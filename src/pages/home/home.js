@@ -16,43 +16,39 @@ import Submit from "../../components/submit/submit";
 import AboutLeasing from "../../components/aboutLeasing/aboutLeasing";
 import Location from "../../components/location/location";
 const Home = () => {
-	const handleClick = (e) => {
-		i18next.changeLanguage(e.target.value);
-	};
-	const { t } = useTranslation();
-	return (
-		<Suspense fallback="loading">
-			<div className="main home">
-				<Nav onClick={(e) => handleClick(e)} />
-				<input type="checkbox" id="navLinks__menu" />
-				<label htmlFor="navLinks__menu" className="navLinks__menu"></label>
-				<Header />
-				<LeasingImages />
-				<Space style={{ width: "100%" }} direction="vertical">
-					<IntegerStep />
-				</Space>
-				<HelpTitle />
-				<Services />
-				<Submit />
-				<AboutLeasing />
-				<Location />
-				<Footer />
-			</div>
-			<div className="success">
-				<ToastContainer
-					position="top-right"
-					autoClose={5000}
-					hideProgressBar={false}
-					newestOnTop={false}
-					closeOnClick
-					rtl={false}
-					pauseOnFocusLoss
-					draggable
-					pauseOnHover
-					theme="light"
-				/>
-			</div>
-		</Suspense>
-	);
+  const { t } = useTranslation();
+  return (
+    <Suspense fallback="loading">
+      <div className="main home">
+        <input type="checkbox" id="navLinks__menu" />
+        <label htmlFor="navLinks__menu" className="navLinks__menu"></label>
+        <Header />
+        <LeasingImages />
+        <Space style={{ width: "100%" }} direction="vertical">
+          <IntegerStep />
+        </Space>
+        <HelpTitle />
+        <Services />
+        <Submit />
+        <AboutLeasing />
+        <Location />
+      </div>
+      
+      <div className="success">
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+        />
+      </div>
+    </Suspense>
+  );
 };
 export { Home };

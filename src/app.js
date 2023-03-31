@@ -5,19 +5,22 @@ import Company from "./pages/company/company";
 import { Routes, Route } from "react-router-dom";
 import Aos from "aos";
 import { useEffect } from "react";
+import Layout from "./layout/layout";
 const App = () => {
-	useEffect(() => {
-		Aos.init({ duration: 1000, mirror: true });
-	}, []);
-	return (
-		<>
-			<Routes>
-				<Route exact path="/" element={<Home />} />
-				<Route path="/contact" element={<Contact />} />
-				<Route path="/company" element={<Company />} />
-			</Routes>
-		</>
-	);
+  useEffect(() => {
+    Aos.init({ duration: 1000, mirror: true });
+  }, []);
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/company" element={<Company />} />
+        </Route>
+      </Routes>
+    </>
+  );
 };
 
 export default App;
