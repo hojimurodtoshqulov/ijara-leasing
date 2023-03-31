@@ -1,0 +1,100 @@
+@import "../../scss/varuables.scss";
+
+.aboutLeasingDiv {
+	background: $bg;
+	position: relative;
+	padding: 5% 0;
+	.aboutLeasing {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		&__col1 {
+			width: 60%;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: space-between;
+			gap: 2rem;
+			&_titles {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 1rem;
+				position: relative;
+				div {
+					height: 80px;
+					width: 2px;
+					border-radius: 50%;
+					background: linear-gradient(to bottom, #319ba124, #319ba1, #319ba124);
+				}
+				h1 {
+					font-size: 50px;
+					font-family: $font_titles;
+					position: relative;
+					p {
+						font-size: 50px;
+						position: relative;
+						z-index: 1;
+					}
+					span {
+						width: 100px;
+						height: 15px;
+						background: $primary;
+						position: absolute;
+						top: 65%;
+						left: 0;
+						z-index: 0;
+					}
+				}
+			}
+			&_texts {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: space-between;
+				gap: 1rem;
+				font-weight: 400;
+				font-family: $font_texts;
+				font-size: 17px;
+				span {
+					font-weight: 700;
+				}
+			}
+		}
+		&__col2 {
+			width: 37%;
+			height: 100%;
+			&_img1 {
+				width: 50%;
+				position: absolute;
+				top: 23%;
+				right: -13%;
+				z-index: 3;
+			}
+			&_img2 {
+				width: 40%;
+				position: absolute;
+				top: 14%;
+				right: -10%;
+				z-index: 2;
+				transform: rotate(5deg);
+			}
+			&_img3 {
+				width: 40%;
+				position: absolute;
+				bottom: 9%;
+				right: -2%;
+				z-index: 1;
+				transform: rotate(-5deg);
+			}
+			&_img4 {
+				width: 40%;
+				position: absolute;
+				bottom: 9%;
+				right: -2%;
+				z-index: 1;
+				transform: rotate(-5deg);
+			}
+		}
+	}
+}

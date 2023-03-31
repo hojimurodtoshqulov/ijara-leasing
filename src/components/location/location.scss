@@ -1,0 +1,88 @@
+@import "../../scss/varuables.scss";
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.map {
+	background: $bg;
+	padding: 5% 0;
+	h1 {
+		font-size: 2.5em;
+		font-family: $font_titles;
+		margin: 2% 0 2% 0.5%;
+		position: relative;
+		p {
+			position: relative;
+			z-index: 1;
+		}
+		span {
+			width: 90px;
+			height: 15px;
+			background: $primary;
+			position: absolute;
+			top: 60%;
+			left: -0.5%;
+			z-index: 0;
+		}
+	}
+}
+@media (min-width: $xxl) {
+	.map {
+		h2 {
+			font-size: 3em;
+		}
+		iframe {
+			height: 600px;
+		}
+	}
+}
+
+@media (max-width: $xxl) {
+	.map {
+		iframe {
+			height: 500px;
+		}
+	}
+}
+@media (max-width: $xl) {
+	.map {
+		h2 {
+			font-size: 2.4em;
+		}
+		iframe {
+			height: 400px;
+		}
+	}
+}
+@media (max-width: $md) {
+	.map {
+		h2 {
+			font-size: 2.2em;
+		}
+		iframe {
+			height: 350px;
+		}
+	}
+}
+
+@media (max-width: $sm) {
+	.map {
+		h2 {
+			font-size: 1.8em;
+		}
+		iframe {
+			height: 300px;
+		}
+	}
+}
+@media (max-width: $sm) {
+	.map {
+		h2 {
+			font-size: 1.5em;
+		}
+		iframe {
+			height: 300px;
+		}
+	}
+}

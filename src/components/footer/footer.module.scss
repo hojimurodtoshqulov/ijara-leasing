@@ -1,0 +1,74 @@
+@import "../../scss/varuables.scss";
+.footer {
+	background: $dark;
+	&__row1 {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 5% 0;
+		&_line {
+			width: 2px;
+			height: 200px;
+			border-radius: 50%;
+			background: linear-gradient(to bottom, #319ba131, #319ba1, #319ba131);
+		}
+		&_col1 {
+			width: 30%;
+			a {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 1rem;
+				img {
+					width: 30%;
+				}
+			}
+		}
+		&_col2 {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 1rem;
+			text-align: center;
+			a {
+				font-size: 20px;
+				font-family: $font_titles;
+				span {
+					color: $primary;
+				}
+			}
+		}
+		&_col3 {
+			width: 30%;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 1rem;
+			text-align: start;
+			h1 {
+				font-size: 48px;
+				font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+				font-weight: 400;
+			}
+			p {
+				font-size: 20px;
+				font-family: $font_texts;
+			}
+		}
+	}
+	&__row2 {
+		border-top: 1px solid $grey;
+		text-align: center;
+		padding: 1.2% 0;
+		p {
+			font-size: 16px;
+			font-family: $font_titles;
+			a {
+				color: $primary;
+			}
+		}
+	}
+}
+
+@media (max-width: $md) {
+}

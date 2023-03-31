@@ -1,0 +1,435 @@
+@import "../../scss/varuables.scss";
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+::placeholder {
+	color: $dark;
+}
+
+#navLinks__menu {
+	display: none;
+}
+
+.contact {
+	margin-top: 50vh;
+	background: #0e0e12;
+	width: $w_100;
+	overflow: hidden;
+	z-index: 123;
+	color: $light;
+	.nav {
+		&__elements {
+			&-linksDiv {
+				&-ul {
+					&-contact {
+						&:hover {
+						}
+						a {
+							color: #f3023e;
+							span {
+								display: inline-block;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.page__title {
+		position: absolute;
+		left: 37%;
+		top: 40vh;
+		overflow: hidden;
+		padding: 1% 0 2% 0;
+		font-family: $font_titles;
+		font-size: 3em;
+		width: 26%;
+		text-align: center;
+		color: $light;
+		font-weight: 500;
+		background: #0e0e12;
+		text-shadow: 0 2px 3px rgba(255, 255, 255, 0.698);
+		box-shadow: 0 3px 10px rgba(255, 255, 255, 0.2);
+		z-index: 12;
+		border-radius: $br_r_5;
+		text-transform: capitalize;
+	}
+	.stages-elements {
+		width: $w_100;
+		padding: 6% 0;
+		border-top: 1px solid rgba(255, 0, 0, 0);
+		border-bottom: 1px solid rgba(255, 0, 0, 0);
+		.wrapper {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			flex-wrap: wrap;
+			.stages-elements-col1 {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				.stages {
+					color: $light;
+					display: flex;
+					align-items: flex-start;
+					h2 {
+						display: none;
+					}
+					.stages-items {
+						display: flex;
+						justify-content: flex-start;
+						align-items: flex-start;
+						gap: 2em;
+						width: 70%;
+						text-align: justify;
+
+						.orderNumber {
+							color: $reddish;
+							display: flex;
+							align-items: flex-start;
+
+							.fa-solid {
+								margin-top: 0.5rem;
+								color: $reddish;
+							}
+						}
+
+						.texts {
+							width: 70%;
+							text-align: start;
+
+							.description {
+								color: #fff;
+							}
+						}
+					}
+				}
+			}
+
+			.stages-elements-col2 {
+				width: 100%;
+				padding-bottom: 1%;
+				.submit {
+					color: $light;
+
+					p {
+						color: #fff;
+					}
+					::placeholder {
+						color: #fff;
+					}
+
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $xl) {
+	.contact {
+		width: $w_100;
+		.page__title {
+			left: 35%;
+			top: 32vh;
+			padding: 1% 0 2% 0;
+			font-size: 2.9em;
+			width: 30%;
+		}
+		.stages-elements {
+			padding: 10% 0;
+			.wrapper {
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				gap: 50px;
+				.stages-elements-col1 {
+					width: 80%;
+					.stages-elements-col1 {
+						width: 80%;
+						.stages {
+							width: $w_100;
+							gap: 2.5em;
+							h2 {
+								font-size: 2.2em;
+								text-align: center;
+							}
+							[data-aos="fade-right"] {
+								margin-left: 0%;
+							}
+							.stages-items {
+								align-items: flex-start;
+								gap: 1.8em;
+								width: 80%;
+								.orderNumber {
+									font-size: 5em;
+									display: flex;
+									align-items: flex-start;
+
+									.fa-solid {
+										margin-top: 0.5rem;
+										color: $reddish;
+									}
+								}
+								.texts {
+									.title {
+										font-size: 1.6em;
+										margin: 3% 0;
+									}
+									.description {
+										font-size: 1.4em;
+									}
+								}
+							}
+						}
+					}
+					.stages-elements-col2 {
+						width: 80%;
+						.submit {
+							width: $w_100;
+							flex-direction: column;
+							gap: 4em;
+							h2 {
+								font-size: 2.2em;
+							}
+							p {
+								font-size: 1.4em;
+								width: 90%;
+							}
+							form {
+								gap: 1em 0;
+								.input-name {
+									background: none;
+									padding: 1% 2%;
+									width: 48.5%;
+									font-size: 1.2em;
+								}
+								.input-tell {
+									width: 48.5%;
+									font-size: 1.2em;
+								}
+								textarea {
+									font-size: 1.2em;
+								}
+								.input-check-div {
+									width: $w_100;
+									label {
+										font-size: 1.4em;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: $lg) {
+	.contact {
+		.page__title {
+			left: 31%;
+			top: 34vh;
+			padding: 0% 0 1% 0;
+			font-size: 2.6em;
+			width: 38%;
+		}
+		.stages-elements {
+			padding: 14% 0 18% 0;
+			.wrapper {
+				.stages-elements-col1 {
+					width: 100%;
+				}
+				.stages-elements-col2 {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $md) {
+	.contact {
+		.page__title {
+			left: 28%;
+			top: 35vh;
+			font-size: 2.4em;
+			width: 44%;
+		}
+		.stages-elements {
+			.wrapper {
+				.stages-elements-col1 {
+					.stages {
+						h2 {
+							font-size: 2em;
+						}
+						[data-aos="fade-right"] {
+							justify-self: flex-start;
+							justify-content: flex-start;
+						}
+						.stages-items {
+							gap: 1.8em;
+							width: 95%;
+							.orderNumber {
+								font-size: 4.5em;
+							}
+							.texts {
+								.title {
+									font-size: 1.5em;
+									margin: 2% 0;
+								}
+								.description {
+									font-size: 1.3em;
+								}
+							}
+						}
+					}
+				}
+				.stages-elements-col2 {
+					.submit {
+						width: $w_100;
+						flex-direction: column;
+						gap: 2.3em;
+						h2 {
+							font-size: 1.8em;
+						}
+						p {
+							font-size: 1.4em;
+							width: 90%;
+						}
+						form {
+							gap: 1.5em 0;
+							.input-name {
+								background: none;
+								padding: 1% 2%;
+								width: 48.5%;
+								font-size: 1.2em;
+							}
+							.input-tell {
+								width: 48.5%;
+								font-size: 1.2em;
+							}
+							textarea {
+								font-size: 1.2em;
+							}
+							.input-check-div {
+								width: $w_100;
+								label {
+									font-size: 1.4em;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $sm) {
+	.contact {
+		.page__title {
+			left: 26%;
+			top: 36vh;
+			font-size: 1.8em;
+			width: 48%;
+		}
+		.stages-elements {
+			.wrapper {
+				.stages-elements-col1 {
+					.stages {
+						h2 {
+							font-size: 1.6em;
+						}
+						width: $w_100;
+						.stages-items {
+							gap: 1.4em;
+							.orderNumber {
+								font-size: 3.6em;
+								.fa-solid {
+									margin-top: 0rem;
+								}
+							}
+							.texts {
+								.title {
+									font-size: 1.3em;
+									margin: 1% 0;
+								}
+								.description {
+									font-size: 1.1em;
+								}
+							}
+						}
+					}
+				}
+				.stages-elements-col2 {
+					.submit {
+						h2 {
+							font-size: 1.6em;
+						}
+						p {
+							font-size: 1em;
+							width: 100%;
+						}
+						form {
+							gap: 1.5em 0;
+							.input-name {
+								background: none;
+								padding: 1% 2%;
+								width: $w_100;
+								font-size: 1.2em;
+							}
+							.input-tell {
+								width: $w_100;
+								font-size: 1.2em;
+							}
+							textarea {
+								font-size: 1.2em;
+							}
+							.input-check-div {
+								label {
+									font-size: 1.2em;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: $xs) {
+	.contact {
+		.page__title {
+			left: 20%;
+			top: 37vh;
+			font-size: 1.3em;
+			width: 60%;
+			padding: 0 1%;
+		}
+		.stages-elements {
+			.wrapper {
+				.stages-elements-col1 {
+					.stages {
+						h2 {
+							font-size: 1.3em;
+						}
+					}
+				}
+				.stages-elements-col2 {
+					.submit {
+						gap: 2em;
+
+						h2 {
+							font-size: 1.3em;
+						}
+					}
+				}
+			}
+		}
+	}
+}

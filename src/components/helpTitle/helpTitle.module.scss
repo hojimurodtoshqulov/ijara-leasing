@@ -1,0 +1,63 @@
+@import "../../scss/varuables.scss";
+
+.helpTitleDiv {
+	background: $bg;
+	padding: 10% 0;
+	.helpTitle {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 90px;
+		h1 {
+			font-size: 50px;
+			font-family: $font_titles;
+			line-height: 50px;
+			position: relative;
+			z-index: 12;
+			p {
+				position: relative;
+				z-index: 1;
+			}
+			span {
+				width: 100px;
+				height: 15px;
+				background: $primary;
+				position: absolute;
+				top: 35%;
+				left: 0;
+				z-index: 0;
+			}
+		}
+		&__elements {
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+			gap: 1rem;
+			&_row1 {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 23px;
+				div {
+					height: 112px;
+					width: 2px;
+					background: linear-gradient(to bottom, #319ba11d, #319ba1, #319ba11d);
+					border-radius: 50%;
+				}
+				p {
+					font-size: 25px;
+					font-family: $font_texts;
+				}
+			}
+			&_btn {
+				width: 292px;
+				height: 74px;
+				button {
+					font-size: 25px;
+				}
+			}
+		}
+	}
+}
