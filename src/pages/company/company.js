@@ -1,6 +1,7 @@
 import React from "react";
 import "./company.scss";
 import InfoCard from "../../components/infoCard/infoCard";
+import Title from "../../components/title/title";
 
 /* 
 
@@ -15,7 +16,7 @@ const Company = () => {
     <main className="company">
       <div className="container">
         <section className="company__section">
-          <h2 className="company__title">О компании</h2>
+          <Title>О компании</Title>
           <p data-aos="flip-down" className="company__par">
             <span className="par__title">«Ijara Leasing»</span> - независимая
             универсальная компания. Мы предоставляем все виды лизинговых услуг,
@@ -37,7 +38,7 @@ const Company = () => {
           </p>
         </section>
         <section className="company__section">
-          <h2 className="company__title">Наша миссия</h2>
+          <Title>Наша миссия</Title>
           <p data-aos="zoom-out" className="company__par">
             <span className="par__title">«Ijara Leasing»</span> - одна из первых
             и крупных иностранных лизинговых компаний в Узбекистане. Мы активно

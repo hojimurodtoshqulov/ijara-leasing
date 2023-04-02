@@ -6,6 +6,11 @@
   width: 100%;
   text-align: center;
   font-family: $font-texts;
+  height: 100%;
+
+  @media (max-width:$xl) {
+    padding: 20px 40px;
+  }
 
   &:last-child {
     @media (max-width: $xl) {
@@ -20,7 +25,7 @@
   &Title {
     font-style: normal;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 45px;
     line-height: 70px;
     margin-bottom: 1rem;
     @media (max-width: $md) {

@@ -1,8 +1,13 @@
 import styles from "./infoCard.module.scss";
 
-const InfoCard = ({ title, text }) => {
+const InfoCard = ({ title, text, ...props }) => {
   return (
-    <div data-aos="flip-up" data-aos-delay="100" className={styles.card}>
+    <div
+      {...props}
+      data-aos="flip-up"
+      data-aos-delay="100"
+      className={styles.card}
+    >
       <h2 className={styles.cardTitle}>{title}</h2>
       <p className={styles.cardText}>{text}</p>
     </div>
