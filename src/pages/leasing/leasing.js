@@ -7,6 +7,8 @@ import iconPen from "../../media/icon-pen.png";
 import icocFileHands from "../../media/icon-handFile.png";
 
 import "./style.scss";
+import ExplainSection from "../../components/explainSection/explainSection";
+import Title from "../../components/title/title";
 
 const Leasing = () => {
   return (
@@ -17,7 +19,8 @@ const Leasing = () => {
         </div>
         <div className="container">
           <div className="leasing__hero-wrapper">
-            <h1 className="leasing__hero-title">Экспресс лизинг</h1>
+            <Title title={"Экспресс лизинг"} typed underline />
+            <h1 className="leasing__hero-title"></h1>
             <p className="leasing__hero-text">
               С целью сделать продукты лизинга доступным широкому кругу
               предпринимателей ООО «Ijara Leasing», ВПЕРВЫЕ в Узбекистане,
@@ -46,36 +49,7 @@ const Leasing = () => {
           <InfoCard text={"ставка удорожания"} title={"20%"} />
           <InfoCard text={"комиссия за рассмотрение"} title={"2%"} />
         </div>
-        <section className="explain">
-          <h2 className="explain__title">Как получить лизинг</h2>
-          <div className="explain__wrapper">
-            <div className="explain__item">
-              <img src={iconSearch} alt="" />
-              <p className="explain__item-text">Вы выбираете оборудование</p>
-            </div>
-            <div className="explain__item">
-              <img src={iconFile} alt="" />
-              <p className="explain__item-text">
-                Заполняете заявку на лизинговое финансирование и передаете ее на
-                рассмотрение
-              </p>
-            </div>
-            <div className="explain__item">
-              <img src={iconPen} alt="" />
-              <p className="explain__item-text">
-                Вы подписываете комплект документов по сделке, оформляете залог
-                и оплачиваете авансовый платеж
-              </p>
-            </div>
-            <div className="explain__item">
-              <img src={icocFileHands} alt="" />
-              <p className="explain__item-text">
-                С этого момента договор лизинга и договор купли-продажи
-                считается вступившими в силу!
-              </p>
-            </div>
-          </div>
-        </section>
+        <ExplainSection />
       </div>
     </div>
   );

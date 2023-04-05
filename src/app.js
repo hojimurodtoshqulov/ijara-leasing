@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import Layout from "./layout/layout";
 import Requisites from "./pages/requisites/requisites";
 import Leasing from "./pages/leasing/leasing";
+import Programs from "./pages/programs/programs";
 const App = () => {
   useEffect(() => {
     Aos.init({ duration: 1000, mirror: true });
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/company" element={<Company />} />
           <Route path="/requisites" element={<Requisites />} />
           <Route path="/leasing" element={<Leasing />} />
+          <Route path="/programs" element={<Programs />} />
         </Route>
       </Routes>
     </>

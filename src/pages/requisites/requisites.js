@@ -10,20 +10,16 @@ const Requisites = () => {
       </div>
       <div className="container">
         <main className="requisites__content">
-          <Title>Реквизиты</Title>
+          <Title title={"Реквизиты"} typed />
           <section className="requisites__section">
-            <Title small border={false}>
-              Наименование
-            </Title>
+            <Title small border={false} title={"Наименование"} />
             <p className="requisites__text">
               ООО «Ijara Leasing» - Общество с ограниченной ответственностью
               «Ijara Leasing»
             </p>
           </section>
           <section className="requisites__section">
-            <Title small border={false}>
-              Адрес
-            </Title>
+            <Title small border={false} title={"Адрес"} />
             <p className="requisites__text">
               г. Ташкент, Юнусабадский район, Ц-4, массив Кашгар, 26 дом, 38
               кв.Тел.: <a href="tel:+998 (99) 160-90-00">+998 (99) 160-90-00</a>
@@ -31,9 +27,7 @@ const Requisites = () => {
             </p>
           </section>
           <section className="requisites__section">
-            <Title small border={false}>
-              Банковские реквизиты:
-            </Title>
+            <Title small border={false} title={"Банковские реквизиты:"} />
             <p className="requisites__text">
               Расчетный счет (Узб.Сум): 20208000805354860001 Банковские данные
               АИКБ «Ипак Йули», г. Ташкент Код Банка: 00444 ИНН: 308234550

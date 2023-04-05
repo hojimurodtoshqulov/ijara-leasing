@@ -16,6 +16,7 @@ $line-height: 70px;
     font-weight: 700;
     font-size: 35px;
     line-height: 70px;
+    padding-bottom: 0;
   }
 
   &.border::before {
@@ -28,6 +29,15 @@ $line-height: 70px;
     background: #319ba1;
     display: inline-block;
     z-index: -1;
+
+    @media (max-width: $md) {
+      top: calc($line-height - 25px);
+    }
+
+    @media (max-width: $sm) {
+      top: calc($line-height - 28px);
+      height: 8px;
+    }
   }
 
   &.underline::after {
@@ -44,5 +54,33 @@ $line-height: 70px;
       #319ba1 51.56%,
       rgba(171, 174, 183, 0) 100%
     );
+  }
+
+  @media (max-width: $md) {
+    font-size: 40px;
+    margin-bottom: 30px;
+    &.small {
+      font-size: 30px;
+      line-height: 50px;
+      margin-bottom: 20px;
+
+      &.border::before {
+        top: calc($line-height - 35px);
+        max-width: 100%;
+        height: 4px;
+      }
+    }
+  }
+
+  @media (max-width: $sm) {
+    font-size: 30px;
+
+    &.small {
+      font-size: 20px;
+
+      &.border::before {
+        top: calc($line-height - 40px);
+      }
+    }
   }
 }

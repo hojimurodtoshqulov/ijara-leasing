@@ -8,14 +8,12 @@ const Contact = () => {
   return (
     <main className="contact">
       <div className="container">
-        <Title>Контакты</Title>
+        <Title typed title={"Контакты"} />
 
         <div className="contact-cards">
           <div className="contact-cards__item">
             <div className="contact-cards__item-title">
-              <Title small underline={false}>
-                Адрес
-              </Title>
+              <Title small underline={false} title={"Адрес"} />
             </div>
 
             <InfoCard
@@ -28,9 +26,7 @@ const Contact = () => {
           <div className="divider" />
           <div className="contact-cards__item">
             <div className="contact-cards__item-title">
-              <Title small underline={false}>
-                Телефон
-              </Title>
+              <Title small underline={false} title={"Телефон"} />
             </div>
             <InfoCard
               text={
@@ -46,7 +42,7 @@ const Contact = () => {
             />
           </div>
         </div>
-        <Title>Карта</Title>
+        <Title title={"Карта"} typed />
         <div data-aos="zoom-in-down" className="contact__map">
           <iframe
             title="iframe"

@@ -16,7 +16,7 @@ const Company = () => {
     <main className="company">
       <div className="container">
         <section className="company__section">
-          <Title>О компании</Title>
+          <Title title={"О компании"} typed />
           <p data-aos="flip-down" className="company__par">
             <span className="par__title">«Ijara Leasing»</span> - независимая
             универсальная компания. Мы предоставляем все виды лизинговых услуг,
@@ -38,7 +38,7 @@ const Company = () => {
           </p>
         </section>
         <section className="company__section">
-          <Title>Наша миссия</Title>
+          <Title title={"Наша миссия"} typed />
           <p data-aos="zoom-out" className="company__par">
             <span className="par__title">«Ijara Leasing»</span> - одна из первых
             и крупных иностранных лизинговых компаний в Узбекистане. Мы активно

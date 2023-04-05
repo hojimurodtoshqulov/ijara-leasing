@@ -41,11 +41,27 @@
     font-size: 25px;
     line-height: 40px;
     margin-bottom: 3rem;
+
+    @media (max-width: $lg) {
+      font-size: 20px;
+
+      &-highlight {
+        font-size: 22px;
+      }
+    }
+
+    @media (max-width: $sm) {
+      font-size: 16px;
+      line-height: 35px;
+
+      &-highlight {
+        font-size: 20px;
+      }
+    }
   }
 
   .par__title {
     font-weight: 700;
-    font-size: 25px;
   }
 
   .card-wrapper {

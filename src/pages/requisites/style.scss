@@ -47,6 +47,13 @@
 
   &__section {
     margin-top: 3rem;
+    @media (max-width: $lg) {
+      margin-top: 2rem;
+    }
+
+    @media (max-width: $sm) {
+      margin-top: 1rem;
+    }
   }
 
   &__text {
@@ -54,5 +61,22 @@
     font-weight: 400;
     font-size: 25px;
     line-height: 35px;
+
+    @media (max-width: $lg) {
+      font-size: 20px;
+
+      &-highlight {
+        font-size: 22px;
+      }
+    }
+
+    @media (max-width: $sm) {
+      font-size: 16px;
+      line-height: 35px;
+
+      &-highlight {
+        font-size: 20px;
+      }
+    }
   }
 }
