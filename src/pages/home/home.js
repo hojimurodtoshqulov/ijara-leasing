@@ -15,6 +15,7 @@ import Services from "../../components/services/services";
 import Submit from "../../components/submit/submit";
 import AboutLeasing from "../../components/aboutLeasing/aboutLeasing";
 import Location from "../../components/location/location";
+import Ques_ans from "../../components/ques_ans/ques_ans";
 const Home = () => {
 	const handleClick = (e) => {
 		i18next.changeLanguage(e.target.value);
@@ -35,6 +36,7 @@ const Home = () => {
 				<Services />
 				<Submit />
 				<AboutLeasing />
+				<Ques_ans />
 				<Location />
 				<Footer />
 			</div>

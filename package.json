@@ -9,6 +9,7 @@
 		"antd": "^5.1.2",
 		"aos": "^2.3.4",
 		"axios": "^1.2.5",
+		"framer-motion": "^10.10.0",
 		"i18next": "22.4.9",
 		"i18next-browser-languagedetector": "^7.0.1",
 		"i18next-http-backend": "2.1.1",

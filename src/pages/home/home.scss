@@ -9,7 +9,8 @@
 	color: inherit;
 }
 .main {
-	background: #0e0e12;
+	font-family: $font_texts;
+	background: $bg;
 	width: 100%;
 	overflow: hidden;
 	input[type="checkbox"] {
