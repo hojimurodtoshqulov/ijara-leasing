@@ -94,6 +94,7 @@
     }
     &-btn {
       button {
+        display: inline-block;
         padding: 0 25px;
         font-family: $font-texts;
         font-style: normal;
@@ -101,6 +102,7 @@
         font-size: 18px;
         line-height: 35px;
         height: 4.5rem;
+        min-width: 15rem;
       }
     }
   }

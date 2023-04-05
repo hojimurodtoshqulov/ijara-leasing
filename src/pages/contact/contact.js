@@ -3,36 +3,44 @@ import Title from "../../components/title/title";
 import "./contact.scss";
 import LocationIcon from "../../media/location-icon.png";
 import TelIcon from "../../media/tel-icon.png";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   return (
     <main className="contact">
       <div className="container">
-        <Title typed title={"Контакты"} />
+        <Title typed title={t("contactPage.contact.title")} />
 
         <div className="contact-cards">
           <div className="contact-cards__item">
             <div className="contact-cards__item-title">
-              <Title small underline={false} title={"Адрес"} />
+              <Title
+                small
+                underline={false}
+                title={t("contactPage.contact.address")}
+              />
             </div>
 
             <InfoCard
-              text={
-                " г. Ташкент, Юнусабадский район, Ц-4, массив Кашгар, 26 дом, 38 кв."
-              }
+              text={t("contactPage.contact.location")}
               title={<img src={LocationIcon} alt="icon" />}
             />
           </div>
           <div className="divider" />
           <div className="contact-cards__item">
             <div className="contact-cards__item-title">
-              <Title small underline={false} title={"Телефон"} />
+              <Title
+                small
+                underline={false}
+                title={t("contactPage.contact.phone")}
+              />
             </div>
             <InfoCard
               text={
                 <div className="contact__tel-numbers">
                   <span>
-                    Тел.:
+                    {t("contactPage.contact.tel")}.:
                     <a href="tel:+998 (99) 160-90-00">+998 (99) 160-90-00</a>
                   </span>
                   <a href="tel:+998 (99) 161-90-00">+998 (99) 161-90-00</a>
@@ -42,7 +50,7 @@ const Contact = () => {
             />
           </div>
         </div>
-        <Title title={"Карта"} typed />
+        <Title title={t("contactPage.map.title")} typed />
         <div data-aos="zoom-in-down" className="contact__map">
           <iframe
             title="iframe"

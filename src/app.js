@@ -9,6 +9,9 @@ import Layout from "./layout/layout";
 import Requisites from "./pages/requisites/requisites";
 import Leasing from "./pages/leasing/leasing";
 import Programs from "./pages/programs/programs";
+
+import "./i18n";
+
 const App = () => {
   useEffect(() => {
     Aos.init({ duration: 1000, mirror: true });

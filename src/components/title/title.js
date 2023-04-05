@@ -12,6 +12,7 @@ const Title = ({
   ...props
 }) => {
   const [isVisible, setIsVisible] = useState(false);
+  const [typedState, setTypedState] = useState([title]);
 
   const { ref, inView } = useInView({
     threshold: 0,
@@ -23,6 +24,12 @@ const Title = ({
       setIsVisible(true);
     }
   }, [inView]);
+
+  console.log(title);
+
+  useEffect(() => {
+    setTypedState((prev) => [...prev, title]);
+  }, [title]);
   return (
     <div ref={ref}>
       {isVisible && (
@@ -31,11 +38,13 @@ const Title = ({
     ${small && styles.small} ${border && styles.border}`}
           {...props}
         >
-          {typed ? (
-            <Typed cursorChar="" strings={[title]} typeSpeed={100} />
-          ) : (
-            title
-          )}
+          {/* {typedState ? (
+            <>
+              <Typed cursorChar="" strings={typedState} typeSpeed={100} />
+            </>
+          ) : ( */}
+          {title}
+          {/* )} */}
         </h2>
       )}
     </div>

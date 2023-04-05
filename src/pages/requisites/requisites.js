@@ -1,8 +1,10 @@
 import CarImg from "../../media/requisities-img.png";
 import Title from "../../components/title/title";
 import "./style.scss";
+import { useTranslation } from "react-i18next";
 
 const Requisites = () => {
+  const { t } = useTranslation();
   return (
     <div className="requisites">
       <div className="side-img">
@@ -10,28 +12,36 @@ const Requisites = () => {
       </div>
       <div className="container">
         <main className="requisites__content">
-          <Title title={"Реквизиты"} typed />
+          <Title title={t("requisites.title")} typed />
           <section className="requisites__section">
-            <Title small border={false} title={"Наименование"} />
+            <Title
+              small
+              border={false}
+              title={t("requisites.section1.title")}
+            />
             <p className="requisites__text">
-              ООО «Ijara Leasing» - Общество с ограниченной ответственностью
-              «Ijara Leasing»
+              title={t("requisites.section1.text")}
             </p>
           </section>
           <section className="requisites__section">
-            <Title small border={false} title={"Адрес"} />
+            <Title
+              small
+              border={false}
+              title={t("requisites.section2.title")}
+            />
             <p className="requisites__text">
-              г. Ташкент, Юнусабадский район, Ц-4, массив Кашгар, 26 дом, 38
-              кв.Тел.: <a href="tel:+998 (99) 160-90-00">+998 (99) 160-90-00</a>
-              , <a href="tel:+998 (99) 161-90-00">+998 (99) 161-90-00</a>
+              {t("requisites.section2.text")}.:{" "}
+              <a href="tel:+998 (99) 160-90-00">+998 (99) 160-90-00</a>,{" "}
+              <a href="tel:+998 (99) 161-90-00">+998 (99) 161-90-00</a>
             </p>
           </section>
           <section className="requisites__section">
-            <Title small border={false} title={"Банковские реквизиты:"} />
-            <p className="requisites__text">
-              Расчетный счет (Узб.Сум): 20208000805354860001 Банковские данные
-              АИКБ «Ипак Йули», г. Ташкент Код Банка: 00444 ИНН: 308234550
-            </p>
+            <Title
+              small
+              border={false}
+              title={t("requisites.section3.title")}
+            />
+            <p className="requisites__text">{t("requisites.section3.text")}</p>
           </section>
         </main>
       </div>

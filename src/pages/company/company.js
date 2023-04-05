@@ -3,6 +3,8 @@ import "./company.scss";
 import InfoCard from "../../components/infoCard/infoCard";
 import Title from "../../components/title/title";
 
+import { useTranslation } from "react-i18next";
+
 /* 
 
 «Ijara Leasing» 
@@ -12,52 +14,45 @@ import Title from "../../components/title/title";
 */
 
 const Company = () => {
+  const { t, i18n } = useTranslation();
   return (
     <main className="company">
       <div className="container">
         <section className="company__section">
-          <Title title={"О компании"} typed />
+          <Title title={t("companyPage.about.title")} typed />
           <p data-aos="flip-down" className="company__par">
-            <span className="par__title">«Ijara Leasing»</span> - независимая
-            универсальная компания. Мы предоставляем все виды лизинговых услуг,
-            исходя из индивидуальных особенностей каждого клиента.
+            <span className="par__title">«Ijara Leasing»</span>{" "}
+            {t("companyPage.about.p1")}
           </p>
           <p data-aos="flip-up" className="company__par">
-            <span className="par__title">«Ijara Leasing»</span> - 1 год успешно
-            работает на рынке лизинга и активно развивается. Головной офис
-            компании находится в Ташкенте. «Ijara Leasing» помогает своим
-            клиентам и партнерам в сегментах микро- и малого бизнеса быстро и
-            успешно развиваться. Также компания помогает бизнесу среднего,
-            крупного и корпоративного уровня.
+            <span className="par__title">«Ijara Leasing»</span>
+            {t("companyPage.about.p2")}
           </p>
           <p data-aos="flip-down" className="company__par">
-            <span className="par__title">«Ijara Leasing»</span> - заинтересовано
-            в построении долгосрочных, взаимовыгодных отношений со своими
-            клиентами, обеспечивая индивидуальный подход и высокий уровень
-            обслуживания.
+            <span className="par__title">«Ijara Leasing»</span>
+            {t("companyPage.about.p3")}
           </p>
         </section>
         <section className="company__section">
-          <Title title={"Наша миссия"} typed />
+          <Title title={t("companyPage.mission.title")} typed />
           <p data-aos="zoom-out" className="company__par">
-            <span className="par__title">«Ijara Leasing»</span> - одна из первых
-            и крупных иностранных лизинговых компаний в Узбекистане. Мы активно
-            финансируем компании во всех ключевых секторах экономики страны от
-            животноводческого сектора и добывающей промышленности до
-            высокотехнологичных областей, таких как фармацевтика или ИТ.
-            Приоритетными направлениями нашей деятельности являются лизинг
-            различных видов коммерческих транспортных средств, аграрной и
-            специальной строительной техники, а также различного
-            производственного и другого оборудования.
+            <span className="par__title">«Ijara Leasing»</span>
+            {t("companyPage.mission.p1")}
           </p>
         </section>
         <div className="card-wrapper">
           <InfoCard
-            title={"Топ-20"}
-            text={"В числе лизинговых компаний Узбекистана"}
+            title={t("companyPage.card1.title")}
+            text={t("companyPage.card1.text")}
           />
-          <InfoCard title={"5 млн"} text={"долларов США Капитал"} />
-          <InfoCard title={"21 млн"} text={"долларов США Стоимость проектов"} />
+          <InfoCard
+            title={t("companyPage.card2.title")}
+            text={t("companyPage.card2.text")}
+          />
+          <InfoCard
+            title={t("companyPage.card3.title")}
+            text={t("companyPage.card3.text")}
+          />
         </div>
       </div>
     </main>

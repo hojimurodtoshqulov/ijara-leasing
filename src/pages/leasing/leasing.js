@@ -6,11 +6,14 @@ import iconFile from "../../media/icon-file.png";
 import iconPen from "../../media/icon-pen.png";
 import icocFileHands from "../../media/icon-handFile.png";
 
+import { useTranslation } from "react-i18next";
+
 import "./style.scss";
 import ExplainSection from "../../components/explainSection/explainSection";
 import Title from "../../components/title/title";
 
 const Leasing = () => {
+  const { t } = useTranslation();
   return (
     <div className="leasing">
       <section className="leasing__hero">
@@ -19,22 +22,20 @@ const Leasing = () => {
         </div>
         <div className="container">
           <div className="leasing__hero-wrapper">
-            <Title title={"Экспресс лизинг"} typed underline />
+            <Title title={t("leasingPage.header.title")} typed underline />
             <h1 className="leasing__hero-title"></h1>
-            <p className="leasing__hero-text">
-              С целью сделать продукты лизинга доступным широкому кругу
-              предпринимателей ООО «Ijara Leasing», ВПЕРВЫЕ в Узбекистане,
-              запустила новый продукт – Экспресс лизинг строительной
-              специализированной техники.
-            </p>
+            <p className="leasing__hero-text">{t("leasingPage.header.p1")}</p>
             <div className="leasing__hero-btns">
               <div className="leasing__hero-btn">
-                <Button btnLink={"/"} btnTitle={"Лизинговые программы"} />
+                <Button
+                  btnLink={"/"}
+                  btnTitle={t("leasingPage.header.button1")}
+                />
               </div>
               <div className="leasing__hero-btn">
                 <Button
                   btnLink={"/"}
-                  btnTitle={"Экспресс лизинг"}
+                  btnTitle={t("leasingPage.header.button2")}
                   btnStyle={"emptyBtn"}
                 />
               </div>
@@ -44,10 +45,10 @@ const Leasing = () => {
       </section>
       <div className="container">
         <div className="leasing__cards">
-          <InfoCard text={"месяцев срок лизинга"} title={"18-48"} />
-          <InfoCard text={"минимальный авансовый платеж"} title={"36%"} />
-          <InfoCard text={"ставка удорожания"} title={"20%"} />
-          <InfoCard text={"комиссия за рассмотрение"} title={"2%"} />
+          <InfoCard text={t("leasingPage.cards.card1")} title={"18-48"} />
+          <InfoCard text={t("leasingPage.cards.card2")} title={"36%"} />
+          <InfoCard text={t("leasingPage.cards.card3")} title={"20%"} />
+          <InfoCard text={t("leasingPage.cards.card4")} title={"2%"} />
         </div>
         <ExplainSection />
       </div>

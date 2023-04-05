@@ -3,6 +3,7 @@ import "./programs.scss";
 import React from "react";
 import Title from "../../components/title/title";
 import ExplainSection from "../../components/explainSection/explainSection";
+import { useTranslation } from "react-i18next";
 
 /* 
 
@@ -12,43 +13,21 @@ import ExplainSection from "../../components/explainSection/explainSection";
 */
 
 const Programs = () => {
+  const { t } = useTranslation();
   return (
     <div className="programs">
       <div className="container">
         <section className="programs__mainInfo">
-          <Title title={"Лизинговые программы"} typed />
+          <Title title={t("programs.title")} typed />
           <p className="programs__text">
-            Как альтернатива кредитованию, Лизинг служит серьезным инструментом
-            финансирования в организации и развитии любой предпринимательской
-            деятельности. Вот уже 10 лет вместе с нашими клиентами – крупными и
-            малыми предприятиями{" "}
+            {t("programs.p1")}
+            {/*
             <span className="programs__text-highlight">IJARA LEASING</span>{" "}
-            реализует потребности бизнеса в транспорте, спецтехнике и
-            оборудовании, воплощая в жизнь самые амбициозные инвестиционные
-            планы компаний-лизингополучателей.
+           . */}
           </p>
-          <p className="programs__text">
-            С каждым годом{" "}
-            <span className="programs__text-highlight">IJARA LEASING</span>{" "}
-            придает уверенности все большему числу клиентов, нацеленных на рост
-            и развитие. Только за последние 2 года количество лизингополучателей
-            в нашем портфеле выросло более чем в два раза. Лизинг позволяет
-            отечественным производителям, торговым и транспортным предприятиям,
-            отраслевым лидерам и небольшим игрокам верить в свои силы и выводить
-            масштабы деятельности на новый уровень.
-          </p>
-          <p className="programs__text">
-            <span className="programs__text-highlight">Лизинг</span> – это
-            плановое управление вашими финансовыми потоками. Вы точно
-            рассчитываете бюджет вашего бизнеса на протяжении срока действия
-            договора лизинга и управляете денежными потоками благодаря схеме
-            расчетов по договору лизинга, что подразумевает равные ежемесячные
-            (ежеквартальные) платежи.
-          </p>
-          <p className="programs__text">
-            Оборудование (объект лизинга), полученное в лизинг, не только
-            окупает само себя, но и позволяет значительно увеличить ваши доходы.
-          </p>
+          <p className="programs__text">{t("programs.p2")}</p>
+         <p className="programs__text">{t("programs.p3")}</p>
+          <p className="programs__text">{t("programs.p4")}</p>
         </section>
         <ExplainSection />
       </div>
