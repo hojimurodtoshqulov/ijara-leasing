@@ -1,7 +1,88 @@
 {
-	"company": "Kompaniya",
-	"leasing": "Lizing dasturlari",
-	"client": "Mijoz uchun",
-	"contact": "Aloqa",
-	"langCheck": "Uz"
+  "company": "Kompaniya",
+  "leasing": "Lizing dasturlari",
+  "client": "Mijoz uchun",
+  "contact": "Aloqa",
+  "langCheck": "Uz",
+  "hello": "uzbekcha salom",
+  "explainSection": {
+    "title": "Qanday qilib ijaraga olish mumkin",
+    "card1": "Ulovni tanlaysiz",
+    "card2": "Arizani to'ldiring lizingni moliyalashtirish uchun va uni ko'rib chiqish uchun yuboring.",
+    "card3": "Siz bitim uchun hujjatlar to'plamini imzolaysiz, garovni tuzasiz va avans to'laysiz",
+    "card4": "Shu paytdan boshlab lizing shartnomasi va oldi-sotdi shartnomasi kuchga kirgan deb hisoblanadi!"
+  },
+  "companyPage": {
+    "about": {
+      "title": "Kompaniya haqida",
+      "p1": " - mustaqil universal kompaniya. Biz har bir mijozning individual xususiyatlaridan kelib chiqib, barcha turdagi lizing xizmatlarini taqdim etamiz.",
+      "p2": " 1 yil lizing bozorida muvaffaqiyatli ishlaydi va faol rivojlanmoqda. Kompaniyaning bosh ofisi Toshkent shahrida joylashgan. «Ijara Leasing» mikro va kichik biznes segmentlaridagi mijozlari va hamkorlariga tez va muvaffaqiyatli o'sishiga yordam beradi. Kompaniya, shuningdek, o'rta, yirik va korporativ darajadagi korxonalarga yordam beradi.",
+      "p3": " - shaxsiy yondashuv va yuqori darajadagi xizmat ko‘rsatish orqali mijozlari bilan uzoq muddatli, o‘zaro manfaatli munosabatlar o‘rnatishga intiladi."
+    },
+    "mission": {
+      "title": "Bizning vazifamiz",
+      "p1": " - O‘zbekistondagi birinchi va yirik xorijiy lizing kompaniyalaridan biridir. Biz chorvachilik va tog‘-kon sanoatidan tortib farmatsevtika yoki IT kabi yuqori texnologiyali sohalargacha bo‘lgan mamlakat iqtisodiyotining barcha muhim tarmoqlaridagi kompaniyalarni faol ravishda moliyalashtiramiz. Har xil turdagi tijorat avtomobillari, qishloq xoʻjaligi va maxsus qurilish texnikasi, shuningdek, turli ishlab chiqarish va boshqa jihozlarni lizingga berish faoliyatimizning ustuvor yoʻnalishlari hisoblanadi."
+    },
+    "card1": {
+      "title": "Top 20",
+      "text": "Lizinglar orasida O'zbekiston kompaniyalari"
+    },
+    "card2": {
+      "title": "5 mln",
+      "text": "AQSH dollari kapital"
+    },
+    "card3": {
+      "title": "21 mln",
+      "text": "AQSH dollari Loyihalar qiymati"
+    }
+  },
+  "contactPage": {
+    "contact": {
+      "title": "Kontaktlar",
+      "address": "Manzil",
+      "phone": "Telefon",
+      "location": "Toshkent shahar Yunusobod tumani, Ц-5, д.78, кв.13",
+      "tel": "Tel"
+    },
+    "map": {
+      "title": "Xarita"
+    }
+  },
+  "leasingPage": {
+    "header": {
+      "title": "Ekspress lizing",
+      "p1": "Lizing mahsulotlarini keng ommaga taqdim etish maqsadida “Ijara Leasing” MChJ tadbirkorlar davrasiga ILK MARTA O‘zbekistonda yangi mahsulot – Ekspress lizing yo‘lga qo‘yildi qurilish uchun maxsus uskunalar.",
+      "button1": "Lizing dasturlari",
+      "button2": "Ekspress lizing"
+    },
+    "cards": {
+      "card1": "oylik ijara muddati",
+      "card2": "minimal to'lov",
+      "card3": "qimmatlashish darajasi",
+      "card4": "tekshirish komissiyasi"
+    }
+  },
+
+  "requisites": {
+    "title": "Rekvizitlar",
+    "section1": {
+      "title": "Kompaniya nomi",
+      "text": "«Ijara Leasing» MChJ – «Ijara Leasing» mas’uliyati cheklangan jamiyati"
+    },
+    "section2": {
+      "title": "Manzil",
+      "text": "Toshkent shahri, Yunusobod tumani, Qashqar massivi, Ц-5, д.78, кв.13 Tel"
+    },
+    "section3": {
+      "title": "Bank rekvizitlari:",
+      "text": "Hisob raqami (UZS): 20208000805354860001; Bank ma'lumotlari: AYKB \"Ipak Yo'li\", Toshkent shahri; Bankning kod raqami: 00444; STIR: 308234550"
+    }
+  },
+  "programs": {
+    "title": "Lizing dasturlari",
+    "p1": "Kredit berishga muqobil sifatida Lizing har qanday tadbirkorlik faoliyatini tashkil etish va rivojlantirishda jiddiy moliyalashtirish vositasi hisoblanadi. IJARA LEASING",
+    "p2": "Har yili IJARA LEASING o'sish va rivojlanishga yo'naltirilgan mijozlar soni ortib borayotganiga ishonch bag'ishlaydi. Birgina so‘nggi 2 yil ichida portfelimizdagi lizing oluvchilar soni ikki baravar ko‘paydi. Lizing mahalliy ishlab chiqaruvchilar, savdo va transport korxonalari, soha yetakchilari va kichik o‘yinchilarga o‘zlariga ishonish va faoliyat ko‘lamini yangi bosqichga olib chiqish imkonini beradi.",
+    "p3": "Lizing - bu sizning moliyaviy oqimlaringizni rejalashtirilgan boshqarish. Siz lizing shartnomasining amal qilish muddati davomida biznesingizni to'g'ri byudjetlashtirasiz va oylik (choraklik) teng to'lovlarni nazarda tutuvchi lizing shartnomasi hisob-kitob sxemasi tufayli pul oqimlarini boshqarasiz.",
+    "p4": "Lizingga olingan uskunalar (lizing ob'ekti) nafaqat o'zini to'laydi, balki sizning daromadingizni sezilarli darajada oshirish imkonini beradi."
+  }
 }

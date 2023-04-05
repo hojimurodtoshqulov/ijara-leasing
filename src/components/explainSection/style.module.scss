@@ -1,0 +1,73 @@
+@import "../../scss/varuables.scss";
+
+.explain {
+}
+.title {
+  font-family: $font-titles;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 70px;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 60px;
+
+  @media (max-width: $md) {
+    row-gap: 2rem;
+  }
+}
+
+.item {
+  position: relative;
+  width: calc(25% - 2px);
+  text-align: center;
+  padding: 1rem 20px;
+  img {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+  }
+
+  &Text {
+    font-family: $font-texts;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  &:not(:first-child):after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(
+      180deg,
+      rgba(171, 174, 183, 0) 0%,
+      #abaeb7 51.56%,
+      rgba(171, 174, 183, 0) 100%
+    );
+  }
+
+  @media (max-width: $xl) {
+    &:nth-child(3)::after {
+      display: none;
+    }
+    width: 50%;
+  }
+
+  @media (max-width: $md) {
+    &::after {
+      display: none !important;
+    }
+
+    width: 100%;
+  }
+}

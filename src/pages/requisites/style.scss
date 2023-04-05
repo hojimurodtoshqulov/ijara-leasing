@@ -1,0 +1,82 @@
+@import "../../scss/varuables.scss";
+
+.requisites {
+  position: relative;
+  margin: 150px 0;
+
+  .side-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    .img {
+      display: inline-block;
+      width: 90%;
+      height: calc(100% - 2rem);
+      z-index: 10;
+    }
+
+    &::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 4rem;
+      right: 0;
+      width: 90%;
+      height: 90%;
+      background: #262745;
+      height: calc(100% - 2rem);
+      z-index: -1;
+    }
+
+    @media (max-width: $lg) {
+      position: relative;
+      width: 100%;
+      padding: 0 10%;
+      margin: 0 auto;
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__content {
+    max-width: 50%;
+    @media (max-width: $lg) {
+      max-width: 100%;
+    }
+  }
+
+  &__section {
+    margin-top: 3rem;
+    @media (max-width: $lg) {
+      margin-top: 2rem;
+    }
+
+    @media (max-width: $sm) {
+      margin-top: 1rem;
+    }
+  }
+
+  &__text {
+    font-family: $font-texts;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+
+    @media (max-width: $lg) {
+      font-size: 20px;
+
+      &-highlight {
+        font-size: 22px;
+      }
+    }
+
+    @media (max-width: $sm) {
+      font-size: 16px;
+      line-height: 35px;
+
+      &-highlight {
+        font-size: 20px;
+      }
+    }
+  }
+}
