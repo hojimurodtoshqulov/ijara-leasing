@@ -1,6 +1,8 @@
 import scss from "./calculate.scss";
 import { Col, InputNumber, Row, Slider } from "antd";
 import { useState } from "react";
+import { motion } from "framer-motion";
+
 const Calculate = () => {
 	const [inputValue, setInputValue] = useState(2000000);
 	const [inputValue2, setInputValue2] = useState(1000000);
@@ -20,13 +22,18 @@ const Calculate = () => {
 	const onChange3 = (newValue) => {
 		setInputValue3(newValue);
 	};
+	const transition = { type: "spring", duration: 2 };
 
 	return (
 		<div className="calculate">
 			<div className="container">
-				<div className="calculate__titles">
+				<div className="calculate__titles" data-aos="fade-up">
 					<h1>Рассчитайте стоимость лизинга</h1>
-					<div></div>
+					<motion.div
+						initial={{ width: "0%" }}
+						whileInView={{ width: "45%" }}
+						transition={{ transition }}
+					></motion.div>
 					<p>
 						Укажите стоимость выбранного автомобиля, желаемый первоначальный
 						взнос и срок лизинга. Свяжитесь с нами после предварительного
@@ -37,9 +44,23 @@ const Calculate = () => {
 				<div className="calculate__calculates">
 					<div className="calculate__calculates_col1">
 						<h1>
-							КАЛЬКУЛЯТОР ЛИЗИНГА <span></span> <p></p>
+							<p>КАЛЬКУЛЯТОР ЛИЗИНГА</p>{" "}
+							<motion.span
+								initial={{ width: "0%" }}
+								whileInView={{ width: "30%" }}
+								transition={{ transition }}
+							></motion.span>{" "}
+							<motion.div
+								initial={{ width: "0%" }}
+								whileInView={{ width: "65%" }}
+								transition={{ transition }}
+							></motion.div>
 						</h1>
-						<div className="calculate__calculates_col1_slider1">
+						<div
+							data-aos="flip-up"
+							data-aos-delay="0"
+							className="calculate__calculates_col1_slider1"
+						>
 							<h4 className="calculate__calculates_col1_slider1-title">
 								Стоимость покупки
 							</h4>
@@ -77,7 +98,11 @@ const Calculate = () => {
 								100 000 000 сум
 							</p>
 						</div>
-						<div className="calculate__calculates_col1_slider1">
+						<div
+							data-aos="flip-up"
+							data-aos-delay="100"
+							className="calculate__calculates_col1_slider1"
+						>
 							<h4 className="calculate__calculates_col1_slider1-title">
 								Первоначальный взнос
 							</h4>
@@ -115,7 +140,11 @@ const Calculate = () => {
 								50 000 000 сум
 							</p>
 						</div>
-						<div className="calculate__calculates_col1_slider1">
+						<div
+							data-aos="flip-up"
+							data-aos-delay="200"
+							className="calculate__calculates_col1_slider1"
+						>
 							<h4 className="calculate__calculates_col1_slider1-title">
 								Срок лизинга
 							</h4>
@@ -153,13 +182,26 @@ const Calculate = () => {
 								48 мес
 							</p>
 						</div>
-						<p className="calculate__calculates_col1-text">
+						<p
+							data-aos="flip-up"
+							data-aos-delay="300"
+							className="calculate__calculates_col1-text"
+						>
 							Приведенные расчеты через калькулятор являются предварительными и
 							не является офертой.
 						</p>
 					</div>
-					<div className="calculate__calculates_col2">
-						<div className="calculate__calculates_col2-titles">
+					<motion.div
+						className="calculate__calculates_col2"
+						initial={{ transform: "rotate(30deg)" }}
+						whileInView={{ transform: "rotate(0deg)" }}
+						transition={{ transition, duration: 1 }}
+					>
+						<div
+							data-aos="fade-left"
+							data-aos-delay="100"
+							className="calculate__calculates_col2-titles"
+						>
 							<h2>
 								Сумма лизинга
 								<br />
@@ -170,7 +212,11 @@ const Calculate = () => {
 								/>
 							</h2>
 						</div>
-						<div className="calculate__calculates_col2-titles titles2">
+						<div
+							data-aos="fade-right"
+							data-aos-delay="200"
+							className="calculate__calculates_col2-titles titles2"
+						>
 							<h2>
 								Ежемесячный платеж
 								<br />
@@ -181,7 +227,7 @@ const Calculate = () => {
 								/>
 							</h2>
 						</div>
-					</div>
+					</motion.div>
 				</div>
 			</div>
 		</div>

@@ -4,21 +4,33 @@ const Categories = () => {
 	return (
 		<div className="container">
 			<div className={scss.categories}>
-				<div className={scss.categories__titles}>
+				<div
+					data-aos="fade-left"
+					data-aos-delay="0"
+					className={scss.categories__titles}
+				>
 					<span>
 						<BsCheckCircle />
 					</span>
 					<p>Быстрое оформление документов</p>
 				</div>
 				<div className={scss.categories__line}></div>
-				<div className={scss.categories__titles}>
+				<div
+					data-aos="fade-left"
+					data-aos-delay="100"
+					className={scss.categories__titles}
+				>
 					<span>
 						<BsCheckCircle />
 					</span>
 					<p>Выгодные условия</p>
 				</div>
 				<div className={scss.categories__line}></div>
-				<div className={scss.categories__titles}>
+				<div
+					data-aos="fade-left"
+					data-aos-delay="200"
+					className={scss.categories__titles}
+				>
 					<span>
 						<BsCheckCircle />
 					</span>

@@ -9,22 +9,33 @@
 	background-image: linear-gradient(#22244fe4, #22244fe4),
 		url("../../media/in_chevrolet.png");
 	background-size: cover;
+	overflow: hidden;
 	&__titles {
+		overflow: hidden;
+
 		width: 25%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
+		&:hover {
+			span {
+				transform: perspective(100px) rotateY(360deg);
+			}
+		}
 		&:nth-child(1) {
 			width: 35%;
 		}
 		&:nth-child(5) {
 			width: 35%;
 		}
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 10px;
 		span {
+			transition: 1s;
 			font-size: 40px;
+			cursor: pointer;
 			svg {
-				color: #319ba1;
+				// color: #319ba1;
+				color: $primary;
 				font-size: 40px;
 			}
 		}

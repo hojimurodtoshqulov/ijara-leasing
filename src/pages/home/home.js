@@ -24,7 +24,7 @@ const Home = () => {
 	return (
 		<Suspense fallback="loading">
 			<div className="main home">
-				<Nav onClick={(e) => handleClick(e)} />
+				{/* <Nav onClick={(e) => handleClick(e)} /> */}
 				<input type="checkbox" id="navLinks__menu" />
 				<label htmlFor="navLinks__menu" className="navLinks__menu"></label>
 				<Header />
@@ -38,7 +38,7 @@ const Home = () => {
 				<AboutLeasing />
 				<Ques_ans />
 				<Location />
-				<Footer />
+				{/* <Footer /> */}
 			</div>
 			<div className="success">
 				<ToastContainer
