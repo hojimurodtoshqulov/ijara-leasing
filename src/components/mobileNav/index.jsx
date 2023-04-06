@@ -61,7 +61,10 @@ const MobileNav = () => {
         ref={containerRef}
       >
         <motion.div className="background" variants={sidebar1} />
-        <Navigation toggleOpen={toggleOpen} />
+        <div style={{ display: isOpen ? "block" : "none" }}>
+          <Navigation toggleOpen={toggleOpen} />
+        </div>
+
         <MenuToggle toggle={() => toggleOpen()} />
       </motion.nav>
     </div>
