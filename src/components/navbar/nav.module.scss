@@ -11,6 +11,10 @@
   z-index: 124;
   width: $w_100;
   margin: 0 auto;
+
+  @media (max-width: $xl) {
+    height: 100px;
+  }
   // transition: 0.3s;
   &__container {
     width: 100%;
@@ -43,6 +47,14 @@
       }
       h3 {
         font-family: $font_titles;
+
+        @media (max-width: $xl) {
+          font-size: 15px !important;
+        }
+      }
+
+      @media (max-width: $xl) {
+		width: unset;
       }
     }
     &_links {
@@ -79,7 +91,11 @@
         }
       }
 
-/*       .dropdown {
+      @media (max-width: $xl) {
+        display: none;
+      }
+
+      /*       .dropdown {
         position: relative;
 
         &Title {
@@ -155,6 +171,10 @@
           height: 0;
           border-bottom: 3px solid $primary;
         }
+      }
+
+      @media (max-width: $xl) {
+        display: none;
       }
     }
     &_linkContact {

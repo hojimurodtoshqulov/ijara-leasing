@@ -14,7 +14,9 @@ const Layout = () => {
     <Suspense fallback="loading">
       <div className="app-wrap">
         <Nav onClick={(e) => handleClick(e)} />
-        <MobileNav />
+        <div className="mobileNav">
+          <MobileNav />
+        </div>
         <Outlet />
         <Footer />
       </div>

@@ -1,4 +1,14 @@
 {
+  "nav": {
+    "company": "Kompaniya",
+    "leasing": "Ekspress lizing",
+    "client": "Mijoz uchun",
+    "contact": "Aloqa",
+    "programs": "Lizing dasturlari",
+    "requisites": "Rekvizitlar"
+  },
+  "uz": "UZ",
+  "ru": "RU",
   "company": "Kompaniya",
   "leasing": "Lizing dasturlari",
   "client": "Mijoz uchun",
