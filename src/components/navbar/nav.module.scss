@@ -186,6 +186,59 @@
 @media (min-width: $xxl) {
 }
 @media (max-width: $xl) {
+	.nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 124;
+		width: $w_100;
+		margin: 0 auto;
+		transition: 0.3s;
+		&__container {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			a {
+				font-family: $font_titles;
+				font-size: 20px;
+				font-weight: 300;
+			}
+			&_logo {
+				width: 50%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				gap: 11px;
+				img {
+					border: 3px solid #ff00;
+					width: auto;
+					height: 50%;
+					border-radius: 50%;
+					animation: rotate 7s cubic-bezier(0.87, -0.17, 0.16, 1.27) infinite
+						reverse forwards;
+					// animation: name duration timing-function delay iteration-count direction fill-mode;
+					// animation-duration: inherit;
+					animation-timing-function: cubic-bezier(1, -0.71, 0.69, 1.11);
+					// animation-direction: ;
+				}
+				h3 {
+					font-family: $font_titles;
+					width: 100%;
+				}
+			}
+			&_links {
+				display: none;
+			}
+			&_lang {
+				display: none;
+			}
+			&_linkContact {
+				display: none;
+			}
+		}
+	}
 }
 @media (max-width: $lg) {
 }
