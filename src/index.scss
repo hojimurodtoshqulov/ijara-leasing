@@ -1,3 +1,4 @@
+@import "./scss/varuables.scss";
 body {
 	margin: 0;
 	-webkit-font-smoothing: antialiased;
@@ -25,4 +26,7 @@ code {
 	background: #319ba1;
 	border-radius: 5px !important;
 	box-shadow: 0 0 10px #000;
+}
+.active {
+	color: $primary;
 }

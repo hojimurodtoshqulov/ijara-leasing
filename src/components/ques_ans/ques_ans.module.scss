@@ -161,3 +161,506 @@
 	// 	z-index: 1;
 	// }
 }
+
+@media (max-width: $xl) {
+	.testimonials {
+		display: flex;
+		justify-content: space-between;
+		gap: 1rem;
+		padding: 4rem 0 5rem 0;
+		.left_t {
+			width: 58%;
+			display: flex;
+			gap: 2rem;
+			flex-direction: column;
+			text-transform: uppercase;
+			color: $light;
+			padding: 2rem 0 0 0;
+			position: relative;
+			& > :nth-child(1) {
+				font-weight: bold;
+				font-size: 35px;
+				position: absolute;
+				top: 5%;
+				left: -90%;
+				text-align: center;
+				width: 200%;
+				margin-right: 10rem;
+			}
+			&_textsDiv {
+				text-align: center;
+				overflow: hidden;
+				box-shadow: 0 5px 15px 10px rgba(0, 0, 0, 0.345);
+				background: linear-gradient(to right, #27283a, #161727);
+				width: 140%;
+				display: flex;
+				flex-direction: column;
+				gap: 1rem;
+				position: absolute;
+				top: 7rem;
+				right: 0;
+				padding: 10% 10% 10% 50%;
+				& > :nth-child(1) {
+					font-weight: normal;
+					font-size: 20px;
+				}
+				& > :nth-child(2) {
+					font-size: 13px;
+					text-transform: none;
+					text-align: justify;
+					letter-spacing: 2px;
+					line-height: 15px;
+				}
+				.arrows {
+					// border: 1px solid red;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					gap: 2rem;
+					&_left {
+						position: relative;
+						cursor: pointer;
+						transition: 0.3s;
+						&:hover {
+							svg {
+								background: $primary;
+								color: $light;
+							}
+						}
+						&:hover::after {
+							transition: 0.3s;
+							left: 0px;
+							bottom: 0px;
+						}
+					}
+					&_left::after {
+						transition: 0.3s;
+						content: "after";
+						color: transparent;
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						left: 5px;
+						bottom: -3px;
+						z-index: 1;
+						background: $primary;
+					}
+					&_right {
+						position: relative;
+						cursor: pointer;
+						&:hover {
+							svg {
+								background: $primary;
+								color: $light;
+							}
+						}
+						&:hover::after {
+							transition: 0.3s;
+							right: 0px;
+							bottom: 0px;
+						}
+					}
+					&_right::after {
+						content: "after";
+						color: transparent;
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						right: 5px;
+						bottom: -3px;
+						z-index: 1;
+						background: $primary;
+					}
+					svg {
+						transition: 0.3s;
+						background: $light;
+						width: 4.5rem;
+						font-size: 2rem;
+						color: $primary;
+						position: relative;
+						z-index: 12;
+					}
+				}
+			}
+		}
+
+		.right_t {
+			position: relative;
+			width: 300px;
+			height: 290px;
+			margin-top: 10rem;
+			img {
+				position: absolute;
+				top: 1rem;
+				left: 1rem;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				z-index: 12;
+			}
+			&_div1 {
+				border: 2px solid $primary;
+				position: absolute;
+				top: 0rem;
+				left: 0rem;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				z-index: 1;
+			}
+			&_div2 {
+				background: linear-gradient(to bottom left, #178187, #319ba1, #48e2ea);
+				position: absolute;
+				right: -2.2rem;
+				bottom: -2.2rem;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				z-index: 2;
+			}
+		}
+		// .right_t::after {
+		// 	content: "after";
+		// 	color: transparent;
+		// 	background: linear-gradient(to bottom left, #178187, #319ba1, #48e2ea);
+		// 	position: relative;
+		// 	width: 400px;
+		// 	height: 390px;
+		// 	position: absolute;
+		// 	right: -2.2rem;
+		// 	bottom: -2.2rem;
+		// 	z-index: 1;
+		// }
+	}
+}
+@media (max-width: $md) {
+	.testimonials {
+		height: 600px;
+		display: flex;
+		justify-content: space-between;
+		gap: 1rem;
+		padding: 4rem 0 5rem 0;
+		position: relative;
+		.left_t {
+			width: 58%;
+			display: flex;
+			gap: 2rem;
+			flex-direction: column;
+			text-transform: uppercase;
+			color: $light;
+			padding: 2rem 0 0 0;
+			position: absolute;
+			right: 0;
+			top: 10%;
+			& > :nth-child(1) {
+				font-weight: bold;
+				font-size: 30px;
+				position: absolute;
+				top: 100%;
+				left: -90%;
+				text-align: center;
+				width: 200%;
+				margin-right: 10rem;
+			}
+			&_textsDiv {
+				text-align: center;
+				overflow: hidden;
+				box-shadow: 0 5px 15px 10px rgba(0, 0, 0, 0.345);
+				background: linear-gradient(to right, #27283a, #161727);
+				width: 140%;
+				display: flex;
+				flex-direction: column;
+				gap: 1rem;
+				position: absolute;
+				top: 7rem;
+				right: 0;
+				padding: 10% 10% 10% 30%;
+				& > :nth-child(1) {
+					font-weight: normal;
+					font-size: 20px;
+				}
+				& > :nth-child(2) {
+					font-size: 13px;
+					text-transform: none;
+					text-align: justify;
+					letter-spacing: 2px;
+					line-height: 15px;
+				}
+				.arrows {
+					// border: 1px solid red;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					gap: 2rem;
+					&_left {
+						position: relative;
+						cursor: pointer;
+						transition: 0.3s;
+						&:hover {
+							svg {
+								background: $primary;
+								color: $light;
+							}
+						}
+						&:hover::after {
+							transition: 0.3s;
+							left: 0px;
+							bottom: 0px;
+						}
+					}
+					&_left::after {
+						transition: 0.3s;
+						content: "after";
+						color: transparent;
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						left: 5px;
+						bottom: -3px;
+						z-index: 1;
+						background: $primary;
+					}
+					&_right {
+						position: relative;
+						cursor: pointer;
+						&:hover {
+							svg {
+								background: $primary;
+								color: $light;
+							}
+						}
+						&:hover::after {
+							transition: 0.3s;
+							right: 0px;
+							bottom: 0px;
+						}
+					}
+					&_right::after {
+						content: "after";
+						color: transparent;
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						right: 5px;
+						bottom: -3px;
+						z-index: 1;
+						background: $primary;
+					}
+					svg {
+						transition: 0.3s;
+						background: $light;
+						width: 4.5rem;
+						font-size: 2rem;
+						color: $primary;
+						position: relative;
+						z-index: 12;
+					}
+				}
+			}
+		}
+
+		.right_t {
+			position: absolute;
+			top: 10%;
+			left: -11%;
+			width: 200px;
+			height: 190px;
+			margin-top: 10rem;
+			img {
+				position: absolute;
+				top: 1rem;
+				left: 1rem;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				z-index: 12;
+			}
+			&_div1 {
+				border: 2px solid $primary;
+				position: absolute;
+				top: 0rem;
+				left: 0rem;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				z-index: 1;
+			}
+			&_div2 {
+				background: linear-gradient(to bottom left, #178187, #319ba1, #48e2ea);
+				position: absolute;
+				right: -2.2rem;
+				bottom: -2.2rem;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				z-index: 2;
+			}
+		}
+	}
+}
+@media (max-width: $sm) {
+	.testimonials {
+		height: 800px;
+		display: flex;
+		justify-content: space-between;
+		gap: 1rem;
+		padding: 4rem 0 10rem 0;
+		position: relative;
+		.left_t {
+			width: 58%;
+			display: flex;
+			gap: 2rem;
+			flex-direction: column;
+			text-transform: uppercase;
+			color: $light;
+			padding: 2rem 0 0 0;
+			position: absolute;
+			right: 0;
+			top: 10%;
+			& > :nth-child(1) {
+				font-weight: bold;
+				font-size: 25px;
+				position: absolute;
+				top: 100%;
+				left: -90%;
+				text-align: center;
+				width: 200%;
+				margin-right: 10rem;
+			}
+			&_textsDiv {
+				text-align: center;
+				overflow: hidden;
+				box-shadow: 0 5px 15px 10px rgba(0, 0, 0, 0.345);
+				background: linear-gradient(to right, #27283a, #161727);
+				width: 175%;
+				display: flex;
+				flex-direction: column;
+				gap: 1rem;
+				position: absolute;
+				top: 7rem;
+				right: 0;
+				padding: 5%;
+				& > :nth-child(1) {
+					font-weight: normal;
+					font-size: 15px;
+				}
+				& > :nth-child(2) {
+					font-size: 12px;
+					text-transform: none;
+					text-align: center;
+					letter-spacing: 2px;
+					line-height: 13px;
+				}
+				.arrows {
+					// border: 1px solid red;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					gap: 2rem;
+					&_left {
+						position: relative;
+						cursor: pointer;
+						transition: 0.3s;
+						&:hover {
+							svg {
+								background: $primary;
+								color: $light;
+							}
+						}
+						&:hover::after {
+							transition: 0.3s;
+							left: 0px;
+							bottom: 0px;
+						}
+					}
+					&_left::after {
+						transition: 0.3s;
+						content: "after";
+						color: transparent;
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						left: 5px;
+						bottom: -3px;
+						z-index: 1;
+						background: $primary;
+					}
+					&_right {
+						position: relative;
+						cursor: pointer;
+						&:hover {
+							svg {
+								background: $primary;
+								color: $light;
+							}
+						}
+						&:hover::after {
+							transition: 0.3s;
+							right: 0px;
+							bottom: 0px;
+						}
+					}
+					&_right::after {
+						content: "after";
+						color: transparent;
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						right: 5px;
+						bottom: -3px;
+						z-index: 1;
+						background: $primary;
+					}
+					svg {
+						transition: 0.3s;
+						background: $light;
+						width: 4.5rem;
+						font-size: 2rem;
+						color: $primary;
+						position: relative;
+						z-index: 12;
+					}
+				}
+			}
+		}
+
+		.right_t {
+			position: absolute;
+			top: auto;
+			left: 1%;
+			bottom: 7%;
+			width: 250px;
+			height: 200px;
+			margin-top: 10rem;
+			img {
+				position: absolute;
+				top: 1rem;
+				left: 1rem;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				z-index: 12;
+			}
+			&_div1 {
+				border: 2px solid $primary;
+				position: absolute;
+				top: 0rem;
+				left: 0rem;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				z-index: 1;
+			}
+			&_div2 {
+				background: linear-gradient(to bottom left, #178187, #319ba1, #48e2ea);
+				position: absolute;
+				right: -2.2rem;
+				bottom: -2.2rem;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				z-index: 2;
+			}
+		}
+	}
+}
