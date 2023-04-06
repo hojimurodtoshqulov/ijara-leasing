@@ -55,16 +55,16 @@ const MobileNav = () => {
   return (
     <div className={`mobileNavWrap ${isOpen && "active"}`}>
       <motion.nav
+        style={{ width: isOpen ? "300px" : "50px" }}
         initial={false}
         animate={isOpen ? "open" : "closed"}
         custom={height}
         ref={containerRef}
       >
-        <motion.div className="background" variants={sidebar1} />
         <div style={{ display: isOpen ? "block" : "none" }}>
+          <motion.div className="background" variants={sidebar1} />
           <Navigation toggleOpen={toggleOpen} />
         </div>
-
         <MenuToggle toggle={() => toggleOpen()} />
       </motion.nav>
     </div>
