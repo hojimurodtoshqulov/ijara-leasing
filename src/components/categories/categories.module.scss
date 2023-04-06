@@ -51,3 +51,165 @@
 		background: linear-gradient(#1b1c3bd3, #fff, #1b1c3bd3);
 	}
 }
+
+@media (max-width: $xl) {
+	.categories {
+		height: 200px;
+		padding: 0 3%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background-image: linear-gradient(#22244fe4, #22244fe4),
+			url("../../media/in_chevrolet.png");
+		background-size: cover;
+		overflow: hidden;
+		&__titles {
+			overflow: hidden;
+			width: 25%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 10px;
+			&:hover {
+				span {
+					transform: perspective(100px) rotateY(360deg);
+				}
+			}
+			&:nth-child(1) {
+				width: 35%;
+			}
+			&:nth-child(5) {
+				width: 35%;
+			}
+			span {
+				transition: 1s;
+				font-size: 35px;
+				cursor: pointer;
+				svg {
+					// color: #319ba1;
+					color: $primary;
+					font-size: 35px;
+				}
+			}
+			p {
+				font-size: 20px;
+				font-family: $font_texts;
+			}
+		}
+		&__line {
+			height: 80%;
+			width: 2px;
+			border-radius: 100%;
+			background: linear-gradient(#1b1c3bd3, #fff, #1b1c3bd3);
+		}
+	}
+}
+@media (max-width: $md) {
+	.categories {
+		height: 160px;
+		padding: 0 2%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background-image: linear-gradient(#22244fe4, #22244fe4),
+			url("../../media/in_chevrolet.png");
+		background-size: cover;
+		overflow: hidden;
+		&__titles {
+			overflow: hidden;
+			width: 25%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 10px;
+			flex-direction: column;
+			&:hover {
+				span {
+					transform: perspective(100px) rotateY(360deg);
+				}
+			}
+			&:nth-child(1) {
+				width: 35%;
+			}
+			&:nth-child(5) {
+				width: 35%;
+			}
+			span {
+				transition: 1s;
+				font-size: 25px;
+				cursor: pointer;
+				svg {
+					// color: #319ba1;
+					color: $primary;
+					font-size: 25px;
+				}
+			}
+			p {
+				font-size: 20px;
+				font-family: $font_texts;
+				text-align: center;
+			}
+		}
+		&__line {
+			height: 80%;
+			width: 2px;
+			border-radius: 100%;
+			background: linear-gradient(#1b1c3bd3, #fff, #1b1c3bd3);
+		}
+	}
+}
+@media (max-width: $sm) {
+	.categories {
+		margin-top: 3rem;
+		height: 140px;
+		padding: 0 2%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background-image: linear-gradient(#22244fe4, #22244fe4),
+			url("../../media/in_chevrolet.png");
+		background-size: cover;
+		overflow: hidden;
+		&__titles {
+			overflow: hidden;
+			width: 25%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			// gap: 10px;
+			flex-direction: column;
+			&:hover {
+				span {
+					transform: perspective(100px) rotateY(360deg);
+				}
+			}
+			&:nth-child(1) {
+				width: 35%;
+			}
+			&:nth-child(5) {
+				width: 35%;
+			}
+			span {
+				transition: 1s;
+				font-size: 20px;
+				cursor: pointer;
+				svg {
+					// color: #319ba1;
+					color: $primary;
+					font-size: 20px;
+				}
+			}
+			p {
+				font-size: 15px;
+				font-family: $font_texts;
+				text-align: center;
+			}
+		}
+		&__line {
+			height: 80%;
+			width: 2px;
+			border-radius: 100%;
+			background: linear-gradient(#1b1c3bd3, #fff, #1b1c3bd3);
+		}
+	}
+}

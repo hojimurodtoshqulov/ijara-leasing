@@ -19,7 +19,7 @@ $line-height: 70px;
     padding-bottom: 0;
   }
 
-  &.border::before {
+  &Border {
     content: "";
     position: absolute;
     top: calc($line-height - 20px);
@@ -40,7 +40,7 @@ $line-height: 70px;
     }
   }
 
-  &.underline::after {
+  &Underline {
     content: "";
     position: absolute;
     left: 0;
@@ -64,7 +64,7 @@ $line-height: 70px;
       line-height: 50px;
       margin-bottom: 20px;
 
-      &.border::before {
+      &Border {
         top: calc($line-height - 35px);
         max-width: 100%;
         height: 4px;
@@ -78,7 +78,7 @@ $line-height: 70px;
     &.small {
       font-size: 20px;
 
-      &.border::before {
+      &Border {
         top: calc($line-height - 40px);
       }
     }

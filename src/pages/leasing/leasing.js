@@ -1,5 +1,5 @@
 import Button from "../../components/button/button";
-import CarImg from "../../media/requisities-img.png";
+import CarImg from "../../media/leasing-car.png";
 import InfoCard from "../../components/infoCard/infoCard";
 import iconSearch from "../../media/icon-search.png";
 import iconFile from "../../media/icon-file.png";

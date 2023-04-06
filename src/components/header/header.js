@@ -9,7 +9,6 @@ const Header = () => {
 	const [openModal, setOpenModal] = useState(false);
 	return (
 		<>
-			{" "}
 			<div className={scss.header}>
 				<div className="container">
 					<div className={scss.header__container}>
