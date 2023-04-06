@@ -4,6 +4,7 @@ import "./contact.scss";
 import LocationIcon from "../../media/location-icon.png";
 import TelIcon from "../../media/tel-icon.png";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const { t } = useTranslation();

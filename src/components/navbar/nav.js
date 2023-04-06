@@ -64,10 +64,21 @@ const Nav = ({ onClick }) => {
                 О компании <AiFillCaretDown />
                 <span></span>
               </Link>
+              {/* <Link to="/leasing"> */}
               <Link to="/leasing">
                 Лизинговые программы <AiFillCaretDown />
                 <span></span>
               </Link>
+              {/*   <div className={scss.dropdown}>
+                <div className={scss.dropdownTitle}>
+                 
+                </div>
+                <div className={scss.dropdownItems}>
+                  <a>salom</a>
+                  <a>salom</a>
+                </div>
+              </div> */}
+              {/* </Link> */}
               <Link to="/client">
                 Для клиентов <span></span>
               </Link>
