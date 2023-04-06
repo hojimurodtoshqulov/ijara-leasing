@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import { useState, useEffect } from "react";
 import navLogo from "../../media/logo_head.png";
 import scss from "./nav.module.scss";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { AiFillCaretDown } from "react-icons/ai";
 import Button from "../button/button";
@@ -12,12 +12,12 @@ const Nav = ({ onClick }) => {
   const [navLogoFSZ, setNavLogoFSZ] = useState("20px");
   const [navContainerBR, setNavContainerBR] = useState("2px solid #fff");
   const listenScrollEvent = () => {
-    window.scrollY > 150
+    window.scrollY > 100
       ? setnavColorBg("#0e0e12f0")
       : setnavColorBg("transparent");
-    window.scrollY > 150 ? setnavSize("80px") : setnavSize("110px");
-    window.scrollY > 150 ? setNavLogoFSZ("15px") : setNavLogoFSZ("20px");
-    window.scrollY > 150
+    window.scrollY > 100 ? setnavSize("80px") : setnavSize("110px");
+    window.scrollY > 100 ? setNavLogoFSZ("15px") : setNavLogoFSZ("20px");
+    window.scrollY > 100
       ? setNavContainerBR("2px solid #ff00")
       : setNavContainerBR("2px solid #fff");
   };
@@ -60,17 +60,17 @@ const Nav = ({ onClick }) => {
               <h3 style={{ fontSize: navLogoFSZ }}>IJARA LEASING</h3>
             </Link>
             <div className={scss.nav__container_links}>
-              <Link to="/company">
+              <NavLink to="/company">
                 О компании <AiFillCaretDown />
                 <span></span>
-              </Link>
-              <Link to="/leasing">
+              </NavLink>
+              <NavLink to="/leasing">
                 Лизинговые программы <AiFillCaretDown />
                 <span></span>
-              </Link>
-              <Link to="/client">
+              </NavLink>
+              <NavLink to="/client">
                 Для клиентов <span></span>
-              </Link>
+              </NavLink>
             </div>
             <div className={scss.nav__container_lang}>
               <span onClick={checkLangImg} value={"ru"}>

@@ -4,6 +4,9 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+.active {
+	color: $primary;
+}
 .nav {
 	position: fixed;
 	top: 0;
@@ -11,7 +14,7 @@
 	z-index: 124;
 	width: $w_100;
 	margin: 0 auto;
-	// transition: 0.3s;
+
 	&__container {
 		width: 100%;
 		display: flex;
@@ -38,7 +41,7 @@
 					reverse forwards;
 				// animation: name duration timing-function delay iteration-count direction fill-mode;
 				// animation-duration: inherit;
-				animation-timing-function: cubic-bezier(1,-0.71, 0.69, 1.11);
+				animation-timing-function: cubic-bezier(1, -0.71, 0.69, 1.11);
 				// animation-direction: ;
 			}
 			h3 {
