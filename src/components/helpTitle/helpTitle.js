@@ -14,9 +14,9 @@ const HelpTitle = () => {
 							Поможем вам <br /> с выбором
 						</p>
 						<motion.span
-							initial={{ width: "0px" }}
-							whileInView={{ width: "100px" }}
-							transition={{ transition }}
+							initial={{ width: "100px", left: "17rem" }}
+							whileInView={{ width: "100px", left: "0" }}
+							transition={{ transition, duration: 1 }}
 						></motion.span>
 					</h1>
 					<div className={scss.helpTitle__elements}>

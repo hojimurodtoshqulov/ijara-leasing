@@ -1,30 +1,75 @@
 @import "../../scss/varuables.scss";
 
 .submit {
-position: relative;
-z-index: 12s;
+	position: relative;
+	z-index: 12s;
 	width: 100%;
 	height: 331px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	gap: 2rem;
+
 	background-image: url("../../media/Group249.png");
 	background-size: cover;
-	h1 {
-		font-family: $font_titles;
-		font-size: 50px;
-	}
-	p {
-		font-family: $font_texts;
-		font-size: 25px;
-	}
-	&__btn {
-		width: 300px;
-		height: 74px;
-		button {
+	&__elements {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		gap: 2rem;
+		h1 {
+			font-family: $font_titles;
+			font-size: 50px;
+		}
+		p {
+			font-family: $font_texts;
 			font-size: 25px;
 		}
+		&_btn {
+			width: 300px;
+			height: 74px;
+			button {
+				font-size: 25px;
+			}
+		}
+	}
+	&__lightLeft {
+		width: 35px;
+		height: 35px;
+		border-radius: 50%;
+		background: #e1fdff;
+		box-shadow: 0 0 80px 50px #e1fdff;
+		position: absolute;
+		top: 51.2%;
+		left: 35.6%;
+		opacity: 0;
+		transition: 0.3s;
+	}
+	&__lightRight {
+		width: 35px;
+		height: 35px;
+		border-radius: 50%;
+		background: #e1fdff;
+		box-shadow: 0 0 80px 50px #e1fdff;
+		position: absolute;
+		top: 51%;
+		right: 32.3%;
+		opacity: 0;
+		transition: 0.3s;
+	}
+}
+@keyframes light {
+	0% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	60% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
 	}
 }

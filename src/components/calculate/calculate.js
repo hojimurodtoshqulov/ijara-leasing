@@ -193,8 +193,14 @@ const Calculate = () => {
 					</div>
 					<motion.div
 						className="calculate__calculates_col2"
-						initial={{ transform: "rotate(30deg)" }}
-						whileInView={{ transform: "rotate(0deg)" }}
+						initial={{
+							transform: "rotate(30deg)",
+							transformOrigin: " right bottom",
+						}}
+						whileInView={{
+							transform: "rotate(0deg)",
+							transformOrigin: " right bottom",
+						}}
 						transition={{ transition, duration: 1 }}
 					>
 						<div

@@ -12,6 +12,7 @@
 		font-family: $font_titles;
 		margin: 2% 0 2% 0.5%;
 		position: relative;
+		z-index: 1;
 		p {
 			position: relative;
 			z-index: 1;
@@ -25,6 +26,11 @@
 			left: -0.5%;
 			z-index: 0;
 		}
+	}
+	&__div {
+		position: relative;
+		z-index: 12;
+		width: 100%;
 	}
 }
 @media (min-width: $xxl) {

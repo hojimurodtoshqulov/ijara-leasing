@@ -19,8 +19,11 @@
 			&_img1 {
 				width: 100%;
 				height: 100%;
-				position: relative;
+				position: absolute;
+				top: 0;
+				left: -10rem;
 				z-index: 1;
+				transform-origin: " left bottom";
 			}
 			&_img2 {
 				position: absolute;
