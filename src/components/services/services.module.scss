@@ -46,6 +46,10 @@
         z-index: 0;
       }
 
+      @media (min-width: $xxl) {
+        height: 600px;
+      }
+
       @media (max-width: $xl) {
         // position: relative;
         width: 70%;
@@ -85,6 +89,12 @@
           top: 65%;
           left: 0;
           z-index: 0;
+        }
+
+        @media (min-width: $xxl) {
+          p {
+            font-size: 70px;
+          }
         }
       }
       p {

@@ -67,7 +67,11 @@ export const Navigation = ({ toggleOpen }) => {
         title={t("nav.leasing")}
         href={"leasing"}
       />
-      <MenuItem toggleOpen={toggleOpen} title={t("nav.client")} href={""} />
+      <MenuItem
+        toggleOpen={toggleOpen}
+        title={t("nav.client")}
+        href={"nothing"}
+      />
       <motion.div
         variants={variantsItem}
         // whileHover={{ scale: 1.1 }}

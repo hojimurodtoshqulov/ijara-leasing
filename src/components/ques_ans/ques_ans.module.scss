@@ -147,6 +147,11 @@
 			object-fit: cover;
 			z-index: 2;
 		}
+
+		@media (min-width: $xxl) {
+			width: 520px;
+			height: 450px;
+		}
 	}
 	// .right_t::after {
 	// 	content: "after";

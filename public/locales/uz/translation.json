@@ -9,6 +9,9 @@
   },
   "uz": "UZ",
   "ru": "RU",
+  "sum": "so'm",
+  "month": "oy",
+
   "company": "Kompaniya",
   "leasing": "Lizing dasturlari",
   "client": "Mijoz uchun",
@@ -94,5 +97,31 @@
     "p2": "Har yili IJARA LEASING o'sish va rivojlanishga yo'naltirilgan mijozlar soni ortib borayotganiga ishonch bag'ishlaydi. Birgina so‘nggi 2 yil ichida portfelimizdagi lizing oluvchilar soni ikki baravar ko‘paydi. Lizing mahalliy ishlab chiqaruvchilar, savdo va transport korxonalari, soha yetakchilari va kichik o‘yinchilarga o‘zlariga ishonish va faoliyat ko‘lamini yangi bosqichga olib chiqish imkonini beradi.",
     "p3": "Lizing - bu sizning moliyaviy oqimlaringizni rejalashtirilgan boshqarish. Siz lizing shartnomasining amal qilish muddati davomida biznesingizni to'g'ri byudjetlashtirasiz va oylik (choraklik) teng to'lovlarni nazarda tutuvchi lizing shartnomasi hisob-kitob sxemasi tufayli pul oqimlarini boshqarasiz.",
     "p4": "Lizingga olingan uskunalar (lizing ob'ekti) nafaqat o'zini to'laydi, balki sizning daromadingizni sezilarli darajada oshirish imkonini beradi."
+  },
+  "home": {
+    "hero": {
+      "title1": "Foydali lizing ",
+      "title2": "yengil mashina",
+      "text": "Ishonchli milliy kompaniyadan, keraksiz hujjatlar va qo'shimcha ovoragarchiliklarsiz",
+      "btnText1": "Takliflarni ko'ring",
+      "btnText2": "Arizangizni yuboring",
+      "category1": "Tez hujjatlar",
+      "category2": "Foydali shartlar",
+      "category3": "Ishlab chiqaruvchilardan chegirmalar"
+    },
+    "calculate": {
+      "title": "Lizing narxini hisoblang",
+      "subtitle": "Tanlangan avtomobilning narxini, kerakli dastlabki to'lovni va lizing muddatini belgilang. Tanlangan mashina haqida bizga xabar berish va tranzaksiyani boshlash uchun dastlabki hisob-kitobdan so'ng biz bilan bog'laning.",
+      "calculator": "LIZING KALKULYATORI",
+      "calcTitle1": "Sotib olish qiymati",
+      "calcTitle2": "Dastlabki to'lov",
+      "calcTitle3": "Lizing muddati",
+      "text": "Kalkulyator orqali yuqoridagi hisob-kitoblar dastlabki hisoblanadi va taklif emas.",
+      "resultTitle1": "Lizing miqdori",
+      "resultTitle2": "Oylik to'lov"
+    },
+    "helpTitle": {
+      "title1": ""
+    }
   }
 }

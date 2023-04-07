@@ -20,15 +20,15 @@
 	&:hover {
 		border: 3px solid $primary;
 		background: #ff00;
-		background-image: url("../../media/Group250.png");
-		background-size: cover;
-		padding-top: 8%;
-		.button__lightLeft {
-			animation: light 1s ease-in 0s 1 alternate;
-		}
-		.button__lightRight {
-			animation: light 1s ease-in 0s 1 alternate;
-		}
+		// background-image: url("../../media/Group250.png");
+		// background-size: cover;
+		// padding-top: 8%;
+		// .button__lightLeft {
+		// 	animation: light 1s ease-in 0s 1 alternate;
+		// }
+		// .button__lightRight {
+		// 	animation: light 1s ease-in 0s 1 alternate;
+		// }
 	}
 	&__lightLeft {
 		width: 10px;

@@ -80,7 +80,7 @@ const Nav = ({ onClick }) => {
 									<Link to="/leasing">Экспресс лизинг</Link>
 								</div>
 							</NavLink>
-							<NavLink to="/">
+							<NavLink to="/nothing">
 								Для клиентов <span></span>
 							</NavLink>
 						</div>

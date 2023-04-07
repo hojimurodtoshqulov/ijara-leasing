@@ -55,7 +55,10 @@ const MobileNav = () => {
   return (
     <div className={`mobileNavWrap ${isOpen && "active"}`}>
       <motion.nav
-        style={{ width: isOpen ? "300px" : "50px" }}
+        style={{
+          width: isOpen ? "300px" : "50px",
+          height: isOpen ? "unset" : "50px",
+        }}
         initial={false}
         animate={isOpen ? "open" : "closed"}
         custom={height}

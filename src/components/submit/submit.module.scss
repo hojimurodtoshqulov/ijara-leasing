@@ -7,6 +7,7 @@
   height: 331px;
 
   background-image: url("../../media/Group249.png");
+  background-position: center;
   background-size: cover;
   &__elements {
     height: 100%;
@@ -18,6 +19,10 @@
     h1 {
       font-family: $font_titles;
       font-size: 50px;
+
+      @media (min-width: $xxl) {
+        font-size: 70px;
+      }
 
       @media (max-width: $md) {
         font-size: 40px;

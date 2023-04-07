@@ -1,126 +1,138 @@
 @import "../../scss/varuables.scss";
 
 .leasingImages {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	height: auto;
-	padding: 10% 0 7% 0;
-	background: $bg;
-	position: relative;
-	z-index: 1;
-	&__imgDiv {
-		width: 20%;
-		height: 600px;
-		&:nth-child(odd) {
-			padding-bottom: 5%;
-		}
-		&:nth-child(even) {
-			padding-top: 5%;
-		}
-		img {
-			height: 100%;
-			width: 100%;
-			object-fit: cover;
-			&:hover {
-				opacity: 0.7;
-			}
-		}
-	}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 10% 0 7% 0;
+  background: $bg;
+  position: relative;
+  z-index: 1;
+  &__imgDiv {
+    width: 20%;
+    height: 600px;
+    &:nth-child(odd) {
+      padding-bottom: 5%;
+    }
+    &:nth-child(even) {
+      padding-top: 5%;
+    }
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    @media (min-width: $xxl) {
+      height: 748px;
+    }
+
+    @media (min-width: 1696px) {
+      height: 948px;
+    }
+
+    // @media (min-width: 2300px) {
+    //   height: 948px;
+    // }
+  }
 }
 
 @media (max-width: $xl) {
-	.leasingImages {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: auto;
-		padding: 10% 0 7% 0;
-		background: $bg;
-		position: relative;
-		z-index: 1;
-		&__imgDiv {
-			width: 20%;
-			height: 400px;
-			&:nth-child(odd) {
-				padding-bottom: 5%;
-			}
-			&:nth-child(even) {
-				padding-top: 5%;
-			}
-			img {
-				height: 100%;
-				width: 100%;
-				object-fit: cover;
-				&:hover {
-					opacity: 0.7;
-				}
-			}
-		}
-	}
+  .leasingImages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 10% 0 7% 0;
+    background: $bg;
+    position: relative;
+    z-index: 1;
+    &__imgDiv {
+      width: 20%;
+      height: 400px;
+      &:nth-child(odd) {
+        padding-bottom: 5%;
+      }
+      &:nth-child(even) {
+        padding-top: 5%;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
 }
 @media (max-width: $md) {
-	.leasingImages {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: auto;
-		padding: 10% 0 7% 0;
-		background: $bg;
-		position: relative;
-		z-index: 1;
-		&__imgDiv {
-			width: 20%;
-			height: 300px;
-			&:nth-child(odd) {
-				padding-bottom: 5%;
-			}
-			&:nth-child(even) {
-				padding-top: 5%;
-			}
-			img {
-				height: 100%;
-				width: 100%;
-				object-fit: cover;
-				&:hover {
-					opacity: 0.7;
-				}
-			}
-		}
-	}
+  .leasingImages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 10% 0 7% 0;
+    background: $bg;
+    position: relative;
+    z-index: 1;
+    &__imgDiv {
+      width: 20%;
+      height: 300px;
+      &:nth-child(odd) {
+        padding-bottom: 5%;
+      }
+      &:nth-child(even) {
+        padding-top: 5%;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
 }
 @media (max-width: $sm) {
-	.leasingImages {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: auto;
-		padding: 15% 0 7% 0;
-		background: $bg;
-		position: relative;
-		z-index: 1;
-		overflow-x: hidden;
-		&__imgDiv {
-			width: 20%;
-			height: 200px;
-			&:nth-child(odd) {
-				padding-bottom: 5%;
-			}
-			&:nth-child(even) {
-				padding-top: 5%;
-			}
-			img {
-				height: 100%;
-				width: 100%;
-				object-fit: cover;
-				&:hover {
-					opacity: 0.7;
-				}
-			}
-		}
-	}
+  .leasingImages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 15% 0 7% 0;
+    background: $bg;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+    &__imgDiv {
+      width: 20%;
+      height: 200px;
+      &:nth-child(odd) {
+        padding-bottom: 5%;
+      }
+      &:nth-child(even) {
+        padding-top: 5%;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
 }
