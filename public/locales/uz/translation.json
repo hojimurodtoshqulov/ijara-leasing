@@ -121,7 +121,47 @@
       "resultTitle2": "Oylik to'lov"
     },
     "helpTitle": {
-      "title1": ""
+      "title1": "Biz sizga tanlovda",
+      "title2": "yordam beramiz",
+      "text": "So'rov qoldiring va biz yordam beramiz. 2-3 daqiqada sizga maslahat beramiz lizing haqida va to'g'ri mahsulotni tanlang.",
+      "btnText": "Mahsulotni oling"
+    },
+    "services": {
+      "title": "«Ijara Leasing» xizmatlari",
+      "text": "Biznesingiz uchun taklifni tanlang",
+      "btnText": "Ekspress lizing"
+    },
+    "submit": {
+      "title": "Lizing uchun ariza qoldiring",
+      "text": "Shaklni to'ldiring va biz sizga imkon qadar tezroq qo'ng'iroq qilamiz",
+      "btnText": "Arizangizni yuboring"
+    },
+    "aboutLeasing": {
+      "title": "Lizing haqida",
+      "p1": {
+        "title": "Lizing",
+        "text": "yuridik shaxslar uchun shaxsiy avtomobil sotib olishning eng foydali usuli hisoblanadi."
+      },
+      "p2": {
+        "title": "Kichik depozit.",
+        "text": "Avtomobil lizingini depozitsiz yoki minimal depozit bilan sotib olish mumkin. Agar sizning kompaniyangiz kredit bo'yicha dastlabki to'lovga katta miqdorda sarmoya kiritishga tayyor bo'lmasa, bu qulay."
+      },
+      "p3": {
+        "title": "Soliq.",
+        "text": "Lizing sizga daromad solig'ini sezilarli darajada tejash imkonini beradi. Oylik to'lovlar (jumladan, mol-mulk va transport solig'i, sug'urta, avans to'lovi) xarajatlarga kiritilgan"
+      },
+      "p4": {
+        "title": "Maxsus takliflar.",
+        "text": "«Ijara Leasing» to'g'ridan-to'g'ri ishlab chiqaruvchilar bilan ishlaydi va ko'pincha boshqa kompaniyalar va avtosalonlarda mavjud bo'lmagan narxlarda transport vositalarini taklif qiladi."
+      },
+      "p5": {
+        "title": "Tez tozalash.",
+        "text": "Avtomobilni lizingga ro'yxatdan o'tkazish uchun siz katta hujjatlar to'plamini to'plashingiz shart emas, arizani tark etganingizdan so'ng, mashina bir necha kun ichida ishlashi va daromad keltirishi mumkin. Bunday holda, avtomobil lizing beruvchining balansiga o'tadi."
+      },
+      "p6": {
+        "title": "Kompleks xizmat.",
+        "text": "«Ijara Leasing» nafaqat avtomobil sotib olish uchun qulay shart-sharoitlarni taklif qiladi, balki uni sug'urta qilish uchun imtiyozli shartlarni ham taqdim etadi."
+      }
     }
   }
 }
