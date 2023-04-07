@@ -16,8 +16,6 @@ const Header = () => {
           <div className={scss.header__container}>
             <div
               className={scss.header__container_elements}
-              // data-aos="zoom-in"
-              // data-aos-duration="2000"
             >
               <h1 data-aos="flip-up" data-aos-delay="0" data-aos-duration="500">
                 {t("home.hero.title1")} <br />

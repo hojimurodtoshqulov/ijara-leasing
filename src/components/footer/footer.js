@@ -34,19 +34,19 @@ const Footer = () => {
 					<div className={scss.footer__row1_line}></div>
 					<div className={scss.footer__row1_col2}>
 						<Link to="/" className={scss.footer__row1_col2_link}>
-							<span>О компании</span>
+							<span>О компании</span> <p></p>
 						</Link>
 						<Link to="/" className={scss.footer__row1_col2_link}>
-							Реквизиты
+							Реквизиты <p></p>
 						</Link>
 						<Link to="/" className={scss.footer__row1_col2_link}>
-							Контакты
+							Контакты <p></p>
 						</Link>
 						<Link to="/" className={scss.footer__row1_col2_link}>
-							<span>Лизинговые программы</span>
+							<span>Лизинговые программы</span> <p></p>
 						</Link>
 						<Link to="/" className={scss.footer__row1_col2_link}>
-							Экспресс лизинг
+							Экспресс лизинг <p></p>
 						</Link>
 					</div>
 					<div className={scss.footer__row1_line}></div>

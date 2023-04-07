@@ -43,6 +43,9 @@ const Nav = ({ onClick }) => {
 			i18n.changeLanguage("uz");
 		}
 	};
+	const scrollToTop = () => {
+		window.scrollTo(0, 0);
+	};
 	return (
 		<Suspense fallback="loading">
 			<nav
@@ -55,32 +58,58 @@ const Nav = ({ onClick }) => {
 			>
 				<div className="container">
 					<div className={scss.nav__container} style={{ height: navSize }}>
-						<Link className={scss.nav__container_logo} to="/">
+						<Link
+							onClick={scrollToTop}
+							className={scss.nav__container_logo}
+							to="/"
+						>
 							<img src={navLogo} alt="nav logo" />
 							<h3 style={{ fontSize: navLogoFSZ }}>IJARA LEASING</h3>
 						</Link>
 						<div className={scss.nav__container_links}>
 							{/* compny */}
-							<NavLink to="/company" className={scss.dropdown}>
-								<NavLink to="/company" className={scss.dropdownTitle}>
-									О компании <AiFillCaretDown />
+							<NavLink
+								to="/company"
+								className={scss.dropdown}
+								onClick={scrollToTop}
+							>
+								<NavLink
+									to="/company"
+									className={scss.dropdownTitle}
+									onClick={scrollToTop}
+								>
+									О компании <AiFillCaretDown /> <span></span>
 								</NavLink>
 								<div className={scss.dropdownItems}>
-									<Link to="/requisites">Реквизиты</Link>
-									<Link to="/contact">Контакты</Link>
+									<Link to="/requisites" onClick={scrollToTop}>
+										Реквизиты
+									</Link>
+									<Link to="/contact" onClick={scrollToTop}>
+										Контакты
+									</Link>
 								</div>
 							</NavLink>
 							{/* leasing */}
 
-							<NavLink to="/programs" className={scss.dropdown}>
-								<Link to="/programs" className={scss.dropdownTitle}>
-									Лизинговые программы <AiFillCaretDown />
+							<NavLink
+								to="/programs"
+								className={scss.dropdown}
+								onClick={scrollToTop}
+							>
+								<Link
+									to="/programs"
+									className={scss.dropdownTitle}
+									onClick={scrollToTop}
+								>
+									Лизинговые программы <AiFillCaretDown /> <span></span>
 								</Link>
 								<div className={scss.dropdownItems}>
-									<Link to="/leasing">Экспресс лизинг</Link>
+									<Link to="/leasing" onClick={scrollToTop}>
+										Экспресс лизинг
+									</Link>
 								</div>
 							</NavLink>
-							<NavLink to="/nothing">
+							<NavLink to="/nothing" onClick={scrollToTop}>
 								Для клиентов <span></span>
 							</NavLink>
 						</div>
