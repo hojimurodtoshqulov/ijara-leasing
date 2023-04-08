@@ -1,7 +1,7 @@
 .main {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 50px;
 
   .imgWrap {
     position: relative;
@@ -32,10 +32,25 @@
 
   .content {
     width: 60%;
+    color: #fff;
 
     h1 {
       font-size: 2rem;
       margin-bottom: 1rem;
+      position: relative;
+      z-index: 10;
+
+      &::after {
+        display: inline-block;
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        background: #319ba1;
+        content: "";
+        height: 10px;
+        width: 80px;
+        z-index: -1;
+      }
     }
   }
 

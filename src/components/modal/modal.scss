@@ -1,37 +1,50 @@
 @import "../../scss/varuables.scss";
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
 .overlay {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	z-index: 12399;
-	.modalContainer {
-		overflow: hidden;
-		border-radius: $br_r_10;
-		max-width: 900px;
-		width: 95%;
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		display: flex;
-		flex-direction: column;
-		background: $bg;
-		box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.75);
-		padding: 1% 2% 2% 2%;
-	}
-	.modalBg {
-		position: fixed;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		width: 100%;
-		height: 100%;
-		background: rgba(0, 0, 0, 0.5);
-		z-index: -1;
-	}
+  .modalContainer {
+    overflow: hidden;
+    border-radius: $br_r_10;
+    max-width: 900px;
+    width: 95%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -250%);
+    display: flex;
+    flex-direction: column;
+    background: $bg;
+    box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.75);
+    padding: 1% 2% 2% 2%;
+    transition: 1s all;
+    z-index: 101;
+  }
+  .modalBg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    display: none;
+  }
+  &.active {
+    background-color: red;
+    .modalContainer {
+      transform: translate(-50%, -50%);
+    }
+    .modalBg {
+      display: block;
+    }
+  }
+}
+
+.modalContainer.animate {
+  top: 50%;
 }

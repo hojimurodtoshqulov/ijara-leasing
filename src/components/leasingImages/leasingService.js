@@ -14,14 +14,14 @@ const images = [img1, img2, img3, img4, img5];
 const LeasingService = ({ theme }) => {
   const [_, order] = theme.split(" ");
   const { t } = useTranslation();
-  
+
   return (
     <div className={styles.main}>
       <div className={styles.imgWrap}>
         <img src={images[order]} alt="" />
       </div>
       <div className={styles.content}>
-        <h1>Lorem, ipsum dolor.</h1>
+        <h1>Lorem, ipsum.</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. A, dolore?
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus vero
