@@ -6,7 +6,6 @@ import { useState } from "react";
 import Modal from "../modal/modal";
 const Submit = () => {
 	const [openModal, setOpenModal] = useState(false);
-
 	const transition = { type: "spring", duration: 2, ease: "easeOut" };
 	const { t } = useTranslation();
 	return (
@@ -47,7 +46,7 @@ const Submit = () => {
 					className={scss.submit__lightRight}
 				></motion.div>
 			</div>
-			<Modal open={openModal} onClose={() => setOpenModal(false)} />
+			<Modal open={openModal} onClose={() => setOpenModal(false)} theme="submit" />
 		</>
 	);
 };
