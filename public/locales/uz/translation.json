@@ -11,10 +11,11 @@
   "ru": "RU",
   "sum": "so'm",
   "month": "oy",
+  "map": "Xarita",
 
   "company": "Kompaniya",
   "leasing": "Lizing dasturlari",
-  "client": "Mijoz uchun",
+  "client": "Mijozlar uchun",
   "contact": "Aloqa",
   "langCheck": "Uz",
   "hello": "uzbekcha salom",
@@ -162,6 +163,22 @@
         "title": "Kompleks xizmat.",
         "text": "«Ijara Leasing» nafaqat avtomobil sotib olish uchun qulay shart-sharoitlarni taklif qiladi, balki uni sug'urta qilish uchun imtiyozli shartlarni ham taqdim etadi."
       }
+    },
+    "q&a": {
+      "title": "SAVOL VA JAVOB",
+      "slider1": {
+        "title": "LIZING KREDITDAN QANDAY FARQI BO'LADI?",
+        "text": "Kredit bilan bank qarz oluvchiga pul o'tkazadi va lizing bilan - mulk. Avtomobilni naqd yoki kreditga sotib olsangiz, siz uning to'liq egasiga aylanasiz: mashinani sotish yoki sovg'a qilish mumkin. Lizingda lizing kompaniyasi mulkdor bo'lib qoladi. Lizing paytida bank mulkdor bo'lib qolishi sababli, lizing asosida mulkni olish osonroq va tezroq. Lizing uchun, muhim avans to'lash talab etilmaganligi sababli, ariza tezroq ko'rib chiqiladi."
+      },
+      "slider2": {
+        "title": "LIZINGNING AVTOZYATLARI QANDAY?",
+        "text": "Kredit bilan bank qarz oluvchiga pul o'tkazadi va lizing bilan - mulk. Avtomobilni naqd yoki kreditga sotib olsangiz, siz uning to'liq egasiga aylanasiz: mashinani sotish yoki sovg'a qilish mumkin. Lizingda lizing kompaniyasi mulkdor bo'lib qoladi. Lizing paytida bank mulkdor bo'lib qolishi sababli, lizing asosida mulkni olish osonroq va tezroq. Lizing uchun, muhim avans to'lash talab etilmaganligi sababli, ariza tezroq ko'rib chiqiladi."
+      }
+    },
+    "footer": {
+      "address": "Bizning manzil",
+      "location": "Yunusobod tumani",
+      "phone": "Telefon"
     }
   }
 }
