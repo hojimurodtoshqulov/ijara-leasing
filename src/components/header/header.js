@@ -68,7 +68,7 @@ const Header = () => {
         </div>
         <div className={scss.header__darkBottom}></div>
       </div>
-      <Modal open={openModal} onClose={() => setOpenModal(false)} />
+      <Modal open={openModal} onClose={() => setOpenModal(false)} theme="submit"/>
     </>
   );
 };
