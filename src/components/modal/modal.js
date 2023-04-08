@@ -11,7 +11,7 @@ const Modal = ({ open, onClose, theme }) => {
 			<div className="modalContainer">
 				{/* <Submit onClose={onClose} /> */}
 
-				{theme === "submit" ? <Submit onClose={onClose} /> : <LeasingService />}
+				{theme === "submit" ? <Submit onClose={onClose} /> : <LeasingService theme={theme} />}
 			</div>
 			<div onClick={onClose} className="modalBg"></div>
 		</div>

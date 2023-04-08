@@ -1,0 +1,53 @@
+.main {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  .imgWrap {
+    position: relative;
+    width: 40%;
+    aspect-ratio: 1 / 1;
+    img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      height: 95%;
+      width: 95%;
+      object-fit: cover;
+      z-index: 5;
+    }
+
+    &::after {
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 95%;
+      width: 95%;
+      border: 3px solid #319ba1;
+      content: "";
+    }
+  }
+
+  .content {
+    width: 60%;
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media (max-width: 720px) {
+    flex-direction: column;
+
+    .content {
+      width: 100%;
+
+      h1 {
+        text-align: center;
+      }
+    }
+  }
+}

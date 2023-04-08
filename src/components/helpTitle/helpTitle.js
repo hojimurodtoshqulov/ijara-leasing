@@ -2,8 +2,10 @@ import scss from "./helpTitle.module.scss";
 import Button from "../button/button";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 const HelpTitle = () => {
+  const navigate = useNavigate();
   const { t } = useTranslation();
   const transition = { type: "spring", duration: 2 };
 
@@ -37,7 +39,10 @@ const HelpTitle = () => {
               data-aos="flip-up"
               data-aos-delay="200"
             >
-              <Button btnTitle={t("home.helpTitle.btnText")} />
+              <Button
+                onClick={() => navigate("/programs")}
+                btnTitle={t("home.helpTitle.btnText")}
+              />
             </div>
           </div>
         </div>

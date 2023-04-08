@@ -125,7 +125,7 @@ const Nav = ({ onClick }) => {
                   type="btn"
                   style={{ color: langColor }}
                 >
-                  Ru
+                  {t("ru")}
                 </button>
                 <div></div>
               </span>
@@ -137,7 +137,7 @@ const Nav = ({ onClick }) => {
                   type="btn"
                   style={{ color: langColor }}
                 >
-                  Uz
+                  {t("uz")}
                 </button>
                 <div></div>
               </span>

@@ -53,13 +53,17 @@ const Footer = () => {
           </div>
           <div className={scss.footer__row1_line}></div>
           <div className={scss.footer__row1_col3}>
-            <h1>{t("home.footer.address")}:</h1>
-            <p>{t("home.footer.location")}, Ц-5, д.78, кв.13</p>
-            <h1>{t("home.footer.phone")}:</h1>
-            <p>
-              <a href="tel:+998991609000">+998 (99) 160-90-00</a>
-              <a href="tel:+998991619000">+998 (99) 161-90-00</a>
-            </p>
+            <div className={scss.footer__row1_group}>
+              <h1>{t("home.footer.address")}:</h1>
+              <p>{t("home.footer.location")}, Ц-5, д.78, кв.13</p>
+            </div>
+            <div className={scss.footer__row1_group}>
+              <h1>{t("home.footer.phone")}:</h1>
+              <p>
+                <a href="tel:+998991609000">+998 (99) 160-90-00</a>
+                <a href="tel:+998991619000">+998 (99) 161-90-00</a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
