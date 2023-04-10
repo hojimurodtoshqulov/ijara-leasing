@@ -1,5 +1,5 @@
 import scss from "./header.module.scss";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import img1 from "../../media/header_chevrolet.png";
 import Button from "../button/button";
 import Categories from "../categories/categories";
@@ -8,15 +8,14 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 const Header = () => {
   const [openModal, setOpenModal] = useState(false);
+  const navigate = useNavigate();
   const { t } = useTranslation();
   return (
     <>
       <div className={scss.header}>
         <div className="container">
           <div className={scss.header__container}>
-            <div
-              className={scss.header__container_elements}
-            >
+            <div className={scss.header__container_elements}>
               <h1 data-aos="flip-up" data-aos-delay="0" data-aos-duration="500">
                 {t("home.hero.title1")} <br />
               </h1>
@@ -36,7 +35,10 @@ const Header = () => {
                 data-aos-delay="900"
               >
                 <div className={scss.header__container_elements_buttons_div1}>
-                  <Button btnLink={"/"} btnTitle={t("home.hero.btnText1")} />
+                  <Button
+                    btnLink={"/company"}
+                    btnTitle={t("home.hero.btnText1")}
+                  />
                 </div>
                 <div
                   onClick={() => {
@@ -68,7 +70,11 @@ const Header = () => {
         </div>
         <div className={scss.header__darkBottom}></div>
       </div>
-      <Modal open={openModal} onClose={() => setOpenModal(false)} theme="submit"/>
+      <Modal
+        open={openModal}
+        onClose={() => setOpenModal(false)}
+        theme="submit"
+      />
     </>
   );
 };

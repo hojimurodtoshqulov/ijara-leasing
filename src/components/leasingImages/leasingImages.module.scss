@@ -1,167 +1,240 @@
 @import "../../scss/varuables.scss";
 
 .leasingImages {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	height: auto;
-	padding: 10% 0 3% 0;
-	background: $bg;
-	position: relative;
-	z-index: 1;
-	&__imgDiv {
-		width: 20%;
-		height: 500px;
-		overflow: hidden;
-		&:nth-child(odd) {
-			margin-bottom: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 10% 0 3% 0;
+  background: $bg;
+  position: relative;
+  z-index: 1;
+  &__imgDiv {
+    width: 20%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
 
-			&:hover {
-				p {
-					bottom: 15%;
-					width: 100%;
-				}
-			}
-			img {
-				margin-bottom: 30px;
-			}
-			// padding-bottom: 5%;
-		}
-		&:nth-child(even) {
-			// padding-top: 5%;
-			&:hover {
-				p {
-					bottom: 15%;
-					width: 100%;
-				}
-			}
-			img {
-				margin-bottom: 5%;
-			}
-		}
-		img {
-			height: 100%;
-			width: 100%;
-			object-fit: cover;
-			&:hover {
-				opacity: 0.5;
-			}
-		}
-		p {
-			text-align: center;
-			position: absolute;
-			left: 0;
-			bottom: -10%;
-			width: 100%;
-			transition: 0.3s;
-			font-size: 1.5rem;
-		}
-		@media (min-width: $xxl) {
-			height: 748px;
-		}
+    &:hover {
+      p {
+        position: absolute;
+        pointer-events: none;
+        bottom: 0;
+        left: 0;
+        // bottom: 15%;
+        width: 100%;
+        padding: 4rem 0 3rem 0;
+        background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 0.9)
+        );
 
-		@media (min-width: 1696px) {
-			height: 948px;
-		}
+        @media (max-width: 1145px) {
+          font-size: 18px;
+          background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.5)
+          );
+        }
+      }
+    }
+    &:nth-child(odd) {
+      margin-bottom: 10%;
 
-		// @media (min-width: 2300px) {
-		//   height: 948px;
-		// }
-	}
+      //   &:hover {
+      //     p {
+      //       bottom: 15%;
+      //       width: 100%;
+      //     }
+      //   }
+      img {
+        // margin-bottom: 30px;
+      }
+      // padding-bottom: 5%;
+    }
+    &:nth-child(even) {
+      // padding-top: 5%;
+      //   &:hover {
+      //     p {
+      //       bottom: 15%;
+      //       width: 100%;
+      // 	  background-color: red;
+      //     }
+      //   }
+      img {
+        margin-bottom: 5%;
+      }
+    }
+    img {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    p {
+      text-align: center;
+      position: absolute;
+      left: 0;
+      bottom: -10%;
+      width: 100%;
+      transition: 0.3s;
+      font-size: 1.5rem;
+    }
+    @media (min-width: $xxl) {
+      height: 748px;
+    }
+
+    @media (min-width: 1696px) {
+      height: 948px;
+    }
+
+    @media (max-width: 885px) {
+      p {
+        font-size: 16px;
+        // padding: 4rem 0 3rem 0;
+        bottom: -25%;
+        background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 0.5)
+        );
+      }
+    }
+
+    // @media (min-width: 2300px) {
+    //   height: 948px;
+    // }
+  }
 }
 
 @media (max-width: $xl) {
-	.leasingImages {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: auto;
-		padding: 10% 0 7% 0;
-		background: $bg;
-		position: relative;
-		z-index: 1;
-		&__imgDiv {
-			width: 20%;
-			height: 400px;
-			&:nth-child(odd) {
-				padding-bottom: 5%;
-			}
-			&:nth-child(even) {
-				padding-top: 5%;
-			}
-			img {
-				height: 100%;
-				width: 100%;
-				object-fit: cover;
-				&:hover {
-					opacity: 0.7;
-				}
-			}
-		}
-	}
+  .leasingImages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 10% 0 7% 0;
+    background: $bg;
+    position: relative;
+    z-index: 1;
+    &__imgDiv {
+      width: 20%;
+      height: 400px;
+      &:nth-child(odd) {
+        padding-bottom: 5%;
+
+        @media (max-width: 1145px) {
+          padding-bottom: 0px;
+        }
+      }
+      &:nth-child(even) {
+        padding-top: 5%;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
 }
 @media (max-width: $md) {
-	.leasingImages {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: auto;
-		padding: 10% 0 7% 0;
-		background: $bg;
-		position: relative;
-		z-index: 1;
-		&__imgDiv {
-			width: 20%;
-			height: 300px;
-			&:nth-child(odd) {
-				padding-bottom: 5%;
-			}
-			&:nth-child(even) {
-				padding-top: 5%;
-			}
-			img {
-				height: 100%;
-				width: 100%;
-				object-fit: cover;
-				&:hover {
-					opacity: 0.7;
-				}
-			}
-		}
-	}
+  .leasingImages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding: 10% 0 7% 0;
+    background: $bg;
+    position: relative;
+    z-index: 1;
+    &__imgDiv {
+      width: 20%;
+      height: 300px;
+      &:nth-child(odd) {
+        width: 30%;
+        padding: 0;
+        margin: 0;
+        border-radius: 8px;
+      }
+      &:nth-child(even) {
+        width: 30%;
+        padding: 0;
+        margin: 0;
+        border-radius: 8px;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
 }
 @media (max-width: $sm) {
-	.leasingImages {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: auto;
-		padding: 15% 0 7% 0;
-		background: $bg;
-		position: relative;
-		z-index: 1;
-		overflow-x: hidden;
-		&__imgDiv {
-			width: 20%;
-			height: 200px;
-			&:nth-child(odd) {
-				padding-bottom: 5%;
-			}
-			&:nth-child(even) {
-				padding-top: 5%;
-			}
-			img {
-				height: 100%;
-				width: 100%;
-				object-fit: cover;
-				&:hover {
-					opacity: 0.7;
-				}
-			}
-		}
-	}
+  .leasingImages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 15% 0 7% 0;
+    background: $bg;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+    gap: 1rem;
+    &__imgDiv {
+      width: 20%;
+      height: 300px;
+      &:nth-child(odd) {
+        width: 45%;
+        padding: 0;
+        margin: 0;
+        border-radius: 8px;
+      }
+      &:nth-child(even) {
+        width: 45%;
+        padding: 0;
+        margin: 0;
+        border-radius: 8px;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media (max-width: $xs) {
+  .leasingImages {
+    max-width: 230px;
+    margin-right: auto;
+    margin-left: auto;
+    &__imgDiv {
+      width: 20%;
+      height: 300px;
+      &:nth-child(odd) {
+        width: 100%;
+      }
+      &:nth-child(even) {
+        width: 100%;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
 }

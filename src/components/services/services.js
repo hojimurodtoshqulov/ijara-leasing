@@ -4,9 +4,11 @@ import img2 from "../../media/waveLine.png";
 import Button from "../button/button";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 const Services = () => {
   const transition = { type: "spring", duration: 2 };
+  const navigate = useNavigate();
 
   const { t } = useTranslation();
 
@@ -48,7 +50,10 @@ const Services = () => {
             </h1>
             <p>{t("home.services.text")}</p>
             <div className={scss.services__elements_btn}>
-              <Button btnTitle={t("home.services.btnText")} />
+              <Button
+                onClick={() => navigate("/leasing")}
+                btnTitle={t("home.services.btnText")}
+              />
             </div>
           </div>
         </div>

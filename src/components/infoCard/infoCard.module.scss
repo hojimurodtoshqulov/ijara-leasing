@@ -8,7 +8,7 @@
   font-family: $font-texts;
   height: 100%;
 
-  @media (max-width:$xl) {
+  @media (max-width: $xl) {
     padding: 20px 40px;
   }
 
@@ -26,8 +26,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 45px;
-    line-height: 70px;
-    margin-bottom: 1rem;
+    line-height: 50px;
     @media (max-width: $md) {
       font-size: 40px;
     }

@@ -6,6 +6,7 @@ import img3 from "../../media/Frame165.png";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
+import { useTranslation } from "react-i18next";
 const Footer = () => {
 	const scrollToTop = () => {
 		window.scrollTo(0, 0);
@@ -37,35 +38,35 @@ const Footer = () => {
 					<div className={scss.footer__row1_line}></div>
 					<div className={scss.footer__row1_col2}>
 						<Link
-							to="/"
+							to="/company"
 							className={scss.footer__row1_col2_link}
 							onClick={scrollToTop}
 						>
 							<span>О компании</span> <p></p>
 						</Link>
 						<Link
-							to="/"
+							to="/requisites"
 							className={scss.footer__row1_col2_link}
 							onClick={scrollToTop}
 						>
 							Реквизиты <p></p>
 						</Link>
 						<Link
-							to="/"
+							to="/contact"
 							className={scss.footer__row1_col2_link}
 							onClick={scrollToTop}
 						>
 							Контакты <p></p>
 						</Link>
 						<Link
-							to="/"
+							to="/programs"
 							className={scss.footer__row1_col2_link}
 							onClick={scrollToTop}
 						>
 							<span>Лизинговые программы</span> <p></p>
 						</Link>
 						<Link
-							to="/"
+							to="/leasing"
 							className={scss.footer__row1_col2_link}
 							onClick={scrollToTop}
 						>

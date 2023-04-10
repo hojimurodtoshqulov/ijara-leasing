@@ -14,19 +14,19 @@ const ExplainSection = () => {
       {/* <h2 className={styles.title}>Как получить лизинг</h2> */}
       <Title title={t("explainSection.title")} typed underline />
       <div className={styles.wrapper}>
-        <div className={styles.item}>
+        <div data-aos="fade-left" className={styles.item}>
           <img src={iconSearch} alt="" />
           <p className={styles.itemText}>{t("explainSection.card1")}</p>
         </div>
-        <div className={styles.item}>
+        <div data-aos="fade-right" className={styles.item}>
           <img src={iconFile} alt="" />
           <p className={styles.itemText}>{t("explainSection.card2")}</p>
         </div>
-        <div className={styles.item}>
+        <div data-aos="fade-left" className={styles.item}>
           <img src={iconPen} alt="" />
           <p className={styles.itemText}>{t("explainSection.card3")}</p>
         </div>
-        <div className={styles.item}>
+        <div data-aos="fade-right" className={styles.item}>
           <img src={icocFileHands} alt="" />
           <p className={styles.itemText}>{t("explainSection.card4")}</p>
         </div>

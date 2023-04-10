@@ -11,6 +11,7 @@ import Leasing from "./pages/leasing/leasing";
 import Programs from "./pages/programs/programs";
 
 import "./i18n";
+import Clients from "./pages/clients/clients";
 
 const App = () => {
   useEffect(() => {
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/requisites" element={<Requisites />} />
           <Route path="/leasing" element={<Leasing />} />
           <Route path="/programs" element={<Programs />} />
+          <Route path="/clients" element={<Clients />} />
         </Route>
       </Routes>
     </>

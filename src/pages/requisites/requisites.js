@@ -19,7 +19,7 @@ const Requisites = () => {
               border={false}
               title={t("requisites.section1.title")}
             />
-            <p className="requisites__text">
+            <p data-aos="fade-right" className="requisites__text">
               title={t("requisites.section1.text")}
             </p>
           </section>
@@ -29,7 +29,7 @@ const Requisites = () => {
               border={false}
               title={t("requisites.section2.title")}
             />
-            <p className="requisites__text">
+            <p data-aos="fade-right" className="requisites__text">
               {t("requisites.section2.text")}.:{" "}
               <a href="tel:+998 (99) 160-90-00">+998 (99) 160-90-00</a>,{" "}
               <a href="tel:+998 (99) 161-90-00">+998 (99) 161-90-00</a>
@@ -41,7 +41,9 @@ const Requisites = () => {
               border={false}
               title={t("requisites.section3.title")}
             />
-            <p className="requisites__text">{t("requisites.section3.text")}</p>
+            <p data-aos="fade-right" className="requisites__text">
+              {t("requisites.section3.text")}
+            </p>
           </section>
         </main>
       </div>

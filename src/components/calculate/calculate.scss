@@ -485,7 +485,7 @@
       }
     }
     &__calculates {
-      height: 400px;
+      height: 500px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -669,5 +669,12 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: $sm) {
+  .calculate__calculates_col2 {
+    flex-direction: column;
+    min-height: 200px;
   }
 }
