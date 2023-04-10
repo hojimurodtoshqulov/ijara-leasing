@@ -505,7 +505,7 @@
 }
 @media (max-width: $sm) {
 	.testimonials {
-		height: 855px;
+		height: 870px;
 		display: flex;
 		justify-content: space-between;
 		gap: 1rem;
@@ -526,7 +526,7 @@
 				font-weight: bold;
 				font-size: 25px;
 				position: absolute;
-				top: 100%;
+				top: 150%;
 				left: -90%;
 				text-align: center;
 				width: 200%;

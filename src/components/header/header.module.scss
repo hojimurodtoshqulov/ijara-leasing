@@ -175,7 +175,7 @@
 }
 @media (max-width: 765px) {
   .header {
-    height: 700px;
+    height: 750px;
     &__container {
       &_elements {
         position: absolute;
@@ -242,17 +242,17 @@
 }
 @media (max-width: $sm) {
   .header {
-    height: 500px;
+    height: 550px;
     &__container {
       &_elements {
         position: absolute;
-        top: 20%;
+        top: 22%;
         z-index: 12;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        gap: 15px;
         width: 80%;
         color: $light;
         text-align: center;
