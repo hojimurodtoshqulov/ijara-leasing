@@ -505,7 +505,7 @@
 }
 @media (max-width: $sm) {
 	.testimonials {
-		height: 800px;
+		height: 855px;
 		display: flex;
 		justify-content: space-between;
 		gap: 1rem;
@@ -544,7 +544,7 @@
 				position: absolute;
 				top: 7rem;
 				right: 0;
-				padding: 5%;
+				padding: 15%;
 				& > :nth-child(1) {
 					font-weight: normal;
 					font-size: 15px;
@@ -630,6 +630,7 @@
 		}
 
 		.right_t {
+			// display: none;
 			position: absolute;
 			top: auto;
 			left: 1%;
@@ -645,6 +646,7 @@
 				height: 100%;
 				object-fit: cover;
 				z-index: 12;
+
 			}
 			&_div1 {
 				border: 2px solid $primary;
