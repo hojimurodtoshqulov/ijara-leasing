@@ -12,7 +12,6 @@
 	overflow: hidden;
 	&__titles {
 		overflow: hidden;
-
 		width: 25%;
 		display: flex;
 		align-items: center;
@@ -42,6 +41,12 @@
 		p {
 			font-size: 25px;
 			font-family: $font_texts;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			span {
+				margin: 5px 5px 0 0;
+			}
 		}
 	}
 	&__line {
@@ -106,33 +111,35 @@
 }
 @media (max-width: $md) {
 	.categories {
-		height: 160px;
-		padding: 0 2%;
+		height: auto;
+		padding: 5% 0;
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: center;
+		flex-direction: column;
 		background-image: linear-gradient(#22244fe4, #22244fe4),
 			url("../../media/in_chevrolet.png");
 		background-size: cover;
 		overflow: hidden;
+		gap: 10px;
 		&__titles {
 			overflow: hidden;
-			width: 25%;
+			width: 100%;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			gap: 10px;
-			flex-direction: column;
+			flex-direction: row;
 			&:hover {
 				span {
 					transform: perspective(100px) rotateY(360deg);
 				}
 			}
 			&:nth-child(1) {
-				width: 35%;
+				width: 100%;
 			}
 			&:nth-child(5) {
-				width: 35%;
+				width: 100%;
 			}
 			span {
 				transition: 1s;
@@ -148,6 +155,12 @@
 				font-size: 20px;
 				font-family: $font_texts;
 				text-align: center;
+				display: flex;
+				align-items: flex-start;
+				justify-content: flex-start;
+				span {
+					margin: 0px 5px 0 0;
+				}
 			}
 		}
 		&__line {
@@ -160,34 +173,36 @@
 }
 @media (max-width: $sm) {
 	.categories {
-		margin-top: 3rem;
-		height: 140px;
-		padding: 0 2%;
+		height: auto;
+		padding: 5% 0;
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: center;
+		flex-direction: column;
 		background-image: linear-gradient(#22244fe4, #22244fe4),
 			url("../../media/in_chevrolet.png");
 		background-size: cover;
 		overflow: hidden;
+		gap: 10px;
 		&__titles {
 			overflow: hidden;
-			width: 25%;
+			width: 100%;
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			// gap: 10px;
-			flex-direction: column;
+			gap: 10px;
+			flex-direction: row;
 			&:hover {
 				span {
 					transform: perspective(100px) rotateY(360deg);
 				}
 			}
 			&:nth-child(1) {
-				width: 35%;
+				width: 70%;
+				gap: 1px;
 			}
 			&:nth-child(5) {
-				width: 35%;
+				width: 100%;
 			}
 			span {
 				transition: 1s;
@@ -200,9 +215,12 @@
 				}
 			}
 			p {
-				font-size: 15px;
+				font-size: 17px;
 				font-family: $font_texts;
 				text-align: center;
+				span {
+					margin: 0px 5px 0 0;
+				}
 			}
 		}
 		&__line {
