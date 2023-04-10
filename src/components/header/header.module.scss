@@ -242,7 +242,7 @@
 }
 @media (max-width: $sm) {
   .header {
-    height: 700px;
+    height: 500px;
     &__container {
       &_elements {
         position: absolute;
@@ -302,6 +302,7 @@
         right: 0%;
         top: 50%;
         z-index: 1;
+        display: none;
       }
     }
   }

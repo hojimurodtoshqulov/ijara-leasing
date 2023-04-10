@@ -1,98 +1,101 @@
 @import "../../scss/varuables.scss";
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 .map {
-	background: $bg;
-	padding: 5% 0;
-	h1 {
-		font-size: 2.5rem;
-		font-family: $font_titles;
-		margin: 2% 0 2% 0.5%;
-		position: relative;
-		z-index: 1;
-		p {
-			position: relative;
-			z-index: 1;
-		}
-		span {
-			width: 90px;
-			height: 15px;
-			background: $primary;
-			position: absolute;
-			top: 60%;
-			left: -0.5%;
-			z-index: 0;
-		}
-	}
-	&__div {
-		position: relative;
-		z-index: 12;
-		width: 100%;
-	}
+  background: $bg;
+  padding: 5% 0;
+  h1 {
+    font-size: 2.5rem;
+    font-family: $font_titles;
+    margin: 2% 0 2% 0.5%;
+    position: relative;
+    z-index: 1;
+    p {
+      position: relative;
+      z-index: 1;
+    }
+    span {
+      width: 90px;
+      height: 15px;
+      background: $primary;
+      position: absolute;
+      top: 60%;
+      left: -0.5%;
+      z-index: 0;
+    }
+  }
+  &__div {
+    position: relative;
+    z-index: 12;
+    width: 100%;
+  }
 }
 @media (min-width: $xxl) {
-	.map {
-		h2 {
-			font-size: 3rem;
-		}
-		iframe {
-			height: 600px;
-		}
-	}
+  .map {
+    h2 {
+      font-size: 3rem;
+    }
+    iframe {
+      height: 600px;
+    }
+  }
 }
 
 @media (max-width: $xxl) {
-	.map {
-		iframe {
-			height: 500px;
-		}
-	}
+  .map {
+    iframe {
+      height: 500px;
+    }
+  }
 }
 @media (max-width: $xl) {
-	.map {
-		h2 {
-			font-size: 2.4em;
-		}
-		iframe {
-			height: 400px;
-		}
-	}
+  .map {
+    h2 {
+      font-size: 2.4em;
+    }
+    iframe {
+      height: 400px;
+    }
+  }
 }
 @media (max-width: $md) {
-	.map {
-		h1 {
-			font-size: 2.2em;
-		}
-		iframe {
-			height: 350px;
-		}
-	}
+  .map {
+    h1 {
+      font-size: 2.2em;
+    }
+    iframe {
+      height: 350px;
+    }
+  }
 }
 
 @media (max-width: $sm) {
-	.map {
-		h1 {
-			font-size: 1.8em;
-			span {
-				height: 7px;
-width: 50%;
-			}
-		}
-		iframe {
-			height: 300px;
-		}
-	}
+  .map {
+    h1 {
+      font-size: 1.8em;
+      span {
+        height: 7px;
+        width: 50%;
+      }
+    }
+    iframe {
+      height: 300px;
+    }
+  }
 }
 @media (max-width: $sm) {
-	.map {
-		h1 {
-			font-size: 1.5em;
-		}
-		iframe {
-			height: 300px;
-		}
-	}
+  .map {
+    h1 {
+      font-size: 1.5em;
+      span {
+        width: 82px;
+      }
+    }
+    iframe {
+      height: 300px;
+    }
+  }
 }
