@@ -7,6 +7,9 @@ import { Link } from "react-router-dom";
 import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 const Footer = () => {
+	const scrollToTop = () => {
+		window.scrollTo(0, 0);
+	};
 	return (
 		<footer className={scss.footer}>
 			<div className="container">
@@ -33,19 +36,39 @@ const Footer = () => {
 					</div>
 					<div className={scss.footer__row1_line}></div>
 					<div className={scss.footer__row1_col2}>
-						<Link to="/" className={scss.footer__row1_col2_link}>
+						<Link
+							to="/"
+							className={scss.footer__row1_col2_link}
+							onClick={scrollToTop}
+						>
 							<span>О компании</span> <p></p>
 						</Link>
-						<Link to="/" className={scss.footer__row1_col2_link}>
+						<Link
+							to="/"
+							className={scss.footer__row1_col2_link}
+							onClick={scrollToTop}
+						>
 							Реквизиты <p></p>
 						</Link>
-						<Link to="/" className={scss.footer__row1_col2_link}>
+						<Link
+							to="/"
+							className={scss.footer__row1_col2_link}
+							onClick={scrollToTop}
+						>
 							Контакты <p></p>
 						</Link>
-						<Link to="/" className={scss.footer__row1_col2_link}>
+						<Link
+							to="/"
+							className={scss.footer__row1_col2_link}
+							onClick={scrollToTop}
+						>
 							<span>Лизинговые программы</span> <p></p>
 						</Link>
-						<Link to="/" className={scss.footer__row1_col2_link}>
+						<Link
+							to="/"
+							className={scss.footer__row1_col2_link}
+							onClick={scrollToTop}
+						>
 							Экспресс лизинг <p></p>
 						</Link>
 					</div>
