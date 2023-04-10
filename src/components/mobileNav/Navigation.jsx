@@ -70,7 +70,7 @@ export const Navigation = ({ toggleOpen }) => {
       <MenuItem
         toggleOpen={toggleOpen}
         title={t("nav.client")}
-        href={"nothing"}
+        href={"clients"}
       />
       <motion.div
         variants={variantsItem}

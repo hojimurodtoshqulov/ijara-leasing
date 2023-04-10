@@ -112,7 +112,7 @@ const Nav = ({ onClick }) => {
                   </Link>
                 </div>
               </NavLink>
-              <NavLink to="/nothing" onClick={scrollToTop}>
+              <NavLink to="/clients" onClick={scrollToTop}>
                 {t("nav.client")} <span></span>
               </NavLink>
             </div>

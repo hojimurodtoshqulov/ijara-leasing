@@ -76,7 +76,6 @@
       "card4": "tekshirish komissiyasi"
     }
   },
-
   "requisites": {
     "title": "Rekvizitlar",
     "section1": {
@@ -180,5 +179,8 @@
       "location": "Yunusobod tumani",
       "phone": "Telefon"
     }
+  },
+  "clients": {
+    "title": "Mijozlar uchun"
   }
 }
