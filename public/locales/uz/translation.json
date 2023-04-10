@@ -181,6 +181,44 @@
     }
   },
   "clients": {
-    "title": "Mijozlar uchun"
+    "title": "Mijozlar uchun",
+    "section1": {
+      "title": "Normativ hujjatlar",
+      "p1": "Ro'yxatdan o'tish guvohnomasi",
+      "p2": "Tashkilotlar va korxonalarning yagona davlat reestridan (EGRPO) kompaniya haqida ma'lumot",
+      "p3": "Direktorning buyrug'i",
+      "p4": "Ta'sischining IP 00O ljara Leasingni yaratish to'g'risidagi qarori"
+    },
+    "section2": {
+      "title": "Normativ hujjatlar",
+      "p1": "Ro'yxatdan o'tish guvohnomasi"
+    },
+    "section3": {
+      "title": "Sug'urta ishi",
+      "p1": "Da'volar bo'yicha hujjatlar ro'yxati",
+      "p2": "Sug'urta da'volarini ko'rib chiqish tartibi"
+    },
+    "section4": {
+      "title": "Lizing oluvchining ma'lumotlarini o'zgartirish",
+      "p1": "Lizing oluvchining rekvizitlari o'zgargan taqdirda, u kompaniyaning firma blankida rahbarning muhri va imzosi bilan tasdiqlangan rasmiy xat yuborish orqali Lizing beruvchini ushbu fakt to'g'risida xabardor qilishi shart.",
+      "p2": "Xatning asl nusxasi pochta orqali Yunusobod tumani, C-5, 78-uy, 13-uy manziliga yuboriladi. Xatning fotonusxasi elektron pochtaga yuboriladi."
+    },
+    "section5": {
+      "title": "Lizing shartnomasini ijara muddati oxirida bekor qilish",
+      "p1": "Lizing ob'ekti lizing shartnomasining amal qilish muddati tugagandan so'ng lizing oluvchining mulkiga o'tadi va lizing oluvchi alohida tuzilgan lizing ob'ektini sotib olish to'g'risidagi shartnomaga muvofiq Shartnoma bo'yicha o'zining barcha majburiyatlarini bajaradi. ijara shartnomasi muddati tugashining oxirgi kunida.",
+      "p2": "Lizing ob'ekti bo'yicha sotib olish shartnomasini tayyorlash faqat lizing oluvchining ijara shartnomasi bo'yicha qarzlari bo'lmagan taqdirdagina boshlanadi.",
+      "p3": "Hujjatlarni tayyorlash muddati 10 ish kunidan oshmaydi."
+    },
+    "section6": {
+      "title": "Lizing shartnomasini muddatidan oldin bekor qilish (erta sotib olish)",
+      "p1": "Alohida hollarda, lizing shartnomasini muddatidan oldin bekor qilish Lizing beruvchi Lizing oluvchi tomonidan ko'rsatilgan holatlarni ko'rib chiqqandan keyin amalga oshirilishi mumkin."
+    },
+    "requisities": {
+      "title": "Rekvizitlar",
+      "subtitle": "Bank rekvizitlari",
+      "p1": "Hisob-kitob schyoti (O‘zb.so‘m)",
+      "p2": "“Ipak yo‘li” АИКБ bank ma’lumotlari, Toshkent",
+      "p3": "Bank kodi 00444"
+    }
   }
 }

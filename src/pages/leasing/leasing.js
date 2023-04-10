@@ -17,15 +17,17 @@ const Leasing = () => {
   return (
     <div className="leasing">
       <section className="leasing__hero">
-        <div className="leasing__hero-img">
+        <div data-aos="fade-right" className="leasing__hero-img">
           <img src={CarImg} alt="" />
         </div>
         <div className="container">
           <div className="leasing__hero-wrapper">
             <Title title={t("leasingPage.header.title")} typed underline />
             <h1 className="leasing__hero-title"></h1>
-            <p className="leasing__hero-text">{t("leasingPage.header.p1")}</p>
-            <div className="leasing__hero-btns">
+            <p data-aos="fade-left" className="leasing__hero-text">
+              {t("leasingPage.header.p1")}
+            </p>
+            <div data-aos="fade-right" className="leasing__hero-btns">
               <div className="leasing__hero-btn">
                 <Button
                   btnLink={"/"}

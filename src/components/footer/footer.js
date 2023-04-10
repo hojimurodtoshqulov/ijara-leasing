@@ -35,19 +35,19 @@ const Footer = () => {
           </div>
           <div className={scss.footer__row1_line}></div>
           <div className={scss.footer__row1_col2}>
-            <Link to="/" className={scss.footer__row1_col2_link}>
+            <Link to="/company" className={scss.footer__row1_col2_link}>
               <span>{t("nav.company")}</span> <p></p>
             </Link>
-            <Link to="/" className={scss.footer__row1_col2_link}>
+            <Link to="/requisites" className={scss.footer__row1_col2_link}>
               {t("nav.requisites")} <p></p>
             </Link>
-            <Link to="/" className={scss.footer__row1_col2_link}>
+            <Link to="/contact" className={scss.footer__row1_col2_link}>
               {t("nav.contact")} <p></p>
             </Link>
-            <Link to="/" className={scss.footer__row1_col2_link}>
+            <Link to="/programs" className={scss.footer__row1_col2_link}>
               <span>{t("nav.programs")}</span> <p></p>
             </Link>
-            <Link to="/" className={scss.footer__row1_col2_link}>
+            <Link to="/leasing" className={scss.footer__row1_col2_link}>
               {t("nav.leasing")} <p></p>
             </Link>
           </div>
