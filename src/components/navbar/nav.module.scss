@@ -88,22 +88,24 @@
 				&:hover {
 					.dropdownItems {
 						z-index: 12;
-						top: calc(100% + 10px);
+						top: calc(100% + 3px);
 						visibility: visible;
 						opacity: 1;
 					}
 				}
 				&Title {
-					//   color: red;
 				}
 				&Title:hover ~ .dropdownItems {
-					background-color: $light !important;
+					background-color: transparent !important;
+					border: 2px solid $primary;
 					a {
 						// background-color: unset;
 						color: $primary;
 					}
 				}
 				&Items {
+					border: 2px solid $primary;
+
 					transition: 0.5s;
 					//   display: none;
 					position: absolute;
@@ -113,8 +115,8 @@
 					visibility: hidden;
 					opacity: 0;
 					a {
-						background-color: #fff;
-						color: #000;
+						background-color: #ff00;
+						color: $primary;
 						padding: 10px 40px;
 						font-family: $font_btn;
 						font-style: normal;
@@ -274,7 +276,7 @@
 						//   color: red;
 					}
 					&Title:hover ~ .dropdownItems {
-						background-color: $light !important;
+						background-color: transparent !important;
 						a {
 							// background-color: unset;
 							color: $primary;
@@ -290,7 +292,7 @@
 						visibility: hidden;
 						opacity: 0;
 						a {
-							background-color: #fff;
+							background-color: transparent;
 							color: #000;
 							padding: 10px 40px;
 							font-family: $font_btn;
