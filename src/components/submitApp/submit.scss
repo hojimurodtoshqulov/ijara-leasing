@@ -48,49 +48,53 @@
 		justify-content: space-between;
 		gap: 2em 0;
 		input {
+			width: 48%;
 			background: none;
-			padding: 1% 2%;
+			padding: 0% 2%;
+			height: 60px;
 			font-size: 1.5em;
 			border: none;
-			border-bottom: 2px solid $light;
+			border: 2px solid $primary;
+			font-size: 1.2em;
 		}
 		input:focus {
 			border: none;
-			border-bottom: 2px solid $primary;
+			border: 2px solid $denger;
 			outline: none;
 		}
-		.input-tell {
-			width: 48.5%;
-		}
-		.input-price {
-			width: 49%;
-		}
-		.input-name {
-			width: $w_100;
-		}
-		textarea {
-			background: none;
-			padding: 1% 2%;
-			width: $w_100;
-			font-size: 1.5em;
-			border: none;
-			border-bottom: 2px solid $light;
-		}
-
-		textarea:focus {
-			border: none;
-			border-bottom: 2px solid $primary;
-			outline: none;
+		label {
+			order: 5;
+			width: 70%;
+			height: 60px;
+			display: flex;
+			align-items: center !important;
+			justify-content: flex-start !important;
+			gap: 0px;
+			font-size: 1.2rem;
+			input {
+				display: block !important;
+				height: 30%;
+				margin: 0 !important;
+				padding: 0 !important;
+				width: 5% !important;
+			}
+			.link {
+				color: $primary !important;
+				margin-left: 3px;
+				text-decoration: underline;
+			}
 		}
 		span {
-			padding: 1rem 0;
 			align-self: flex-start;
-			order: 5;
-			width: 50%;
-			padding: 1rem 0;
-			height: 90px;
+			order: 6;
+			width: 30%;
+			height: 60px;
 			button {
 				font-size: 20px;
+				height: 100% !important;
+			}
+			input {
+				display: block !important;
 			}
 		}
 	}
@@ -102,30 +106,6 @@
 	p {
 		font-size: 1.4em;
 		width: 90%;
-	}
-
-	form {
-		gap: 1em 0;
-		input {
-			font-size: 1.2em;
-		}
-		.input-tell {
-			width: 48.5%;
-		}
-		.input-price {
-			width: 48.5%;
-		}
-		textarea {
-			font-size: 1.2em;
-		}
-
-		.input-check-div {
-			width: $w_100;
-
-			label {
-				font-size: 1.4em;
-			}
-		}
 	}
 }
 .openSuccess {
@@ -181,10 +161,32 @@
 			input {
 				font-size: 1.2em;
 			}
-			textarea {
-				font-size: 1.2em;
+			label {
+				order: 5;
+				width: 100%;
+				height: 60px;
+				display: flex;
+				align-items: center !important;
+				justify-content: flex-start !important;
+				flex-wrap: wrap;
+				gap: 0px;
+				font-size: 1rem;
+				input {
+					display: block !important;
+					height: 30%;
+					margin: 0 3px 0 0 !important;
+					padding: 0 !important;
+					width: 5% !important;
+				}
+				.link {
+					color: $primary !important;
+					margin-left: 3px;
+					text-decoration: underline;
+				}
 			}
-
+			span {
+				width: 100%;
+			}
 			.input-check-div {
 				width: $w_100;
 

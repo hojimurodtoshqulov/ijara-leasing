@@ -1,224 +1,234 @@
 {
-  "nav": {
-    "company": "Kompaniya",
-    "leasing": "Ekspress lizing",
-    "client": "Mijoz uchun",
-    "contact": "Aloqa",
-    "programs": "Lizing dasturlari",
-    "requisites": "Rekvizitlar"
-  },
-  "uz": "UZ",
-  "ru": "RU",
-  "sum": "so'm",
-  "month": "oy",
-  "map": "Xarita",
+	"nav": {
+		"company": "Kompaniya",
+		"leasing": "Ekspress lizing",
+		"client": "Mijoz uchun",
+		"contact": "Aloqa",
+		"programs": "Lizing dasturlari",
+		"requisites": "Rekvizitlar"
+	},
+	"uz": "UZ",
+	"ru": "RU",
+	"sum": "so'm",
+	"month": "oy",
+	"map": "Xarita",
 
-  "company": "Kompaniya",
-  "leasing": "Lizing dasturlari",
-  "client": "Mijozlar uchun",
-  "contact": "Aloqa",
-  "langCheck": "Uz",
-  "hello": "uzbekcha salom",
-  "explainSection": {
-    "title": "Qanday qilib ijaraga olish mumkin",
-    "card1": "Ulovni tanlaysiz",
-    "card2": "Arizani to'ldiring lizingni moliyalashtirish uchun va uni ko'rib chiqish uchun yuboring.",
-    "card3": "Siz bitim uchun hujjatlar to'plamini imzolaysiz, garovni tuzasiz va avans to'laysiz",
-    "card4": "Shu paytdan boshlab lizing shartnomasi va oldi-sotdi shartnomasi kuchga kirgan deb hisoblanadi!"
-  },
-  "companyPage": {
-    "about": {
-      "title": "Kompaniya haqida",
-      "p1": " - mustaqil universal kompaniya. Biz har bir mijozning individual xususiyatlaridan kelib chiqib, barcha turdagi lizing xizmatlarini taqdim etamiz.",
-      "p2": " 1 yil lizing bozorida muvaffaqiyatli ishlaydi va faol rivojlanmoqda. Kompaniyaning bosh ofisi Toshkent shahrida joylashgan. «Ijara Leasing» mikro va kichik biznes segmentlaridagi mijozlari va hamkorlariga tez va muvaffaqiyatli o'sishiga yordam beradi. Kompaniya, shuningdek, o'rta, yirik va korporativ darajadagi korxonalarga yordam beradi.",
-      "p3": " - shaxsiy yondashuv va yuqori darajadagi xizmat ko‘rsatish orqali mijozlari bilan uzoq muddatli, o‘zaro manfaatli munosabatlar o‘rnatishga intiladi."
-    },
-    "mission": {
-      "title": "Bizning vazifamiz",
-      "p1": " - O‘zbekistondagi birinchi va yirik xorijiy lizing kompaniyalaridan biridir. Biz chorvachilik va tog‘-kon sanoatidan tortib farmatsevtika yoki IT kabi yuqori texnologiyali sohalargacha bo‘lgan mamlakat iqtisodiyotining barcha muhim tarmoqlaridagi kompaniyalarni faol ravishda moliyalashtiramiz. Har xil turdagi tijorat avtomobillari, qishloq xoʻjaligi va maxsus qurilish texnikasi, shuningdek, turli ishlab chiqarish va boshqa jihozlarni lizingga berish faoliyatimizning ustuvor yoʻnalishlari hisoblanadi."
-    },
-    "card1": {
-      "title": "Top 20",
-      "text": "Lizinglar orasida O'zbekiston kompaniyalari"
-    },
-    "card2": {
-      "title": "5 mln",
-      "text": "AQSH dollari kapital"
-    },
-    "card3": {
-      "title": "21 mln",
-      "text": "AQSH dollari Loyihalar qiymati"
-    }
-  },
-  "contactPage": {
-    "contact": {
-      "title": "Kontaktlar",
-      "address": "Manzil",
-      "phone": "Telefon",
-      "location": "Toshkent shahar Yunusobod tumani, Ц-5, д.78, кв.13",
-      "tel": "Tel"
-    },
-    "map": {
-      "title": "Xarita"
-    }
-  },
-  "leasingPage": {
-    "header": {
-      "title": "Ekspress lizing",
-      "p1": "Lizing mahsulotlarini keng ommaga taqdim etish maqsadida “Ijara Leasing” MChJ tadbirkorlar davrasiga ILK MARTA O‘zbekistonda yangi mahsulot – Ekspress lizing yo‘lga qo‘yildi qurilish uchun maxsus uskunalar.",
-      "button1": "Lizing dasturlari",
-      "button2": "Ekspress lizing"
-    },
-    "cards": {
-      "card1": "oylik ijara muddati",
-      "card2": "minimal to'lov",
-      "card3": "qimmatlashish darajasi",
-      "card4": "tekshirish komissiyasi"
-    }
-  },
-  "requisites": {
-    "title": "Rekvizitlar",
-    "section1": {
-      "title": "Kompaniya nomi",
-      "text": "«Ijara Leasing» MChJ – «Ijara Leasing» mas’uliyati cheklangan jamiyati"
-    },
-    "section2": {
-      "title": "Manzil",
-      "text": "Toshkent shahri, Yunusobod tumani, Qashqar massivi, Ц-5, д.78, кв.13 Tel"
-    },
-    "section3": {
-      "title": "Bank rekvizitlari:",
-      "text": "Hisob raqami (UZS): 20208000805354860001; Bank ma'lumotlari: AYKB \"Ipak Yo'li\", Toshkent shahri; Bankning kod raqami: 00444; STIR: 308234550"
-    }
-  },
-  "programs": {
-    "title": "Lizing dasturlari",
-    "p1": "Kredit berishga muqobil sifatida Lizing har qanday tadbirkorlik faoliyatini tashkil etish va rivojlantirishda jiddiy moliyalashtirish vositasi hisoblanadi. IJARA LEASING",
-    "p2": "Har yili IJARA LEASING o'sish va rivojlanishga yo'naltirilgan mijozlar soni ortib borayotganiga ishonch bag'ishlaydi. Birgina so‘nggi 2 yil ichida portfelimizdagi lizing oluvchilar soni ikki baravar ko‘paydi. Lizing mahalliy ishlab chiqaruvchilar, savdo va transport korxonalari, soha yetakchilari va kichik o‘yinchilarga o‘zlariga ishonish va faoliyat ko‘lamini yangi bosqichga olib chiqish imkonini beradi.",
-    "p3": "Lizing - bu sizning moliyaviy oqimlaringizni rejalashtirilgan boshqarish. Siz lizing shartnomasining amal qilish muddati davomida biznesingizni to'g'ri byudjetlashtirasiz va oylik (choraklik) teng to'lovlarni nazarda tutuvchi lizing shartnomasi hisob-kitob sxemasi tufayli pul oqimlarini boshqarasiz.",
-    "p4": "Lizingga olingan uskunalar (lizing ob'ekti) nafaqat o'zini to'laydi, balki sizning daromadingizni sezilarli darajada oshirish imkonini beradi."
-  },
-  "home": {
-    "hero": {
-      "title1": "Foydali lizing ",
-      "title2": "yengil mashina",
-      "text": "Ishonchli milliy kompaniyadan, keraksiz hujjatlar va qo'shimcha ovoragarchiliklarsiz",
-      "btnText1": "Takliflarni ko'ring",
-      "btnText2": "Arizangizni yuboring",
-      "category1": "Tez hujjatlar",
-      "category2": "Foydali shartlar",
-      "category3": "Ishlab chiqaruvchilardan chegirmalar"
-    },
-    "calculate": {
-      "title": "Lizing narxini hisoblang",
-      "subtitle": "Tanlangan avtomobilning narxini, kerakli dastlabki to'lovni va lizing muddatini belgilang. Tanlangan mashina haqida bizga xabar berish va tranzaksiyani boshlash uchun dastlabki hisob-kitobdan so'ng biz bilan bog'laning.",
-      "calculator": "LIZING KALKULYATORI",
-      "calcTitle1": "Sotib olish qiymati",
-      "calcTitle2": "Dastlabki to'lov",
-      "calcTitle3": "Lizing muddati",
-      "text": "Kalkulyator orqali yuqoridagi hisob-kitoblar dastlabki hisoblanadi va taklif emas.",
-      "resultTitle1": "Lizing miqdori",
-      "resultTitle2": "Oylik to'lov"
-    },
-    "helpTitle": {
-      "title1": "Biz sizga tanlovda",
-      "title2": "yordam beramiz",
-      "text": "So'rov qoldiring va biz yordam beramiz. 2-3 daqiqada sizga maslahat beramiz lizing haqida va to'g'ri mahsulotni tanlang.",
-      "btnText": "Mahsulotni oling"
-    },
-    "services": {
-      "title": "«Ijara Leasing» xizmatlari",
-      "text": "Biznesingiz uchun taklifni tanlang",
-      "btnText": "Ekspress lizing"
-    },
-    "submit": {
-      "title": "Lizing uchun ariza qoldiring",
-      "text": "Shaklni to'ldiring va biz sizga imkon qadar tezroq qo'ng'iroq qilamiz",
-      "btnText": "Arizangizni yuboring"
-    },
-    "aboutLeasing": {
-      "title": "Lizing haqida",
-      "p1": {
-        "title": "Lizing",
-        "text": "yuridik shaxslar uchun shaxsiy avtomobil sotib olishning eng foydali usuli hisoblanadi."
-      },
-      "p2": {
-        "title": "Kichik depozit.",
-        "text": "Avtomobil lizingini depozitsiz yoki minimal depozit bilan sotib olish mumkin. Agar sizning kompaniyangiz kredit bo'yicha dastlabki to'lovga katta miqdorda sarmoya kiritishga tayyor bo'lmasa, bu qulay."
-      },
-      "p3": {
-        "title": "Soliq.",
-        "text": "Lizing sizga daromad solig'ini sezilarli darajada tejash imkonini beradi. Oylik to'lovlar (jumladan, mol-mulk va transport solig'i, sug'urta, avans to'lovi) xarajatlarga kiritilgan"
-      },
-      "p4": {
-        "title": "Maxsus takliflar.",
-        "text": "«Ijara Leasing» to'g'ridan-to'g'ri ishlab chiqaruvchilar bilan ishlaydi va ko'pincha boshqa kompaniyalar va avtosalonlarda mavjud bo'lmagan narxlarda transport vositalarini taklif qiladi."
-      },
-      "p5": {
-        "title": "Tez tozalash.",
-        "text": "Avtomobilni lizingga ro'yxatdan o'tkazish uchun siz katta hujjatlar to'plamini to'plashingiz shart emas, arizani tark etganingizdan so'ng, mashina bir necha kun ichida ishlashi va daromad keltirishi mumkin. Bunday holda, avtomobil lizing beruvchining balansiga o'tadi."
-      },
-      "p6": {
-        "title": "Kompleks xizmat.",
-        "text": "«Ijara Leasing» nafaqat avtomobil sotib olish uchun qulay shart-sharoitlarni taklif qiladi, balki uni sug'urta qilish uchun imtiyozli shartlarni ham taqdim etadi."
-      }
-    },
-    "q&a": {
-      "title": "SAVOL VA JAVOB",
-      "slider1": {
-        "title": "LIZING KREDITDAN QANDAY FARQI BO'LADI?",
-        "text": "Kredit bilan bank qarz oluvchiga pul o'tkazadi va lizing bilan - mulk. Avtomobilni naqd yoki kreditga sotib olsangiz, siz uning to'liq egasiga aylanasiz: mashinani sotish yoki sovg'a qilish mumkin. Lizingda lizing kompaniyasi mulkdor bo'lib qoladi. Lizing paytida bank mulkdor bo'lib qolishi sababli, lizing asosida mulkni olish osonroq va tezroq. Lizing uchun, muhim avans to'lash talab etilmaganligi sababli, ariza tezroq ko'rib chiqiladi."
-      },
-      "slider2": {
-        "title": "LIZINGNING AVTOZYATLARI QANDAY?",
-        "text": "Kredit bilan bank qarz oluvchiga pul o'tkazadi va lizing bilan - mulk. Avtomobilni naqd yoki kreditga sotib olsangiz, siz uning to'liq egasiga aylanasiz: mashinani sotish yoki sovg'a qilish mumkin. Lizingda lizing kompaniyasi mulkdor bo'lib qoladi. Lizing paytida bank mulkdor bo'lib qolishi sababli, lizing asosida mulkni olish osonroq va tezroq. Lizing uchun, muhim avans to'lash talab etilmaganligi sababli, ariza tezroq ko'rib chiqiladi."
-      }
-    },
-    "footer": {
-      "address": "Bizning manzil",
-      "location": "Yunusobod tumani",
-      "phone": "Telefon"
-    }
-  },
-  "clients": {
-    "title": "Mijozlar uchun",
-    "section1": {
-      "title": "Normativ hujjatlar",
-      "p1": "Ro'yxatdan o'tish guvohnomasi",
-      "p2": "Tashkilotlar va korxonalarning yagona davlat reestridan (EGRPO) kompaniya haqida ma'lumot",
-      "p3": "Direktorning buyrug'i",
-      "p4": "Ta'sischining IP 00O ljara Leasingni yaratish to'g'risidagi qarori"
-    },
-    "section2": {
-      "title": "Normativ hujjatlar",
-      "p1": "Ro'yxatdan o'tish guvohnomasi"
-    },
-    "section3": {
-      "title": "Sug'urta ishi",
-      "p1": "Da'volar bo'yicha hujjatlar ro'yxati",
-      "p2": "Sug'urta da'volarini ko'rib chiqish tartibi"
-    },
-    "section4": {
-      "title": "Lizing oluvchining ma'lumotlarini o'zgartirish",
-      "p1": "Lizing oluvchining rekvizitlari o'zgargan taqdirda, u kompaniyaning firma blankida rahbarning muhri va imzosi bilan tasdiqlangan rasmiy xat yuborish orqali Lizing beruvchini ushbu fakt to'g'risida xabardor qilishi shart.",
-      "p2": "Xatning asl nusxasi pochta orqali Yunusobod tumani, C-5, 78-uy, 13-uy manziliga yuboriladi. Xatning fotonusxasi elektron pochtaga yuboriladi."
-    },
-    "section5": {
-      "title": "Lizing shartnomasini ijara muddati oxirida bekor qilish",
-      "p1": "Lizing ob'ekti lizing shartnomasining amal qilish muddati tugagandan so'ng lizing oluvchining mulkiga o'tadi va lizing oluvchi alohida tuzilgan lizing ob'ektini sotib olish to'g'risidagi shartnomaga muvofiq Shartnoma bo'yicha o'zining barcha majburiyatlarini bajaradi. ijara shartnomasi muddati tugashining oxirgi kunida.",
-      "p2": "Lizing ob'ekti bo'yicha sotib olish shartnomasini tayyorlash faqat lizing oluvchining ijara shartnomasi bo'yicha qarzlari bo'lmagan taqdirdagina boshlanadi.",
-      "p3": "Hujjatlarni tayyorlash muddati 10 ish kunidan oshmaydi."
-    },
-    "section6": {
-      "title": "Lizing shartnomasini muddatidan oldin bekor qilish (erta sotib olish)",
-      "p1": "Alohida hollarda, lizing shartnomasini muddatidan oldin bekor qilish Lizing beruvchi Lizing oluvchi tomonidan ko'rsatilgan holatlarni ko'rib chiqqandan keyin amalga oshirilishi mumkin."
-    },
-    "requisities": {
-      "title": "Rekvizitlar",
-      "subtitle": "Bank rekvizitlari",
-      "p1": "Hisob-kitob schyoti (O‘zb.so‘m)",
-      "p2": "“Ipak yo‘li” АИКБ bank ma’lumotlari, Toshkent",
-      "p3": "Bank kodi 00444"
-    }
-  }
+	"company": "Kompaniya",
+	"leasing": "Lizing dasturlari",
+	"client": "Mijozlar uchun",
+	"contact": "Aloqa",
+	"langCheck": "Uz",
+	"hello": "uzbekcha salom",
+	"explainSection": {
+		"title": "Qanday qilib ijaraga olish mumkin",
+		"card1": "Ulovni tanlaysiz",
+		"card2": "Arizani to'ldiring lizingni moliyalashtirish uchun va uni ko'rib chiqish uchun yuboring.",
+		"card3": "Siz bitim uchun hujjatlar to'plamini imzolaysiz, garovni tuzasiz va avans to'laysiz",
+		"card4": "Shu paytdan boshlab lizing shartnomasi va oldi-sotdi shartnomasi kuchga kirgan deb hisoblanadi!"
+	},
+	"companyPage": {
+		"about": {
+			"title": "Kompaniya haqida",
+			"p1": " - mustaqil universal kompaniya. Biz har bir mijozning individual xususiyatlaridan kelib chiqib, barcha turdagi lizing xizmatlarini taqdim etamiz.",
+			"p2": " 1 yil lizing bozorida muvaffaqiyatli ishlaydi va faol rivojlanmoqda. Kompaniyaning bosh ofisi Toshkent shahrida joylashgan. «Ijara Leasing» mikro va kichik biznes segmentlaridagi mijozlari va hamkorlariga tez va muvaffaqiyatli o'sishiga yordam beradi. Kompaniya, shuningdek, o'rta, yirik va korporativ darajadagi korxonalarga yordam beradi.",
+			"p3": " - shaxsiy yondashuv va yuqori darajadagi xizmat ko‘rsatish orqali mijozlari bilan uzoq muddatli, o‘zaro manfaatli munosabatlar o‘rnatishga intiladi."
+		},
+		"mission": {
+			"title": "Bizning vazifamiz",
+			"p1": " - O‘zbekistondagi birinchi va yirik xorijiy lizing kompaniyalaridan biridir. Biz chorvachilik va tog‘-kon sanoatidan tortib farmatsevtika yoki IT kabi yuqori texnologiyali sohalargacha bo‘lgan mamlakat iqtisodiyotining barcha muhim tarmoqlaridagi kompaniyalarni faol ravishda moliyalashtiramiz. Har xil turdagi tijorat avtomobillari, qishloq xoʻjaligi va maxsus qurilish texnikasi, shuningdek, turli ishlab chiqarish va boshqa jihozlarni lizingga berish faoliyatimizning ustuvor yoʻnalishlari hisoblanadi."
+		},
+		"card1": {
+			"title": "Top 20",
+			"text": "Lizinglar orasida O'zbekiston kompaniyalari"
+		},
+		"card2": {
+			"title": "5 mln",
+			"text": "AQSH dollari kapital"
+		},
+		"card3": {
+			"title": "21 mln",
+			"text": "AQSH dollari Loyihalar qiymati"
+		}
+	},
+	"contactPage": {
+		"contact": {
+			"title": "Kontaktlar",
+			"address": "Manzil",
+			"phone": "Telefon",
+			"location": "Toshkent shahar Yunusobod tumani, Ц-5, д.78, кв.13",
+			"tel": "Tel"
+		},
+		"map": {
+			"title": "Xarita"
+		}
+	},
+	"leasingPage": {
+		"header": {
+			"title": "Ekspress lizing",
+			"p1": "Lizing mahsulotlarini keng ommaga taqdim etish maqsadida “Ijara Leasing” MChJ tadbirkorlar davrasiga ILK MARTA O‘zbekistonda yangi mahsulot – Ekspress lizing yo‘lga qo‘yildi qurilish uchun maxsus uskunalar.",
+			"button1": "Lizing dasturlari",
+			"button2": "Ekspress lizing"
+		},
+		"cards": {
+			"card1": "oylik ijara muddati",
+			"card2": "minimal to'lov",
+			"card3": "qimmatlashish darajasi",
+			"card4": "tekshirish komissiyasi"
+		}
+	},
+	"requisites": {
+		"title": "Rekvizitlar",
+		"section1": {
+			"title": "Kompaniya nomi",
+			"text": "«Ijara Leasing» MChJ – «Ijara Leasing» mas’uliyati cheklangan jamiyati"
+		},
+		"section2": {
+			"title": "Manzil",
+			"text": "Toshkent shahri, Yunusobod tumani, Qashqar massivi, Ц-5, д.78, кв.13 Tel"
+		},
+		"section3": {
+			"title": "Bank rekvizitlari:",
+			"text": "Hisob raqami (UZS): 20208000805354860001; Bank ma'lumotlari: AYKB \"Ipak Yo'li\", Toshkent shahri; Bankning kod raqami: 00444; STIR: 308234550"
+		}
+	},
+	"programs": {
+		"title": "Lizing dasturlari",
+		"p1": "Kredit berishga muqobil sifatida Lizing har qanday tadbirkorlik faoliyatini tashkil etish va rivojlantirishda jiddiy moliyalashtirish vositasi hisoblanadi. IJARA LEASING",
+		"p2": "Har yili IJARA LEASING o'sish va rivojlanishga yo'naltirilgan mijozlar soni ortib borayotganiga ishonch bag'ishlaydi. Birgina so‘nggi 2 yil ichida portfelimizdagi lizing oluvchilar soni ikki baravar ko‘paydi. Lizing mahalliy ishlab chiqaruvchilar, savdo va transport korxonalari, soha yetakchilari va kichik o‘yinchilarga o‘zlariga ishonish va faoliyat ko‘lamini yangi bosqichga olib chiqish imkonini beradi.",
+		"p3": "Lizing - bu sizning moliyaviy oqimlaringizni rejalashtirilgan boshqarish. Siz lizing shartnomasining amal qilish muddati davomida biznesingizni to'g'ri byudjetlashtirasiz va oylik (choraklik) teng to'lovlarni nazarda tutuvchi lizing shartnomasi hisob-kitob sxemasi tufayli pul oqimlarini boshqarasiz.",
+		"p4": "Lizingga olingan uskunalar (lizing ob'ekti) nafaqat o'zini to'laydi, balki sizning daromadingizni sezilarli darajada oshirish imkonini beradi."
+	},
+	"home": {
+		"hero": {
+			"title1": "Foydali lizing ",
+			"title2": "yengil mashina",
+			"text": "Ishonchli milliy kompaniyadan, keraksiz hujjatlar va qo'shimcha ovoragarchiliklarsiz",
+			"btnText1": "Takliflarni ko'ring",
+			"btnText2": "Arizangizni yuboring",
+			"category1": "Tez hujjatlar",
+			"category2": "Foydali shartlar",
+			"category3": "Ishlab chiqaruvchilardan chegirmalar"
+		},
+		"calculate": {
+			"title": "Lizing narxini hisoblang",
+			"subtitle": "Tanlangan avtomobilning narxini, kerakli dastlabki to'lovni va lizing muddatini belgilang. Tanlangan mashina haqida bizga xabar berish va tranzaksiyani boshlash uchun dastlabki hisob-kitobdan so'ng biz bilan bog'laning.",
+			"calculator": "LIZING KALKULYATORI",
+			"calcTitle1": "Sotib olish qiymati",
+			"calcTitle2": "Dastlabki to'lov",
+			"calcTitle3": "Lizing muddati",
+			"text": "Kalkulyator orqali yuqoridagi hisob-kitoblar dastlabki hisoblanadi va taklif emas.",
+			"resultTitle1": "Lizing miqdori",
+			"resultTitle2": "Oylik to'lov"
+		},
+		"helpTitle": {
+			"title1": "Biz sizga tanlovda",
+			"title2": "yordam beramiz",
+			"text": "So'rov qoldiring va biz yordam beramiz. 2-3 daqiqada sizga maslahat beramiz lizing haqida va to'g'ri mahsulotni tanlang.",
+			"btnText": "Mahsulotni oling"
+		},
+		"services": {
+			"title": "«Ijara Leasing» xizmatlari",
+			"text": "Biznesingiz uchun taklifni tanlang",
+			"btnText": "Ekspress lizing"
+		},
+		"submit": {
+			"title": "Lizing uchun ariza qoldiring",
+			"text": "Shaklni to'ldiring va biz sizga imkon qadar tezroq qo'ng'iroq qilamiz",
+			"btnText": "Arizangizni yuboring"
+		},
+		"aboutLeasing": {
+			"title": "Lizing haqida",
+			"p1": {
+				"title": "Lizing",
+				"text": "yuridik shaxslar uchun shaxsiy avtomobil sotib olishning eng foydali usuli hisoblanadi."
+			},
+			"p2": {
+				"title": "Kichik depozit.",
+				"text": "Avtomobil lizingini depozitsiz yoki minimal depozit bilan sotib olish mumkin. Agar sizning kompaniyangiz kredit bo'yicha dastlabki to'lovga katta miqdorda sarmoya kiritishga tayyor bo'lmasa, bu qulay."
+			},
+			"p3": {
+				"title": "Soliq.",
+				"text": "Lizing sizga daromad solig'ini sezilarli darajada tejash imkonini beradi. Oylik to'lovlar (jumladan, mol-mulk va transport solig'i, sug'urta, avans to'lovi) xarajatlarga kiritilgan"
+			},
+			"p4": {
+				"title": "Maxsus takliflar.",
+				"text": "«Ijara Leasing» to'g'ridan-to'g'ri ishlab chiqaruvchilar bilan ishlaydi va ko'pincha boshqa kompaniyalar va avtosalonlarda mavjud bo'lmagan narxlarda transport vositalarini taklif qiladi."
+			},
+			"p5": {
+				"title": "Tez tozalash.",
+				"text": "Avtomobilni lizingga ro'yxatdan o'tkazish uchun siz katta hujjatlar to'plamini to'plashingiz shart emas, arizani tark etganingizdan so'ng, mashina bir necha kun ichida ishlashi va daromad keltirishi mumkin. Bunday holda, avtomobil lizing beruvchining balansiga o'tadi."
+			},
+			"p6": {
+				"title": "Kompleks xizmat.",
+				"text": "«Ijara Leasing» nafaqat avtomobil sotib olish uchun qulay shart-sharoitlarni taklif qiladi, balki uni sug'urta qilish uchun imtiyozli shartlarni ham taqdim etadi."
+			}
+		},
+		"q&a": {
+			"title": "SAVOL VA JAVOB",
+			"slider1": {
+				"title": "LIZING KREDITDAN QANDAY FARQI BO'LADI?",
+				"text": "Kredit bilan bank qarz oluvchiga pul o'tkazadi va lizing bilan - mulk. Avtomobilni naqd yoki kreditga sotib olsangiz, siz uning to'liq egasiga aylanasiz: mashinani sotish yoki sovg'a qilish mumkin. Lizingda lizing kompaniyasi mulkdor bo'lib qoladi. Lizing paytida bank mulkdor bo'lib qolishi sababli, lizing asosida mulkni olish osonroq va tezroq. Lizing uchun, muhim avans to'lash talab etilmaganligi sababli, ariza tezroq ko'rib chiqiladi."
+			},
+			"slider2": {
+				"title": "LIZINGNING AVTOZYATLARI QANDAY?",
+				"text": "Kredit bilan bank qarz oluvchiga pul o'tkazadi va lizing bilan - mulk. Avtomobilni naqd yoki kreditga sotib olsangiz, siz uning to'liq egasiga aylanasiz: mashinani sotish yoki sovg'a qilish mumkin. Lizingda lizing kompaniyasi mulkdor bo'lib qoladi. Lizing paytida bank mulkdor bo'lib qolishi sababli, lizing asosida mulkni olish osonroq va tezroq. Lizing uchun, muhim avans to'lash talab etilmaganligi sababli, ariza tezroq ko'rib chiqiladi."
+			}
+		},
+		"footer": {
+			"address": "Bizning manzil",
+			"location": "Yunusobod tumani",
+			"phone": "Telefon"
+		}
+	},
+	"clients": {
+		"title": "Mijozlar uchun",
+		"section1": {
+			"title": "Normativ hujjatlar",
+			"p1": "Ro'yxatdan o'tish guvohnomasi",
+			"p2": "Tashkilotlar va korxonalarning yagona davlat reestridan (EGRPO) kompaniya haqida ma'lumot",
+			"p3": "Direktorning buyrug'i",
+			"p4": "Ta'sischining IP 00O ljara Leasingni yaratish to'g'risidagi qarori"
+		},
+		"section2": {
+			"title": "Normativ hujjatlar",
+			"p1": "Ro'yxatdan o'tish guvohnomasi"
+		},
+		"section3": {
+			"title": "Sug'urta ishi",
+			"p1": "Da'volar bo'yicha hujjatlar ro'yxati",
+			"p2": "Sug'urta da'volarini ko'rib chiqish tartibi"
+		},
+		"section4": {
+			"title": "Lizing oluvchining ma'lumotlarini o'zgartirish",
+			"p1": "Lizing oluvchining rekvizitlari o'zgargan taqdirda, u kompaniyaning firma blankida rahbarning muhri va imzosi bilan tasdiqlangan rasmiy xat yuborish orqali Lizing beruvchini ushbu fakt to'g'risida xabardor qilishi shart.",
+			"p2": "Xatning asl nusxasi pochta orqali Yunusobod tumani, C-5, 78-uy, 13-uy manziliga yuboriladi. Xatning fotonusxasi elektron pochtaga yuboriladi."
+		},
+		"section5": {
+			"title": "Lizing shartnomasini ijara muddati oxirida bekor qilish",
+			"p1": "Lizing ob'ekti lizing shartnomasining amal qilish muddati tugagandan so'ng lizing oluvchining mulkiga o'tadi va lizing oluvchi alohida tuzilgan lizing ob'ektini sotib olish to'g'risidagi shartnomaga muvofiq Shartnoma bo'yicha o'zining barcha majburiyatlarini bajaradi. ijara shartnomasi muddati tugashining oxirgi kunida.",
+			"p2": "Lizing ob'ekti bo'yicha sotib olish shartnomasini tayyorlash faqat lizing oluvchining ijara shartnomasi bo'yicha qarzlari bo'lmagan taqdirdagina boshlanadi.",
+			"p3": "Hujjatlarni tayyorlash muddati 10 ish kunidan oshmaydi."
+		},
+		"section6": {
+			"title": "Lizing shartnomasini muddatidan oldin bekor qilish (erta sotib olish)",
+			"p1": "Alohida hollarda, lizing shartnomasini muddatidan oldin bekor qilish Lizing beruvchi Lizing oluvchi tomonidan ko'rsatilgan holatlarni ko'rib chiqqandan keyin amalga oshirilishi mumkin."
+		},
+		"requisities": {
+			"title": "Rekvizitlar",
+			"subtitle": "Bank rekvizitlari",
+			"p1": "Hisob-kitob schyoti (O‘zb.so‘m)",
+			"p2": "“Ipak yo‘li” АИКБ bank ma’lumotlari, Toshkent",
+			"p3": "Bank kodi 00444"
+		}
+	},
+	"modal": {
+		"submitTitle": "Umumiy ma'lumotni to'ldiring",
+		"submitDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, illo.",
+		"submitPhone": "F.I.O",
+		"submitPrice": "Yuridik shaxsning STIR",
+		"submitProduct": "Qo'l telefoningiz",
+		"submitComments": "Elektron manzilingiz",
+		"modalAgree": "Men shaxsiy ma'lumotlarni",
+		"modalAgreeLink": "qayta ishlash shartlariga roziman"
+	}
 }

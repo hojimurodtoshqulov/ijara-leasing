@@ -2,11 +2,22 @@ import React, { useState } from "react";
 import Button from "../button/button";
 import "./submit.scss";
 import { useTranslation } from "react-i18next";
+import { message } from "antd";
 import axios from "axios";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const Submit = ({ onClose, success }) => {
 	const { t } = useTranslation();
+	const [agree, setAgree] = useState(false);
+	const [messageApi, contextHolder] = message.useMessage();
+
+	const errorAlert = () => {
+		messageApi.open({
+			type: "error",
+			content: "Barcha qiymatlarni kiriting",
+		});
+	};
+
 	success = () =>
 		toast.success(t("submitSuccess"), {
 			position: "top-right",
@@ -31,32 +42,32 @@ const Submit = ({ onClose, success }) => {
 		setData(newData);
 		console.log(newData);
 	}
+
+	const isValid = () => {
+		return Boolean(data.comment && data.phone && data.price && data.product);
+	};
 	const submit = async (e) => {
 		e.preventDefault();
-		// await axios
-		// 	.post(url, {
-		// 		phone: data.phone,
-		// 		price: data.price,
-		// 		product: data.product,
-		// 		comment: data.comment,
-		// 	})
-		// 	.then((res) => {
-		// 		console.log(res.data);
-		// 	});
-		setData({
-			phone: "",
-			price: "",
-			product: "",
-			comment: "",
-		});
-		setOpenModal(false);
-		onClose(openModal);
+		if (isValid() && agree) {
+			setData({
+				phone: "",
+				price: "",
+				product: "",
+				comment: "",
+			});
+			setOpenModal(false);
+			onClose(openModal);
+			success();
+		} else {
+			errorAlert();
+		}
 	};
 	return (
 		<>
+			{contextHolder}
 			<div className="submit">
-				<h2>{t("submitTitle")}</h2>
-				<p>{t("submitDescription")}</p>
+				<h2>{t("modal.submitTitle")}</h2>
+				<p>{t("modal.submitDescription")}</p>
 				<form action="" className="form" onSubmit={(e) => submit(e)}>
 					<input
 						className="input-tell form-control"
@@ -64,7 +75,7 @@ const Submit = ({ onClose, success }) => {
 						id="phone"
 						value={data.phone}
 						type="text"
-						placeholder={t("submitPhone")}
+						placeholder={t("modal.submitPhone")}
 						required
 					/>
 					{/* {console.log("data phone ----> ", data.phone)} */}
@@ -74,7 +85,7 @@ const Submit = ({ onClose, success }) => {
 						id="price"
 						value={data.price}
 						type="text"
-						placeholder={t("submitPrice")}
+						placeholder={t("modal.submitPrice")}
 						required
 					/>
 					<input
@@ -83,27 +94,41 @@ const Submit = ({ onClose, success }) => {
 						id="product"
 						value={data.product}
 						type="text"
-						placeholder={t("submitProduct")}
+						placeholder={t("modal.submitProduct")}
 						required
 					/>
-					<textarea
+					<input
+						className="input-name form-control"
 						onChange={(e) => handle(e)}
 						id="comment"
 						value={data.comment}
 						name=""
 						cols="50"
 						rows="1"
-						placeholder={t("submitComments")}
-					></textarea>
-					<span
-						onClick={
-							(data.phone && data.price && data.product) ||
-							(data.phone && data.price && data.product && data.comment) !== ""
-								? success
-								: null
-						}
-					>
-						<Button btnTitle={t("submitTitle")} />
+						placeholder={t("modal.submitComments")}
+						required
+					/>
+					<label htmlFor="check">
+						<input
+							value={agree}
+							onChange={() => {
+								console.log("check>>");
+								setAgree((prev) => !prev);
+							}}
+							type="checkbox"
+							placeholder="bla bla"
+							id="check"
+							required
+						/>
+						{t("modal.modalAgree")}
+						<a className="link" href="#" target="_blank">
+							{t("modal.modalAgreeLink")}
+						</a>
+					</label>
+					<span>
+						<span onClick={submit}>
+							<Button btnTitle={t("submitTitle")} />
+						</span>
 					</span>
 				</form>
 			</div>

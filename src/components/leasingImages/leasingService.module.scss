@@ -79,3 +79,62 @@
 		}
 	}
 }
+@media (min-width: $xxl) {
+	.main {
+		display: flex;
+		align-items: center;
+		gap: 60px;
+		padding: 1.5rem;
+		.imgWrap {
+			position: relative;
+			width: 50%;
+			aspect-ratio: 1 / 1;
+			img {
+				position: absolute;
+				top: 0;
+				right: 0;
+				display: block;
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+				z-index: 5;
+			}
+			&::after {
+				display: inline-block;
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				height: 100%;
+				width: 100%;
+				border: 3px solid #319ba1;
+				content: "";
+			}
+		}
+		.content {
+			width: 60%;
+			color: #fff;
+			h1 {
+				font-size: 3.3rem;
+				position: relative;
+				z-index: 10;
+				margin-bottom: 2.5rem;
+
+				&::after {
+					display: inline-block;
+					position: absolute;
+					bottom: 10px;
+					left: 0;
+					background: #319ba1;
+					content: "";
+					height: 15px;
+					width: 85px;
+					z-index: -1;
+				}
+			}
+			p {
+				line-height: 140%;
+				font-size: 35px;
+			}
+		}
+	}
+}
