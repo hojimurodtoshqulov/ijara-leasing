@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 import { AiFillCaretDown } from "react-icons/ai";
 import Button from "../button/button";
 const Nav = ({ onClick }) => {
-  const [navSize, setnavSize] = useState("100px");
+  const [navSize, setnavSize] = useState("12vh");
   const [navColorBg, setnavColorBg] = useState("transparent");
   const [navLogoFSZ, setNavLogoFSZ] = useState("20px");
   const [navContainerBR, setNavContainerBR] = useState("2px solid #fff");
@@ -15,7 +15,7 @@ const Nav = ({ onClick }) => {
     window.scrollY > 80
       ? setnavColorBg("#0e0e12f0")
       : setnavColorBg("transparent");
-    window.scrollY > 80 ? setnavSize("80px") : setnavSize("110px");
+    window.scrollY > 80 ? setnavSize("10vh") : setnavSize("13vh");
     window.scrollY > 80 ? setNavLogoFSZ("15px") : setNavLogoFSZ("20px");
     window.scrollY > 80
       ? setNavContainerBR("2px solid #ff00")
