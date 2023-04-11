@@ -1,172 +1,172 @@
 @import "../../scss/varuables.scss";
 .footer {
-  background: $dark;
-  &__row1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 5% 0;
-    &_group {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      &:nth-child(1) {
-        margin-bottom: 1rem;
-      }
-    }
-    &_line {
-      width: 2px;
-      height: 200px;
-      border-radius: 50%;
-      background: linear-gradient(to bottom, #319ba131, #319ba1, #319ba131);
-    }
-    &_col1 {
-      width: 30%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 1.5rem;
-      &_logo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-        img {
-          width: 30%;
-        }
-      }
-      &_imgDiv {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 1rem;
-        &_img {
-          width: 50px;
-          height: 50px;
-          border-radius: $br_r_5;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background: $light;
-          color: $primary;
-          font-size: 1.2rem;
-          transition: 0.1s !important;
-          &:hover {
-            color: $light;
-            background: $primary;
-          }
-        }
-      }
-    }
-    &_col2 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-      text-align: center;
-      a {
-        font-size: 20px;
-        font-family: $font_titles;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        &:hover {
-          // color: $light;
-          p {
-            width: 100%;
-            border-bottom: 3px solid $primary;
-            opacity: 1;
-          }
-        }
-        span {
-          color: $primary;
-        }
-        p {
-          transition: 0.6s;
-          opacity: 0;
-          width: 1%;
-          height: 0;
-          border-bottom: 3px solid $primary;
-        }
-      }
-    }
-    &_col3 {
-      width: 30%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 1rem;
-      text-align: start;
-      h1 {
-        font-size: 20px;
-        font-family: $font_titles;
-        font-weight: 400;
-      }
-      p {
-        font-size: 17px;
-        font-family: $font_texts;
-        a {
-          display: block;
-          font-size: 17px;
-          font-family: $font_texts;
-          margin-bottom: 0.4rem;
-        }
-      }
-    }
+	background: $dark;
+	&__row1 {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 20px;
+		padding: 5% 0;
+		&_group {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			&:nth-child(1) {
+				margin-bottom: 1rem;
+			}
+		}
+		&_line {
+			width: 2px;
+			height: 200px;
+			border-radius: 50%;
+			background: linear-gradient(to bottom, #319ba131, #319ba1, #319ba131);
+		}
+		&_col1 {
+			width: 30%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 1.5rem;
+			&_logo {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 0.5rem;
+				img {
+					width: 30%;
+				}
+			}
+			&_imgDiv {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 1rem;
+				&_img {
+					width: 50px;
+					height: 50px;
+					border-radius: $br_r_5;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					background: $light;
+					color: $primary;
+					font-size: 1.2rem;
+					transition: 0.1s !important;
+					&:hover {
+						color: $light;
+						background: $primary;
+					}
+				}
+			}
+		}
+		&_col2 {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 1rem;
+			text-align: center;
+			a {
+				font-size: 20px;
+				font-family: $font_titles;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				&:hover {
+					// color: $light;
+					p {
+						width: 100%;
+						border-bottom: 3px solid $primary;
+						opacity: 1;
+					}
+				}
+				span {
+					color: $primary;
+				}
+				p {
+					transition: 0.6s;
+					opacity: 0;
+					width: 1%;
+					height: 0;
+					border-bottom: 3px solid $primary;
+				}
+			}
+		}
+		&_col3 {
+			width: 30%;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 1rem;
+			text-align: start;
+			h1 {
+				font-size: 20px;
+				font-family: $font_titles;
+				font-weight: 400;
+			}
+			p {
+				font-size: 17px;
+				font-family: $font_texts;
+				a {
+					display: block;
+					font-size: 17px;
+					font-family: $font_texts;
+					margin-bottom: 0.4rem;
+				}
+			}
+		}
 
-    @media (max-width: $xl) {
-      flex-wrap: wrap;
-      &_line:nth-child(2) {
-        display: none;
-      }
+		@media (max-width: $xl) {
+			flex-wrap: wrap;
+			&_line:nth-child(2) {
+				display: none;
+			}
 
-      &_col1 {
-        width: 100%;
+			&_col1 {
+				width: 100%;
 
-        img {
-          max-width: 100px;
-        }
-      }
-      &_col2,
-      &_col3 {
-        width: 45%;
-        text-align: center;
-      }
+				img {
+					max-width: 100px;
+				}
+			}
+			&_col2,
+			&_col3 {
+				width: 45%;
+				text-align: center;
+			}
 
-      &_col3 {
-        align-items: center;
-      }
-    }
+			&_col3 {
+				align-items: center;
+			}
+		}
 
-    @media (max-width: $md) {
-      padding: 2rem 0;
-      &_line:nth-child(4) {
-        display: none;
-      }
+		@media (max-width: $md) {
+			padding: 2rem 0;
+			&_line:nth-child(4) {
+				display: none;
+			}
 
-      gap: 4rem;
+			gap: 4rem;
 
-      &_col1,
-      &_col2,
-      &_col3 {
-        width: 100%;
-      }
-    }
-  }
-  &__row2 {
-    border-top: 1px solid $grey;
-    text-align: center;
-    padding: 1.2% 0;
-    p {
-      font-size: 16px;
-      font-family: $font_titles;
-      a {
-        color: $primary;
-      }
-    }
-  }
+			&_col1,
+			&_col2,
+			&_col3 {
+				width: 100%;
+			}
+		}
+	}
+	&__row2 {
+		border-top: 1px solid $grey;
+		text-align: center;
+		padding: 1.2% 0;
+		p {
+			font-size: 16px;
+			font-family: $font_titles;
+			a {
+				color: $primary;
+			}
+		}
+	}
 }
 
 @media (max-width: $md) {

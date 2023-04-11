@@ -16,7 +16,11 @@ const Footer = () => {
 			<div className="container">
 				<div className={scss.footer__row1}>
 					<div className={scss.footer__row1_col1}>
-						<Link to="/" className={scss.footer__row1_col1_logo}>
+						<Link
+							to="/"
+							className={scss.footer__row1_col1_logo}
+							onClick={scrollToTop}
+						>
 							<img src={logo} alt="" />
 							<h2>ijara leasing</h2>
 						</Link>
