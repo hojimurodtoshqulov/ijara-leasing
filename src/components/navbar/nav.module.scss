@@ -81,7 +81,6 @@
 					border-bottom: 3px solid $primary;
 				}
 			}
-
 			.dropdown {
 				position: relative;
 				transition: 0.3s;
@@ -104,10 +103,9 @@
 					}
 				}
 				&Items {
+					min-width: max-content;
 					border: 2px solid $primary;
-
 					transition: 0.5s;
-					//   display: none;
 					position: absolute;
 					top: calc(-200% + 10px);
 					left: 0;

@@ -229,6 +229,7 @@
 		"submitProduct": "Qo'l telefoningiz",
 		"submitComments": "Elektron manzilingiz",
 		"modalAgree": "Men shaxsiy ma'lumotlarni",
-		"modalAgreeLink": "qayta ishlash shartlariga roziman"
+		"modalAgreeLink": "qayta ishlash shartlariga roziman",
+		"submitSucces": "Arizangiz muvaffaqiyatli yuborildi!"
 	}
 }
