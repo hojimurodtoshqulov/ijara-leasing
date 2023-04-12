@@ -467,7 +467,7 @@
 		padding-bottom: 20%;
 		&__titles {
 			text-align: center;
-			width: 80%;
+			width: 100%;
 			margin: 0 auto;
 			display: flex;
 			flex-direction: column;
@@ -513,6 +513,7 @@
 					p {
 						position: relative;
 						z-index: 1;
+						
 					}
 					span {
 						height: 10px;
@@ -640,7 +641,7 @@
 					bottom: -19%;
 					left: 0;
 					z-index: 123;
-					font-size: 14px;
+					font-size: 15px;
 					text-align: center;
 				}
 			}

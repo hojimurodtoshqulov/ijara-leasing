@@ -8,7 +8,7 @@
 	background: $bg;
 	padding: 5% 0;
 	h1 {
-		font-size: 2.5rem;
+		font-size: 50px;
 		font-family: $font_titles;
 		margin: 2% 0 2% 0.5%;
 		position: relative;
@@ -27,6 +27,9 @@
 			z-index: 0;
 		}
 	}
+	.mapDiv {
+		z-index: 12;
+	}
 	&__div {
 		position: relative;
 		z-index: 12;
@@ -37,7 +40,7 @@
 @media (min-width: $xxl) {
 	.map {
 		h2 {
-			font-size: 3rem;
+			font-size: 80px;
 		}
 		iframe {
 			height: 600px;
@@ -54,8 +57,8 @@
 }
 @media (max-width: $xl) {
 	.map {
-		h2 {
-			font-size: 2.4em;
+		h1 {
+			font-size: 40px;
 		}
 		iframe {
 			height: 400px;
@@ -65,7 +68,10 @@
 @media (max-width: $md) {
 	.map {
 		h1 {
-			font-size: 2.2em;
+			font-size: 25px;
+			p {
+				font-size: 25px;
+			}
 		}
 		iframe {
 			height: 350px;
@@ -76,7 +82,11 @@
 @media (max-width: $sm) {
 	.map {
 		h1 {
-			font-size: 1.8em;
+			font-size: 25px;
+
+			p {
+				font-size: 25px;
+			}
 			span {
 				height: 7px;
 				width: 50%;

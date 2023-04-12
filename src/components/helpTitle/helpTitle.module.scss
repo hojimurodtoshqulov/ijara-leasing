@@ -1,124 +1,127 @@
 @import "../../scss/varuables.scss";
 
 .helpTitleDiv {
-  background: $bg;
-  padding: 10% 0;
-  .helpTitle {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 90px;
+	background: $bg;
+	padding: 10% 0;
+	.helpTitle {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 90px;
 
-    @media (max-width: $xl) {
-      flex-direction: column;
-      align-items: center;
+		@media (max-width: $xl) {
+			flex-direction: column;
+			align-items: center;
 
-      & > h1 {
-        width: 100%;
-        text-align: center;
+			& > h1 {
+				width: 100%;
+				text-align: center;
 
-        @media (max-width: $md) {
-          p {
-            font-size: 25px;
-          }
-          span {
-            display: none;
-          }
-        }
-        br {
-          display: none;
-        }
-      }
+				@media (max-width: $md) {
+					p {
+						font-size: 25px;
+					}
+					span {
+						display: none;
+					}
+				}
+				br {
+					display: none;
+				}
+			}
 
-      .helpTitle__elements_row1 > div {
-        display: none !important;
-      }
+			.helpTitle__elements_row1 > div {
+				display: none !important;
+			}
 
-      .helpTitle__elements_row1 {
-        @media (max-width: $md) {
-          height: auto;
-          p {
-            font-size: 12px;
-            text-align: center;
-          }
-        }
-      }
-      .helpTitle__elements {
-        gap: 2rem;
-        width: 100%;
-        align-items: center;
-      }
-    }
+			.helpTitle__elements_row1 {
+				@media (max-width: $md) {
+					height: auto;
+					p {
+						font-size: 15px;
+						text-align: center;
+					}
+				}
+			}
+			.helpTitle__elements {
+				gap: 2rem;
+				width: 100%;
+				align-items: center;
+			}
+		}
 
-    @media (max-width: $md) {
-      gap: 1rem;
-    }
-    h1 {
-      font-size: 50px;
-      font-family: $font_titles;
-      line-height: 50px;
-      position: relative;
-      z-index: 12;
-      p {
-        position: relative;
-        z-index: 1;
-      }
-      span {
-        width: 100px;
-        height: 15px;
-        background: $primary;
-        position: absolute;
-        top: 35%;
-        left: 0;
-        z-index: 0;
-      }
+		@media (max-width: $md) {
+			gap: 1rem;
+		}
+		h1 {
+			font-size: 50px;
+			font-family: $font_titles;
+			line-height: 50px;
+			position: relative;
+			z-index: 12;
+			p {
+				position: relative;
+				z-index: 1;
+			}
+			span {
+				width: 100px;
+				height: 15px;
+				background: $primary;
+				position: absolute;
+				top: 35%;
+				left: 0;
+				z-index: 0;
+			}
 
-      @media (min-width: $xxl) {
-        font-size: 70px;
-        line-height: 70px;
-      }
-    }
-    &__elements {
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
-      gap: 1rem;
-      &_row1 {
-        height: 112px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 23px;
-        div {
-          height: 112px;
-          width: 2px;
-          background: linear-gradient(to bottom, #319ba11d, #319ba1, #319ba11d);
-          border-radius: 50%;
-        }
-        p {
-          font-size: 25px;
-          font-family: $font_texts;
-        }
-      }
-      &_btn {
-        width: 292px;
-        height: 74px;
-        button {
-          font-size: 25px;
-        }
+			@media (min-width: $xxl) {
+				font-size: 70px;
+				line-height: 70px;
+			}
+		}
+		&__elements {
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+			gap: 1rem;
+			&_row1 {
+				height: 112px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 23px;
+				div {
+					height: 112px;
+					width: 2px;
+					background: linear-gradient(to bottom, #319ba11d, #319ba1, #319ba11d);
+					border-radius: 50%;
+				}
+				p {
+					font-size: 25px;
+					font-family: $font_texts;
+					@media (max-width: $md) {
+						font-size: 15px;
+					}
+				}
+			}
+			&_btn {
+				width: 292px;
+				height: 74px;
+				button {
+					font-size: 25px;
+				}
 
-        @media (max-width: $md) {
-          width: 302px;
-          height: 54px;
-          button {
-            font-size: 16px;
-          }
-        }
-      }
-    }
-  }
+				@media (max-width: $md) {
+					width: 302px;
+					height: 54px;
+					button {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: $xl) {

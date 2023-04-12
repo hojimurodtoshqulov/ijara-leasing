@@ -38,7 +38,6 @@ const Home = () => {
 				<AboutLeasing />
 				<Ques_ans />
 				<Location />
-				{/* <Footer /> */}
 			</div>
 			<div className="success">
 				<ToastContainer

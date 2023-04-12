@@ -1,104 +1,137 @@
 @import "../../scss/varuables.scss";
 
 .submit {
-  position: relative;
-  z-index: 12s;
-  width: 100%;
-  height: 331px;
+	position: relative;
+	z-index: 12s;
+	width: 100%;
+	height: 331px;
+	background-image: url("../../media/Group249.png");
+	background-position: center;
+	background-size: cover;
+	&__elements {
+		height: 331px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		gap: 2rem;
+		h1 {
+			font-family: $font_titles;
+			font-size: 50px;
 
-  background-image: url("../../media/Group249.png");
-  background-position: center;
-  background-size: cover;
-  &__elements {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 2rem;
-    h1 {
-      font-family: $font_titles;
-      font-size: 50px;
+			@media (min-width: $xxl) {
+				font-size: 70px;
+			}
 
-      @media (min-width: $xxl) {
-        font-size: 70px;
-      }
+			@media (max-width: $md) {
+				font-size: 40px;
+				text-align: center;
+			}
 
-      @media (max-width: $md) {
-        font-size: 40px;
-      }
+			@media (max-width: $sm) {
+				font-size: 24px;
+			}
+		}
+		p {
+			font-family: $font_texts;
+			font-size: 25px;
 
-      @media (max-width: $sm) {
-        font-size: 24px;
-      }
-    }
-    p {
-      font-family: $font_texts;
-      font-size: 25px;
+			@media (max-width: $md) {
+				font-size: 16px;
+				text-align: center;
+			}
 
-      @media (max-width: $md) {
-        font-size: 16px;
-      }
+			@media (max-width: $sm) {
+				font-size: 15px;
+			}
+		}
+		&_btn {
+			width: 300px;
+			height: 74px;
+			button {
+				font-size: 25px;
+			}
 
-      @media (max-width: $sm) {
-        font-size: 12px;
-      }
-    }
-    &_btn {
-      width: 300px;
-      height: 74px;
-      button {
-        font-size: 25px;
-      }
-
-      @media (max-width: $md) {
-        width: 302px;
-        height: 54px;
-        button {
-          font-size: 16px;
-        }
-      }
-    }
-  }
-  &__lightLeft {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background: #e1fdff;
-    box-shadow: 0 0 80px 50px #e1fdff;
-    position: absolute;
-    top: 51.2%;
-    left: 35.6%;
-    opacity: 0;
-    transition: 0.3s;
-  }
-  &__lightRight {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background: #e1fdff;
-    box-shadow: 0 0 80px 50px #e1fdff;
-    position: absolute;
-    top: 51%;
-    right: 32.3%;
-    opacity: 0;
-    transition: 0.3s;
-  }
+			@media (max-width: $md) {
+				width: 302px;
+				height: 54px;
+				button {
+					font-size: 16px;
+				}
+			}
+		}
+		@media (max-width: $md) {
+			gap: 1rem;
+			height: 200px;
+			padding: 5% 0;
+		}
+	}
+	&__lightLeft {
+		width: 35px;
+		height: 35px;
+		border-radius: 50%;
+		background: #e1fdff;
+		box-shadow: 0 0 80px 50px #e1fdff;
+		position: absolute;
+		top: 51.2%;
+		left: 35.6%;
+		opacity: 0;
+		transition: 0.3s;
+		@media (max-width: $md) {
+			width: 35px;
+			height: 35px;
+			border-radius: 50%;
+			background: #e1fdff;
+			box-shadow: 0 0 80px 50px #e1fdff;
+			position: absolute;
+			top: 51.2%;
+			left: 9.6%;
+			opacity: 0;
+			transition: 0.3s;
+		}
+	}
+	&__lightRight {
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background: #e1fdff;
+		box-shadow: 0 0 50px 30px #e1fdff;
+		position: absolute;
+		top: 51%;
+		right: 32.3%;
+		opacity: 0;
+		transition: 0.3s;
+		@media (max-width: $md) {
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			background: #e1fdff;
+			box-shadow: 0 0 50px 30px #e1fdff;
+			position: absolute;
+			top: 51%;
+			right: 5%;
+			opacity: 0;
+			transition: 0.3s;
+		}
+	}
+	@media (max-width: $md) {
+		height: 200px;
+	}
 }
 @keyframes light {
-  0% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+	0% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	60% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
 }

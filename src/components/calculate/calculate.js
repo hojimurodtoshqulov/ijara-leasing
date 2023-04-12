@@ -209,11 +209,6 @@ const Calculate = () => {
 								{t("home.calculate.resultTitle1")}
 								<br />
 								<span>{inputValue} cuм</span>
-								{/* <input
-									type="text"
-									value={`${inputValue} ${t("sum")}`}
-									onChange={onChange}
-								/> */}
 							</h2>
 						</div>
 						<div
