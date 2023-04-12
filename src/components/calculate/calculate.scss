@@ -40,7 +40,7 @@
 		gap: 40px;
 		&_col1 {
 			padding: 0 0 5% 0;
-			width: 60%;
+			//width: 60%;
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
@@ -107,52 +107,61 @@
 				&_inp {
 					position: absolute;
 					top: -150%;
-					right: 50.5%;
+					right: 46.5%;
 					height: 30px;
 					width: 150px;
 					&-col {
-						&-input {
-							background: none;
-							border: none;
-							color: $light;
-							.ant-input-number {
-							}
-							.ant-input-number-handler-wrap {
-								input {
-									outline: none;
-									&:focus {
-										border: none;
-										outline: none;
-									}
-								}
-							}
-							.ant-input-number-input-wrap {
-								height: 30px;
-								width: 150px;
-								input {
-									color: #fff;
-									font-size: 20px;
-									&:focus {
-										border: none;
-										outline: none;
-									}
-								}
-							}
-						}
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						gap: .5rem;
+						//&-input {
+						//	background: none;
+						//	border: none;
+						//	color: $light;
+						//	.ant-input-number {
+						//	}
+						//	.ant-input-number-handler-wrap {
+						//		input {
+						//			outline: none;
+						//			&:focus {
+						//				border: none;
+						//				outline: none;
+						//			}
+						//		}
+						//	}
+						//	.ant-input-number-input-wrap {
+						//		height: 30px;
+						//		width: 150px;
+						//		input {
+						//			color: #fff;
+						//			font-size: 20px;
+						//			&:focus {
+						//				border: none;
+						//				outline: none;
+						//			}
+						//		}
+						//	}
+						//}
 						p {
-							position: absolute;
-							top: -2%;
-							left: 500%;
+							//position: absolute;
+							//top: -2%;
+							//left: 500%;
 							font-size: 20px;
+						}
+
+						span {
+							//color: red;
+							font-size: 18px;
 						}
 					}
 				}
 				.inp3 {
 					position: absolute;
 					top: -150%;
-					right: 46%;
+					right: 49%;
 					height: 30px;
-					width: 150px;
+					width: 75px;
 					&_mec {
 						position: absolute;
 						top: -2%;
@@ -174,11 +183,12 @@
 				}
 			}
 			&-text {
-				position: absolute;
+				//position: absolute;
 				bottom: 0;
 				left: 0;
 				z-index: 123;
 				font-size: 16px;
+				margin-top: -2rem;
 			}
 		}
 		&_col2 {
@@ -358,7 +368,7 @@
 					&_inp {
 						position: absolute;
 						top: -150%;
-						right: 50.5%;
+						right: 46.5%;
 						height: 30px;
 						width: 150px;
 						&-col {
@@ -390,20 +400,20 @@
 									}
 								}
 							}
-							p {
-								position: absolute;
-								top: -2%;
-								left: 500%;
-								font-size: 20px;
-							}
+							//p {
+							//	position: absolute;
+							//	top: -2%;
+							//	left: 500%;
+							//	font-size: 20px;
+							//}
 						}
 					}
 					.inp3 {
 						position: absolute;
 						top: -150%;
-						right: 46%;
+						//right: 46%;
 						height: 30px;
-						width: 150px;
+						//width: 150px;
 						&_mec {
 							position: absolute;
 							top: -2%;
@@ -425,7 +435,7 @@
 					}
 				}
 				&-text {
-					position: absolute;
+					//position: absolute;
 					bottom: 0;
 					left: 0;
 					z-index: 123;
@@ -570,7 +580,7 @@
 					&_inp {
 						position: absolute;
 						top: -150%;
-						right: 50.5%;
+						right: 46.5%;
 						height: 30px;
 						width: 150px;
 						&-col {
@@ -602,18 +612,18 @@
 									}
 								}
 							}
-							p {
-								position: absolute;
-								top: -2%;
-								left: 500%;
-								font-size: 20px;
-							}
+							//p {
+							//	position: absolute;
+							//	top: -2%;
+							//	left: 500%;
+							//	font-size: 20px;
+							//}
 						}
 					}
 					.inp3 {
 						position: absolute;
 						top: -150%;
-						right: 46%;
+						//right: 46%;
 						height: 30px;
 						width: 150px;
 						&_mec {
