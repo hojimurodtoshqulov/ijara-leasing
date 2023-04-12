@@ -1,323 +1,318 @@
 @import "../../scss/varuables.scss";
 .header {
-  position: relative;
-  width: 100%;
-  height: 850px;
-  // margin-bottom: 100px;
-  // background-image: url("../../media/header.png");
-  // background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: $bg;
-  // overflow: hidden;
-  &__container {
-    width: 100%;
-    height: 100%;
-    // flex-wrap: nowrap;
-    &_elements {
-      position: absolute;
-      top: 20%;
-      z-index: 12;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-      width: 40%;
-      color: $light;
-      h1 {
-        font-size: 50px;
-        font-family: $font_titles;
-        font-weight: 700;
-        line-height: 40px;
-        color: $light;
-        span {
-          font-weight: 400;
-        }
+	position: relative;
+	width: 100%;
+	height: 850px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: $bg;
+	&__container {
+		width: 100%;
+		height: 100%;
+		&_elements {
+			position: absolute;
+			top: 20%;
+			z-index: 12;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
+			gap: 20px;
+			width: 40%;
+			color: $light;
+			h1 {
+				font-size: 50px;
+				font-family: $font_titles;
+				font-weight: 700;
+				line-height: 40px;
+				color: $light;
+				span {
+					font-weight: 400;
+				}
+				@media (min-width: $xxl) {
+					font-size: 63px;
+				}
+			}
+			p {
+				margin-bottom: 10px;
+				font-size: 25px;
+				line-height: 40px;
+				font-family: $font_texts;
+			}
+			&_buttons {
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				gap: 30px;
+				width: 100%;
+				&_div1 {
+					width: 267px;
+					height: 61px;
+					width: 45%;
+					button {
+						font-size: 18px;
+					}
+				}
+				&_div2 {
+					width: 200px;
+					height: 61px;
+					width: 45%;
+					button {
+						font-size: 18px;
+					}
+				}
+			}
+		}
+		&_img {
+			width: 60%;
+			position: absolute;
+			right: -10%;
+			top: 15%;
+			z-index: 1;
+			// transform: rotate(-100deg);
+			// animation: car 2s cubic-bezier(0.87, -0.17, 0.16, 1.27) 1 alternate
+			// 	forwards;
+			// animation-timing-function: cubic-bezier(0.94, -0.24, 0.47, 1.07);
+		}
+	}
+	&__categories {
+		height: 200px;
+		position: absolute;
+		bottom: -50px;
+		left: 0;
+		z-index: 12;
+		width: 100%;
+	}
+	&__darkBottom {
+		position: absolute;
+		width: 150%;
+		height: 0px;
+		bottom: -15%;
+		left: -25%;
+		box-shadow: 0 -150px 200px 150px #000;
+		z-index: 0;
+	}
 
-        @media (min-width: $xxl) {
-          font-size: 63px;
-        }
-      }
-      p {
-        margin-bottom: 10px;
-        font-size: 25px;
-        line-height: 40px;
-        font-family: $font_texts;
-      }
-      &_buttons {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 30px;
-        width: 100%;
-        &_div1 {
-          width: 267px;
-          height: 61px;
-          width: 45%;
-          button {
-            font-size: 18px;
-          }
-        }
-        &_div2 {
-          width: 200px;
-          height: 61px;
-          width: 45%;
-          button {
-            font-size: 18px;
-          }
-        }
-      }
-    }
-    &_img {
-      width: 60%;
-      position: absolute;
-      right: -10%;
-      top: 15%;
-      z-index: 1;
-      // transform: rotate(-100deg);
-      // animation: car 2s cubic-bezier(0.87, -0.17, 0.16, 1.27) 1 alternate
-      // 	forwards;
-      // animation-timing-function: cubic-bezier(0.94, -0.24, 0.47, 1.07);
-    }
-  }
-  &__categories {
-    height: 200px;
-    position: absolute;
-    bottom: -50px;
-    left: 0;
-    z-index: 12;
-    width: 100%;
-  }
-  &__darkBottom {
-    position: absolute;
-    width: 150%;
-    height: 0px;
-    bottom: -15%;
-    left: -25%;
-    box-shadow: 0 -150px 200px 150px #000;
-    z-index: 0;
-  }
+	@media (min-width: $xxl) {
+		height: 980px;
+	}
 
-  @media (min-width: $xxl) {
-    height: 980px;
-  }
-
-  @media (min-width: 2410px) {
-    height: 1070px;
-  }
+	@media (min-width: 2410px) {
+		height: 1070px;
+	}
 }
-@media (max-width: 1200px) {
-  .header {
-    height: 800px;
-    &__container {
-      &_elements {
-        position: absolute;
-        top: 20%;
-        z-index: 12;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        gap: 20px;
-        width: 60%;
-        color: $light;
-        h1 {
-          font-size: 50px;
-          font-family: $font_titles;
-          font-weight: 700;
-          line-height: 40px;
-          color: $light;
-          span {
-            font-weight: 400;
-          }
-        }
-        p {
-          margin-bottom: 10px;
-          font-size: 25px;
-          line-height: 40px;
-          font-family: $font_texts;
-        }
-        &_buttons {
-          display: flex;
-          align-items: center;
-          justify-content: flex-start;
-          gap: 30px;
-          width: 100%;
-          &_div1 {
-            width: 267px;
-            height: 61px;
-            width: 45%;
-            button {
-              font-size: 18px;
-            }
-          }
-          &_div2 {
-            width: 200px;
-            height: 61px;
-            width: 45%;
-            button {
-              font-size: 18px;
-            }
-          }
-        }
-      }
-      &_img {
-        width: 80%;
-        position: absolute;
-        right: -10%;
-        top: 20%;
-        z-index: 1;
-      }
-    }
-  }
+@media (max-width: $xl) {
+	.header {
+		height: 800px;
+		&__container {
+			&_elements {
+				position: absolute;
+				top: 20%;
+				z-index: 12;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: space-between;
+				gap: 20px;
+				width: 60%;
+				color: $light;
+				h1 {
+					font-size: 50px;
+					font-family: $font_titles;
+					font-weight: 700;
+					line-height: 40px;
+					color: $light;
+					span {
+						font-weight: 400;
+					}
+				}
+				p {
+					margin-bottom: 10px;
+					font-size: 25px;
+					line-height: 40px;
+					font-family: $font_texts;
+				}
+				&_buttons {
+					display: flex;
+					align-items: center;
+					justify-content: flex-start;
+					gap: 30px;
+					width: 100%;
+					&_div1 {
+						width: 267px;
+						height: 61px;
+						width: 45%;
+						button {
+							font-size: 18px;
+						}
+					}
+					&_div2 {
+						width: 200px;
+						height: 61px;
+						width: 45%;
+						button {
+							font-size: 18px;
+						}
+					}
+				}
+			}
+			&_img {
+				width: 80%;
+				position: absolute;
+				right: -10%;
+				top: 20%;
+				z-index: 1;
+			}
+		}
+	}
 }
-@media (max-width: 765px) {
-  .header {
-    height: 750px;
-    &__container {
-      &_elements {
-        position: absolute;
-        top: 20%;
-        z-index: 12;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        width: 80%;
-        color: $light;
-        text-align: center;
-        h1 {
-          font-size: 35px;
-          font-family: $font_titles;
-          font-weight: 700;
-          line-height: 30px;
-          text-align: center;
-          span {
-            font-weight: 400;
-          }
-        }
-        p {
-          margin-bottom: 10px;
-          font-size: 20px;
-          line-height: 40px;
-          font-family: $font_texts;
-          text-align: center;
-        }
-        &_buttons {
-          display: flex;
-          align-items: center;
-          justify-content: flex-start;
-          gap: 30px;
-          width: 100%;
-          &_div1 {
-            width: 267px;
-            height: 61px;
-            width: 45%;
-            button {
-              font-size: 18px;
-            }
-          }
-          &_div2 {
-            width: 200px;
-            height: 61px;
-            width: 45%;
-            button {
-              font-size: 18px;
-            }
-          }
-        }
-      }
-      &_img {
-        width: 80%;
-        position: absolute;
-        right: -10%;
-        top: 20%;
-        z-index: 1;
-      }
-    }
-  }
+@media (max-width: $md) {
+	.header {
+		height: 750px;
+		&__container {
+			&_elements {
+				position: absolute;
+				top: 20%;
+				z-index: 12;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: center;
+				gap: 10px;
+				width: 80%;
+				color: $light;
+				text-align: center;
+				h1 {
+					font-size: 35px;
+					font-family: $font_titles;
+					font-weight: 700;
+					line-height: 30px;
+					text-align: center;
+					span {
+						font-weight: 400;
+					}
+				}
+				p {
+					margin-bottom: 10px;
+					font-size: 20px;
+					line-height: 40px;
+					font-family: $font_texts;
+					text-align: center;
+				}
+				&_buttons {
+					display: flex;
+					align-items: center;
+					justify-content: flex-start;
+					gap: 30px;
+					width: 100%;
+					&_div1 {
+						width: 267px;
+						height: 61px;
+						width: 45%;
+						button {
+							font-size: 18px;
+						}
+					}
+					&_div2 {
+						width: 200px;
+						height: 61px;
+						width: 45%;
+						button {
+							font-size: 18px;
+						}
+					}
+				}
+			}
+			&_img {
+				width: 80%;
+				position: absolute;
+				right: -10%;
+				top: 20%;
+				z-index: 1;
+			}
+		}
+	}
 }
 @media (max-width: $sm) {
-  .header {
-    height: 550px;
-    &__container {
-      &_elements {
-        position: absolute;
-        top: 22%;
-        z-index: 12;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        gap: 15px;
-        width: 80%;
-        color: $light;
-        text-align: center;
-        h1 {
-          font-size: 27px;
-          font-family: $font_titles;
-          font-weight: 700;
-          line-height: 27px;
-          text-align: center;
-          span {
-            font-weight: 400;
-          }
-        }
-        p {
-          margin-bottom: 10px;
-          font-size: 15px;
-          line-height: 27px;
-          font-family: $font_texts;
-          text-align: center;
-        }
-        &_buttons {
-          display: flex;
-          align-items: center;
-          justify-content: flex-start;
-          gap: 10px;
-          width: 100%;
-          &_div1 {
-            height: 51px;
-            width: 47%;
-            button {
-              font-size: 18px;
-            }
-          }
-          &_div2 {
-            width: 200px;
-            height: 51px;
-            width: 47%;
-            button {
-              font-size: 18px;
-            }
-          }
-        }
-      }
-      &_img {
-        width: 100%;
-        position: absolute;
-        right: 0%;
-        top: 50%;
-        z-index: 1;
-        display: none;
-      }
-    }
-  }
+	.header {
+		height: 600px;
+		&__container {
+			&_elements {
+				position: absolute;
+				top: 22%;
+				z-index: 12;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: center;
+				gap: 15px;
+				width: 90%;
+				color: $light;
+				text-align: center;
+				h1 {
+					font-size: 27px;
+					font-family: $font_titles;
+					font-weight: 700;
+					line-height: 27px;
+					text-align: center;
+					span {
+						font-weight: 400;
+					}
+				}
+				p {
+					margin-bottom: 10px;
+					font-size: 15px;
+					line-height: 27px;
+					font-family: $font_texts;
+					text-align: center;
+				}
+				&_buttons {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					flex-wrap: wrap;
+					gap: 15px;
+					width: 100%;
+					&_div1 {
+						height: 51px;
+						width: 100%;
+						button {
+							font-size: 18px;
+						}
+					}
+					&_div2 {
+						width: 200px;
+						height: 51px;
+						width: 100%;
+						button {
+							font-size: 18px;
+						}
+					}
+				}
+			}
+			&_img {
+				width: 100%;
+				position: absolute;
+				right: 0%;
+				top: 50%;
+				z-index: 1;
+				display: none;
+			}
+		}
+	}
 }
 @keyframes car {
-  0% {
-    right: -80%;
-  }
-  90% {
-    transform: rotate(-0.2deg);
-  }
-  100% {
-    right: -10%;
-    transform: rotate(0deg);
-  }
+	0% {
+		right: -80%;
+	}
+	90% {
+		transform: rotate(-0.2deg);
+	}
+	100% {
+		right: -10%;
+		transform: rotate(0deg);
+	}
 }
 // @keyframes dust {
 // 	0% {

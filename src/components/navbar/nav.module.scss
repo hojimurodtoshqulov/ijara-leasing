@@ -13,6 +13,7 @@
 	left: 0;
 	z-index: 124;
 	width: $w_100;
+	height: 10vh;
 	margin: 0 auto;
 	transition: 0.3s;
 	&__container {
@@ -35,7 +36,7 @@
 			img {
 				border: 3px solid #ff00;
 				width: auto;
-				height: 50%;
+				height: 60%;
 				border-radius: 50%;
 				// animation: rotate 7s cubic-bezier(0.87, -0.17, 0.16, 1.27) infinite
 				//   reverse forwards;
@@ -432,6 +433,7 @@
 		left: 0;
 		z-index: 124;
 		width: $w_100;
+		height: 10vh !important;
 		margin: 0 auto;
 		transition: 0.3s;
 		&__container {

@@ -581,233 +581,201 @@
 }
 
 @media (max-width: $md) {
-  .calculate {
-    padding-bottom: 20%;
+	.calculate {
+		padding-bottom: 20%;
+		&__titles {
+			text-align: center;
+			width: 100%;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 1rem;
+			margin-bottom: 5rem;
+			h1 {
+				font-size: 30px;
+			}
+			div {
+				width: 40%;
+				height: 3px;
+				background: linear-gradient(to left, #319ba116, #319ba1, #319ba116);
+				border-radius: 100%;
+			}
+			p {
+				font-size: 15px;
+			}
+		}
+		&__calculates {
+			height: 550px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-direction: column;
+			gap: 70px;
+			&_col1 {
+				padding: 0 0 7% 0;
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: center;
+				gap: 5rem;
+				position: relative;
+				h1 {
+					height: 20px;
+					display: flex;
+					flex-direction: column;
+					position: relative;
+					font-size: 20px;
+					p {
+						position: relative;
+						z-index: 1;
+						
+					}
+					span {
+						height: 10px;
+						background: $primary;
+						position: absolute;
+						top: 55%;
+						left: -1%;
+						z-index: 0;
+					}
+					div {
+						position: absolute;
+						bottom: -50%;
+						right: 36%;
+						height: 3px;
+						background: $primary;
+					}
+				}
+				&_slider1 {
+					position: relative;
+					width: 200%;
+					padding: 0 0 0 1.4%;
+					&-title {
+						position: absolute;
+						bottom: 140%;
+						left: 0.2%;
+						height: 20px;
+						font-weight: 500;
+						font-size: 1rem;
+					}
+					.row {
+						height: 20px;
+						display: flex;
+						align-items: center;
+						justify-content: flex-start;
+						&__col {
+							height: 100%;
+							&_slider {
+								position: absolute;
+								top: -50%;
+								left: -1%;
+								width: 100%;
+								.ant-input-number-input {
+									font-size: 15px;
+								}
+								input {
+								}
+								.ant-slider-rail {
+									background: #fff;
+								}
+							}
+						}
+					}
 
-    &__titles {
-      text-align: center;
-      width: 80%;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-      margin-bottom: 5rem;
-
-      h1 {
-        font-size: 30px;
-      }
-
-      div {
-        width: 40%;
-        height: 3px;
-        background: linear-gradient(to left, #319ba116, #319ba1, #319ba116);
-        border-radius: 100%;
-      }
-
-      p {
-        font-size: 15px;
-      }
-    }
-
-    &__calculates {
-      height: 550px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: column;
-      gap: 70px;
-
-      &_col1 {
-        padding: 0 0 7% 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        gap: 4rem;
-        position: relative;
-
-        h1 {
-          height: 20px;
-          display: flex;
-          flex-direction: column;
-          position: relative;
-          font-size: 20px;
-
-          p {
-            position: relative;
-            z-index: 1;
-          }
-
-          span {
-            height: 10px;
-            background: $primary;
-            position: absolute;
-            top: 55%;
-            left: -1%;
-            z-index: 0;
-          }
-
-          div {
-            position: absolute;
-            bottom: -50%;
-            right: 36%;
-            height: 3px;
-            background: $primary;
-          }
-        }
-
-        &_slider1 {
-          position: relative;
-          width: 200%;
-          padding: 0 0 0 1.4%;
-
-          &-title {
-            position: absolute;
-            bottom: 140%;
-            left: 0.2%;
-            height: 20px;
-            font-weight: 500;
-            font-size: 1rem;
-          }
-
-          .row {
-            height: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-
-            &__col {
-              height: 100%;
-
-              &_slider {
-                position: absolute;
-                top: -50%;
-                left: -1%;
-                width: 100%;
-
-                .ant-input-number-input {
-                  font-size: 15px;
-                }
-
-                input {
-                }
-
-                .ant-slider-rail {
-                  background: #fff;
-                }
-              }
-            }
-          }
-
-          &_inp {
-            position: absolute;
-            top: -150%;
-            right: 46.5%;
-            height: 30px;
-            width: 150px;
-
-            &-col {
-              &-input {
-                background: none;
-                border: none;
-                color: $light;
-
-                .ant-input-number {
-                }
-
-                .ant-input-number-handler-wrap {
-                  input {
-                    outline: none;
-
-                    &:focus {
-                      border: none;
-                      outline: none;
-                    }
-                  }
-                }
-
-                .ant-input-number-input-wrap {
-                  height: 30px;
-                  width: 150px;
-
-                  input {
-                    color: #fff;
-                    font-size: 20px;
-
-                    &:focus {
-                      border: none;
-                      outline: none;
-                    }
-                  }
-                }
-              }
-
-              //p {
-              //	position: absolute;
-              //	top: -2%;
-              //	left: 500%;
-              //	font-size: 20px;
-              //}
-            }
-          }
-
-          .inp3 {
-            position: absolute;
-            top: -150%;
-            //right: 46%;
-            height: 30px;
-            width: 150px;
-
-            &_mec {
-              position: absolute;
-              top: -2%;
-              left: 230%;
-              font-size: 20px;
-            }
-          }
-
-          &-priceStart {
-            position: absolute;
-            bottom: -90%;
-            left: 0.3%;
-            font-size: 17px;
-          }
-
-          &-priceEnd {
-            position: absolute;
-            bottom: -90%;
-            right: 50%;
-            font-size: 17px;
-          }
-        }
-
-        &-text {
-          position: absolute;
-          bottom: -19%;
-          left: 0;
-          z-index: 123;
-          font-size: 14px;
-          text-align: center;
-        }
-      }
-
-      &_col2 {
-        margin-top: 6%;
-        width: 100%;
-        padding: 20% 0;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-
-        &-titles {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: center !important;
-          width: 100%;
+					&_inp {
+						position: absolute;
+						top: -150%;
+						right: 46.5%;
+						height: 30px;
+						width: 150px;
+						&-col {
+							&-input {
+								background: none;
+								border: none;
+								color: $light;
+								.ant-input-number {
+								}
+								.ant-input-number-handler-wrap {
+									input {
+										outline: none;
+										&:focus {
+											border: none;
+											outline: none;
+										}
+									}
+								}
+								.ant-input-number-input-wrap {
+									height: 30px;
+									width: 150px;
+									input {
+										color: #fff;
+										font-size: 20px;
+										&:focus {
+											border: none;
+											outline: none;
+										}
+									}
+								}
+							}
+							//p {
+							//	position: absolute;
+							//	top: -2%;
+							//	left: 500%;
+							//	font-size: 20px;
+							//}
+						}
+					}
+					.inp3 {
+						position: absolute;
+						top: -150%;
+						//right: 46%;
+						height: 30px;
+						width: 150px;
+						&_mec {
+							position: absolute;
+							top: -2%;
+							left: 230%;
+							font-size: 20px;
+						}
+					}
+					&-priceStart {
+						position: absolute;
+						bottom: -90%;
+						left: 0.3%;
+						font-size: 17px;
+					}
+					&-priceEnd {
+						position: absolute;
+						bottom: -90%;
+						right: 50%;
+						font-size: 17px;
+					}
+				}
+				&-text {
+					position: absolute;
+					bottom: -19%;
+					left: 0;
+					z-index: 123;
+					font-size: 14px;
+					text-align: center;
+				}
+			}
+			&_col2 {
+				margin-top: 6%;
+				width: 100%;
+				padding: 20% 0;
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+				&-titles {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					justify-content: center !important;
+					width: 100%;
 
           h2 {
             font-size: 17px;

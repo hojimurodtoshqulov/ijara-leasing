@@ -36,6 +36,10 @@
 				img {
 					width: 30%;
 				}
+				h2 {
+					font-family: $font_titles;
+					font-weight: 500;
+				}
 			}
 			&_imgDiv {
 				display: flex;
