@@ -70,132 +70,49 @@ const Calculate = () => {
                                 transition={{transition}}
                             ></motion.div>
                         </h1>
-                        <div
-                            data-aos="flip-up"
-                            data-aos-delay="0"
-                            className="calculate__calculates_col1_slider1"
-                        >
-                            <h4 className="calculate__calculates_col1_slider1-title">
-                                {t("home.calculate.calcTitle1")}
-                            </h4>
-                            {/*<Row className="row">*/}<div>
-                            {/*    <Col className="row__col" span={12}>*/}
-                                    {/* Leasing  */}
-                            <div>
-                                    <input type={'range'} min={2000000}
-                                           onChange={leasingValueChange}
-                                           value={leasingValue} max={100000000} style={{width: "100%"}}/>
-                                    {/*<Slider*/}
-                                    {/*	className="row__col_slider"*/}
-                                    {/*	min={2000000}*/}
-                                    {/*	max={100000000}*/}
-                                    {/*	onChange={onChange}*/}
-                                    {/*	value={typeof leasingValue === "number" ? leasingValue : 0}*/}
-                                    {/*/>*/}</div>
-                                {/*</Col>*/}
-                                <div className="calculate__calculates_col1_slider1_inp">
-                                    <Col
-                                        span={4}
-                                        className="calculate__calculates_col1_slider1_inp-col"
-                                    >
-                                        <span>{numberForamtter(leasingValue)}</span>
-                                        <p>{t("sum")}</p>
-                                    </Col>
+                        <div className={"calculate__range-wrap"}>
+                            <div className={"calculate__range"}>
+                                <label className={"calculate__range-label"}>
+                                    <h4 className={"calculate__range-label-text"}>{t("home.calculate.calcTitle1")}</h4>
+                                    <h3 className={"calculate__range-label-amount"}>{numberForamtter(leasingValue)} {t("sum")}</h3>
+                                </label>
+                                <input type={'range'} min={2000000}
+                                       onChange={leasingValueChange}
+                                       value={leasingValue} max={100000000} style={{width: "100%"}}/>
+                                <div className={'calculate__range-values'}>
+                                    <h3> 2 000 000 {t("sum")}</h3>
+                                    <h3> 100 000 000 {t("sum")}</h3>
                                 </div>
-                        </div>
-                            <p className="calculate__calculates_col1_slider1-priceStart">
-                                2 000 000 {t("sum")}
-                            </p>
-                            <p className="calculate__calculates_col1_slider1-priceEnd">
-                                100 000 000 {t("sum")}
-                            </p>
-                        </div>
-                        <div
-                            data-aos="flip-up"
-                            data-aos-delay="100"
-                            className="calculate__calculates_col1_slider1"
-                        >
-                            <h4 className="calculate__calculates_col1_slider1-title">
-                                {t("home.calculate.calcTitle2")}
-                            </h4>
-                            <Row className="row">
-                                <Col className="row__col" span={12}>
-                                    {/*  payment */}
-                                    <input onChange={paymentValueChange} value={paymentValue} type={'range'}
-                                           max={50000000}
-                                           min={1000000}
-                                           style={{width: "100%"}}/>
-                                    {/*<Slider
-										className="row__col_slider"
-										min={1000000}
-										max={50000000}
-										onChange={onChange2}
-										value={typeof paymentValue === "number" ? paymentValue : 0}
-									/>*/}
-                                </Col>
-                                <div className="calculate__calculates_col1_slider1_inp">
-                                    <Col
-                                        span={4}
-                                        className="calculate__calculates_col1_slider1_inp-col"
-                                    >
-                                        <span
-                                        >{numberForamtter(paymentValue)}</span>
-                                        <p>{t("sum")}</p>
-                                    </Col>
+                            </div>
+                            <div className={"calculate__range"}>
+                                <label className={"calculate__range-label"}>
+                                    <h4 className={"calculate__range-label-text"}>{t("home.calculate.calcTitle2")}</h4>
+                                    <h3 className={"calculate__range-label-amount"}>{numberForamtter(paymentValue)} {t("sum")}</h3>
+                                </label>
+                                <div className={'input-wrapper'}><input onChange={paymentValueChange} value={paymentValue} type={'range'}
+                                            max={50000000}
+                                            min={1000000}
+                                            style={{width: "100%"}}/></div>
+
+                                <div className={'calculate__range-values'}>
+                                    <h3>1 000 000 {t("sum")}</h3>
+                                    <h3>50 000 000 {t("sum")}</h3>
                                 </div>
-                            </Row>
-                            <p className="calculate__calculates_col1_slider1-priceStart">
-                                1 000 000 {t("sum")}
-                            </p>
-                            <p className="calculate__calculates_col1_slider1-priceEnd">
-                                50 000 000 {t("sum")}
-                            </p>
-                        </div>
-                        <div
-                            data-aos="flip-up"
-                            data-aos-delay="200"
-                            className="calculate__calculates_col1_slider1"
-                        >
-                            <h4 className="calculate__calculates_col1_slider1-title">
-                                {t("home.calculate.calcTitle3")}
-                            </h4>
-                            <Row className="row">
-                                <Col className="row__col" span={12}>
-                                    <input min={13} value={timeValue} max={48} style={{width: "100%"}}
-                                           onChange={(e) => setTimeValue(+e.target.value)} type="range"/>
-                                    {/*<Slider*/}
-                                    {/*    className="row__col_slider"*/}
-                                    {/*    min={13}*/}
-                                    {/*    max={48}*/}
-                                    {/*    onChange={onChange3}*/}
-                                    {/*    value={typeof timeValue === "number" ? timeValue : 0}*/}
-                                    {/*/>*/}
-                                </Col>
-                                <div className="calculate__calculates_col1_slider1_inp inp3">
-                                    <Col
-                                        span={4}
-                                        className="calculate__calculates_col1_slider1_inp-col"
-                                    >
-                                        <span>{timeValue}</span>
-                                        {/*  <InputNumber
-                                            className="calculate__calculates_col1_slider1_inp-col-input"
-                                            min={13}
-                                            max={48}
-                                            style={{margin: "0 16px"}}
-                                            value={timeValue}
-                                            onChange={onChange3}
-                                        />*/}
-                                        <p className="inp3_mec">{t("month")}</p>
-                                    </Col>
+                            </div>
+                            <div className={"calculate__range"}>
+                                <label className={"calculate__range-label"}>
+                                    <h4 className={"calculate__range-label-text"}>{t("home.calculate.calcTitle3")}</h4>
+                                    <h3 className={"calculate__range-label-amount"}>{timeValue} {t("month")}</h3>
+                                </label>
+                                <input min={13} value={timeValue} max={48} style={{width: "100%"}}
+                                       onChange={(e) => setTimeValue(+e.target.value)} type="range"/>
+                                <div className={'calculate__range-values'}>
+                                    <h3>13 {t("month")}</h3>
+                                    <h3>48 {t("month")}</h3>
                                 </div>
-                            </Row>
-                            <p className="calculate__calculates_col1_slider1-priceStart">
-                                13{t("month")}
-                            </p>
-                            <p className="calculate__calculates_col1_slider1-priceEnd">
-                                48 {t("month")}
-                            </p>
+                            </div>
                         </div>
+
                         <p
                             data-aos="flip-up"
                             data-aos-delay="300"
