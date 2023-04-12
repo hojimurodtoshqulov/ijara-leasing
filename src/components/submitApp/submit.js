@@ -19,7 +19,7 @@ const Submit = ({ onClose, success }) => {
 	};
 
 	success = () =>
-		toast.success(t("submitSuccess"), {
+		toast.success(t("modal.submitSucces"), {
 			position: "top-right",
 			autoClose: 5000,
 			hideProgressBar: false,
@@ -126,6 +126,7 @@ const Submit = ({ onClose, success }) => {
 						</a>
 					</label>
 					<span>
+						
 						<span onClick={submit}>
 							<Button btnTitle={t("submitTitle")} />
 						</span>
