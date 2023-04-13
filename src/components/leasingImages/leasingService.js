@@ -2,7 +2,6 @@ import React from "react";
 import InfoCard from "../infoCard/infoCard";
 import { useTranslation } from "react-i18next";
 import styles from "./leasingService.module.scss";
-
 import img1 from "../../media/car-rental.png";
 import img2 from "../../media/kredit.png";
 import img3 from "../../media/Autofficine.png";

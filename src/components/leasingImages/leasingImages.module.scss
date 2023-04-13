@@ -1,5 +1,8 @@
 @import "../../scss/varuables.scss";
-
+.leasingImagesDiv {
+	width: 100%;
+	position: relative;
+}
 .leasingImages {
 	display: flex;
 	align-items: center;
@@ -133,11 +136,14 @@
 	}
 }
 @media (max-width: $md) {
+	.leasingImagesDiv {
+		width: 100%;
+		height: 500px;
+	}
 	.leasingImages {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-
 		flex-wrap: wrap;
 		width: 100%;
 		height: auto;
@@ -145,17 +151,21 @@
 		background: $bg;
 		position: relative;
 		z-index: 1;
+		gap: 0.5rem !important;
+		overflow-x: scroll !important;
+		display: none;
 		&__imgDiv {
-			width: 20%;
+			margin: 0;
+			width: 44% !important;
 			height: 300px;
 			&:nth-child(odd) {
-				width: 30%;
+				width: 40%;
 				padding: 0;
 				margin: 0;
 				border-radius: 0px;
 			}
 			&:nth-child(even) {
-				width: 30%;
+				width: 40%;
 				padding: 0;
 				margin: 0;
 				border-radius: 0px;
@@ -169,6 +179,10 @@
 	}
 }
 @media (max-width: $sm) {
+	.leasingImagesDiv {
+		width: 100%;
+		height: 450px;
+	}
 	.leasingImages {
 		display: flex;
 		align-items: center;
@@ -181,6 +195,7 @@
 		z-index: 1;
 		overflow-x: hidden;
 		gap: 1rem;
+		display: none;
 		&__imgDiv {
 			width: 20%;
 			height: 300px;

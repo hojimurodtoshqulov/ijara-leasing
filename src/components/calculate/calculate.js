@@ -1,45 +1,43 @@
 import scss from "./calculate.scss";
-import {Col, InputNumber, Row, Slider} from "antd";
-import {useState} from "react";
-import {motion} from "framer-motion";
-import {useTranslation} from "react-i18next";
+import { Col, InputNumber, Row, Slider } from "antd";
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Calculate = () => {
-    const {t} = useTranslation();
+	const { t } = useTranslation();
 
-    const [leasingValue, setLeasingValue] = useState(2000000);
-    const [paymentValue, setPaymentValue] = useState(1000000);
-    const [timeValue, setTimeValue] = useState(13);
-    const [sum, setSum] = useState(1472500);
-    const [sum2, setSum2] = useState(54537);
-    // const onChangeSum = (newValue) => {
-    // 	newValue = sum + 10;
-    // 	setSum(newValue);
-    // };
+	const [leasingValue, setLeasingValue] = useState(2000000);
+	const [paymentValue, setPaymentValue] = useState(1000000);
+	const [timeValue, setTimeValue] = useState(13);
+	const [sum, setSum] = useState(1472500);
+	const [sum2, setSum2] = useState(54537);
+	// const onChangeSum = (newValue) => {
+	// 	newValue = sum + 10;
+	// 	setSum(newValue);
+	// };
 
-    const paymentValueChange = (e) => {
-        const value = Number(e.target.value)
-        if (value > leasingValue) {
-            setPaymentValue(leasingValue)
-        } else {
-            setPaymentValue(value)
-        }
-    }
+	const paymentValueChange = (e) => {
+		const value = Number(e.target.value);
+		if (value > leasingValue) {
+			setPaymentValue(leasingValue);
+		} else {
+			setPaymentValue(value);
+		}
+	};
 
-    const leasingValueChange = (e) => {
-        const value = Number(e.target.value)
-        if (value <= paymentValue) {
-            setPaymentValue(value)
-        }
-        setLeasingValue(value)
-    }
+	const leasingValueChange = (e) => {
+		const value = Number(e.target.value);
+		if (value <= paymentValue) {
+			setPaymentValue(value);
+		}
+		setLeasingValue(value);
+	};
 
     const numberForamtter = (num) => {
         // const newFormatter = new Intl.numberFormat("en-US", {separator: " "});
         return (new Intl.NumberFormat("en-US").format(num));
     }
-
-
     const transition = {type: "spring", duration: 2};
 
     return (
