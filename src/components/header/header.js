@@ -59,7 +59,6 @@ const Header = () => {
 							className={scss.header__container_img}
 							data-aos="fade-left"
 							data-aos-duration="1500"
-							className={scss.header__container_img}
 							src={img1}
 							alt="avto img"
 						/>
