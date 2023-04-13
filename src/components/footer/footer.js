@@ -7,15 +7,17 @@ import { Link } from "react-router-dom";
 import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 const Footer = () => {
 	const scrollToTop = () => {
 		window.scrollTo(0, 0);
 	};
+	const transition = { type: "spring", duration: 2 };
 	return (
 		<footer className={scss.footer}>
 			<div className="container">
 				<div className={scss.footer__row1}>
-					<div className={scss.footer__row1_col1}>
+					<div className={scss.footer__row1_col1} data-aos="fade-left">
 						<Link
 							to="/"
 							className={scss.footer__row1_col1_logo}
@@ -40,7 +42,7 @@ const Footer = () => {
 						</div>
 					</div>
 					<div className={scss.footer__row1_line}></div>
-					<div className={scss.footer__row1_col2}>
+					<div className={scss.footer__row1_col2} data-aos="fade-down">
 						<Link
 							to="/company"
 							className={scss.footer__row1_col2_link}
@@ -78,7 +80,7 @@ const Footer = () => {
 						</Link>
 					</div>
 					<div className={scss.footer__row1_line}></div>
-					<div className={scss.footer__row1_col3}>
+					<div className={scss.footer__row1_col3} data-aos="fade-right">
 						<h1>Наш адрес:</h1>
 						<p>Юнусабадский район, Ц-5, д.78, кв.13</p>
 						<h1>Телефон:</h1>
@@ -90,12 +92,21 @@ const Footer = () => {
 				</div>
 			</div>
 			<div className={scss.footer__row2}>
-				<p>
+				<motion.p
+					initial={{
+						transform: "rotate(30deg)",
+						transformOrigin: " right top",
+					}}
+					whileInView={{
+						transform: "rotate(0deg)",
+						transformOrigin: " right top",
+					}}
+					transition={{ transition, duration: 1 }}
+				>
 					OOO <Link to="/">“IJARA LEASING”</Link> 2021-2021
-				</p>
+				</motion.p>
 			</div>
 		</footer>
 	);
 };
-
 export default Footer;
