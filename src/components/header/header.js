@@ -66,7 +66,7 @@ const Header = () => {
 						<img
 							className={scss.header__container_imgMobile}
 							src={img2}
-							alt=""
+							alt={img2}
 						/>
 					</div>
 				</div>

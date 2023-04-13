@@ -3,38 +3,53 @@ import "./carousel1.scss";
 import { useState } from "react";
 import Slider from "react-slick";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import { AiFillRightCircle, AiFillLeftCircle } from "react-icons/ai";
 import { Link } from "react-router-dom";
-const Carousel1 = () => {
+import { useTranslation } from "react-i18next";
+import img1 from "../../../media/car-rental.png";
+import img2 from "../../../media/kredit.png";
+import img3 from "../../../media/Autofficine.png";
+import img4 from "../../../media/lizing-pen.png";
+import img5 from "../../../media/auto-key.png";
+const Carousel1 = ({ openModal, setcardOreder, setOpenModal }) => {
+	const { t } = useTranslation();
+	const [openModal1, setOpenModal1] = useState(openModal);
+	const [cardOreder1, setcardOreder1] = useState(setcardOreder);
 	const data = [
 		{
- 			img: "https://www.bankofengland.co.uk/-/media/boe/images/education-and-engagement/education/teacher-resource-image-1-web.jpg?h=347&la=en&mh=347&mw=520&w=520&hash=76512627AB76D24E22CFC00C41AD0BA59F624BA9",
+			img: img1,
 			title: "img 1",
 			link: "/study",
 		},
 		{
-			img: "https://www.educationperfect.com/wp-content/uploads/2022/11/Generic_Happyhighschoolgirlusinglaptopinclassroom_1500px.webp",
+			img: img2,
 			title: "img 2",
 			link: "/study",
 		},
 		{
-			img: "https://alis.alberta.ca/media/2149/students-in-class.jpg?anchor=center&mode=crop&width=606&height=440&rnd=131868559330000000",
+			img: img3,
 			title: "img 3",
 			link: "/study",
 		},
 		{
-			img: "https://www.cdc.gov/healthyyouth/protective/images/EDkQGdeXkAIiM0q.jpg?_=56749",
+			img: img4,
+			title: "img 4",
+			link: "/study",
+		},
+		{
+			img: img5,
 			title: "img 4",
 			link: "/study",
 		},
 	];
 	const NextArrow = ({ onClick }) => (
 		<div className="arrow next" onClick={onClick}>
-			<FaArrowRight />
+			<AiFillRightCircle />
 		</div>
 	);
 	const PrevArrow = ({ onClick }) => (
 		<div className="arrow prev" onClick={onClick}>
-			<FaArrowLeft />
+			<AiFillLeftCircle />
 		</div>
 	);
 	const [imageIndex, setImageIndex] = useState(0);
@@ -53,11 +68,18 @@ const Carousel1 = () => {
 		<div className="carousel1">
 			<Slider {...settings}>
 				{data.map((item, index) => (
-					<div key={index} className={index === imageIndex ? "slide active" : "slide"}>
+					<div
+						key={index}
+						className={index === imageIndex ? "slide active" : "slide"}
+						onClick={() => {
+							setOpenModal(true);
+							setcardOreder(index);
+						}}
+					>
 						<img src={item.img} alt={item.img} />
-						<Link to={item.link} className="link">
+						<p className="link">
 							{item.title}
-						</Link>
+						</p>
 					</div>
 				))}
 			</Slider>

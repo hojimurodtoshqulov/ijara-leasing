@@ -76,7 +76,7 @@ const LeasingImages = () => {
 						<p>5Lorem, ipsum.</p>
 					</div>
 				</div>
-				<Carousel1 />
+				<Carousel1 setOpenModal={setOpenModal} setcardOreder={setcardOreder} />
 			</div>
 			<Modal
 				open={openModal}
