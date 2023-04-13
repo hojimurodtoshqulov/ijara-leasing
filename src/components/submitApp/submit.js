@@ -18,9 +18,9 @@ const Submit = ({ onClose, success }) => {
       Subject: "Email to IjaraLeasing",
       Body: `Name: ${data.product} | Email: ${data.comment} | Number: ${data.phone} | INN: ${data.price}`,
     };
-
+    
     if (window.Email) {
-      window.Email.send(config).then((message) => alert(message));
+      window.Email.send(config).then((message) => console.log(message));
     }
   };
   const { t } = useTranslation();
@@ -75,6 +75,7 @@ const Submit = ({ onClose, success }) => {
       submitHandler(data);
       setOpenModal(false);
       onClose(openModal);
+      success()
     } else {
       errorAlert();
     }
