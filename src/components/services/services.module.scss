@@ -16,7 +16,7 @@
 			height: 324px;
 		}
 		@media (max-width: $sm) {
-			height: 200px;
+			height: 170px;
 			padding-bottom: 5%;
 		}
 		&__images {
@@ -80,7 +80,8 @@
 					z-index: 1;
 
 					@media (max-width: $md) {
-						font-size: 30px;
+						font-size: 29px;
+						font-weight: 600;
 					}
 				}
 				span {

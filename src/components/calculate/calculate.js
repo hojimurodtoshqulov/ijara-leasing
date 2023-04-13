@@ -34,140 +34,174 @@ const Calculate = () => {
 		setLeasingValue(value);
 	};
 
-    const numberForamtter = (num) => {
-        // const newFormatter = new Intl.numberFormat("en-US", {separator: " "});
-        return (new Intl.NumberFormat("en-US").format(num));
-    }
-    const transition = {type: "spring", duration: 2};
+	const numberForamtter = (num) => {
+		// const newFormatter = new Intl.numberFormat("en-US", {separator: " "});
+		return new Intl.NumberFormat("en-US").format(num);
+	};
+	const transition = { type: "spring", duration: 2 };
 
-    return (
-        <div className="calculate">
-            <div className="container">
-                <div className="calculate__titles" data-aos="fade-up">
-                    <h1>{t("home.calculate.title")}</h1>
-                    {/*<motion.div*/}
-                    {/*    initial={{width: "0%"}}*/}
-                    {/*    whileInView={{width: "45%"}}*/}
-                    {/*    transition={{transition}}*/}
-                    {/*></motion.div>*/}
-                    <p>{t("home.calculate.subtitle")}</p>
-                </div>
-                <div className="calculate__calculates">
-                    <div className="calculate__calculates_col1">
-                        <h1>
-                            <p>{t("home.calculate.calculator")}</p>{" "}
-                            <motion.span
-                                initial={{width: "0%"}}
-                                whileInView={{width: "30%"}}
-                                transition={{transition}}
-                            ></motion.span>
-                            {" "}
-                            <motion.div
-                                initial={{width: "0%"}}
-                                whileInView={{width: "65%"}}
-                                transition={{transition}}
-                            ></motion.div>
-                        </h1>
-                        <div className={"calculate__range-wrap"}>
-                            <div className={"calculate__range"}>
-                                <label className={"calculate__range-label"}>
-                                    <h4 className={"calculate__range-label-text"}>{t("home.calculate.calcTitle1")}</h4>
-                                    <h3 className={"calculate__range-label-amount"}>{numberForamtter(leasingValue)} {t("sum")}</h3>
-                                </label>
-                                <input type={'range'} min={2000000}
-                                       onChange={leasingValueChange}
-                                       value={leasingValue} max={100000000} style={{width: "100%"}}/>
-                                <div className={'calculate__range-values'}>
-                                    <h3> 2 000 000 {t("sum")}</h3>
-                                    <h3> 100 000 000 {t("sum")}</h3>
-                                </div>
-                            </div>
-                            <div className={"calculate__range"}>
-                                <label className={"calculate__range-label"}>
-                                    <h4 className={"calculate__range-label-text"}>{t("home.calculate.calcTitle2")}</h4>
-                                    <h3 className={"calculate__range-label-amount"}>{numberForamtter(paymentValue)} {t("sum")}</h3>
-                                </label>
-                                <div className={'input-wrapper'}><input onChange={paymentValueChange} value={paymentValue} type={'range'}
-                                            max={50000000}
-                                            min={1000000}
-                                            style={{width: "100%"}}/></div>
+	return (
+		<div className="calculate">
+			<div className="container">
+				<div className="calculate__titles" data-aos="fade-up">
+					<h1>{t("home.calculate.title")}</h1>
+					{/*<motion.div*/}
+					{/*    initial={{width: "0%"}}*/}
+					{/*    whileInView={{width: "45%"}}*/}
+					{/*    transition={{transition}}*/}
+					{/*></motion.div>*/}
+					<p>{t("home.calculate.subtitle")}</p>
+				</div>
+				<div className="calculate__calculates">
+					<div className="calculate__calculates_col1">
+						<h1>
+							<p>{t("home.calculate.calculator")}</p>{" "}
+							<motion.span
+								initial={{ width: "0%" }}
+								whileInView={{ width: "30%" }}
+								transition={{ transition }}
+							></motion.span>{" "}
+							<motion.div
+								initial={{ width: "0%" }}
+								whileInView={{ width: "65%" }}
+								transition={{ transition }}
+							></motion.div>
+						</h1>
+						<div className={"calculate__range-wrap"}>
+							<div className={"calculate__range"}>
+								<label className={"calculate__range-label"}>
+									<h4 className={"calculate__range-label-text"}>
+										{t("home.calculate.calcTitle1")}
+									</h4>
+									<h3 className={"calculate__range-label-amount"}>
+										{numberForamtter(leasingValue)} {t("sum")}
+									</h3>
+								</label>
+								<input
+									type={"range"}
+									min={2000000}
+									onChange={leasingValueChange}
+									value={leasingValue}
+									max={100000000}
+									style={{ width: "100%" }}
+								/>
+								<div className={"calculate__range-values"}>
+									<h3> 2 000 000 {t("sum")}</h3>
+									<h3> 100 000 000 {t("sum")}</h3>
+								</div>
+							</div>
+							<div className={"calculate__range"}>
+								<label className={"calculate__range-label"}>
+									<h4 className={"calculate__range-label-text"}>
+										{t("home.calculate.calcTitle2")}
+									</h4>
+									<h3 className={"calculate__range-label-amount"}>
+										{numberForamtter(paymentValue)} {t("sum")}
+									</h3>
+								</label>
+								<div className={"input-wrapper"}>
+									<input
+										onChange={paymentValueChange}
+										value={paymentValue}
+										type={"range"}
+										max={50000000}
+										min={1000000}
+										style={{ width: "100%" }}
+									/>
+								</div>
 
-                                <div className={'calculate__range-values'}>
-                                    <h3>1 000 000 {t("sum")}</h3>
-                                    <h3>50 000 000 {t("sum")}</h3>
-                                </div>
-                            </div>
-                            <div className={"calculate__range"}>
-                                <label className={"calculate__range-label"}>
-                                    <h4 className={"calculate__range-label-text"}>{t("home.calculate.calcTitle3")}</h4>
-                                    <h3 className={"calculate__range-label-amount"}>{timeValue} {t("month")}</h3>
-                                </label>
-                                <input min={13} value={timeValue} max={48} style={{width: "100%"}}
-                                       onChange={(e) => setTimeValue(+e.target.value)} type="range"/>
-                                <div className={'calculate__range-values'}>
-                                    <h3>13 {t("month")}</h3>
-                                    <h3>48 {t("month")}</h3>
-                                </div>
-                            </div>
-                        </div>
+								<div className={"calculate__range-values"}>
+									<h3>1 000 000 {t("sum")}</h3>
+									<h3>50 000 000 {t("sum")}</h3>
+								</div>
+							</div>
+							<div className={"calculate__range"}>
+								<label className={"calculate__range-label"}>
+									<h4 className={"calculate__range-label-text"}>
+										{t("home.calculate.calcTitle3")}
+									</h4>
+									<h3 className={"calculate__range-label-amount"}>
+										{timeValue} {t("month")}
+									</h3>
+								</label>
+								<input
+									min={13}
+									value={timeValue}
+									max={48}
+									style={{ width: "100%" }}
+									onChange={(e) => setTimeValue(+e.target.value)}
+									type="range"
+								/>
+								<div className={"calculate__range-values"}>
+									<h3>13 {t("month")}</h3>
+									<h3>48 {t("month")}</h3>
+								</div>
+							</div>
+						</div>
 
-                        <p
-                            data-aos="flip-up"
-                            data-aos-delay="300"
-                            className="calculate__calculates_col1-text"
-                        >
-                            {t("home.calculate.text")}
-                        </p>
-                    </div>
-                    <motion.div
-                        className="calculate__calculates_col2"
-                        initial={{
-                            transform: "rotate(30deg)",
-                            transformOrigin: " right bottom",
-                        }}
-                        whileInView={{
-                            transform: "rotate(0deg)",
-                            transformOrigin: " right bottom",
-                        }}
-                        transition={{transition, duration: 1}}
-                    >
-                        <div
-                            data-aos="fade-left"
-                            data-aos-delay="100"
-                            className="calculate__calculates_col2-titles"
-                        >
-                            <h2>
-                                {t("home.calculate.resultTitle1")}
-                                <br/>
-                                <span>{leasingValue} {t("sum")}</span>
-                                {/* <input
+						<p
+							data-aos="flip-up"
+							data-aos-delay="300"
+							className="calculate__calculates_col1-text"
+						>
+							{t("home.calculate.text")}
+						</p>
+					</div>
+					<motion.div
+						className="calculate__calculates_col2"
+						initial={{
+							transform: "rotate(30deg)",
+							transformOrigin: " right bottom",
+							clipPath: " polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)",
+						}}
+						whileInView={{
+							transform: "rotate(0deg)",
+							transformOrigin: " right bottom",
+							clipPath: "polygon(100% 0, 100% 100%, 0 100%, 0 0)",
+						}}
+						transition={{ transition, duration: 1 }}
+					>
+						<div
+							data-aos="fade-left"
+							data-aos-delay="100"
+							className="calculate__calculates_col2-titles"
+						>
+							<h2>
+								{t("home.calculate.resultTitle1")}
+								<br />
+								<span>
+									{leasingValue} {t("sum")}
+								</span>
+								{/* <input
 									type="text"
 									value={`${leasingValue} ${t("sum")}`}
 									onChange={onChange}
 								/> */}
-                            </h2>
-                        </div>
-                        <div
-                            data-aos="fade-right"
-                            data-aos-delay="200"
-                            className="calculate__calculates_col2-titles titles2"
-                        >
-                            <h2>
-                                {t("home.calculate.resultTitle2")}
-                                <br/>
-                                <span>{paymentValue} {t("sum")}</span>
-                                {/* <input
+							</h2>
+						</div>
+						<div
+							data-aos="fade-right"
+							data-aos-delay="200"
+							className="calculate__calculates_col2-titles titles2"
+						>
+							<h2>
+								{t("home.calculate.resultTitle2")}
+								<br />
+								<span>
+									{paymentValue} {t("sum")}
+								</span>
+								{/* <input
 									type="text"
 									value={`${paymentValue} ${t("sum")}`}
 									onChange={onChange2}
 								/> */}
-                            </h2>
-                        </div>
-                    </motion.div>
-                </div>
-            </div>
-        </div>
-    );
+							</h2>
+						</div>
+					</motion.div>
+				</div>
+			</div>
+		</div>
+	);
 };
 
 export default Calculate;

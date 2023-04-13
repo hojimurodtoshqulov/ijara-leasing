@@ -497,7 +497,7 @@
 }
 @media (max-width: $sm) {
 	.testimonials {
-		height: 770px;
+		height: 790px;
 		display: flex;
 		justify-content: space-between;
 		gap: 1rem;
@@ -515,8 +515,8 @@
 			right: 0;
 			top: 10%;
 			& > :nth-child(1) {
-				font-weight: bold;
-				font-size: 25px;
+				font-weight: 700;
+				font-size: 26px;
 				position: absolute;
 				top: -50%;
 				left: -90%;
@@ -538,15 +538,15 @@
 				right: 0;
 				padding: 15%;
 				& > :nth-child(1) {
-					font-weight: normal;
-					font-size: 15px;
+					font-weight: 700;
+					font-size: 16px;
 				}
 				& > :nth-child(2) {
-					font-size: 12px;
+					font-size: 14px;
 					text-transform: none;
 					text-align: center;
-					letter-spacing: 2px;
-					line-height: 13px;
+					letter-spacing: 0.3px;
+					line-height: 15px;
 				}
 				.arrows {
 					// border: 1px solid red;
@@ -620,15 +620,14 @@
 				}
 			}
 		}
-
 		.right_t {
 			// display: none;
 			position: absolute;
 			top: auto;
 			left: 1%;
 			bottom: 7%;
-			width: 250px;
-			height: 200px;
+			width: 300px;
+			height: 230px;
 			margin-top: 10rem;
 			img {
 				position: absolute;
