@@ -1,6 +1,7 @@
 @import "../../scss/varuables.scss";
 .footer {
 	background: $dark;
+	overflow-x: hidden;
 	&__row1 {
 		display: flex;
 		align-items: center;
