@@ -14,7 +14,7 @@ const Location = () => {
 					<p>Карта</p>
 					<motion.span
 						initial={{ width: "100px", left: "8rem" }}
-						whileInView={{ width: "100px", left: "-0.3rem" }}
+						whileInView={{ width: "100px", left: "-0.1rem" }}
 						transition={{ transition, duration: 1 }}
 					></motion.span>
 				</h1>
@@ -33,8 +33,8 @@ const Location = () => {
 					<a
 						href="https://yandex.uz/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps"
 						style={{
-							color: "#eee",
-							fontSize: "12px",
+							color: "#1A1B2F",
+							fontSize: "15px",
 							position: "absolute",
 							top: 0,
 						}}
@@ -44,8 +44,8 @@ const Location = () => {
 					<a
 						href="https://yandex.uz/maps/10335/tashkent/house/YkAYdABlQEcPQFprfX9zdHxmYQ==/?ll=69.276332%2C41.325071&utm_medium=mapframe&utm_source=maps&z=19"
 						style={{
-							color: "#eee",
-							fontSize: "12px",
+							color: "#1A1B2F",
+							fontSize: "15px",
 							position: "absolute",
 							top: 14,
 						}}
@@ -54,14 +54,37 @@ const Location = () => {
 						Qodiriy — Yandex&nbsp;Xaritalar
 					</a>
 					<iframe
-						src="https://yandex.uz/map-widget/v1/?ll=69.276332%2C41.325071&mode=whatshere&whatshere%5Bpoint%5D=69.275928%2C41.325055&whatshere%5Bzoom%5D=17&z=19"
+						src="https://yandex.uz/map-widget/v1/?from=mapframe&ll=69.277701%2C41.324926&mode=whatshere&whatshere%5Bpoint%5D=69.275928%2C41.325055&whatshere%5Bzoom%5D=17&z=15.58"
 						width="100%"
 						height="100%"
-						frameBorder="1"
-						allowFullScreen
-						style={{ position: "relative" }}
+						frameborder="1"
+						allowfullscreen="true"
+						style={{position:"relative"}}
 					></iframe>
 				</div>
+				{/* <div style="position:relative;overflow:hidden;">
+					<a
+						href="https://yandex.uz/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps"
+						style="color:#eee;font-size:12px;position:absolute;top:0px;"
+					>
+						Ташкент
+					</a>
+					<a
+						href="https://yandex.uz/maps/10335/tashkent/house/YkAYdABlQEcPQFprfX9zdHxmYQ==/?from=mapframe&ll=69.277701%2C41.324926&utm_medium=mapframe&utm_source=maps&z=15.58"
+						style="color:#eee;font-size:12px;position:absolute;top:14px;"
+					>
+						Массив Киёт, 78 на карте Ташкента, ближайшее метро Абдуллы Кадыри —
+						Яндекс Карты
+					</a>
+					<iframe
+						src="https://yandex.uz/map-widget/v1/?from=mapframe&ll=69.277701%2C41.324926&mode=whatshere&whatshere%5Bpoint%5D=69.275928%2C41.325055&whatshere%5Bzoom%5D=17&z=15.58"
+						width="560"
+						height="400"
+						frameborder="1"
+						allowfullscreen="true"
+						style="position:relative;"
+					></iframe>
+				</div> */}
 			</div>
 		</div>
 	);

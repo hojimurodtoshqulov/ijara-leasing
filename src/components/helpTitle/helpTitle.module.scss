@@ -2,7 +2,7 @@
 
 .helpTitleDiv {
 	background: $bg;
-	padding: 10% 0;
+	padding: 8% 0;
 	.helpTitle {
 		display: flex;
 		align-items: flex-start;
@@ -16,10 +16,11 @@
 			& > h1 {
 				width: 100%;
 				text-align: center;
-
 				@media (max-width: $md) {
 					p {
-						font-size: 25px;
+						font-size: 30px;
+						line-height: 26px;
+						font-weight: 600;
 					}
 					span {
 						display: none;

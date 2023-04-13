@@ -8,7 +8,7 @@ import { AiFillCaretDown } from "react-icons/ai";
 import Button from "../button/button";
 const Nav = ({ onClick }) => {
 	const [navSize, setnavSize] = useState("12vh");
-	const [navSizeMobile, setnavSizeMobile] = useState("10vh");
+	const [navSizeMobile, setnavSizeMobile] = useState("9.4vh");
 	const [navColorBg, setnavColorBg] = useState("transparent");
 	const [navLogoFSZ, setNavLogoFSZ] = useState("20px");
 	const [navContainerBR, setNavContainerBR] = useState("2px solid #fff");
@@ -17,7 +17,7 @@ const Nav = ({ onClick }) => {
 			? setnavColorBg("#0e0e12f0")
 			: setnavColorBg("transparent");
 		window.scrollY > 80 ? setnavSize("10vh") : setnavSize("12vh");
-		window.scrollY > 80 ? setnavSizeMobile("10vh") : setnavSizeMobile("10vh");
+		window.scrollY > 80 ? setnavSizeMobile("9.4vh") : setnavSizeMobile("9.4vh");
 		window.scrollY > 80 ? setNavLogoFSZ("15px") : setNavLogoFSZ("20px");
 		window.scrollY > 80
 			? setNavContainerBR("2px solid #ff00")
@@ -50,7 +50,7 @@ const Nav = ({ onClick }) => {
 		window.scrollTo(0, 0);
 	};
 	const width = () => {
-		if (window.innerWidth > 500) {
+		if (window.innerWidth > 765) {
 			return navSize;
 		} else {
 			return navSizeMobile;

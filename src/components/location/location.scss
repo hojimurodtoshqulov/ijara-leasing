@@ -6,11 +6,11 @@
 }
 .map {
 	background: $bg;
-	padding: 5% 0;
+	padding: 9% 0 7% 0;
 	h1 {
 		font-size: 50px;
 		font-family: $font_titles;
-		margin: 2% 0 2% 0.5%;
+		margin: 2% 0 2% 0.1%;
 		position: relative;
 		z-index: 1;
 		p {
@@ -72,6 +72,9 @@
 			p {
 				font-size: 25px;
 			}
+			span {
+				left: -0.1rem;
+			}
 		}
 		iframe {
 			height: 350px;
@@ -83,13 +86,14 @@
 	.map {
 		h1 {
 			font-size: 25px;
-
+			margin-left: 1px;
 			p {
-				font-size: 25px;
+				font-size: 30px;
 			}
 			span {
-				height: 7px;
+				height: 8px;
 				width: 50%;
+				left: -0.1rem;
 			}
 		}
 		iframe {
@@ -100,9 +104,10 @@
 @media (max-width: $sm) {
 	.map {
 		h1 {
-			font-size: 1.5em;
+			font-size: 30px;
 			span {
 				width: 82px;
+				left: -0.1rem;
 			}
 		}
 		iframe {

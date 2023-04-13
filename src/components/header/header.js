@@ -30,12 +30,12 @@ const Header = () => {
 							<p data-aos="flip-up" data-aos-delay="600">
 								{t("home.hero.text")}
 							</p>
-							<div
-								className={scss.header__container_elements_buttons}
-								data-aos="flip-up"
-								data-aos-delay="900"
-							>
-								<div className={scss.header__container_elements_buttons_div1}>
+							<div className={scss.header__container_elements_buttons}>
+								<div
+									className={scss.header__container_elements_buttons_div1}
+									data-aos="flip-up"
+									data-aos-delay="900"
+								>
 									<Button
 										btnLink={"/company"}
 										btnTitle={t("home.hero.btnText1")}
@@ -46,6 +46,8 @@ const Header = () => {
 										setOpenModal(true);
 									}}
 									className={scss.header__container_elements_buttons_div2}
+									data-aos="flip-up"
+									data-aos-delay="900"
 								>
 									<Button
 										btnLink={"/"}
