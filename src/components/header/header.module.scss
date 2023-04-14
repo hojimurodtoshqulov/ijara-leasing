@@ -12,7 +12,7 @@
 		height: 100%;
 		&_elements {
 			position: absolute;
-			top: 20%;
+			top: 25%;
 			z-index: 12;
 			display: flex;
 			flex-wrap: wrap;
@@ -68,7 +68,7 @@
 			width: 60%;
 			position: absolute;
 			right: -10%;
-			top: 15%;
+			top: 20%;
 			z-index: 1;
 			// transform: rotate(-100deg);
 			// animation: car 2s cubic-bezier(0.87, -0.17, 0.16, 1.27) 1 alternate
