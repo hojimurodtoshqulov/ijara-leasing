@@ -10,6 +10,7 @@
 		url("../../media/in_chevrolet.png");
 	background-size: cover;
 	overflow: hidden;
+	box-shadow: 2px 5px 30px 5px rgba(0, 0, 0, 0.595);
 	&__titles {
 		overflow: hidden;
 		width: 25%;
@@ -200,6 +201,13 @@
 			&:nth-child(1) {
 				width: 70%;
 				gap: 1px;
+				p {
+					position: relative;
+					span {
+						position: absolute;
+						left: 5px;
+					}
+				}
 			}
 			&:nth-child(5) {
 				width: 100%;

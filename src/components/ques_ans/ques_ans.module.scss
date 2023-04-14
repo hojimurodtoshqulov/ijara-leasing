@@ -17,6 +17,7 @@
 		color: $light;
 		padding: 2rem 0 0 0;
 		position: relative;
+		z-index: 1;
 		& > :nth-child(1) {
 			font-weight: bold;
 			font-size: 50px;
@@ -46,7 +47,7 @@
 				line-height: 22px;
 			}
 			.arrows {
-				// border: 1px solid red;
+				margin-top: 1.5rem;
 				display: flex;
 				align-items: center;
 				justify-content: flex-start;
@@ -59,6 +60,7 @@
 						svg {
 							background: $primary;
 							color: $light;
+							box-shadow: none;
 						}
 					}
 					&:hover::after {
@@ -78,6 +80,7 @@
 					bottom: -3px;
 					z-index: 1;
 					background: $primary;
+					box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.417);
 				}
 				&_right {
 					position: relative;
@@ -86,12 +89,16 @@
 						svg {
 							background: $primary;
 							color: $light;
+							box-shadow: none;
 						}
 					}
 					&:hover::after {
 						transition: 0.3s;
 						right: 0px;
 						bottom: 0px;
+					}
+					svg {
+						box-shadow: 2px -3px 15px rgba(0, 0, 0, 0.804);
 					}
 				}
 				&_right::after {
@@ -104,6 +111,7 @@
 					bottom: -3px;
 					z-index: 1;
 					background: $primary;
+					box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.417);
 				}
 				svg {
 					transition: 0.3s;
@@ -113,23 +121,32 @@
 					color: $primary;
 					position: relative;
 					z-index: 12;
+					box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.804);
 				}
 			}
 		}
 	}
-
 	.right_t {
 		position: relative;
 		width: 400px;
 		height: 390px;
+		z-index: 123;
+		transform: translateZ(50px);
+		&:hover {
+			cursor: pointer;
+			transform: translateZ(50px) scale(1.05);
+		}
 		img {
 			position: absolute;
 			top: 1rem;
 			left: 1rem;
+			z-index: 1234;
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
 			z-index: 12;
+			box-shadow: 5px 3px 35px rgba(0, 0, 0, 0.781);
+			transform: translateZ(100px);
 		}
 		&_div1 {
 			border: 2px solid $primary;
@@ -140,6 +157,7 @@
 			height: 100%;
 			object-fit: cover;
 			z-index: 1;
+			box-shadow: -5px 3px 35px rgba(0, 0, 0, 0.781);
 		}
 		&_div2 {
 			background: linear-gradient(to bottom left, #178187, #319ba1, #48e2ea);
@@ -150,6 +168,7 @@
 			height: 100%;
 			object-fit: cover;
 			z-index: 2;
+			box-shadow: 3px 3px 35px rgba(0, 0, 0, 0.781);
 		}
 
 		@media (min-width: $xxl) {
@@ -205,7 +224,7 @@
 					font-size: 13px;
 					text-transform: none;
 					text-align: justify;
-					letter-spacing: 2px;
+					letter-spacing: 0px;
 					line-height: 15px;
 				}
 				.arrows {
@@ -380,7 +399,7 @@
 					font-size: 13px;
 					text-transform: none;
 					text-align: justify;
-					letter-spacing: 2px;
+					letter-spacing: 0px;
 					line-height: 15px;
 				}
 				.arrows {
@@ -497,7 +516,7 @@
 }
 @media (max-width: $sm) {
 	.testimonials {
-		height: 790px;
+		height: 825px;
 		display: flex;
 		justify-content: space-between;
 		gap: 1rem;
@@ -629,6 +648,7 @@
 			width: 300px;
 			height: 230px;
 			margin-top: 10rem;
+			z-index: 123;
 			img {
 				position: absolute;
 				top: 1rem;

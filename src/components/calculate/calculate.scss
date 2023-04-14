@@ -61,8 +61,9 @@
 		margin-bottom: 150px;
 
 		h1 {
-			font-size: 50px;
-
+			p {
+				font-size: 50px;
+			}
 			@media (min-width: $xxl) {
 				font-size: 70px;
 			}
@@ -89,7 +90,7 @@
 
 		&_col1 {
 			padding: 0 0 5% 0;
-			width: 60%;
+			width: 55%;
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
@@ -257,19 +258,35 @@
 		}
 
 		&_col2 {
-			width: 37%;
+			width: 35%;
 			height: 100%;
-			background-image: linear-gradient(to bottom, #00000081, #000000ab),
-				url("../../media/Group248.png");
-			background-size: cover;
+			// background-image: linear-gradient(to bottom, #00000081, #000000ab),
+			// 	url("../../media/Group248.png");
+			// background-size: cover;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
 			gap: 2rem;
 			text-align: center;
-			overflow: hidden;
-
+			position: relative;
+			&-main {
+				position: relative;
+				z-index: 123;
+				background-image: linear-gradient(to bottom, #00000081, #000000ab),
+					url("../../media/Group248.png");
+				background-size: cover;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				gap: 2rem;
+				text-align: center;
+				overflow: hidden;
+				width: 100%;
+				height: 100%;
+				box-shadow: 2px 3px 35px 10px #000;
+			}
 			&-titles {
 				h2 {
 					font-size: 35px;
@@ -288,6 +305,28 @@
 						text-align: center;
 					}
 				}
+			}
+			&_div1 {
+				border: 2px solid $primary;
+				position: absolute;
+				top: -1.5rem;
+				left: -1.5rem;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				z-index: 1;
+				box-shadow: -5px 3px 35px rgba(0, 0, 0, 0.781);
+			}
+			&_div2 {
+				background: linear-gradient(to bottom left, #178187, #319ba1, #48e2ea);
+				position: absolute;
+				right: -1.5rem;
+				bottom: -1.5rem;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				z-index: 2;
+				box-shadow: 3px 3px 35px rgba(0, 0, 0, 0.781);
 			}
 		}
 	}
@@ -499,22 +538,12 @@
 									}
 								}
 							}
-
-							//p {
-							//	position: absolute;
-							//	top: -2%;
-							//	left: 500%;
-							//	font-size: 20px;
-							//}
 						}
 					}
-
 					.inp3 {
 						position: absolute;
 						top: -150%;
-						//right: 46%;
 						height: 30px;
-						//width: 150px;
 						&_mec {
 							position: absolute;
 							top: -2%;
@@ -522,7 +551,6 @@
 							font-size: 20px;
 						}
 					}
-
 					&-priceStart {
 						position: absolute;
 						bottom: -90%;
@@ -559,7 +587,7 @@
 				justify-content: center;
 				gap: 1.5rem;
 				text-align: center;
-				overflow: hidden;
+				// overflow: hidden;
 
 				&-titles {
 					h2 {
@@ -579,10 +607,9 @@
 		}
 	}
 }
-
 @media (max-width: $md) {
 	.calculate {
-		padding-bottom: 23%;
+		padding-bottom: 30%;
 		&__titles {
 			text-align: center;
 			width: 100%;
@@ -794,13 +821,23 @@
 			}
 
 			&_col2 {
-				margin-top: 2%;
+				margin-top: 5%;
 				width: 100%;
 				padding: 20% 0;
 				flex-direction: row;
 				align-items: center;
 				justify-content: center;
-				background: #000;
+				background-image: none;
+				&-main {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background: #000;
+					z-index: 12;
+					box-shadow: 2px 3px 10px #000;
+				}
 				&-titles {
 					display: flex;
 					flex-direction: row;
@@ -829,709 +866,9 @@
 		}
 	}
 }
-
 @media (max-width: $sm) {
 	.calculate__calculates_col2 {
 		flex-direction: column;
 		min-height: 200px;
 	}
 }
-
-// @import "../../scss/varuables.scss";
-
-// .calculate {
-// 	background: $bg;
-// 	display: flex;
-// 	flex-direction: column;
-// 	gap: 2rem;
-// 	&__titles {
-// 		text-align: center;
-// 		width: 80%;
-// 		margin: 0 auto;
-// 		display: flex;
-// 		flex-direction: column;
-// 		align-items: center;
-// 		justify-content: center;
-// 		gap: 1rem;
-// 		margin-bottom: 5rem;
-// 		h1 {
-// 			font-size: 50px;
-
-// 			@media (min-width: $xxl) {
-// 				font-size: 70px;
-// 			}
-// 		}
-// 		div {
-// 			width: 40%;
-// 			height: 3px;
-// 			background: linear-gradient(to left, #319ba116, #319ba1, #319ba116);
-// 			border-radius: 100%;
-// 		}
-// 		p {
-// 			font-size: 25px;
-// 		}
-// 	}
-// 	&__calculates {
-// 		height: 400px;
-// 		display: flex;
-// 		justify-content: space-between;
-// 		align-items: center;
-// 		gap: 40px;
-// 		&_col1 {
-// 			padding: 0 0 5% 0;
-// 			//width: 60%;
-// 			display: flex;
-// 			flex-direction: column;
-// 			align-items: flex-start;
-// 			justify-content: center;
-// 			gap: 5rem;
-// 			position: relative;
-// 			h1 {
-// 				height: 30px;
-// 				display: flex;
-// 				flex-direction: column;
-// 				position: relative;
-// 				p {
-// 					position: relative;
-// 					z-index: 1;
-// 				}
-// 				span {
-// 					height: 15px;
-// 					background: $primary;
-// 					position: absolute;
-// 					top: 75%;
-// 					left: -1%;
-// 					z-index: 0;
-// 				}
-// 				div {
-// 					position: absolute;
-// 					bottom: -100%;
-// 					right: 36%;
-// 					height: 5px;
-// 					background: $primary;
-// 				}
-// 			}
-// 			&_slider1 {
-// 				position: relative;
-// 				width: 200%;
-// 				padding: 0 0 0 1.4%;
-// 				&-title {
-// 					position: absolute;
-// 					bottom: 140%;
-// 					left: 0.2%;
-// 					height: 25px;
-// 					font-weight: 500;
-// 					font-size: 1.2rem;
-// 				}
-// 				.row {
-// 					height: 20px;
-// 					display: flex;
-// 					align-items: center;
-// 					justify-content: flex-start;
-// 					&__col {
-// 						height: 100%;
-
-// 						&_slider {
-// 							position: absolute;
-// 							top: -50%;
-// 							left: -1%;
-// 							width: 100%;
-// 							.ant-slider-rail {
-// 								background: #fff;
-// 							}
-// 						}
-// 					}
-// 				}
-
-// 				&_inp {
-// 					position: absolute;
-// 					top: -150%;
-// 					right: 46.5%;
-// 					height: 30px;
-// 					width: 150px;
-// 					&-col {
-// 						display: flex;
-// 						justify-content: space-between;
-// 						align-items: center;
-// 						gap: 0.5rem;
-// 						//&-input {
-// 						//	background: none;
-// 						//	border: none;
-// 						//	color: $light;
-// 						//	.ant-input-number {
-// 						//	}
-// 						//	.ant-input-number-handler-wrap {
-// 						//		input {
-// 						//			outline: none;
-// 						//			&:focus {
-// 						//				border: none;
-// 						//				outline: none;
-// 						//			}
-// 						//		}
-// 						//	}
-// 						//	.ant-input-number-input-wrap {
-// 						//		height: 30px;
-// 						//		width: 150px;
-// 						//		input {
-// 						//			color: #fff;
-// 						//			font-size: 20px;
-// 						//			&:focus {
-// 						//				border: none;
-// 						//				outline: none;
-// 						//			}
-// 						//		}
-// 						//	}
-// 						//}
-// 						p {
-// 							//position: absolute;
-// 							//top: -2%;
-// 							//left: 500%;
-// 							font-size: 20px;
-// 						}
-
-// 						span {
-// 							//color: red;
-// 							font-size: 18px;
-// 						}
-// 					}
-// 				}
-// 				.inp3 {
-// 					position: absolute;
-// 					top: -150%;
-// 					right: 49%;
-// 					height: 30px;
-// 					width: 75px;
-// 					&_mec {
-// 						position: absolute;
-// 						top: -2%;
-// 						left: 230%;
-// 						font-size: 20px;
-// 					}
-// 				}
-// 				&-priceStart {
-// 					position: absolute;
-// 					bottom: -90%;
-// 					left: 0.3%;
-// 					font-size: 17px;
-// 				}
-// 				&-priceEnd {
-// 					position: absolute;
-// 					bottom: -90%;
-// 					right: 50%;
-// 					font-size: 17px;
-// 				}
-// 			}
-// 			&-text {
-// 				//position: absolute;
-// 				bottom: 0;
-// 				left: 0;
-// 				z-index: 123;
-// 				font-size: 16px;
-// 				margin-top: -2rem;
-// 			}
-// 		}
-// 		&_col2 {
-// 			width: 37%;
-// 			height: 100%;
-// 			background-image: linear-gradient(to bottom, #00000081, #000000ab),
-// 				url("../../media/Group248.png");
-// 			background-size: cover;
-// 			display: flex;
-// 			flex-direction: column;
-// 			align-items: center;
-// 			justify-content: center;
-// 			gap: 2rem;
-// 			text-align: center;
-// 			overflow: hidden;
-// 			&-titles {
-// 				h2 {
-// 					font-size: 35px;
-// 					font-weight: 400;
-// 					input {
-// 						background: none;
-// 						border: none;
-// 						color: $light;
-// 						font-size: 20px;
-// 						text-align: center;
-// 					}
-// 					span {
-// 						font-size: 20px;
-// 						text-align: center;
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
-// }
-// .ant-input-number-handler-wrap {
-// 	border-radius: none;
-// }
-// .calculate__calculates_col1_slider1_inp-col {
-// 	outline: none;
-// 	box-shadow: none;
-// 	&:focus {
-// 		border: none;
-// 		outline: none;
-// 		box-shadow: none;
-// 	}
-// 	&:active {
-// 		border: none;
-// 		outline: none;
-// 		box-shadow: none;
-// 	}
-// }
-// .ant-input-number {
-// 	border-radius: 0;
-// 	width: 130px;
-// 	&:focus {
-// 		border: none;
-// 		outline: none;
-// 	}
-// 	&:active {
-// 		border: none;
-// 		outline: none;
-// 	}
-// 	input {
-// 		&:focus {
-// 			border: none;
-// 			outline: none;
-// 		}
-// 		&:active {
-// 			border: none;
-// 			outline: none;
-// 		}
-// 	}
-// }
-
-// @media (max-width: $xl) {
-// 	.calculate {
-// 		background: $bg;
-// 		display: flex;
-// 		flex-direction: column;
-// 		gap: 2rem;
-// 		&__titles {
-// 			text-align: center;
-// 			width: 80%;
-// 			margin: 0 auto;
-// 			display: flex;
-// 			flex-direction: column;
-// 			align-items: center;
-// 			justify-content: center;
-// 			gap: 1rem;
-// 			margin-bottom: 5rem;
-// 			h1 {
-// 				font-size: 40px;
-// 			}
-// 			div {
-// 				width: 40%;
-// 				height: 3px;
-// 				background: linear-gradient(to left, #319ba116, #319ba1, #319ba116);
-// 				border-radius: 100%;
-// 			}
-// 			p {
-// 				font-size: 20px;
-// 			}
-// 		}
-// 		&__calculates {
-// 			height: 400px;
-// 			display: flex;
-// 			justify-content: space-between;
-// 			align-items: center;
-// 			gap: 20px;
-// 			&_col1 {
-// 				padding: 0 0 5% 0;
-// 				width: 60%;
-// 				display: flex;
-// 				flex-direction: column;
-// 				align-items: flex-start;
-// 				justify-content: center;
-// 				gap: 5rem;
-// 				position: relative;
-// 				h1 {
-// 					height: 25px;
-// 					display: flex;
-// 					flex-direction: column;
-// 					position: relative;
-// 					p {
-// 						position: relative;
-// 						z-index: 1;
-// 					}
-// 					span {
-// 						height: 15px;
-// 						background: $primary;
-// 						position: absolute;
-// 						top: 75%;
-// 						left: -1%;
-// 						z-index: 0;
-// 					}
-// 					div {
-// 						position: absolute;
-// 						bottom: -100%;
-// 						right: 36%;
-// 						height: 5px;
-// 						background: $primary;
-// 					}
-// 				}
-// 				&_slider1 {
-// 					position: relative;
-// 					width: 200%;
-// 					padding: 0 0 0 1.4%;
-// 					&-title {
-// 						position: absolute;
-// 						bottom: 140%;
-// 						left: 0.2%;
-// 						height: 25px;
-// 						font-weight: 500;
-// 						font-size: 1.2rem;
-// 					}
-// 					.row {
-// 						height: 20px;
-// 						display: flex;
-// 						align-items: center;
-// 						justify-content: flex-start;
-// 						&__col {
-// 							height: 100%;
-
-// 							&_slider {
-// 								position: absolute;
-// 								top: -50%;
-// 								left: -1%;
-// 								width: 100%;
-// 								.ant-slider-rail {
-// 									background: #fff;
-// 								}
-// 							}
-// 						}
-// 					}
-
-// 					&_inp {
-// 						position: absolute;
-// 						top: -150%;
-// 						right: 46.5%;
-// 						height: 30px;
-// 						width: 150px;
-// 						&-col {
-// 							&-input {
-// 								background: none;
-// 								border: none;
-// 								color: $light;
-// 								.ant-input-number {
-// 								}
-// 								.ant-input-number-handler-wrap {
-// 									input {
-// 										outline: none;
-// 										&:focus {
-// 											border: none;
-// 											outline: none;
-// 										}
-// 									}
-// 								}
-// 								.ant-input-number-input-wrap {
-// 									height: 30px;
-// 									width: 150px;
-// 									input {
-// 										color: #fff;
-// 										font-size: 20px;
-// 										&:focus {
-// 											border: none;
-// 											outline: none;
-// 										}
-// 									}
-// 								}
-// 							}
-// 							//p {
-// 							//	position: absolute;
-// 							//	top: -2%;
-// 							//	left: 500%;
-// 							//	font-size: 20px;
-// 							//}
-// 						}
-// 					}
-// 					.inp3 {
-// 						position: absolute;
-// 						top: -150%;
-// 						//right: 46%;
-// 						height: 30px;
-// 						//width: 150px;
-// 						&_mec {
-// 							position: absolute;
-// 							top: -2%;
-// 							left: 230%;
-// 							font-size: 20px;
-// 						}
-// 					}
-// 					&-priceStart {
-// 						position: absolute;
-// 						bottom: -90%;
-// 						left: 0.3%;
-// 						font-size: 17px;
-// 					}
-// 					&-priceEnd {
-// 						position: absolute;
-// 						bottom: -90%;
-// 						right: 50%;
-// 						font-size: 17px;
-// 					}
-// 				}
-// 				&-text {
-// 					//position: absolute;
-// 					bottom: 0;
-// 					left: 0;
-// 					z-index: 123;
-// 					font-size: 16px;
-// 				}
-// 			}
-// 			&_col2 {
-// 				width: 40%;
-// 				height: 100%;
-// 				background-image: linear-gradient(to bottom, #00000081, #000000ab),
-// 					url("../../media/Group248.png");
-// 				background-size: cover;
-// 				display: flex;
-// 				flex-direction: column;
-// 				align-items: center;
-// 				justify-content: center;
-// 				gap: 1.5rem;
-// 				text-align: center;
-// 				overflow: hidden;
-// 				&-titles {
-// 					h2 {
-// 						font-size: 30px;
-// 						font-weight: 400;
-// 						input {
-// 							background: none;
-// 							border: none;
-// 							color: $light;
-// 							font-size: 20px;
-// 							text-align: center;
-// 						}
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
-// }
-// @media (max-width: $md) {
-// 	.calculate {
-// 		padding-bottom: 20%;
-// 		&__titles {
-// 			text-align: center;
-// 			width: 100%;
-// 			margin: 0 auto;
-// 			display: flex;
-// 			flex-direction: column;
-// 			align-items: center;
-// 			justify-content: center;
-// 			gap: 1rem;
-// 			margin-bottom: 5rem;
-// 			h1 {
-// 				font-size: 30px;
-// 			}
-// 			div {
-// 				width: 40%;
-// 				height: 3px;
-// 				background: linear-gradient(to left, #319ba116, #319ba1, #319ba116);
-// 				border-radius: 100%;
-// 			}
-// 			p {
-// 				font-size: 15px;
-// 			}
-// 		}
-// 		&__calculates {
-// 			height: 550px;
-// 			display: flex;
-// 			justify-content: space-between;
-// 			align-items: center;
-// 			flex-direction: column;
-// 			gap: 70px;
-// 			&_col1 {
-// 				padding: 0 0 7% 0;
-// 				width: 100%;
-// 				display: flex;
-// 				flex-direction: column;
-// 				align-items: flex-start;
-// 				justify-content: center;
-// 				gap: 5rem;
-// 				position: relative;
-// 				h1 {
-// 					height: 20px;
-// 					display: flex;
-// 					flex-direction: column;
-// 					position: relative;
-// 					font-size: 20px;
-// 					p {
-// 						position: relative;
-// 						z-index: 1;
-// 					}
-// 					span {
-// 						height: 10px;
-// 						background: $primary;
-// 						position: absolute;
-// 						top: 55%;
-// 						left: -1%;
-// 						z-index: 0;
-// 					}
-// 					div {
-// 						position: absolute;
-// 						bottom: -50%;
-// 						right: 36%;
-// 						height: 3px;
-// 						background: $primary;
-// 					}
-// 				}
-// 				&_slider1 {
-// 					position: relative;
-// 					width: 200%;
-// 					padding: 0 0 0 1.4%;
-// 					&-title {
-// 						position: absolute;
-// 						bottom: 140%;
-// 						left: 0.2%;
-// 						height: 20px;
-// 						font-weight: 500;
-// 						font-size: 1rem;
-// 					}
-// 					.row {
-// 						height: 20px;
-// 						display: flex;
-// 						align-items: center;
-// 						justify-content: flex-start;
-// 						&__col {
-// 							height: 100%;
-// 							&_slider {
-// 								position: absolute;
-// 								top: -50%;
-// 								left: -1%;
-// 								width: 100%;
-// 								.ant-input-number-input {
-// 									font-size: 15px;
-// 								}
-// 								input {
-// 								}
-// 								.ant-slider-rail {
-// 									background: #fff;
-// 								}
-// 							}
-// 						}
-// 					}
-// 					&_inp {
-// 						position: absolute;
-// 						top: -150%;
-// 						right: 46.5%;
-// 						height: 30px;
-// 						width: 150px;
-// 						&-col {
-// 							&-input {
-// 								background: none;
-// 								border: none;
-// 								color: $light;
-// 								.ant-input-number {
-// 								}
-// 								.ant-input-number-handler-wrap {
-// 									input {
-// 										outline: none;
-// 										&:focus {
-// 											border: none;
-// 											outline: none;
-// 										}
-// 									}
-// 								}
-// 								.ant-input-number-input-wrap {
-// 									height: 30px;
-// 									width: 150px;
-// 									input {
-// 										color: #fff;
-// 										font-size: 20px;
-// 										&:focus {
-// 											border: none;
-// 											outline: none;
-// 										}
-// 									}
-// 								}
-// 							}
-// 							//p {
-// 							//	position: absolute;
-// 							//	top: -2%;
-// 							//	left: 500%;
-// 							//	font-size: 20px;
-// 							//}
-// 						}
-// 					}
-// 					.inp3 {
-// 						position: absolute;
-// 						top: -150%;
-// 						//right: 46%;
-// 						height: 30px;
-// 						width: 150px;
-// 						&_mec {
-// 							position: absolute;
-// 							top: -2%;
-// 							left: 230%;
-// 							font-size: 20px;
-// 						}
-// 					}
-// 					&-priceStart {
-// 						position: absolute;
-// 						bottom: -90%;
-// 						left: 0.3%;
-// 						font-size: 17px;
-// 					}
-// 					&-priceEnd {
-// 						position: absolute;
-// 						bottom: -90%;
-// 						right: 50%;
-// 						font-size: 17px;
-// 					}
-// 				}
-// 				&-text {
-// 					position: absolute;
-// 					bottom: -19%;
-// 					left: 0;
-// 					z-index: 123;
-// 					font-size: 15px;
-// 					text-align: center;
-// 				}
-// 			}
-// 			&_col2 {
-// 				margin-top: 6%;
-// 				width: 100%;
-// 				padding: 20% 0;
-// 				flex-direction: row;
-// 				align-items: center;
-// 				justify-content: center;
-// 				background-image: linear-gradient(to bottom, #000000, #000000),
-// 					url("../../media/Group248.png");
-// 				&-titles {
-// 					display: flex;
-// 					flex-direction: row;
-// 					align-items: center;
-// 					justify-content: center !important;
-// 					width: 100%;
-
-// 					h2 {
-// 						font-size: 17px;
-// 						font-weight: 400;
-// 						width: 100%;
-// 						text-align: center;
-// 						input {
-// 							width: 100%;
-
-// 							background: none;
-// 							border: none;
-// 							color: $light;
-// 							font-size: 15px;
-// 							text-align: center;
-// 						}
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
-// }
-
-// @media (max-width: $sm) {
-// 	.calculate__calculates_col2 {
-// 		flex-direction: column;
-// 		min-height: 200px;
-// 	}
-// }

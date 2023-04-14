@@ -19,6 +19,7 @@
 		overflow: hidden;
 		position: relative;
 		cursor: pointer;
+		box-shadow: 3px 7px 30px 5px rgba(0, 0, 0, 0.658);
 		&:hover {
 			p {
 				position: absolute;

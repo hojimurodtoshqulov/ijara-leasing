@@ -1,9 +1,9 @@
 import scss from "./calculate.scss";
 import { Col, InputNumber, Row, Slider } from "antd";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-
+import VanillaTilt from "vanilla-tilt";
 const Calculate = () => {
 	const { t } = useTranslation();
 
@@ -39,17 +39,28 @@ const Calculate = () => {
 		return new Intl.NumberFormat("en-US").format(num);
 	};
 	const transition = { type: "spring", duration: 2 };
+	const Tilt = (props) => {
+		const { options, ...rest } = props;
+		const tilt = useRef(null);
 
+		useEffect(() => {
+			VanillaTilt.init(tilt.current, options);
+		}, [options]);
+
+		return <div ref={tilt} {...rest} />;
+	};
+	const options = {
+		scale: 1.05,
+		speed: 1000,
+		max: 20,
+	};
 	return (
 		<div className="calculate">
 			<div className="container">
 				<div className="calculate__titles" data-aos="fade-up">
-					<h1>{t("home.calculate.title")}</h1>
-					{/*<motion.div*/}
-					{/*    initial={{width: "0%"}}*/}
-					{/*    whileInView={{width: "45%"}}*/}
-					{/*    transition={{transition}}*/}
-					{/*></motion.div>*/}
+					<h1>
+						<p>{t("home.calculate.title")}</p>
+					</h1>
 					<p>{t("home.calculate.subtitle")}</p>
 				</div>
 				<div className="calculate__calculates">
@@ -147,57 +158,78 @@ const Calculate = () => {
 							{t("home.calculate.text")}
 						</p>
 					</div>
-					<motion.div
-						className="calculate__calculates_col2"
-						initial={{
-							transform: "rotate(30deg)",
-							transformOrigin: " right bottom",
-							clipPath: " polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)",
-						}}
-						whileInView={{
-							transform: "rotate(0deg)",
-							transformOrigin: " right bottom",
-							clipPath: "polygon(100% 0, 100% 100%, 0 100%, 0 0)",
-						}}
-						transition={{ transition, duration: 1 }}
-					>
+					<div options={options} className="calculate__calculates_col2">
 						<div
 							data-aos="fade-left"
-							data-aos-delay="100"
-							className="calculate__calculates_col2-titles"
+							className="calculate__calculates_col2_div1"
+						></div>
+						<div
+							data-aos="fade-right"
+							className="calculate__calculates_col2_div2"
+						></div>
+						<motion.div
+							className="calculate__calculates_col2-main "
+							initial={{
+								transform: "rotate(30deg)",
+								transformOrigin: " right bottom",
+								// clipPath: " polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)",
+							}}
+							whileInView={{
+								transform: "rotate(0deg)",
+								transformOrigin: " right bottom",
+								// clipPath: "polygon(100% 0, 100% 100%, 0 100%, 0 0)",
+							}}
+							transition={{ transition, duration: 1 }}
+							// initial={{
+							// 	transform: "rotate(30deg)",
+							// 	transformOrigin: " right bottom",
+							// 	clipPath: " polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)",
+							// }}
+							// whileInView={{
+							// 	transform: "rotate(0deg)",
+							// 	transformOrigin: " right bottom",
+							// 	clipPath: "polygon(100% 0, 100% 100%, 0 100%, 0 0)",
+							// }}
+							// transition={{ transition, duration: 1 }}
 						>
-							<h2>
-								{t("home.calculate.resultTitle1")}
-								<br />
-								<span>
-									{leasingValue} {t("sum")}
-								</span>
-								{/* <input
+							<div
+								data-aos="fade-left"
+								data-aos-delay="100"
+								className="calculate__calculates_col2-titles"
+							>
+								<h2>
+									{t("home.calculate.resultTitle1")}
+									<br />
+									<span>
+										{leasingValue} {t("sum")}
+									</span>
+									{/* <input
 									type="text"
 									value={`${leasingValue} ${t("sum")}`}
 									onChange={onChange}
 								/> */}
-							</h2>
-						</div>
-						<div
-							data-aos="fade-right"
-							data-aos-delay="200"
-							className="calculate__calculates_col2-titles titles2"
-						>
-							<h2>
-								{t("home.calculate.resultTitle2")}
-								<br />
-								<span>
-									{paymentValue} {t("sum")}
-								</span>
-								{/* <input
+								</h2>
+							</div>
+							<div
+								data-aos="fade-right"
+								data-aos-delay="200"
+								className="calculate__calculates_col2-titles titles2"
+							>
+								<h2>
+									{t("home.calculate.resultTitle2")}
+									<br />
+									<span>
+										{paymentValue} {t("sum")}
+									</span>
+									{/* <input
 									type="text"
 									value={`${paymentValue} ${t("sum")}`}
 									onChange={onChange2}
 								/> */}
-							</h2>
-						</div>
-					</motion.div>
+								</h2>
+							</div>
+						</motion.div>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -119,6 +119,9 @@
 					font-size: 17px;
 					font-family: $font_texts;
 					margin-bottom: 0.4rem;
+					&:hover {
+						color: $primary;
+					}
 				}
 			}
 		}

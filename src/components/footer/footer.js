@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import scss from "./footer.module.scss";
 import logo from "../../media/logo_head.png";
 import img1 from "../../media/Frame163.png";
@@ -9,6 +10,9 @@ import { RiInstagramFill } from "react-icons/ri";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 const Footer = () => {
+	const [year, setyear] = useState(0);
+
+	useEffect(() => {});
 	const scrollToTop = () => {
 		window.scrollTo(0, 0);
 	};
@@ -103,7 +107,7 @@ const Footer = () => {
 					}}
 					transition={{ transition, duration: 1 }}
 				>
-					OOO <Link to="/">“IJARA LEASING”</Link> 2021-2021
+					OOO <Link to="/">“IJARA LEASING”</Link> 2021- <span></span>
 				</motion.p>
 			</div>
 		</footer>

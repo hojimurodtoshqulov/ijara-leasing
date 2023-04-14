@@ -34,6 +34,7 @@
 				left: -10rem;
 				z-index: 1;
 				transform-origin: " left bottom";
+				filter: drop-shadow(0 0 15px #000);
 			}
 			&_img2 {
 				position: absolute;

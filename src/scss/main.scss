@@ -24,7 +24,9 @@ body {
 .mobileNav {
 	display: none;
 }
-
+h1 {
+	text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.747);
+}
 @media (max-width: $xl) {
 	.mobileNav {
 		display: block;
