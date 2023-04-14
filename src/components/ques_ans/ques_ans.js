@@ -1,10 +1,10 @@
 import { useState, useEffect, useRef } from "react";
+import VanillaTilt from "vanilla-tilt";
 import scss from "./ques_ans.module.scss";
 import { Ques_ansData } from "./ques_ansData";
 import { HiArrowLongLeft, HiArrowLongRight } from "react-icons/hi2";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import VanillaTilt from "vanilla-tilt";
 const Ques_ans = () => {
 	const { t } = useTranslation();
 	const [selected, setSelected] = useState(0);

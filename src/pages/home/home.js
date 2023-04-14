@@ -10,7 +10,7 @@ import Footer from "../../components/footer/footer";
 import LeasingImages from "../../components/leasingImages/leasingImages";
 import IntegerStep from "../../components/calculate/calculate";
 import { Space } from "antd";
-import HelpTitle from "../../components/helpTitle/helpTitle";
+// import HelpTitle from "../../components/helpTitle/helpTitle";
 import Services from "../../components/services/services";
 import Submit from "../../components/submit/submit";
 import AboutLeasing from "../../components/aboutLeasing/aboutLeasing";
@@ -32,7 +32,7 @@ const Home = () => {
 				<Space style={{ width: "100%" }} direction="vertical">
 					<IntegerStep />
 				</Space>
-				<HelpTitle />
+				{/* <HelpTitle /> */}
 				<Services />
 				<Submit />
 				<AboutLeasing />

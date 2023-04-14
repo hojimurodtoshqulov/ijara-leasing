@@ -40,7 +40,7 @@ const Company = () => {
             {t("companyPage.mission.p1")}
           </p>
         </section>
-        <div className="card-wrapper">
+        {/* <div className="card-wrapper">
           <InfoCard
             title={t("companyPage.card1.title")}
             text={t("companyPage.card1.text")}
@@ -53,7 +53,7 @@ const Company = () => {
             title={t("companyPage.card3.title")}
             text={t("companyPage.card3.text")}
           />
-        </div>
+        </div> */}
       </div>
     </main>
   );

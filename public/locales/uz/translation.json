@@ -88,7 +88,10 @@
 		},
 		"section3": {
 			"title": "Bank rekvizitlari:",
-			"text": "Hisob raqami (UZS): 20208000805354860001; Bank ma'lumotlari: AYKB \"Ipak Yo'li\", Toshkent shahri; Bankning kod raqami: 00444; STIR: 308234550"
+			"text1": "Hisob raqami (UZS): 20208000805354860001;",
+			"text2": "Bank ma'lumotlari: AYKB \"Ipak Yo'li\",Toshkent shahri;",
+			"text3": "Bank kodi: 00444",
+			"text4": "STIR: 308234550"
 		}
 	},
 	"programs": {

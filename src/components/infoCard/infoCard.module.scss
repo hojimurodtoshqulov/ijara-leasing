@@ -1,42 +1,42 @@
 @import "../../scss/varuables.scss";
 
 .card {
-  background: #262745;
-  padding: 20px 60px;
-  width: 100%;
-  text-align: center;
-  font-family: $font-texts;
-  height: 100%;
+	background: #252650;
+	padding: 20px 60px;
+	width: 100%;
+	text-align: center;
+	font-family: $font-texts;
+	height: 100%;
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.389);
+	@media (max-width: $xl) {
+		padding: 20px 40px;
+	}
 
-  @media (max-width: $xl) {
-    padding: 20px 40px;
-  }
+	&:last-child {
+		@media (max-width: $xl) {
+			grid-column: 1 / 3;
+		}
 
-  &:last-child {
-    @media (max-width: $xl) {
-      grid-column: 1 / 3;
-    }
+		@media (max-width: $md) {
+			grid-column: 1 / 1;
+		}
+	}
 
-    @media (max-width: $md) {
-      grid-column: 1 / 1;
-    }
-  }
+	&Title {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 45px;
+		line-height: 50px;
+		@media (max-width: $md) {
+			font-size: 40px;
+		}
+	}
 
-  &Title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 50px;
-    @media (max-width: $md) {
-      font-size: 40px;
-    }
-  }
-
-  &Text {
-    font-weight: 500;
-    font-size: 20px;
-    @media (max-width: $md) {
-      font-size: 16px;
-    }
-  }
+	&Text {
+		font-weight: 500;
+		font-size: 20px;
+		@media (max-width: $md) {
+			font-size: 16px;
+		}
+	}
 }

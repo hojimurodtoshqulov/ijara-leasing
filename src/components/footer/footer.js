@@ -107,7 +107,8 @@ const Footer = () => {
 					}}
 					transition={{ transition, duration: 1 }}
 				>
-					OOO <Link to="/">“IJARA LEASING”</Link> 2021- <span></span>
+					OOO &nbsp; <Link to="/">“IJARA LEASING”</Link>&nbsp; 2021 - 2023
+					<span></span>
 				</motion.p>
 			</div>
 		</footer>
