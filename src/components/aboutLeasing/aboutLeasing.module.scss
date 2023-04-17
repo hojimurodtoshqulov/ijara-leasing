@@ -1,7 +1,7 @@
 @import "../../scss/varuables.scss";
 
 .aboutLeasingDiv {
-	background: $bg;
+	background: var(--background);
 	position: relative;
 	padding: 5% 0;
 	.aboutLeasing {
@@ -119,7 +119,7 @@
 }
 @media (max-width: $xl) {
 	.aboutLeasingDiv {
-		background: $bg;
+		// background: $bg;
 		position: relative;
 		padding: 5% 0 0 0;
 		.aboutLeasing {
@@ -222,7 +222,7 @@
 }
 @media (max-width: $md) {
 	.aboutLeasingDiv {
-		background: $bg;
+		// background: $bg;
 		position: relative;
 		padding: 5% 0 0 0;
 		.aboutLeasing {

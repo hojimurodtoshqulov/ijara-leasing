@@ -53,15 +53,15 @@ const Contact = () => {
         </div>
         <Title title={t("contactPage.map.title")} typed />
         <div data-aos="zoom-in-down" className="contact__map">
-          <iframe
-            title="iframe"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1271.2092005609525!2d69.2704868180565!3d41.29892324595613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m3!3e3!4m0!4m0!5e0!3m2!1sru!2s!4v1679145475185!5m2!1sru!2s"
-            width="100%"
-            height="450px"
-            style={{ border: "0" }}
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27421.554409237182!2d69.25858835347726!3d41.32078688990037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b37f890f285%3A0x832fef85ffe2c4a3!2zNzgsINCi0LDRiNC60LXQvdGCLCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2s!4v1681561043683!5m2!1sru!2s"
+						width="100%"
+						height="100%"
+						style={{ border: "0" }}
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+					></iframe>
         </div>
       </div>
     </main>

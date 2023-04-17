@@ -1,16 +1,4 @@
 @import "./scss/varuables.scss";
-
-body {
-	margin: 0;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	color: #fff;
-	background: #1b1c2f;
-}
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-		monospace;
-}
 ::-webkit-scrollbar {
 	width: 8px;
 	height: 0px;
@@ -30,4 +18,20 @@ code {
 }
 .active {
 	color: $primary;
+}
+:root {
+	--background: #262745;
+	--color: #fff;
+	--transparentBG: #22244fe4;
+	// --footerBG: #000;
+}
+[data-theme="dark"] {
+	--background: rgb(236, 239, 255);
+	--color: #262745;
+	--transparentBG: rgba(255, 255, 255, 0.85);
+	// --footerBG: #000;
+}
+body {
+	background: var(--background);
+	color: var(--color);
 }

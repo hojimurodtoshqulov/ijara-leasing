@@ -5,11 +5,9 @@
 	margin: 0;
 	box-sizing: border-box;
 }
-
 ::placeholder {
-	color: $primary;
+	color: var(--color);
 }
-
 .submit {
 	margin: 0;
 	padding: 0;
@@ -19,7 +17,7 @@
 	flex-direction: column;
 	align-items: center;
 	gap: 4em;
-	color: $light;
+	// color: $light;
 	width: $w_100;
 	flex-direction: column;
 	gap: 4em;
@@ -27,6 +25,7 @@
 		font-family: $font_titles;
 		font-size: 2.5em;
 		text-align: center;
+		color: var(--color);
 	}
 
 	p {
@@ -34,12 +33,8 @@
 		text-align: justify;
 		font-family: $font_texts;
 		font-size: 1.1em;
+		color: var(--color);
 	}
-
-	::placeholder {
-		color: $light;
-	}
-
 	form {
 		width: $w_100;
 		display: flex;
@@ -70,6 +65,7 @@
 			align-items: center !important;
 			justify-content: flex-start !important;
 			gap: 0px;
+			color: var(--color);
 			font-size: 1.2rem;
 			input {
 				display: block !important;
@@ -91,6 +87,7 @@
 			height: 60px;
 			button {
 				font-size: 20px;
+				color: var(--color);
 				height: 100% !important;
 			}
 			input {
@@ -116,7 +113,8 @@
 	z-index: 12345;
 	width: 40%;
 	background: $light;
-	color: $dark;
+	// color: $dark;
+
 	border-radius: 15px 15px 0 15px;
 	padding: 3% 5%;
 	text-align: center;

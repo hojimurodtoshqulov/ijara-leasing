@@ -30,7 +30,16 @@ const Location = () => {
 					className="mapDiv"
 					style={{ position: "relative", overflow: "hidden" }}
 				>
-					<a
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27421.554409237182!2d69.25858835347726!3d41.32078688990037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b37f890f285%3A0x832fef85ffe2c4a3!2zNzgsINCi0LDRiNC60LXQvdGCLCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2s!4v1681561043683!5m2!1sru!2s"
+						width="100%"
+						height="100%"
+						style={{ border: "0" }}
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+					></iframe>
+					{/* <a
 						href="https://yandex.uz/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps"
 						style={{
 							color: "#1A1B2F",
@@ -60,7 +69,7 @@ const Location = () => {
 						frameborder="1"
 						allowfullscreen="true"
 						style={{position:"relative"}}
-					></iframe>
+					></iframe> */}
 				</div>
 				{/* <div style="position:relative;overflow:hidden;">
 					<a

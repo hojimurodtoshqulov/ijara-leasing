@@ -47,7 +47,7 @@ const Ques_ans = () => {
 							exit={{ opacity: 0, x: 100 }}
 							transition={{ ...transition, duration: 2 }}
 							src={Ques_ansData[selected].img}
-							alt=""
+							alt={Ques_ansData[selected].img}
 						/>
 					</Tilt>
 					<div className={scss.left_t}>

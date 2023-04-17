@@ -1,44 +1,33 @@
 @import "../../scss/varuables.scss";
 
 .calculate {
-	background: $bg;
+	// background: $bg;
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
-
 	&__range {
 		&:nth-child(1),
 		&:nth-child(2) {
 			margin-bottom: 1rem;
 		}
-
 		&-wrap {
 			width: 100%;
 		}
-
 		width: 100%;
-
 		&-label,
 		&-values {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-
 			h4 {
 				font-weight: 500;
 				font-size: 1.2rem;
 			}
-
 			h3 {
 				font-size: 17px;
 				font-weight: 400;
 			}
 		}
-
-		//.values {
-		//	display: flex;
-		//
-		//}
 		.input-wrapper {
 			position: relative;
 		}
@@ -46,9 +35,9 @@
 			display: block;
 			margin: 10px 0;
 			accent-color: $primary;
+			filter: drop-shadow(0 0 10px #000000d0);
 		}
 	}
-
 	&__titles {
 		text-align: center;
 		width: 80%;
@@ -80,7 +69,6 @@
 			font-size: 20px;
 		}
 	}
-
 	&__calculates {
 		height: 400px;
 		display: flex;
@@ -288,6 +276,7 @@
 				box-shadow: 2px 3px 35px 10px #000;
 			}
 			&-titles {
+				color: $light;
 				h2 {
 					font-size: 35px;
 					font-weight: 400;
@@ -331,11 +320,9 @@
 		}
 	}
 }
-
 .ant-input-number-handler-wrap {
 	//border-radius: none;
 }
-
 .calculate__calculates_col1_slider1_inp-col {
 	outline: none;
 	box-shadow: none;
@@ -352,7 +339,6 @@
 		box-shadow: none;
 	}
 }
-
 .ant-input-number {
 	border-radius: 0;
 	width: 130px;
@@ -379,7 +365,6 @@
 		}
 	}
 }
-
 @media (max-width: $xl) {
 	.calculate {
 		background: $bg;
@@ -853,7 +838,6 @@
 
 						input {
 							width: 100%;
-
 							background: none;
 							border: none;
 							color: $light;

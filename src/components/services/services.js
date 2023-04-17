@@ -34,11 +34,11 @@ const Services = () => {
 							src={img1}
 							alt="hand"
 						/>
-						<img
+						{/* <img
 							className={scss.services__images_img2}
 							src={img2}
 							alt="waveLine"
-						/>
+						/> */}
 					</div>
 					<div data-aos="zoom-out-left" className={scss.services__elements}>
 						<h1>

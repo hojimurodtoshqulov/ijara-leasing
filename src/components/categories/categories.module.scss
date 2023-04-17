@@ -6,7 +6,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-image: linear-gradient(#22244fe4, #22244fe4),
+	background-image: linear-gradient(var(--transparentBG), var(--transparentBG)),
 		url("../../media/in_chevrolet.png");
 	background-size: cover;
 	overflow: hidden;
@@ -65,9 +65,6 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		background-image: linear-gradient(#22244fe4, #22244fe4),
-			url("../../media/in_chevrolet.png");
-		background-size: cover;
 		overflow: hidden;
 		&__titles {
 			overflow: hidden;
@@ -118,9 +115,6 @@
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-		background-image: linear-gradient(#22244fe4, #22244fe4),
-			url("../../media/in_chevrolet.png");
-		background-size: cover;
 		overflow: hidden;
 		gap: 10px;
 		&__titles {
@@ -180,9 +174,6 @@
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-		background-image: linear-gradient(#22244fe4, #22244fe4),
-			url("../../media/in_chevrolet.png");
-		background-size: cover;
 		overflow: hidden;
 		gap: 10px;
 		&__titles {

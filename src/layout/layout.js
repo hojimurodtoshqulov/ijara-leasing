@@ -3,7 +3,6 @@ import { Outlet } from "react-router-dom";
 import { Nav } from "../components/navbar/nav";
 import i18next from "i18next";
 import Footer from "../components/footer/footer";
-
 import MobileNav from "../components/mobileNav";
 
 const Layout = () => {

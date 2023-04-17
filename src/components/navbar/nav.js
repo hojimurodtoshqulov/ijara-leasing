@@ -6,22 +6,27 @@ import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { AiFillCaretDown } from "react-icons/ai";
 import Button from "../button/button";
+import sun from "../../media/sun-solid.svg";
+import moon from "../../media/moon-solid.svg";
+import Toggle from "../theme/toggleTheme";
 const Nav = ({ onClick }) => {
 	const [navSize, setnavSize] = useState("12vh");
 	const [navSizeMobile, setnavSizeMobile] = useState("9.4vh");
 	const [navColorBg, setnavColorBg] = useState("transparent");
 	const [navLogoFSZ, setNavLogoFSZ] = useState("20px");
-	const [navContainerBR, setNavContainerBR] = useState("2px solid #fff");
+	const [navLinkColor, setNavLinkColor] = useState("");
+	// const [navContainerBR, setNavContainerBR] = useState("2px solid #fff");
 	const listenScrollEvent = () => {
 		window.scrollY > 80
 			? setnavColorBg("#0e0e12f0")
 			: setnavColorBg("transparent");
 		window.scrollY > 80 ? setnavSize("10vh") : setnavSize("12vh");
+		window.scrollY > 80 ? setNavLinkColor("#fff") : setNavLinkColor("");
 		window.scrollY > 80 ? setnavSizeMobile("9.4vh") : setnavSizeMobile("9.4vh");
 		window.scrollY > 80 ? setNavLogoFSZ("15px") : setNavLogoFSZ("20px");
-		window.scrollY > 80
-			? setNavContainerBR("2px solid #ff00")
-			: setNavContainerBR("2px solid #fff");
+		// window.scrollY > 80
+		// 	? setNavContainerBR("2px solid #ff00")
+		// 	: setNavContainerBR("2px solid #fff");
 	};
 	const { t, i18n } = useTranslation();
 	useEffect(() => {
@@ -69,6 +74,7 @@ const Nav = ({ onClick }) => {
 				<div className="container">
 					<div className={scss.nav__container} style={{ height: width() }}>
 						<Link
+							style={{ color: navLinkColor }}
 							onClick={scrollToTop}
 							className={scss.nav__container_logo}
 							to="/"
@@ -79,11 +85,13 @@ const Nav = ({ onClick }) => {
 						<div className={scss.nav__container_links}>
 							{/* compny */}
 							<NavLink
+								style={{ color: navLinkColor }}
 								to="/company"
 								className={scss.dropdown}
 								onClick={scrollToTop}
 							>
 								<NavLink
+									style={{ color: navLinkColor }}
 									to="/company"
 									className={scss.dropdownTitle}
 									onClick={scrollToTop}
@@ -102,6 +110,7 @@ const Nav = ({ onClick }) => {
 							{/* leasing */}
 
 							<NavLink
+								style={{ color: navLinkColor }}
 								to="/programs"
 								className={scss.dropdown}
 								onClick={scrollToTop}
@@ -119,12 +128,29 @@ const Nav = ({ onClick }) => {
 									</Link>
 								</div>
 							</NavLink>
-							<NavLink to="/clients" onClick={scrollToTop}>
+							<NavLink
+								style={{ color: navLinkColor }}
+								to="/clients"
+								onClick={scrollToTop}
+							>
 								{t("nav.client")} <span></span>
 							</NavLink>
 						</div>
+						{/* <div className={scss.nav__container_toggleTheme}>
+							<span >
+								<img src={sun} alt={sun} />
+							</span>
+							<span>
+								<img src={moon} alt={moon} />
+							</span>
+						</div> */}
+						<Toggle color={navLinkColor} />
 						<div className={scss.nav__container_lang}>
-							<span onClick={checkLangImg} value={"ru"}>
+							<span
+								className={scss.nav__container_lang_ru}
+								onClick={checkLangImg}
+								value={"ru"}
+							>
 								<button
 									className={currentLang === "ru" && scss.active}
 									value={"ru"}
@@ -132,11 +158,15 @@ const Nav = ({ onClick }) => {
 									type="btn"
 									style={{ color: langColor }}
 								>
-									{t("ru")}
+									{/* {t("ru")} */}
 								</button>
 								<div></div>
 							</span>
-							<span onClick={checkLangImg} value={"uz"}>
+							<span
+								className={scss.nav__container_lang_uz}
+								onClick={checkLangImg}
+								value={"uz"}
+							>
 								<button
 									className={currentLang === "uz" && scss.active}
 									value={"uz"}
@@ -144,14 +174,11 @@ const Nav = ({ onClick }) => {
 									type="btn"
 									style={{ color: langColor }}
 								>
-									{t("uz")}
+									{/* {t("uz")} */}
 								</button>
 								<div></div>
 							</span>
 						</div>
-						{/* <div className={scss.nav__container_linkContact}>
-							<Button btnTitle={"Контакты"} btnLink={"/contact"} />
-						</div> */}
 					</div>
 				</div>
 			</nav>

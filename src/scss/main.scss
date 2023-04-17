@@ -6,7 +6,6 @@
 	text-decoration: none;
 	list-style: none;
 	box-sizing: border-box;
-	transition: 0.2s;
 }
 a:hover {
 	// color: $primary;
@@ -14,7 +13,7 @@ a:hover {
 body {
 	overflow-x: hidden;
 	margin: 0 auto;
-	background: $bg;
+	// background: $bg;
 }
 .container {
 	width: 100%;
@@ -24,9 +23,9 @@ body {
 .mobileNav {
 	display: none;
 }
-h1 {
-	text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.747);
-}
+// h1 {
+// 	text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.747);
+// }
 @media (max-width: $xl) {
 	.mobileNav {
 		display: block;

@@ -5,7 +5,7 @@
 	box-sizing: border-box;
 }
 .map {
-	background: $bg;
+	// background: $bg;
 	padding: 9% 0 7% 0;
 	h1 {
 		font-size: 50px;
@@ -37,6 +37,7 @@
 		height: 400px;
 	}
 }
+
 @media (min-width: $xxl) {
 	.map {
 		h2 {
@@ -47,7 +48,6 @@
 		}
 	}
 }
-
 @media (max-width: $xxl) {
 	.map {
 		iframe {
@@ -81,7 +81,6 @@
 		}
 	}
 }
-
 @media (max-width: $sm) {
 	.map {
 		h1 {

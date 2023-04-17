@@ -10,7 +10,7 @@
 	width: 100%;
 	height: auto;
 	padding: 10% 0 3% 0;
-	background: $bg;
+	background: var(--background);
 	position: relative;
 	z-index: 1;
 	&__imgDiv {
@@ -22,6 +22,7 @@
 		box-shadow: 3px 7px 30px 5px rgba(0, 0, 0, 0.658);
 		&:hover {
 			p {
+				color: $light;
 				position: absolute;
 				pointer-events: none;
 				bottom: 0;
@@ -112,7 +113,7 @@
 		width: 100%;
 		height: auto;
 		padding: 10% 0 7% 0;
-		background: $bg;
+		// background: $bg;
 		position: relative;
 		z-index: 1;
 		&__imgDiv {
@@ -149,7 +150,7 @@
 		width: 100%;
 		height: auto;
 		padding: 10% 0 7% 0;
-		background: $bg;
+		// background: $bg;
 		position: relative;
 		z-index: 1;
 		gap: 0.5rem !important;
@@ -191,7 +192,7 @@
 		width: 100%;
 		height: auto;
 		padding: 15% 0 7% 0;
-		background: $bg;
+		// background: $bg;
 		position: relative;
 		z-index: 1;
 		overflow-x: hidden;

@@ -1,59 +1,63 @@
 @import "../../scss/varuables.scss";
 
 .contact {
-  padding: 150px 0;
+	padding: 150px 0;
 
-  &-cards {
-    display: flex;
-    gap: 5rem;
-    margin: 140px 0;
-    justify-content: space-between;
-    // margin-top: 70px;
+	&-cards {
+		display: flex;
+		gap: 5rem;
+		margin: 140px 0;
+		justify-content: space-between;
+		// margin-top: 70px;
 
-    .divider {
-      width: 2px;
-      background: linear-gradient(
-        180deg,
-        rgba(171, 174, 183, 0) 0%,
-        #abaeb7 51.56%,
-        rgba(171, 174, 183, 0) 100%
-      );
-      min-height: 100%;
-    }
+		.divider {
+			width: 2px;
+			background: linear-gradient(
+				180deg,
+				rgba(171, 174, 183, 0) 0%,
+				#abaeb7 51.56%,
+				rgba(171, 174, 183, 0) 100%
+			);
+			min-height: 100%;
+		}
 
-    @media (max-width: $lg) {
-      .divider {
-        display: none;
-      }
-    }
+		@media (max-width: $lg) {
+			.divider {
+				display: none;
+			}
+		}
 
-    @media (max-width: $md) {
-      flex-direction: column;
-      row-gap: 7rem;
-    }
-  }
+		@media (max-width: $md) {
+			flex-direction: column;
+			row-gap: 7rem;
+		}
+	}
 
-  &__tel-numbers {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
+	&__tel-numbers {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
 
-  &-cards__item {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    width: 100%;
+	&-cards__item {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		max-width: 600px;
+		width: 100%;
 
-    &-title {
-      position: absolute;
-      left: 0;
-      bottom: 100%;
-    }
-  }
+		&-title {
+			position: absolute;
+			left: 0;
+			bottom: 100%;
+		}
+	}
 
-  &__map {
-    margin-top: 3rem;
-  }
+	&__map {
+		margin-top: 3rem;
+		height: 450px;
+		@media (max-width: $md) {
+			height: 300px;
+		}
+	}
 }
