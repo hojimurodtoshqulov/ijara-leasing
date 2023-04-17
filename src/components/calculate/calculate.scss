@@ -367,7 +367,7 @@
 }
 @media (max-width: $xl) {
 	.calculate {
-		background: $bg;
+		// background: $bg;
 		display: flex;
 		flex-direction: column;
 		gap: 2rem;
@@ -851,8 +851,261 @@
 	}
 }
 @media (max-width: $sm) {
-	.calculate__calculates_col2 {
-		flex-direction: column;
-		min-height: 200px;
+	.calculate {
+		padding-bottom: 30%;
+		&__titles {
+			text-align: center;
+			width: 100%;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 1rem;
+			margin-bottom: 3rem;
+
+			h1 {
+				p {
+					font-size: 30px;
+				}
+			}
+
+			div {
+				width: 40%;
+				height: 3px;
+				background: linear-gradient(to left, #319ba116, #319ba1, #319ba116);
+				border-radius: 100%;
+			}
+
+			p {
+				font-size: 15px;
+			}
+		}
+
+		&__calculates {
+			height: 550px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-direction: column;
+			gap: 70px;
+
+			&_col1 {
+				padding: 0 0 7% 0;
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: center;
+				gap: 2rem;
+				position: relative;
+
+				h1 {
+					height: 20px;
+					display: flex;
+					flex-direction: column;
+					position: relative;
+					p {
+						font-size: 20px;
+						position: relative;
+						z-index: 1;
+					}
+
+					span {
+						height: 8px;
+						background: $primary;
+						position: absolute;
+						top: 75%;
+						left: -1%;
+						z-index: 0;
+					}
+
+					div {
+						position: absolute;
+						bottom: -50%;
+						right: 36%;
+						height: 3px;
+						background: $primary;
+					}
+				}
+
+				&_slider1 {
+					position: relative;
+					width: 200%;
+					padding: 0 0 0 1.4%;
+
+					&-title {
+						position: absolute;
+						bottom: 140%;
+						left: 0.2%;
+						height: 20px;
+						font-weight: 500;
+						font-size: 1rem;
+					}
+
+					.row {
+						height: 20px;
+						display: flex;
+						align-items: center;
+						justify-content: flex-start;
+
+						&__col {
+							height: 100%;
+
+							&_slider {
+								position: absolute;
+								top: -50%;
+								left: -1%;
+								width: 100%;
+
+								.ant-input-number-input {
+									font-size: 15px;
+								}
+
+								input {
+								}
+
+								.ant-slider-rail {
+									background: #fff;
+								}
+							}
+						}
+					}
+
+					&_inp {
+						position: absolute;
+						top: -150%;
+						right: 46.5%;
+						height: 30px;
+						width: 150px;
+
+						&-col {
+							&-input {
+								background: none;
+								border: none;
+								color: $light;
+
+								.ant-input-number {
+								}
+
+								.ant-input-number-handler-wrap {
+									input {
+										outline: none;
+
+										&:focus {
+											border: none;
+											outline: none;
+										}
+									}
+								}
+
+								.ant-input-number-input-wrap {
+									height: 30px;
+									width: 150px;
+
+									input {
+										color: #fff;
+										font-size: 20px;
+
+										&:focus {
+											border: none;
+											outline: none;
+										}
+									}
+								}
+							}
+
+							//p {
+							//	position: absolute;
+							//	top: -2%;
+							//	left: 500%;
+							//	font-size: 20px;
+							//}
+						}
+					}
+
+					.inp3 {
+						position: absolute;
+						top: -150%;
+						//right: 46%;
+						height: 30px;
+						width: 150px;
+
+						&_mec {
+							position: absolute;
+							top: -2%;
+							left: 230%;
+							font-size: 20px;
+						}
+					}
+
+					&-priceStart {
+						position: absolute;
+						bottom: -90%;
+						left: 0.3%;
+						font-size: 17px;
+					}
+
+					&-priceEnd {
+						position: absolute;
+						bottom: -90%;
+						right: 50%;
+						font-size: 17px;
+					}
+				}
+
+				&-text {
+					position: absolute;
+					bottom: -15%;
+					left: 0;
+					z-index: 123;
+					font-size: 15px;
+					text-align: center;
+				}
+			}
+
+			&_col2 {
+				margin-top: 5%;
+				width: 100%;
+				padding: 20% 0;
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+				background-image: none;
+				&-main {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background: #000;
+					z-index: 12;
+					box-shadow: 2px 3px 10px #000;
+				}
+				&-titles {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					justify-content: center !important;
+					width: 100%;
+
+					h2 {
+						font-size: 17px;
+						font-weight: 400;
+						width: 100%;
+						text-align: center;
+
+						input {
+							width: 100%;
+							background: none;
+							border: none;
+							color: $light;
+							font-size: 15px;
+							text-align: center;
+						}
+					}
+				}
+			}
+		}
 	}
 }

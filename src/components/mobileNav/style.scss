@@ -1,17 +1,5 @@
 @import "../../scss/varuables.scss";
 .mobileNavWrap {
-	//   body {
-	//     width: 100vw;
-	//     height: 100vh;
-	//     background: linear-gradient(180deg, #0055ff 0%, rgb(0, 153, 255) 100%);
-	//     overflow: hidden;
-	//     padding: 0;
-	//     margin: 0;
-	//     display: flex;
-	//     justify-content: center;
-	//     align-items: center;
-	//   }
-
 	&.active {
 		width: 100%;
 		height: 100%;
@@ -26,11 +14,9 @@
 		border-radius: 10px;
 		border: 1px solid rgba(255, 255, 255, 0.18);
 	}
-
 	h2 {
 		display: block;
 	}
-
 	nav {
 		position: absolute;
 		top: 0;
@@ -44,15 +30,15 @@
 			}
 		}
 	}
-				.toggleBG {
-					width: 100%;
-					height: 100%;
-					position: fixed;
-					top: 0;
-					left: 0;
-					background: rgba(0, 0, 0, 0.832);
-					z-index: -1;
-				}
+	.toggleBG {
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background: rgba(0, 0, 0, 0.832);
+		z-index: -1;
+	}
 
 	.background {
 		position: absolute;
@@ -60,7 +46,7 @@
 		right: 0;
 		bottom: 0;
 		width: 300px;
-		background: #262745;
+		background: var(--background);
 	}
 
 	button {
@@ -71,12 +57,16 @@
 		-ms-user-select: none;
 		cursor: pointer;
 		position: absolute;
-		top: 18px;
+		top: 15px;
 		right: 15px;
 		width: 50px;
 		height: 50px;
 		border-radius: 50%;
 		background: transparent;
+		@media (max-width: $md) {
+			top: 12px;
+			right: 15px;
+		}
 	}
 
 	ul,
@@ -140,10 +130,9 @@
 		font-family: Inter;
 		font-weight: 400;
 		font-size: 20px;
-		color: #ffffff;
+		color: var(--color);
 		width: 100%;
 		display: block;
-
 		&.active {
 			color: #319ba1;
 		}
@@ -154,7 +143,7 @@
 		gap: 1rem;
 		align-items: center;
 		height: 100%;
-		color: #fff !important;
+		color: var(--color);
 		button {
 			position: static;
 			width: unset;

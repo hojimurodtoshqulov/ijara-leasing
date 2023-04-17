@@ -12,7 +12,6 @@ const Contact = () => {
     <main className="contact">
       <div className="container">
         <Title typed title={t("contactPage.contact.title")} />
-
         <div className="contact-cards">
           <div className="contact-cards__item">
             <div className="contact-cards__item-title">
@@ -22,7 +21,6 @@ const Contact = () => {
                 title={t("contactPage.contact.address")}
               />
             </div>
-
             <InfoCard
               text={t("contactPage.contact.location")}
               title={<img src={LocationIcon} alt="icon" />}

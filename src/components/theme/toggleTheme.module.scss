@@ -1,5 +1,5 @@
 .switch {
-	
+	margin-right: 5px;
 	width: 35px;
 	height: 35px;
 	position: relative;
@@ -15,7 +15,7 @@
 	}
 	&__sun {
 		padding: 5px;
-		
+
 		width: 100%;
 		height: 100%;
 	}
@@ -25,18 +25,18 @@
 		height: 100%;
 		opacity: 0;
 		transition: 0s !important;
+		font-size: 2rem;
 	}
 	input {
 		display: none;
 	}
 	input:checked ~ .switch__sun {
 		transform: perspective(100px) rotateY(180deg);
-		
+
 		opacity: 0;
 	}
 	input:checked ~ .switch__moon {
 		transform: perspective(100px) rotateY(-180deg);
-		
 		opacity: 1;
 	}
 }

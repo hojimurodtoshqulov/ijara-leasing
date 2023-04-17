@@ -51,6 +51,10 @@
 			height: 74px;
 			button {
 				font-size: 25px;
+				background: $primary;
+				&:hover {
+					background: #ff00;
+				}
 			}
 
 			@media (max-width: $md) {

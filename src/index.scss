@@ -23,13 +23,21 @@
 	--background: #262745;
 	--color: #fff;
 	--transparentBG: #22244fe4;
-	// --footerBG: #000;
+	--cardBG: #252650;
+	--btnBG: #319ba1;
+	--btnEmptyBG: #ff00;
+	--btnHoverBG: #ff00;
+	--btnHoverColor: #fff;
 }
 [data-theme="dark"] {
 	--background: rgb(236, 239, 255);
 	--color: #262745;
 	--transparentBG: rgba(255, 255, 255, 0.85);
-	// --footerBG: #000;
+	--cardBG: #fff;
+	--btnBG: #fff;
+	--btnEmptyBG: #fff;
+	--btnHoverBG: #319ba1;
+	--btnHoverColor: #fff;
 }
 body {
 	background: var(--background);

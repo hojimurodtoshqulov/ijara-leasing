@@ -16,19 +16,19 @@
 	width: $w_100;
 	height: 10vh;
 	margin: 0 auto;
-	// transition: 0.3s;
+	transition: 0.3s;
 	box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.364);
 	&__container {
 		width: 100%;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		// transition: 0.3s;
+		transition: 0.3s;
 		a {
 			font-family: $font_titles;
 			font-size: 20px;
 			font-weight: 300;
-			// transition: 0.3s;
+			transition: 0s !important;
 		}
 		&_logo {
 			// transition: 0.3s;
@@ -56,11 +56,11 @@
 			}
 		}
 		&_links {
-			width: 55%;
+			width: 50%;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			transition: 0.3s;
+			transition: 0s !important;
 			a {
 				font-family: $font_titles;
 				font-size: 20px;
@@ -68,6 +68,7 @@
 				align-items: center;
 				justify-content: center;
 				flex-wrap: wrap;
+				transition: 0s !important;
 				&:hover {
 					color: $primary;
 					span {

@@ -83,7 +83,7 @@ const Nav = ({ onClick }) => {
 							<h3 style={{ fontSize: navLogoFSZ }}>IJARA LEASING</h3>
 						</Link>
 						<div className={scss.nav__container_links}>
-							{/* compny */}
+							{/* company */}
 							<NavLink
 								style={{ color: navLinkColor }}
 								to="/company"
@@ -108,7 +108,6 @@ const Nav = ({ onClick }) => {
 								</div>
 							</NavLink>
 							{/* leasing */}
-
 							<NavLink
 								style={{ color: navLinkColor }}
 								to="/programs"
@@ -136,14 +135,6 @@ const Nav = ({ onClick }) => {
 								{t("nav.client")} <span></span>
 							</NavLink>
 						</div>
-						{/* <div className={scss.nav__container_toggleTheme}>
-							<span >
-								<img src={sun} alt={sun} />
-							</span>
-							<span>
-								<img src={moon} alt={moon} />
-							</span>
-						</div> */}
 						<Toggle color={navLinkColor} />
 						<div className={scss.nav__container_lang}>
 							<span

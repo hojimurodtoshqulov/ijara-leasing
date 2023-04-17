@@ -2,7 +2,7 @@
 
 .contact {
 	padding: 150px 0;
-
+	// overflow-x: hidden;
 	&-cards {
 		display: flex;
 		gap: 5rem;
@@ -45,7 +45,7 @@
 		flex-direction: column;
 		max-width: 600px;
 		width: 100%;
-
+		// overflow-x: hidden;
 		&-title {
 			position: absolute;
 			left: 0;

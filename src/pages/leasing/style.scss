@@ -2,8 +2,6 @@
 
 .leasing {
 	margin: 150px 0;
-	// overflow-x: hidden;
-
 	.leasing__hero-img {
 		position: absolute;
 		top: 15%;
@@ -25,7 +23,7 @@
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
-			z-index: 0;
+			z-index: 1;
 			box-shadow: -5px 3px 35px rgba(0, 0, 0, 0.781);
 		}
 		&_div2 {
@@ -36,40 +34,37 @@
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
-			z-index: 0;
+			z-index: 1;
 			box-shadow: 3px 3px 35px rgba(0, 0, 0, 0.781);
 		}
-		&::after {
-			content: "";
-			display: inline-block;
-			position: absolute;
-			top: 4rem;
-			right: 0;
-			width: 90%;
-			height: 90%;
-			background: #262745;
-			height: calc(100% - 2rem);
-			z-index: -1;
-		}
-
 		@media (max-width: $lg) {
 			position: relative;
 			width: 100%;
 			padding: 0 10%;
 			margin: 0 auto;
 			margin-bottom: 4rem;
-
 			img {
 				width: 100%;
 			}
 		}
+		@media (max-width: $md) {
+			right: 0%;
+			&_div1 {
+				top: -1rem;
+				left: 1rem;
+				width: 80%;
+			}
+			&_div2 {
+				right: 1rem;
+				bottom: -1rem;
+				width: 80%;
+			}
+		}
 	}
-
 	&__hero {
 		position: relative;
 		&-wrapper {
 			max-width: 60%;
-
 			@media (max-width: $lg) {
 				max-width: 100%;
 			}
@@ -130,14 +125,13 @@
 			}
 		}
 	}
-
 	&__cards {
 		margin: 150px 0;
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		gap: 1rem;
 		flex-wrap: nowrap;
-
+		overflow-x: hidden;
 		@media (max-width: 1352px) {
 			grid-template-columns: repeat(3, 1fr);
 
@@ -163,7 +157,6 @@
 			grid-template-columns: repeat(1, 1fr);
 		}
 	}
-
 	.explain {
 		&__title {
 			font-family: $font-titles;
@@ -235,4 +228,6 @@
 			}
 		}
 	}
+}
+.container {
 }

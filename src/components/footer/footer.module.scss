@@ -153,6 +153,7 @@
 
 		@media (max-width: $md) {
 			padding: 2rem 0;
+			overflow-x: hidden;
 			&_line:nth-child(4) {
 				display: none;
 			}
@@ -173,6 +174,9 @@
 		padding: 1.2% 0;
 		overflow: hidden;
 		position: relative;
+		@media (max-width: $md) {
+			overflow-x: hidden;
+		}
 		p {
 			position: absolute;
 			top: 0;
