@@ -6,7 +6,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	// background: $bg;
+	
 	&__container {
 		width: 100%;
 		height: 100%;
@@ -20,13 +20,13 @@
 			justify-content: space-between;
 			gap: 20px;
 			width: 40%;
-			// color: $light;
+			
 			h1 {
 				font-size: 50px;
 				font-family: $font_titles;
 				font-weight: 700;
 				line-height: 40px;
-				// color: $light;
+				
 				span {
 					font-weight: 400;
 				}
@@ -93,7 +93,7 @@
 		height: 0px;
 		bottom: -15%;
 		left: -25%;
-		box-shadow: 0 -150px 200px 150px #000;
+		box-shadow: 0 -150px 200px 150px var(--headerBottomShadow);
 		z-index: 0;
 	}
 
@@ -119,13 +119,13 @@
 				justify-content: space-between;
 				gap: 20px;
 				width: 60%;
-				// color: $light;
+				
 				h1 {
 					font-size: 50px;
 					font-family: $font_titles;
 					font-weight: 700;
 					line-height: 40px;
-					// color: $light;
+					
 					span {
 						font-weight: 400;
 					}
@@ -184,7 +184,7 @@
 				justify-content: center;
 				gap: 10px;
 				width: 80%;
-				// color: $light;
+				
 				text-align: center;
 				h1 {
 					font-size: 35px;
@@ -251,7 +251,7 @@
 				justify-content: center;
 				gap: 15px;
 				width: 90%;
-				// color: $light;
+				
 				text-align: center;
 				h1 {
 					font-size: 30px;

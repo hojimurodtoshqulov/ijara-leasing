@@ -28,6 +28,7 @@
 	--btnEmptyBG: #ff00;
 	--btnHoverBG: #ff00;
 	--btnHoverColor: #fff;
+	--headerBottomShadow: #000;
 }
 [data-theme="dark"] {
 	--background: rgb(236, 239, 255);
@@ -38,6 +39,8 @@
 	--btnEmptyBG: #fff;
 	--btnHoverBG: #319ba1;
 	--btnHoverColor: #fff;
+	--headerBottomShadow: rgba(0, 0, 0, 0.436);
+
 }
 body {
 	background: var(--background);

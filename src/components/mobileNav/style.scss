@@ -63,6 +63,9 @@
 		height: 50px;
 		border-radius: 50%;
 		background: transparent;
+		svg {
+			filter: drop-shadow(0 0 2px  rgba(0, 0, 0, 0.739));
+		}
 		@media (max-width: $md) {
 			top: 12px;
 			right: 15px;

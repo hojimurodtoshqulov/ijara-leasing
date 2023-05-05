@@ -6,9 +6,9 @@ import { useTranslation } from "react-i18next";
 import VanillaTilt from "vanilla-tilt";
 const Calculate = () => {
 	const { t } = useTranslation();
-	const [leasingValue, setLeasingValue] = useState(2000000);
-	const [paymentValue, setPaymentValue] = useState(1000000);
-	const [timeValue, setTimeValue] = useState(13);
+	const [leasingValue, setLeasingValue] = useState(10000000);
+	const [paymentValue, setPaymentValue] = useState(3000000);
+	const [timeValue, setTimeValue] = useState(18);
 	const paymentValueChange = (e) => {
 		const value = Number(e.target.value);
 		if (value > leasingValue) {
@@ -19,15 +19,48 @@ const Calculate = () => {
 	};
 	const leasingValueChange = (e) => {
 		const value = Number(e.target.value);
+
+		const paymentMinPrecent = () => {
+			return (value / 100) * 30;
+		};
+		const limit = paymentMinPrecent();
 		if (value <= paymentValue) {
 			setPaymentValue(value);
+		} else if (paymentValue <= limit) {
+			setPaymentValue(limit);
 		}
+		// paymentMinPrecent();
 		setLeasingValue(value);
 	};
 	const numberForamtter = (num) => {
 		// const newFormatter = new Intl.numberFormat("en-US", {separator: " "});
 		return new Intl.NumberFormat("en-US").format(num);
 	};
+	const sumLeasing = () => {
+		const sum = leasingValue - paymentValue;
+		if (timeValue <= 24) {
+			if (timeValue > 12) {
+				const sum1 = sum + (sum / 100) * 18;
+				const moonSum = sum1 / 12;
+				console.log("Sum1 >>> ", sum1);
+				console.log("moonSum >>> ", moonSum);
+			} else {
+				const sum1 = sum + (sum / 100) * 18;
+				return sum1;
+			}
+		} else if (timeValue > 24) {
+			const sum1 = sum + (sum / 100) * 17;
+			return sum1;
+		}
+	};
+	const monthlyPayment = () => {
+		const num = sumLeasing() / timeValue;
+		return num;
+	};
+	// const paymentMinPrecent = () => {
+	// 	console.log((134000000 / 100) * 30);
+	// };
+	// paymentMinPrecent();
 	const transition = { type: "spring", duration: 2 };
 	const Tilt = (props) => {
 		const { options, ...rest } = props;
@@ -240,15 +273,16 @@ const Calculate = () => {
 								</label>
 								<input
 									type={"range"}
-									min={2000000}
+									min={10000000}
 									onChange={leasingValueChange}
 									value={leasingValue}
-									max={100000000}
+									max={1000000000}
+									step={1000000}
 									style={{ width: "100%" }}
 								/>
 								<div className={"calculate__range-values"}>
-									<h3> 2 000 000 {t("sum")}</h3>
-									<h3> 100 000 000 {t("sum")}</h3>
+									<h3> 10 000 000 {t("sum")}</h3>
+									<h3> 1000 000 000 {t("sum")}</h3>
 								</div>
 							</div>
 							<div className={"calculate__range"}>
@@ -265,15 +299,16 @@ const Calculate = () => {
 										onChange={paymentValueChange}
 										value={paymentValue}
 										type={"range"}
-										max={50000000}
-										min={1000000}
+										max={500000000}
+										min={3000000}
+										// step={1000000}
 										style={{ width: "100%" }}
 									/>
 								</div>
 
 								<div className={"calculate__range-values"}>
-									<h3>1 000 000 {t("sum")}</h3>
-									<h3>50 000 000 {t("sum")}</h3>
+									<h3>3 000 000 {t("sum")}</h3>
+									<h3>500 000 000 {t("sum")}</h3>
 								</div>
 							</div>
 							<div className={"calculate__range"}>
@@ -286,15 +321,16 @@ const Calculate = () => {
 									</h3>
 								</label>
 								<input
-									min={13}
+									min={18}
 									value={timeValue}
 									max={48}
+									step={3}
 									style={{ width: "100%" }}
 									onChange={(e) => setTimeValue(+e.target.value)}
 									type="range"
 								/>
 								<div className={"calculate__range-values"}>
-									<h3>13 {t("month")}</h3>
+									<h3>18 {t("month")}</h3>
 									<h3>48 {t("month")}</h3>
 								</div>
 							</div>
@@ -350,7 +386,8 @@ const Calculate = () => {
 									{t("home.calculate.resultTitle1")}
 									<br />
 									<span>
-										{leasingValue} {t("sum")}
+										{/* {leasingValue} {t("sum")} */}
+										{numberForamtter(sumLeasing())} {t("sum")}
 									</span>
 									{/* <input
 									type="text"
@@ -368,7 +405,9 @@ const Calculate = () => {
 									{t("home.calculate.resultTitle2")}
 									<br />
 									<span>
-										{paymentValue} {t("sum")}
+										{numberForamtter(monthlyPayment())}
+										{t("sum")}
+										{/* {paymentValue}  */}
 									</span>
 									{/* <input
 									type="text"

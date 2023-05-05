@@ -51,10 +51,10 @@
 		}
 	}
 	&__line {
-		height: 80%;
+		height: 90%;
 		width: 2px;
 		border-radius: 100%;
-		background: linear-gradient(#1b1c3bd3, #fff, #1b1c3bd3);
+		background: linear-gradient(#1b1c3b00, $primary, #1b1c3b00);
 	}
 }
 
@@ -99,12 +99,7 @@
 				font-family: $font_texts;
 			}
 		}
-		&__line {
-			height: 80%;
-			width: 2px;
-			border-radius: 100%;
-			background: linear-gradient(#1b1c3bd3, #fff, #1b1c3bd3);
-		}
+
 	}
 }
 @media (max-width: $md) {
@@ -158,12 +153,7 @@
 				}
 			}
 		}
-		&__line {
-			height: 80%;
-			width: 2px;
-			border-radius: 100%;
-			background: linear-gradient(#1b1c3bd3, #fff, #1b1c3bd3);
-		}
+
 	}
 }
 @media (max-width: $sm) {
@@ -222,11 +212,6 @@
 				}
 			}
 		}
-		&__line {
-			height: 80%;
-			width: 2px;
-			border-radius: 100%;
-			background: linear-gradient(#1b1c3bd3, #fff, #1b1c3bd3);
-		}
+
 	}
 }

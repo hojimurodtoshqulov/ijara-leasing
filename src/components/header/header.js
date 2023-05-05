@@ -9,8 +9,31 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 const Header = () => {
 	const [openModal, setOpenModal] = useState(false);
-	const navigate = useNavigate();
+	// const navigate = useNavigate();
 	const { t } = useTranslation();
+	const [selected, setSelected] = useState(0);
+	const headerData = [
+		{
+			img: img1,
+			title: t("home.q&a.slider1.title"),
+			text: t("home.q&a.slider1.text"),
+		},
+		{
+			img: img2,
+			title: t("home.q&a.slider2.title"),
+			text: t("home.q&a.slider2.text"),
+		},
+	];
+	const tLength = headerData.length;
+	const transition = { type: "spring", duration: 2 };
+	const titles = [
+		<>{t("home.q&a.slider1.title")}</>,
+		<>{t("home.q&a.slider2.title")}</>,
+	];
+	const texts = [
+		<>{t("home.q&a.slider1.text")}</>,
+		<>{t("home.q&a.slider2.text")}</>,
+	];
 	return (
 		<>
 			<div className={scss.header}>

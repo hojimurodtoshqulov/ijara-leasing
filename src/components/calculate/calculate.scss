@@ -822,6 +822,7 @@
 					background: #000;
 					z-index: 12;
 					box-shadow: 2px 3px 10px #000;
+					gap: 10px;
 				}
 				&-titles {
 					display: flex;
@@ -846,6 +847,16 @@
 						}
 					}
 				}
+				&_div1 {
+					width: 100%;
+					top: -1rem;
+					left: -1rem;
+				}
+				&_div2 {
+					width: 100%;
+					right: -1rem;
+					bottom: -1rem;
+				}
 			}
 		}
 	}
@@ -863,7 +874,6 @@
 			justify-content: center;
 			gap: 1rem;
 			margin-bottom: 3rem;
-
 			h1 {
 				p {
 					font-size: 30px;
@@ -889,7 +899,6 @@
 			align-items: center;
 			flex-direction: column;
 			gap: 70px;
-
 			&_col1 {
 				padding: 0 0 7% 0;
 				width: 100%;
@@ -910,7 +919,6 @@
 						position: relative;
 						z-index: 1;
 					}
-
 					span {
 						height: 8px;
 						background: $primary;
@@ -919,7 +927,6 @@
 						left: -1%;
 						z-index: 0;
 					}
-
 					div {
 						position: absolute;
 						bottom: -50%;
@@ -928,12 +935,10 @@
 						background: $primary;
 					}
 				}
-
 				&_slider1 {
 					position: relative;
 					width: 200%;
 					padding: 0 0 0 1.4%;
-
 					&-title {
 						position: absolute;
 						bottom: 140%;
@@ -942,13 +947,11 @@
 						font-weight: 500;
 						font-size: 1rem;
 					}
-
 					.row {
 						height: 20px;
 						display: flex;
 						align-items: center;
 						justify-content: flex-start;
-
 						&__col {
 							height: 100%;
 
@@ -957,56 +960,45 @@
 								top: -50%;
 								left: -1%;
 								width: 100%;
-
 								.ant-input-number-input {
 									font-size: 15px;
 								}
-
 								input {
 								}
-
 								.ant-slider-rail {
 									background: #fff;
 								}
 							}
 						}
 					}
-
 					&_inp {
 						position: absolute;
 						top: -150%;
 						right: 46.5%;
 						height: 30px;
 						width: 150px;
-
 						&-col {
 							&-input {
 								background: none;
 								border: none;
 								color: $light;
-
 								.ant-input-number {
 								}
-
 								.ant-input-number-handler-wrap {
 									input {
 										outline: none;
-
 										&:focus {
 											border: none;
 											outline: none;
 										}
 									}
 								}
-
 								.ant-input-number-input-wrap {
 									height: 30px;
 									width: 150px;
-
 									input {
 										color: #fff;
 										font-size: 20px;
-
 										&:focus {
 											border: none;
 											outline: none;
@@ -1014,7 +1006,6 @@
 									}
 								}
 							}
-
 							//p {
 							//	position: absolute;
 							//	top: -2%;
@@ -1023,14 +1014,12 @@
 							//}
 						}
 					}
-
 					.inp3 {
 						position: absolute;
 						top: -150%;
 						//right: 46%;
 						height: 30px;
 						width: 150px;
-
 						&_mec {
 							position: absolute;
 							top: -2%;
@@ -1038,14 +1027,12 @@
 							font-size: 20px;
 						}
 					}
-
 					&-priceStart {
 						position: absolute;
 						bottom: -90%;
 						left: 0.3%;
 						font-size: 17px;
 					}
-
 					&-priceEnd {
 						position: absolute;
 						bottom: -90%;
@@ -1053,7 +1040,6 @@
 						font-size: 17px;
 					}
 				}
-
 				&-text {
 					position: absolute;
 					bottom: -15%;
@@ -1063,7 +1049,6 @@
 					text-align: center;
 				}
 			}
-
 			&_col2 {
 				margin-top: 5%;
 				width: 100%;
@@ -1088,13 +1073,11 @@
 					align-items: center;
 					justify-content: center !important;
 					width: 100%;
-
 					h2 {
 						font-size: 17px;
 						font-weight: 400;
 						width: 100%;
 						text-align: center;
-
 						input {
 							width: 100%;
 							background: none;
