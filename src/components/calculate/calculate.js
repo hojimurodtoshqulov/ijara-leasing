@@ -51,9 +51,9 @@ const Calculate = () => {
 		const { options, ...rest } = props;
 		const tilt = useRef(null);
 
-		useEffect(() => {
-			VanillaTilt.init(tilt.current, options);
-		}, [options]);
+    useEffect(() => {
+      VanillaTilt.init(tilt.current, options);
+    }, [options]);
 
 		return <div ref={tilt} {...rest} />;
 	};
@@ -99,99 +99,99 @@ const Calculate = () => {
 								>
 									{titles[selected]}
 								</motion.span> */}
-							</motion.p>
-							<motion.span
-								initial={{ width: "0%" }}
-								whileInView={{ width: "30%" }}
-								transition={{ transition }}
-							></motion.span>
-							<motion.div
-								initial={{ width: "0%" }}
-								whileInView={{ width: "65%" }}
-								transition={{ transition }}
-							></motion.div>
-						</h1>
-						<div className={"calculate__range-wrap"}>
-							<div className={"calculate__range"}>
-								<label className={"calculate__range-label"}>
-									<h4 className={"calculate__range-label-text"}>
-										{t("home.calculate.calcTitle1")}
-									</h4>
-									<h3 className={"calculate__range-label-amount"}>
-										<input
-											type="text"
-											onChange={(e) => {
-												labelInputChange(e, setLeasingValue, 1000000000);
-											}}
-											value={formatInputValue(leasingValue)}
-										/>
-										{t("sum")}
-										{/* {numberForamtter(leasingValue)} {t("sum")} */}
-									</h3>
-								</label>
-								{/* Sotib olish qiymati */}
-								<input
-									type={"range"}
-									min={10000000}
-									onChange={leasingValueChange}
-									value={leasingValue}
-									max={1000000000}
-									style={{ width: "100%" }}
-								/>
-								<div className={"calculate__range-values"}>
-									<h3> 10 000 000 {t("sum")}</h3>
-									<h3> 1000 000 000 {t("sum")}</h3>
-								</div>
-							</div>
-							<div className={"calculate__range"}>
-								<label className={"calculate__range-label"}>
-									<h4 className={"calculate__range-label-text"}>
-										{t("home.calculate.calcTitle2")}
-									</h4>
-									<h3 className={"calculate__range-label-amount"}>
-										<input
-											type="text"
-											onChange={(e) => {
-												labelInputChange(e, setPaymentValue, 500000000);
-											}}
-											value={formatInputValue(paymentValue)}
-										/>
-										{t("sum")}
-									</h3>
-								</label>
-								<div className={"input-wrapper"}>
-									{/* Dastlabki to'lov */}
-									<input
-										onChange={paymentValueChange}
-										value={paymentValue}
-										type={"range"}
-										max={500000000}
-										min={3000000}
-										style={{ width: "100%" }}
-									/>
-								</div>
+              </motion.p>
+              <motion.span
+                initial={{ width: "0%" }}
+                whileInView={{ width: "30%" }}
+                transition={{ transition }}
+              ></motion.span>
+              <motion.div
+                initial={{ width: "0%" }}
+                whileInView={{ width: "65%" }}
+                transition={{ transition }}
+              ></motion.div>
+            </h1>
+            <div className={"calculate__range-wrap"}>
+              <div className={"calculate__range"}>
+                <label className={"calculate__range-label"}>
+                  <h4 className={"calculate__range-label-text"}>
+                    {t("home.calculate.calcTitle1")}
+                  </h4>
+                  <h3 className={"calculate__range-label-amount"}>
+                    <input
+                      type="text"
+                      onChange={(e) => {
+                        labelInputChange(e, setLeasingValue, 1000000000);
+                      }}
+                      value={formatInputValue(leasingValue)}
+                    />
+                    {t("sum")}
+                    {/* {numberForamtter(leasingValue)} {t("sum")} */}
+                  </h3>
+                </label>
+                {/* Sotib olish qiymati */}
+                <input
+                  type={"range"}
+                  min={10000000}
+                  onChange={leasingValueChange}
+                  value={leasingValue}
+                  max={1000000000}
+                  style={{ width: "100%" }}
+                />
+                <div className={"calculate__range-values"}>
+                  <h3> 10 000 000 {t("sum")}</h3>
+                  <h3> 1000 000 000 {t("sum")}</h3>
+                </div>
+              </div>
+              <div className={"calculate__range"}>
+                <label className={"calculate__range-label"}>
+                  <h4 className={"calculate__range-label-text"}>
+                    {t("home.calculate.calcTitle2")}
+                  </h4>
+                  <h3 className={"calculate__range-label-amount"}>
+                    <input
+                      type="text"
+                      onChange={(e) => {
+                        labelInputChange(e, setPaymentValue, 500000000);
+                      }}
+                      value={formatInputValue(paymentValue)}
+                    />
+                    {t("sum")}
+                  </h3>
+                </label>
+                <div className={"input-wrapper"}>
+                  {/* Dastlabki to'lov */}
+                  <input
+                    onChange={paymentValueChange}
+                    value={paymentValue}
+                    type={"range"}
+                    max={500000000}
+                    min={3000000}
+                    style={{ width: "100%" }}
+                  />
+                </div>
 
-								<div className={"calculate__range-values"}>
-									<h3>3 000 000 {t("sum")}</h3>
-									<h3>500 000 000 {t("sum")}</h3>
-								</div>
-							</div>
-							<div className={"calculate__range"}>
-								<label className={"calculate__range-label"}>
-									<h4 className={"calculate__range-label-text"}>
-										{t("home.calculate.calcTitle3")}
-									</h4>
-									<h3 className={"calculate__range-label-amount"}>
-										<input
-											type="text"
-											onChange={(e) => {
-												labelInputChange(e, setTimeValue, 48);
-											}}
-											value={timeValue}
-										/>
-										{t("month")}
-									</h3>
-								</label>
+                <div className={"calculate__range-values"}>
+                  <h3>3 000 000 {t("sum")}</h3>
+                  <h3>500 000 000 {t("sum")}</h3>
+                </div>
+              </div>
+              <div className={"calculate__range"}>
+                <label className={"calculate__range-label"}>
+                  <h4 className={"calculate__range-label-text"}>
+                    {t("home.calculate.calcTitle3")}
+                  </h4>
+                  <h3 className={"calculate__range-label-amount"}>
+                    <input
+                      type="text"
+                      onChange={(e) => {
+                        labelInputChange(e, setTimeValue, 48);
+                      }}
+                      value={timeValue}
+                    />
+                    {t("month")}
+                  </h3>
+                </label>
 
 								<input
 									min={18}
@@ -268,14 +268,14 @@ const Calculate = () => {
 									value={`${paymentValue} ${t("sum")}`}
 									onChange={onChange2}
 								/> */}
-								</h2>
-							</div>
-						</motion.div>
-					</div>
-				</div>
-			</div>
-		</div>
-	);
+                </h2>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Calculate;

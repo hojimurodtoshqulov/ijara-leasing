@@ -131,7 +131,7 @@
 		grid-template-columns: repeat(4, 1fr);
 		gap: 1rem;
 		flex-wrap: nowrap;
-		overflow-x: hidden;
+		// overflow-x: hidden;
 		@media (max-width: 1352px) {
 			grid-template-columns: repeat(3, 1fr);
 
