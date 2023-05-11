@@ -9,6 +9,8 @@ const Calculate = () => {
 	const [leasingValue, setLeasingValue] = useState(10000000);
 	const [paymentValue, setPaymentValue] = useState(3000000);
 	const [timeValue, setTimeValue] = useState(18);
+	const [sumValue, setsumValue] = useState(0);
+	const [numValue, setNumValue] = useState(0);
 	const paymentValueChange = (e) => {
 		const value = Number(e.target.value);
 		if (value > leasingValue) {
@@ -24,6 +26,22 @@ const Calculate = () => {
 		}
 		setLeasingValue(value);
 	};
+	useEffect(() => {
+		if (timeValue < 24) {
+			const sum = leasingValue - paymentValue;
+			const sumFoiz = timeValue * (18 / 12);
+			const brnarsa = (sum / 100) * sumFoiz;
+			const sasa = brnarsa / timeValue;
+			setsumValue(Math.ceil(sasa));
+		} else if (timeValue >= 24) {
+			const sum = leasingValue - paymentValue;
+			const sumFoiz = timeValue * (17 / 12);
+			const brnarsa = (sum / 100) * sumFoiz;
+			const sasa = brnarsa / timeValue;
+			setsumValue(Math.ceil(sasa));
+			console.log("timeValue", timeValue);
+		}
+	}, [leasingValue, paymentValue, timeValue]);
 	const numberForamtter = (num) => {
 		// const newFormatter = new Intl.numberFormat("en-US", {separator: " "});
 		return new Intl.NumberFormat("en-US").format(num);
@@ -49,11 +67,9 @@ const Calculate = () => {
 		<>{t("home.q&a.slider1.title")}</>,
 		<>{t("home.q&a.slider2.title")}</>,
 	];
-
 	const formatInputValue = (inputVal) => {
 		return `${numberForamtter(inputVal)}`;
 	};
-
 	const labelInputChange = (e, setState, maxVal) => {
 		const inputVal = e.target.value;
 		const newValue = parseInt(inputVal.replace(/(,)/g, ""));
@@ -181,7 +197,7 @@ const Calculate = () => {
 									min={18}
 									value={timeValue}
 									max={48}
-									step={3}
+									// step={3}
 									style={{ width: "100%" }}
 									onChange={(e) => setTimeValue(+e.target.value)}
 									type="range"
@@ -222,17 +238,6 @@ const Calculate = () => {
 								clipPath: "polygon(100% 0, 100% 100%, 0 100%, 0 0)",
 							}}
 							transition={{ transition, duration: 1 }}
-							// initial={{
-							// 	transform: "rotate(30deg)",
-							// 	transformOrigin: " right bottom",
-							// 	clipPath: " polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)",
-							// }}
-							// whileInView={{
-							// 	transform: "rotate(0deg)",
-							// 	transformOrigin: " right bottom",
-							// 	clipPath: "polygon(100% 0, 100% 100%, 0 100%, 0 0)",
-							// }}
-							// transition={{ transition, duration: 1 }}
 						>
 							<div
 								data-aos="fade-left"
@@ -245,11 +250,6 @@ const Calculate = () => {
 									<span>
 										{leasingValue} {t("sum")}
 									</span>
-									{/* <input
-									type="text"
-									value={`${leasingValue} ${t("sum")}`}
-									onChange={onChange}
-								/> */}
 								</h2>
 							</div>
 							<div
@@ -261,7 +261,7 @@ const Calculate = () => {
 									{t("home.calculate.resultTitle2")}
 									<br />
 									<span>
-										{paymentValue} {t("sum")}
+										{sumValue} {t("sum")}
 									</span>
 									{/* <input
 									type="text"
