@@ -9,7 +9,6 @@ const Ques_ans = () => {
 	const { t } = useTranslation();
 	const [selected, setSelected] = useState(0);
 	const tLength = Ques_ansData.length;
-	const transition = { type: "spring", duration: 2 };
 	const titles = [
 		<>{t("home.q&a.slider1.title")}</>,
 		<>{t("home.q&a.slider2.title")}</>,
@@ -18,6 +17,7 @@ const Ques_ans = () => {
 		<>{t("home.q&a.slider1.text")}</>,
 		<>{t("home.q&a.slider2.text")}</>,
 	];
+	const transition = { type: "spring", duration: 2 };
 	const Tilt = (props) => {
 		const { options, ...rest } = props;
 		const tilt = useRef(null);

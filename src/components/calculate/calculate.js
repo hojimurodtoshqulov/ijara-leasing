@@ -357,12 +357,12 @@ const Calculate = () => {
 							initial={{
 								transform: "rotate(30deg)",
 								transformOrigin: " right bottom",
-								// clipPath: " polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)",
+								clipPath: " polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)",
 							}}
 							whileInView={{
 								transform: "rotate(0deg)",
 								transformOrigin: " right bottom",
-								// clipPath: "polygon(100% 0, 100% 100%, 0 100%, 0 0)",
+								clipPath: "polygon(100% 0, 100% 100%, 0 100%, 0 0)",
 							}}
 							transition={{ transition, duration: 1 }}
 							// initial={{
