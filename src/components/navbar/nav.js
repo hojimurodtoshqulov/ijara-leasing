@@ -99,12 +99,14 @@ const Nav = ({ onClick }) => {
 									{t("nav.company")} <AiFillCaretDown /> <span></span>
 								</NavLink>
 								<div className={scss.dropdownItems}>
-									<Link to="/requisites" onClick={scrollToTop}>
-										{t("nav.requisites")}
-									</Link>
-									<Link to="/contact" onClick={scrollToTop}>
-										{t("nav.contact")}
-									</Link>
+									<div>
+										<Link to="/requisites" onClick={scrollToTop}>
+											{t("nav.requisites")}
+										</Link>
+										<Link to="/contact" onClick={scrollToTop}>
+											{t("nav.contact")}
+										</Link>
+									</div>
 								</div>
 							</NavLink>
 							{/* leasing */}
@@ -122,9 +124,14 @@ const Nav = ({ onClick }) => {
 									{t("nav.programs")} <AiFillCaretDown /> <span></span>
 								</Link>
 								<div className={scss.dropdownItems}>
-									<Link to="/leasing" onClick={scrollToTop}>
-										{t("nav.leasing")}
-									</Link>
+									<div>
+										<Link to="/leasing" onClick={scrollToTop}>
+											{t("nav.leasing")}
+										</Link>
+										<Link to="/funds" onClick={scrollToTop}>
+											{t("nav.funds")}
+										</Link>
+									</div>
 								</div>
 							</NavLink>
 							<NavLink

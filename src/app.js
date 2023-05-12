@@ -11,6 +11,7 @@ import Leasing from "./pages/leasing/leasing";
 import Programs from "./pages/programs/programs";
 import "./i18n";
 import Clients from "./pages/clients/clients";
+import Funds from "./pages/funds/funds";
 const App = () => {
 	useEffect(() => {
 		Aos.init({ duration: 1000, mirror: true });
@@ -24,6 +25,7 @@ const App = () => {
 					<Route path="/company" element={<Company />} />
 					<Route path="/requisites" element={<Requisites />} />
 					<Route path="/leasing" element={<Leasing />} />
+					<Route path="/funds" element={<Funds />} />
 					<Route path="/programs" element={<Programs />} />
 					<Route path="/clients" element={<Clients />} />
 				</Route>

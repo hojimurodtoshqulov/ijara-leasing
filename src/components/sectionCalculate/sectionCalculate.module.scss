@@ -1,0 +1,131 @@
+@import "../../scss/varuables.scss";
+.sectionCalculateDiv {
+	// background: $bg;
+	position: relative;
+	margin-top: 9%;
+	padding: 0 0 10% 0;
+	.sectionCalculate {
+		height: 510px;
+		width: 100%;
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		flex-direction: column;
+		@media (max-width: $xl) {
+			flex-direction: column;
+		}
+		@media (max-width: $md) {
+			height: 324px;
+		}
+		@media (max-width: $sm) {
+			height: 170px;
+			padding-bottom: 5%;
+		}
+		&__elements {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			text-align: start;
+			gap: 20px;
+			padding-bottom: 3vw;
+			width: 55%;
+			h1 {
+				font-size: 50px;
+				font-family: $font_titles;
+				position: relative;
+				p {
+					font-size: 50px;
+					position: relative;
+					z-index: 1;
+
+					@media (max-width: $md) {
+						font-size: 29px;
+						font-weight: 600;
+					}
+				}
+				span {
+					width: 120px;
+					height: 15px;
+					background: $primary;
+					position: absolute;
+					top: 40px;
+					left: 0;
+					z-index: 0;
+				}
+				@media (min-width: $xxl) {
+					p {
+						font-size: 70px;
+					}
+				}
+			}
+			p {
+				font-size: 25px;
+				font-family: $font_texts;
+				@media (max-width: $md) {
+					font-size: 15px;
+				}
+			}
+			&_btn {
+				width: 390px;
+				height: 70px;
+				button {
+					font-size: 25px;
+				}
+
+				@media (max-width: $md) {
+					width: 302px;
+					height: 54px;
+					button {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+		&__images {
+			width: 45%;
+			height: 510px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			object-fit: cover;
+			&_img1 {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: -10rem;
+				z-index: 1;
+				transform-origin: " left bottom";
+				filter: drop-shadow(0 0 15px #000);
+			}
+			&_img2 {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 75%;
+				object-fit: cover;
+				z-index: 0;
+			}
+
+			@media (min-width: $xxl) {
+				height: 600px;
+			}
+
+			@media (max-width: $xl) {
+				// position: relative;
+				width: 70%;
+				opacity: 0.5;
+				// object-fit: cover;
+			}
+
+			@media (max-width: $md) {
+				width: 100%;
+				height: 300px;
+			}
+
+			@media (max-width: $sm) {
+				display: none;
+			}
+		}
+	}
+}

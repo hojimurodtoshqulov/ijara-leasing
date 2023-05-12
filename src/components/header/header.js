@@ -2,7 +2,7 @@ import scss from "./header.module.scss";
 import { Link, useNavigate } from "react-router-dom";
 import img1 from "../../media/header_chevrolet.png";
 import img2 from "../../media/header2.jpg";
-import img3 from "../../media/pulqo'l.png";
+import img3 from "../../media/pulqo'l1.png";
 import Button from "../button/button";
 import Categories from "../categories/categories";
 import Modal from "../modal/modal";

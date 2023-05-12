@@ -96,7 +96,7 @@
 				&:hover {
 					.dropdownItems {
 						z-index: 12;
-						top: calc(100% + 3px);
+						top: calc(100% - 3px);
 						visibility: visible;
 						opacity: 1;
 					}
@@ -105,7 +105,7 @@
 				}
 				&Title:hover ~ .dropdownItems {
 					background-color: transparent !important;
-					border: 2px solid $primary;
+
 					a {
 						// background-color: unset;
 						color: $primary;
@@ -113,14 +113,16 @@
 				}
 				&Items {
 					min-width: max-content;
-					border: 2px solid $primary;
-					// transition: 0.3s;
 					position: absolute;
 					top: calc(-200% + 10px);
 					left: 0;
 					z-index: -12;
 					visibility: hidden;
 					opacity: 0;
+					padding-top: 15px;
+					div {
+						border: 2px solid $primary;
+					}
 					a {
 						background-color: #ff00;
 						color: $primary;

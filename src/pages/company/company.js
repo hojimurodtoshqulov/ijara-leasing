@@ -2,16 +2,7 @@ import React from "react";
 import "./company.scss";
 import InfoCard from "../../components/infoCard/infoCard";
 import Title from "../../components/title/title";
-
 import { useTranslation } from "react-i18next";
-
-/* 
-
-«Ijara Leasing» 
-
-«Ijara Leasing» 
-
-*/
 
 const Company = () => {
   const { t, i18n } = useTranslation();

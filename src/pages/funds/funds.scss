@@ -1,0 +1,62 @@
+@import "../../scss/varuables.scss";
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.funds {
+	padding: 150px 0;
+	&__imgText {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		gap: 20px;
+		padding: 5% 0;
+	}
+	img {
+		width: 510px;
+		height: 510px;
+	}
+	&__par {
+		width: 50%;
+		font-family: $font_texts;
+		font-weight: 200;
+		font-size: 25px;
+		line-height: 35px;
+
+		@media (max-width: $lg) {
+			font-size: 20px;
+
+			&-highlight {
+				font-size: 22px;
+			}
+		}
+
+		@media (max-width: $sm) {
+			font-size: 16px;
+			line-height: 35px;
+
+			&-highlight {
+				font-size: 20px;
+			}
+		}
+	}
+
+	.card-wrapper {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		flex-wrap: wrap;
+		margin-top: 150px;
+		gap: 1rem;
+
+		@media (max-width: $xl) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@media (max-width: $md) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+}

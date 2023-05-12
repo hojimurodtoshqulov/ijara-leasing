@@ -8,11 +8,11 @@ import icocFileHands from "../../media/icon-handFile.png";
 import { useState, useEffect, useRef } from "react";
 import VanillaTilt from "vanilla-tilt";
 import { useTranslation } from "react-i18next";
-
 import "./style.scss";
 import ExplainSection from "../../components/explainSection/explainSection";
 import Title from "../../components/title/title";
-
+import IntegerStep from "../../components/calculate/calculate";
+import { Space } from "antd";
 const Leasing = () => {
 	const { t } = useTranslation();
 	const Tilt = (props) => {
@@ -74,6 +74,9 @@ const Leasing = () => {
 					<InfoCard text={t("leasingPage.cards.card3")} title={"20%"} />
 					<InfoCard text={t("leasingPage.cards.card4")} title={"2%"} />
 				</div>
+				<Space style={{ width: "100%" }} direction="vertical">
+					<IntegerStep />
+				</Space>
 				<ExplainSection />
 			</div>
 		</div>

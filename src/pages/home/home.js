@@ -16,6 +16,7 @@ import Submit from "../../components/submit/submit";
 import AboutLeasing from "../../components/aboutLeasing/aboutLeasing";
 import Location from "../../components/location/location";
 import Ques_ans from "../../components/ques_ans/ques_ans";
+import SectionCalculate from "../../components/sectionCalculate/sectionCalculate";
 const Home = () => {
 	const handleClick = (e) => {
 		i18next.changeLanguage(e.target.value);
@@ -29,10 +30,11 @@ const Home = () => {
 				<label htmlFor="navLinks__menu" className="navLinks__menu"></label>
 				<Header />
 				<LeasingImages />
-				<Space style={{ width: "100%" }} direction="vertical">
+				{/* <Space style={{ width: "100%" }} direction="vertical">
 					<IntegerStep />
-				</Space>
+				</Space> */}
 				{/* <HelpTitle /> */}
+				<SectionCalculate />
 				<Services />
 				<Submit />
 				<AboutLeasing />
@@ -55,38 +57,38 @@ const Home = () => {
 			</div>
 		</Suspense>
 	);
-//   return (
-//     <Suspense fallback="loading">
-//       <div className="main home">
-//         <input type="checkbox" id="navLinks__menu" />
-//         <label htmlFor="navLinks__menu" className="navLinks__menu"></label>
-//         <Header />
-//         <LeasingImages />
-//         <Space style={{ width: "100%" }} direction="vertical">
-//           <IntegerStep />
-//         </Space>
-//         <HelpTitle />
-//         <Services />
-//         <Submit />
-//         <AboutLeasing />
-//         <Location />
-//       </div>
-      
-//       <div className="success">
-//         <ToastContainer
-//           position="top-right"
-//           autoClose={5000}
-//           hideProgressBar={false}
-//           newestOnTop={false}
-//           closeOnClick
-//           rtl={false}
-//           pauseOnFocusLoss
-//           draggable
-//           pauseOnHover
-//           theme="light"
-//         />
-//       </div>
-//     </Suspense>
-//   );
+	//   return (
+	//     <Suspense fallback="loading">
+	//       <div className="main home">
+	//         <input type="checkbox" id="navLinks__menu" />
+	//         <label htmlFor="navLinks__menu" className="navLinks__menu"></label>
+	//         <Header />
+	//         <LeasingImages />
+	//         <Space style={{ width: "100%" }} direction="vertical">
+	//           <IntegerStep />
+	//         </Space>
+	//         <HelpTitle />
+	//         <Services />
+	//         <Submit />
+	//         <AboutLeasing />
+	//         <Location />
+	//       </div>
+
+	//       <div className="success">
+	//         <ToastContainer
+	//           position="top-right"
+	//           autoClose={5000}
+	//           hideProgressBar={false}
+	//           newestOnTop={false}
+	//           closeOnClick
+	//           rtl={false}
+	//           pauseOnFocusLoss
+	//           draggable
+	//           pauseOnHover
+	//           theme="light"
+	//         />
+	//       </div>
+	//     </Suspense>
+	//   );
 };
 export { Home };

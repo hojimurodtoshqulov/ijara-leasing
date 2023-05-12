@@ -2,6 +2,7 @@
 	"nav": {
 		"company": "Kompaniya",
 		"leasing": "Ekspress lizing",
+		"funds": "Asosiy vositalar",
 		"client": "Mijoz uchun",
 		"contact": "Aloqa",
 		"programs": "Lizing dasturlari",
@@ -49,6 +50,11 @@
 			"title": "21 mln",
 			"text": "AQSH dollari Loyihalar qiymati"
 		}
+	},
+	"fundsPage": {
+		"title": "Aylanma mablag'larni to'ldirish",
+		"text": "Aylanma mablag'larni to'ldirish - bu kompaniya tomonidan joriy faoliyatni ta'minlash uchun foydalaniladigan pul mablag'larini ko'paytirish jarayoni. Bu, odatda, mahsulot ishlab chiqarish yoki sotish uchun zarur bo'lgan kassa apparati, bank hisob raqamlari va tovarlar zaxiralarini to'ldirishni o'z ichiga oladi. Aylanma mablag'larni yangi kreditlar olish, aktivlarni sotish, investitsiyalarni jalb qilish yoki kompaniya foydasini oshirish orqali to'ldirish mumkin. Bu korxonaning moliyaviy ahvoli barqarorligini, mijozlar va yetkazib beruvchilar oldidagi majburiyatlarini bajarish qobiliyatini ta’minlashda muhim omil hisoblanadi.",
+		"text2": "Mablag'laringizni hisoblash uchun ushbu jarayondan foydalanib ko'ring."
 	},
 	"contactPage": {
 		"contact": {
@@ -113,13 +119,14 @@
 			"category3": "Ishlab chiqaruvchilardan chegirmalar"
 		},
 		"hero2": {
-			"title1": "Aylanma mablag'larni ",
-			"title2": "to'ldirish",
+			"title1": "Asosiy vositalar  ",
+			"title2": "va mablag'lar",
 			"text": "Lörem ipsum rubihet benade. Agnostifaktisk elektrosiv: nykaling fast pebelt och infrade. "
 		},
 		"calculate": {
 			"title": "Lizing narxini hisoblang",
 			"subtitle": "Tanlangan avtomobilning narxini, kerakli dastlabki to'lovni va lizing muddatini belgilang. Tanlangan mashina haqida bizga xabar berish va tranzaksiyani boshlash uchun dastlabki hisob-kitobdan so'ng biz bilan bog'laning.",
+			"subtitle2": "Tanlangan avtomobilning narxini, kerakli dastlabki to'lovni va lizing muddatini belgilang.",
 			"calculator": "LIZING KALKULYATORI",
 			"calcTitle1": "Sotib olish qiymati",
 			"calcTitle2": "Dastlabki to'lov",
