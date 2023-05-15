@@ -2,6 +2,8 @@
 .leasingImagesDiv {
 	width: 100%;
 	position: relative;
+	padding-top: 10%;
+	background: var(--background);
 }
 .leasingImages {
 	display: flex;
@@ -9,8 +11,7 @@
 	justify-content: center;
 	width: 100%;
 	height: auto;
-	padding: 10% 0 3% 0;
-	background: var(--background);
+	padding: 5% 0 0 0;
 	position: relative;
 	z-index: 1;
 	&__imgDiv {
@@ -65,9 +66,9 @@
 			text-align: center;
 			position: absolute;
 			left: 0;
-			bottom: -10%;
+			bottom: -25vh;
 			width: 100%;
-			transition: 0.3s;
+			transition: 0.4s;
 			font-size: 1.5rem;
 		}
 		@media (min-width: $xxl) {

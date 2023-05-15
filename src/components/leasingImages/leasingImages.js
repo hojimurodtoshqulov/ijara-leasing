@@ -7,13 +7,20 @@ import img5 from "../../media/auto-key.png";
 import Modal from "../modal/modal";
 import { useState } from "react";
 import Carousel1 from "./carousel1/carousel1";
+import Title from "../title/title";
+import { useTranslation } from "react-i18next";
+
 const LeasingImages = () => {
 	const [openModal, setOpenModal] = useState(false);
 	const [cardOreder, setcardOreder] = useState(0);
+	const { t } = useTranslation();
 
 	return (
 		<>
 			<div className={scss.leasingImagesDiv}>
+				<div className="container">
+					<Title title={t("home.leasingImages.title")} />
+				</div>
 				<div className={scss.leasingImages}>
 					<div
 						data-aos="flip-left"
@@ -25,7 +32,7 @@ const LeasingImages = () => {
 						}}
 					>
 						<img src={img1} alt="car-rental" />
-						<p>1Lorem, ipsum.</p>
+						<p>{t("home.leasingImages.catalog1")}</p>
 					</div>
 					<div
 						data-aos="flip-left"
@@ -37,7 +44,7 @@ const LeasingImages = () => {
 						}}
 					>
 						<img src={img2} alt="kredit" />
-						<p>2Lorem, ipsum.</p>
+						<p>{t("home.leasingImages.catalog2")}</p>
 					</div>
 					<div
 						data-aos="flip-left"
@@ -49,7 +56,7 @@ const LeasingImages = () => {
 						}}
 					>
 						<img src={img3} alt="Autofficine" />
-						<p>3Lorem, ipsum.</p>
+						<p>{t("home.leasingImages.catalog3")}</p>
 					</div>
 					<div
 						data-aos="flip-left"
@@ -61,7 +68,7 @@ const LeasingImages = () => {
 						}}
 					>
 						<img src={img4} alt="lizing-pen" />
-						<p>4Lorem, ipsum.</p>
+						<p>{t("home.leasingImages.catalog4")}</p>
 					</div>
 					<div
 						data-aos="flip-left"
@@ -73,7 +80,7 @@ const LeasingImages = () => {
 						}}
 					>
 						<img src={img5} alt="auto-key" />
-						<p>5Lorem, ipsum.</p>
+						<p>{t("home.leasingImages.catalog5")}</p>
 					</div>
 				</div>
 				<Carousel1 setOpenModal={setOpenModal} setcardOreder={setcardOreder} />

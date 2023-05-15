@@ -18,27 +18,27 @@ const Carousel1 = ({ openModal, setcardOreder, setOpenModal }) => {
 	const data = [
 		{
 			img: img1,
-			title: "img 1",
+			title: t("home.leasingImages.catalog1"),
 			link: "/study",
 		},
 		{
 			img: img2,
-			title: "img 2",
+			title: t("home.leasingImages.catalog2"),
 			link: "/study",
 		},
 		{
 			img: img3,
-			title: "img 3",
+			title: t("home.leasingImages.catalog3"),
 			link: "/study",
 		},
 		{
 			img: img4,
-			title: "img 4",
+			title: t("home.leasingImages.catalog4"),
 			link: "/study",
 		},
 		{
 			img: img5,
-			title: "img 4",
+			title: t("home.leasingImages.catalog5"),
 			link: "/study",
 		},
 	];

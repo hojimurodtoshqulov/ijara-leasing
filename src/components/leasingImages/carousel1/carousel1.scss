@@ -40,9 +40,9 @@
 				text-align: center;
 				color: $light;
 				position: absolute;
-				bottom: -20%;
+				bottom: -30%;
 				left: 0%;
-				font-size: 1.4rem;
+				font-size: 1rem;
 				// border-radius: 0 20px 0 20px;
 				text-shadow: 1px 1px 5px #000;
 				&:hover {
@@ -91,7 +91,7 @@
 		height: 260px;
 		position: absolute;
 		left: 0%;
-		top: 25%;
+		top: 35%;
 		.slide {
 			transform: scale(0.9);
 			transition: transform 300ms;
@@ -114,12 +114,13 @@
 				text-align: center;
 				color: $light;
 				position: absolute;
-				bottom: -20%;
+				bottom: -30%;
 				left: 0%;
-				font-size: 1.4rem;
+				font-size: 0.9rem;
+				line-height: 13px;
 				// border-radius: 0 20px 0 20px;
 				text-shadow: 1px 1px 5px #000;
-
+				transition: all .5s;
 				&:hover {
 					transform: scale(1.07);
 				}
@@ -134,7 +135,7 @@
 				object-fit: cover;
 			}
 			.link {
-				bottom: 0%;
+				bottom: 5%;
 				left: 0%;
 			}
 		}

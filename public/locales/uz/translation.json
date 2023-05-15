@@ -123,6 +123,19 @@
 			"title2": "va mablag'lar",
 			"text": "Lörem ipsum rubihet benade. Agnostifaktisk elektrosiv: nykaling fast pebelt och infrade. "
 		},
+		"leasingImages": {
+			"title": "5 afzalliklar",
+			"catalog1": "1. Jarimasiz (penyasiz) lizing ",
+			"catalog2": "2. Dastlabki to'lovsiz imkoniyat",
+			"catalog3": "3. Yuridik shaxslar uchun biznes-reja talab qilinmaydi. ",
+			"catalog4": "4.  Past belgilanish foizi",
+			"catalog5": "5. 48 oygacha ijaraga olish imkoniyati",
+			"catalog1text": " Iqtisodiy samaradorlik. “Ijara lizing” kompaniyalarga asbob-uskunalar yoki transport vositalarini sotib olish uchun katta xarajatlardan qochish, shuningdek, uni ishlatish va texnik xizmat ko'rsatish xarajatlarini kamaytirish imkonini beradi.",
+			"catalog2text": " Moslashuvchanlik. Kompaniya lizingning turli variantlarini taklif etadi, jumladan, moliyaviy lizing, operativ lizing va lizing shartnomasi bo'yicha asbob-uskunalarni keyinchalik sotib olish bilan sotib olish. Bu kompaniyalarga moliyaviy imkoniyatlari va ehtiyojlarini hisobga olgan holda o'zlari uchun eng mos variantni tanlash imkonini beradi.",
+			"catalog3text": " Mijozlarni qo'llab-quvvatlash. “Ijara lizing” uskunalarga texnik xizmat ko‘rsatish va ta’mirlash bo‘yicha keng ko‘lamli xizmatlarni taqdim etadi, bu esa mijozlarga o‘zlarining asosiy biznesiga e’tibor qaratish imkonini beradi.",
+			"catalog4text": "Soliq imtiyozlari. Uskunaning amortizatsiyasi va lizing shartnomalari bo'yicha foizlarni to'lash bilan bog'liq soliq imtiyozlaridan foydalanmoqchi bo'lgan kompaniyalar uchun lizing foydali bo'lishi mumkin.",
+			"catalog5text": "Uskunalarni tez yetkazib berish. “Ijara lizing” mijozlarga asbob-uskunalarni tezda yetkazib berishi mumkin, bu esa lizing shartnomasi tuzilganidan so‘ng, uskunani yetkazib berish va o‘rnatishni kutmasdan, darhol ish boshlash imkonini beradi."
+		},
 		"calculate": {
 			"title": "Lizing narxini hisoblang",
 			"subtitle": "Tanlangan avtomobilning narxini, kerakli dastlabki to'lovni va lizing muddatini belgilang. Tanlangan mashina haqida bizga xabar berish va tranzaksiyani boshlash uchun dastlabki hisob-kitobdan so'ng biz bilan bog'laning.",

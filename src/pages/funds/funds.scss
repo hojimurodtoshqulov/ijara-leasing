@@ -14,17 +14,47 @@
 		justify-content: space-between;
 		gap: 20px;
 		padding: 5% 0;
-	}
-	img {
-		width: 510px;
-		height: 510px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			box-shadow: 5px 3px 35px rgba(0, 0, 0, 0.781);
+		}
+		&_img {
+			width: 450px;
+			height: 450px;
+			position: relative;
+			z-index: 123;
+		}
+		&_div1 {
+			border: 2px solid $primary;
+			position: absolute;
+			top: -1.5rem;
+			left: -1.5rem;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			z-index: -1;
+			box-shadow: -5px 3px 35px rgba(0, 0, 0, 0.781);
+		}
+		&_div2 {
+			background: linear-gradient(to bottom left, #178187, #319ba1, #48e2ea);
+			position: absolute;
+			right: -1.5rem;
+			bottom: -1.5rem;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			z-index: -1;
+			box-shadow: 3px 3px 35px rgba(0, 0, 0, 0.781);
+		}
 	}
 	&__par {
 		width: 50%;
 		font-family: $font_texts;
 		font-weight: 200;
 		font-size: 25px;
-		line-height: 35px;
+		line-height: 33px;
 
 		@media (max-width: $lg) {
 			font-size: 20px;
