@@ -3,84 +3,84 @@
 $line-height: 70px;
 
 .title {
-  position: relative;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: $line-height;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  max-width: fit-content;
-  font-family: $font_titles;
+	position: relative;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: $line-height;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	max-width: fit-content;
+	font-family: $font_titles;
 
-  &.small {
-    font-weight: 700;
-    font-size: 35px;
-    line-height: 70px;
-    padding-bottom: 0;
-  }
+	&.small {
+		font-weight: 700;
+		font-size: 35px;
+		line-height: 70px;
+		padding-bottom: 0;
+	}
 
-  &Border {
-    content: "";
-    position: absolute;
-    top: calc($line-height - 20px);
-    bottom: 0;
-    height: 10px;
-    width: 100px;
-    background: #319ba1;
-    display: inline-block;
-    z-index: -1;
+	&Border {
+		content: "";
+		position: absolute;
+		top: calc($line-height - 20px);
+		// bottom: 0;
+		height: 10px;
+		width: 100px;
+		background: #319ba1;
+		display: inline-block;
+		z-index: -1;
 
-    @media (max-width: $md) {
-      top: calc($line-height - 25px);
-    }
+		@media (max-width: $md) {
+			top: calc($line-height - 45px);
+		}
 
-    @media (max-width: $sm) {
-      top: calc($line-height - 28px);
-      height: 8px;
-    }
-  }
+		@media (max-width: $sm) {
+			top: calc($line-height - 48px);
+			height: 8px;
+		}
+	}
 
-  &Underline {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 1px;
-    display: inline-block;
-    width: 100%;
-    background-image: linear-gradient(
-      10deg,
-      rgba(171, 174, 183, 0) 0%,
-      #319ba1 51.56%,
-      rgba(171, 174, 183, 0) 100%
-    );
-  }
+	&Underline {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 1px;
+		display: inline-block;
+		width: 100%;
+		background-image: linear-gradient(
+			10deg,
+			rgba(171, 174, 183, 0) 0%,
+			#319ba1 51.56%,
+			rgba(171, 174, 183, 0) 100%
+		);
+	}
 
-  @media (max-width: $md) {
-    font-size: 40px;
-    margin-bottom: 30px;
-    &.small {
-      font-size: 30px;
-      line-height: 50px;
-      margin-bottom: 20px;
+	@media (max-width: $md) {
+		font-size: 40px;
+		margin-bottom: 30px;
+		line-height: 30px;
+		&.small {
+			font-size: 30px;
+			line-height: 30px;
+			margin-bottom: 20px;
+			&Border {
+				top: calc($line-height - 35px);
+				max-width: 100%;
+				height: 4px;
+			}
+		}
+	}
 
-      &Border {
-        top: calc($line-height - 35px);
-        max-width: 100%;
-        height: 4px;
-      }
-    }
-  }
+	@media (max-width: $sm) {
+		font-size: 30px;
 
-  @media (max-width: $sm) {
-    font-size: 30px;
+		&.small {
+			font-size: 20px;
 
-    &.small {
-      font-size: 20px;
-
-      &Border {
-        top: calc($line-height - 40px);
-      }
-    }
-  }
+			&Border {
+				top: calc($line-height - 40px);
+			}
+		}
+	}
 }

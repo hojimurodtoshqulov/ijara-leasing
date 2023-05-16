@@ -11,12 +11,13 @@ const Calculate = () => {
 	const [timeValue, setTimeValue] = useState(18);
 	const [sumValue, setsumValue] = useState(0);
 	const [numValue, setNumValue] = useState(0);
+
 	const paymentValueChange = (e) => {
 		const value = Number(e.target.value);
 		if (value > leasingValue) {
 			setPaymentValue(leasingValue);
 		} else {
-			setPaymentValue(value);
+			setPaymentValue(onStepChange(e, 1000000));
 		}
 	};
 	const leasingValueChange = (e) => {
@@ -24,27 +25,35 @@ const Calculate = () => {
 		if (value <= paymentValue) {
 			setPaymentValue(value);
 		}
-		setLeasingValue(value);
+		setLeasingValue(onStepChange(e, 1000000));
 	};
 	useEffect(() => {
 		if (timeValue < 24) {
 			const sum = leasingValue - paymentValue;
 			const sumFoiz = timeValue * (18 / 12);
+			// console.log("kichik", sumFoiz);
 			const brnarsa = (sum / 100) * sumFoiz;
-			const sasa = brnarsa / timeValue;
+			const kattaFoyda = brnarsa + sum;
+			const sasa = kattaFoyda / timeValue;
 			setsumValue(Math.ceil(sasa));
+			setNumValue(Math.ceil(kattaFoyda));
+			// console.log("kichik", sasa);
 		} else if (timeValue >= 24) {
 			const sum = leasingValue - paymentValue;
 			const sumFoiz = timeValue * (17 / 12);
+			// console.log("katta", sumFoiz);
 			const brnarsa = (sum / 100) * sumFoiz;
-			const sasa = brnarsa / timeValue;
+			const kattaFoyda = brnarsa + sum;
+			const sasa = kattaFoyda / timeValue;
 			setsumValue(Math.ceil(sasa));
-			console.log("timeValue", timeValue);
+			setNumValue(Math.ceil(kattaFoyda));
+
+			// console.log("katta", sasa);
 		}
 	}, [leasingValue, paymentValue, timeValue]);
 	const numberForamtter = (num) => {
 		// const newFormatter = new Intl.numberFormat("en-US", {separator: " "});
-		return new Intl.NumberFormat("en-US").format(num);
+		return new Intl.NumberFormat("ru-RU").format(num);
 	};
 	const transition = { type: "spring", duration: 2 };
 	const Tilt = (props) => {
@@ -76,6 +85,27 @@ const Calculate = () => {
 		if (newValue >= maxVal || !newValue) return;
 		setState(newValue);
 	};
+
+	const onStepChange = (event, step) => {
+		const newValue = parseInt(event.target.value, 10);
+
+		const remainder = newValue % step;
+		const newValueRounded =
+			remainder >= step / 2
+				? newValue + (step - remainder)
+				: newValue - remainder;
+
+		return newValueRounded;
+	};
+
+	// const monthOnchange = (e) => {
+	// 	const inputVal = e.target.value;
+	// 	const maxVal = 48;
+	// 	const newValue = parseInt(inputVal.replace(/(,)/g, ""));
+	// 	console.log(newValue,);
+	// 	if (newValue >= maxVal || !newValue) return;
+	// 	setTimeValue((prev) => prev + 3);
+	// };
 	return (
 		<div className="calculate">
 			<div className="">
@@ -170,7 +200,6 @@ const Calculate = () => {
 										style={{ width: "100%" }}
 									/>
 								</div>
-
 								<div className={"calculate__range-values"}>
 									<h3>3 000 000 {t("sum")}</h3>
 									<h3>500 000 000 {t("sum")}</h3>
@@ -199,7 +228,10 @@ const Calculate = () => {
 									max={48}
 									// step={3}
 									style={{ width: "100%" }}
-									onChange={(e) => setTimeValue(+e.target.value)}
+									// onChange={(e) => setTimeValue((prev) => prev + 3)}
+									onChange={(event) => {
+										setTimeValue(onStepChange(event, 3));
+									}}
 									type="range"
 								/>
 								<div className={"calculate__range-values"}>
@@ -248,7 +280,7 @@ const Calculate = () => {
 									{t("home.calculate.resultTitle1")}
 									<br />
 									<span>
-										{leasingValue} {t("sum")}
+										{numberForamtter(numValue)} {t("sum")}
 									</span>
 								</h2>
 							</div>
@@ -261,7 +293,7 @@ const Calculate = () => {
 									{t("home.calculate.resultTitle2")}
 									<br />
 									<span>
-										{sumValue} {t("sum")}
+										{numberForamtter(sumValue)} {t("sum")}
 									</span>
 								</h2>
 							</div>
