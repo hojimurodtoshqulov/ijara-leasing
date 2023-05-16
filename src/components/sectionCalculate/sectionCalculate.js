@@ -5,6 +5,7 @@ import Button from "../button/button";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
+import Title from "../title/title";
 
 const SectionCalculate = () => {
 	const transition = { type: "spring", duration: 2 };
@@ -21,14 +22,15 @@ const SectionCalculate = () => {
 						data-aos="zoom-out-right"
 						className={scss.sectionCalculate__elements}
 					>
-						<h1>
+						<Title title={t("home.calculate.title")} typed underline />
+						{/* <h1>
 							<p>{t("home.calculate.title")}</p>{" "}
 							<motion.span
 								initial={{ width: "100px", left: "32rem" }}
 								whileInView={{ width: "100px", left: "0" }}
 								transition={{ transition, duration: 1 }}
 							></motion.span>
-						</h1>
+						</h1> */}
 						<p>{t("home.calculate.subtitle2")}</p>
 						<div
 							className={scss.sectionCalculate__elements_btn}
@@ -44,14 +46,16 @@ const SectionCalculate = () => {
 						data-aos="zoom-out-right"
 						className={scss.sectionCalculate__elements}
 					>
-						<h1>
+						<Title title={t("home.hero2.title1")} typed underline />
+
+						{/* <h1>
 							<p>{t("home.hero2.title1")}</p>{" "}
 							<motion.span
 								initial={{ width: "100px", left: "32rem" }}
 								whileInView={{ width: "100px", left: "0" }}
 								transition={{ transition, duration: 1 }}
 							></motion.span>
-						</h1>
+						</h1> */}
 						<p>{t("fundsPage.text2")}</p>
 						<div
 							className={scss.sectionCalculate__elements_btn}

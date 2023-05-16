@@ -107,7 +107,7 @@ const Header = () => {
 		<>{t("home.hero2.title2")}</>,
 	];
 	const texts = [<>{t("home.hero.text")}</>, <>{t("home.hero2.text")}</>];
-	const btnLinks = ["/company", "/leasing"];
+	const btnLinks = ["/leasing", "/funds"];
 	useEffect(() => {
 		const interval = setInterval(() => {
 			selected === tLength - 1

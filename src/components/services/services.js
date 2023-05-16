@@ -5,7 +5,7 @@ import Button from "../button/button";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
-
+import Title from "../title/title";
 const Services = () => {
 	const transition = { type: "spring", duration: 2 };
 	const navigate = useNavigate();
@@ -41,14 +41,16 @@ const Services = () => {
 						/> */}
 					</div>
 					<div data-aos="zoom-out-left" className={scss.services__elements}>
-						<h1>
+						<Title title={t("home.hero2.title1")} typed underline />
+
+						{/* <h1>
 							<p>{t("home.services.title")}</p>{" "}
 							<motion.span
 								initial={{ width: "100px", left: "32rem" }}
 								whileInView={{ width: "100px", left: "0" }}
 								transition={{ transition, duration: 1 }}
 							></motion.span>
-						</h1>
+						</h1> */}
 						<p>{t("home.services.text")}</p>
 						<div className={scss.services__elements_btn} onClick={scrollToTop}>
 							<Button

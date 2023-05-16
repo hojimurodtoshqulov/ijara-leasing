@@ -30,42 +30,42 @@
 			gap: 20px;
 			padding-bottom: 3vw;
 			width: 55%;
-			h1 {
-				font-size: 50px;
-				font-family: $font_titles;
-				position: relative;
-				p {
-					font-size: 50px;
-					position: relative;
-					z-index: 1;
+			// h1 {
+			// 	font-size: 50px;
+			// 	font-family: $font_titles;
+			// 	// position: relative;
+			// 	p {
+			// 		font-size: 50px;
+			// 		position: relative;
+			// 		z-index: 1;
 
-					@media (max-width: $md) {
-						font-size: 29px;
-						font-weight: 600;
-					}
-				}
-				span {
-					width: 120px;
-					height: 15px;
-					background: $primary;
-					position: absolute;
-					top: 40px;
-					left: 0;
-					z-index: 0;
-				}
-				@media (min-width: $xxl) {
-					p {
-						font-size: 70px;
-					}
-				}
-			}
-			p {
-				font-size: 25px;
-				font-family: $font_texts;
-				@media (max-width: $md) {
-					font-size: 15px;
-				}
-			}
+			// 		@media (max-width: $md) {
+			// 			font-size: 29px;
+			// 			font-weight: 600;
+			// 		}
+			// 	}
+			// 	span {
+			// 		width: 120px;
+			// 		height: 15px;
+			// 		background: $primary;
+			// 		position: absolute;
+			// 		top: 40px;
+			// 		left: 0;
+			// 		z-index: 0;
+			// 	}
+			// 	@media (min-width: $xxl) {
+			// 		p {
+			// 			font-size: 70px;
+			// 		}
+			// 	}
+			// }
+			// p {
+			// 	font-size: 25px;
+			// 	font-family: $font_texts;
+			// 	@media (max-width: $md) {
+			// 		font-size: 15px;
+			// 	}
+			// }
 			&_btn {
 				width: 390px;
 				height: 70px;

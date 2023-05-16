@@ -58,7 +58,8 @@ $line-height: 70px;
 
 	@media (max-width: $md) {
 		font-size: 40px;
-		margin-bottom: 30px;
+		margin-bottom: 0px;
+		margin-top: 10px;
 		line-height: 30px;
 		&.small {
 			font-size: 30px;
@@ -71,7 +72,6 @@ $line-height: 70px;
 			}
 		}
 	}
-
 	@media (max-width: $sm) {
 		font-size: 30px;
 
