@@ -41,7 +41,7 @@ const Services = () => {
 						/> */}
 					</div>
 					<div data-aos="zoom-out-left" className={scss.services__elements}>
-						<Title title={t("home.hero2.title1")} typed underline />
+						<Title title={t("home.services.title")} typed underline />
 
 						{/* <h1>
 							<p>{t("home.services.title")}</p>{" "}
