@@ -82,7 +82,8 @@ const Calculate = () => {
 	const labelInputChange = (e, setState, maxVal) => {
 		const inputVal = e.target.value;
 		const newValue = parseInt(inputVal.replace(/(,)/g, ""));
-		if (newValue >= maxVal || !newValue) return;
+		// if (newValue >= maxVal || !newValue) return;
+		if(!newValue) return setState(0);
 		setState(newValue);
 	};
 
