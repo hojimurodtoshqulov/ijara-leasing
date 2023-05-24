@@ -25,6 +25,7 @@ const Calculate = () => {
         const value = Number(e.target.value);
         if (value <= paymentValue) {
             setPaymentValue(value);
+            
         }
         setLeasingValue(onStepChange(e, 1000000));
     };
