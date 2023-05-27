@@ -2,7 +2,7 @@ import React, {useRef, useEffect} from "react";
 import "./funds.scss";
 import Title from "../../components/title/title";
 import { useTranslation } from "react-i18next";
-import IntegerStep from "../../components/calculate/calculate";
+import IntegerStep from "../../components/fundsCalculate/fundsCalculate";
 import { Space } from "antd";
 import img1 from "../../media/fundsImg.png";
 import VanillaTilt from "vanilla-tilt";
