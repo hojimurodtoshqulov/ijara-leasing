@@ -120,13 +120,12 @@ const FundsCalculate = () => {
 	return (
 		<div className="fundsCalculate">
 			<div className="">
-				<div className="fundsCalculate__titles" data-aos="fade-up">
+				{/* <div className="fundsCalculate__titles" data-aos="fade-up">
 					<h1>
 						<p>Funds Calculate</p>
-						{/* <p>{t("home.calculate.title")}</p> */}
 					</h1>
 					<p>{t("home.calculate.subtitle")}</p>
-				</div>
+				</div> */}
 				<div className="fundsCalculate__calculates">
 					<div className="fundsCalculate__calculates_col1">
 						<h1>
@@ -285,13 +284,13 @@ const FundsCalculate = () => {
 								</div>
 							</div>
 						</div>
-						<p
+						{/* <p
 							data-aos="flip-up"
 							data-aos-delay="300"
 							className="fundsCalculate__calculates_col1-text"
 						>
 							{t("home.calculate.text")}
-						</p>
+						</p> */}
 					</div>
 					<div options={options} className="fundsCalculate__calculates_col2">
 						<div
