@@ -4,6 +4,9 @@
 	padding: 150px 0;
 	font-family: Inter;
 	overflow-x: hidden;
+	@media (min-width: 1650px) {
+		padding: 250px 0 150px 0;
+	}
 	section {
 		position: relative;
 		padding-bottom: 20px;

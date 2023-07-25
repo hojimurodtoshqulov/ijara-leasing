@@ -1,7 +1,10 @@
 @import "../../scss/varuables.scss";
 
 .leasing {
-	margin: 150px 0;
+	padding: 150px 0;
+	@media (min-width: 1650px) {
+		padding: 250px 0 150px 0;
+	}
 	.leasing__hero-img {
 		position: absolute;
 		top: 15%;
@@ -63,9 +66,9 @@
 	}
 	&__hero {
 		position: relative;
-		@media (min-width: 1650px) {
-			margin-top: 250px;
-		}
+		// @media (min-width: 1650px) {
+		// 	margin-top: 250px;
+		// }
 		@media (max-width: 776px) {
 			margin-top: 200px;
 		}

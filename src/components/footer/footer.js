@@ -11,7 +11,7 @@ import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 const Footer = () => {
 	const [year, setyear] = useState(0);
-
+	const { t } = useTranslation();
 	useEffect(() => {});
 	const scrollToTop = () => {
 		window.scrollTo(0, 0);
@@ -52,42 +52,57 @@ const Footer = () => {
 							className={scss.footer__row1_col2_link}
 							onClick={scrollToTop}
 						>
-							<span>О компании</span> <p></p>
+							<span>{t("nav.company")}</span> <p></p>
 						</Link>
 						<Link
 							to="/requisites"
 							className={scss.footer__row1_col2_link}
 							onClick={scrollToTop}
 						>
-							Реквизиты <p></p>
+							{t("nav.requisites")}
+							<p></p>
 						</Link>
 						<Link
 							to="/contact"
 							className={scss.footer__row1_col2_link}
 							onClick={scrollToTop}
 						>
-							Контакты <p></p>
+							{t("nav.contact")} <p></p>
 						</Link>
 						<Link
 							to="/programs"
 							className={scss.footer__row1_col2_link}
 							onClick={scrollToTop}
 						>
-							<span>Лизинговые программы</span> <p></p>
+							<span>{t("nav.programs")}</span> <p></p>
 						</Link>
 						<Link
 							to="/leasing"
 							className={scss.footer__row1_col2_link}
 							onClick={scrollToTop}
 						>
-							Экспресс лизинг <p></p>
+							{t("nav.leasing")} <p></p>
+						</Link>
+						<Link
+							to="/funds"
+							className={scss.footer__row1_col2_link}
+							onClick={scrollToTop}
+						>
+							{t("nav.funds")} <p></p>
+						</Link>
+						<Link
+							to="/clients"
+							className={scss.footer__row1_col2_link}
+							onClick={scrollToTop}
+						>
+							<span>{t("nav.client")}</span> <p></p>
 						</Link>
 					</div>
 					<div className={scss.footer__row1_line}></div>
 					<div className={scss.footer__row1_col3} data-aos="fade-right">
-						<h1>Наш адрес:</h1>
-						<p>Юнусабадский район, Ц-5, д.78, кв.13</p>
-						<h1>Телефон:</h1>
+						<h1>{t("footer.addressTitle")}</h1>
+						<p>{t("footer.addressText")}</p>
+						<h1>{t("footer.tel")}</h1>
 						<p>
 							<a href="tel:+998991609000">+998 (99) 160-90-00</a>
 							<a href="tel:+998991619000">+998 (99) 161-90-00</a>

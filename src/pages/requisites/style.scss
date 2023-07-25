@@ -2,8 +2,11 @@
 
 .requisites {
 	position: relative;
-	margin: 150px 0;
+	padding: 150px 0;
 	overflow-x: hidden;
+	@media (min-width: 1650px) {
+		padding: 250px 0 150px 0;
+	}
 	.container {
 		overflow-x: hidden;
 	}
@@ -12,6 +15,9 @@
 		top: 10%;
 		right: 5%;
 		width: 40%;
+		@media (min-width: 1650px) {
+			top: 20%;
+		}
 		&_div1 {
 			border: 2px solid $primary;
 			position: absolute;

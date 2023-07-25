@@ -263,5 +263,10 @@
 		"modalAgree": "Men shaxsiy ma'lumotlarni",
 		"modalAgreeLink": "qayta ishlash shartlariga roziman",
 		"submitSucces": "Arizangiz muvaffaqiyatli yuborildi!"
+	},
+	"footer": {
+		"addressTitle": "Bizning manzil:",
+		"addressText": " Yunusobod tumani, C-5, 78-dom, 13-kvartira",
+		"tel": "Telefon:"
 	}
 }

@@ -8,6 +8,9 @@
 .funds {
 	padding: 150px 0;
 	overflow-x: hidden;
+	@media (min-width: 1650px) {
+		padding: 250px 0 150px 0;
+	}
 	&__imgText {
 		display: flex;
 		flex-wrap: wrap;
