@@ -44,8 +44,14 @@
 				left: 0%;
 				font-size: 1rem;
 				text-shadow: 0px 0px 5px #000, 2px 2px 5px #000, -1px -1px 5px #000;
+				padding-bottom: 20px;
 				&:hover {
 					transform: scale(1.07);
+					background-image: linear-gradient(
+						to bottom,
+						rgba(0, 0, 0, 0),
+						rgba(0, 0, 0, 0.9)
+					);
 				}
 			}
 		}
@@ -60,6 +66,11 @@
 			.link {
 				bottom: 0%;
 				left: 0%;
+				background-image: linear-gradient(
+					to bottom,
+					rgba(0, 0, 0, 0),
+					rgba(0, 0, 0, 0.9)
+				);
 			}
 		}
 		.arrow {
@@ -117,7 +128,7 @@
 				left: 0%;
 				font-size: 0.9rem;
 				line-height: 13px;
-				text-shadow: 0px 0px 5px #000, 2px 2px 5px #000, -1px -1px 5px #000;
+				// text-shadow: 0px 0px 5px #000, 2px 2px 5px #000, -1px -1px 5px #000;
 				transition: all 0.5s;
 				&:hover {
 					transform: scale(1.07);
@@ -133,7 +144,7 @@
 				object-fit: cover;
 			}
 			.link {
-				bottom: 5%;
+				bottom: 0%;
 				left: 0%;
 			}
 		}
