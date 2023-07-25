@@ -63,6 +63,12 @@
 	}
 	&__hero {
 		position: relative;
+		@media (min-width: 1650px) {
+			margin-top: 250px;
+		}
+		@media (max-width: 776px) {
+			margin-top: 200px;
+		}
 		&-wrapper {
 			max-width: 60%;
 			@media (max-width: $lg) {
@@ -132,9 +138,11 @@
 		gap: 1rem;
 		flex-wrap: nowrap;
 		// overflow-x: hidden;
+		@media (min-width: 1652px) {
+			margin: 300px 0 150px 0;
+		}
 		@media (max-width: 1352px) {
 			grid-template-columns: repeat(3, 1fr);
-
 			> div:first-child {
 				order: 1;
 				grid-column: 1 / 4;

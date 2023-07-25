@@ -226,6 +226,10 @@
 			"p1": "Da'volar bo'yicha hujjatlar ro'yxati",
 			"p2": "Sug'urta da'volarini ko'rib chiqish tartibi"
 		},
+		"management": {
+			"name": "Yusupov Ruslan Batirovich",
+			"title": "Bosh boshqaruvchi"
+		},
 		"section4": {
 			"title": "Lizing oluvchining ma'lumotlarini o'zgartirish",
 			"p1": "Lizing oluvchining rekvizitlari o'zgargan taqdirda, u kompaniyaning firma blankida rahbarning muhri va imzosi bilan tasdiqlangan rasmiy xat yuborish orqali Lizing beruvchini ushbu fakt to'g'risida xabardor qilishi shart.",

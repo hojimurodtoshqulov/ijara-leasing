@@ -69,9 +69,9 @@ const Leasing = () => {
 			</section>
 			<div className="container">
 				<div className="leasing__cards">
-					<InfoCard text={t("leasingPage.cards.card1")} title={"18-48"} />
-					<InfoCard text={t("leasingPage.cards.card2")} title={"36%"} />
-					<InfoCard text={t("leasingPage.cards.card3")} title={"20%"} />
+					<InfoCard text={t("leasingPage.cards.card1")} title={"18-36"} />
+					<InfoCard text={t("leasingPage.cards.card2")} title={"30%"} />
+					<InfoCard text={t("leasingPage.cards.card3")} title={"17%"} />
 					<InfoCard text={t("leasingPage.cards.card4")} title={"2%"} />
 				</div>
 				<Space style={{ width: "100%" }} direction="vertical">

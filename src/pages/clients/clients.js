@@ -64,8 +64,8 @@ const Clients = () => {
 							<img src={clientImage} alt="logo" />
 						</div>
 						<div className="image__content">
-							<h3>Азимов Зафар Баходирович</h3>
-							<p>Руководство</p>
+							<h3>{t("clients.management.name")}</h3>
+							<p>{t("clients.management.title")}</p>
 							<a href="mailto:info@ijaraleasing.uz">info@ijaraleasing.uz</a>
 						</div>
 					</div>
