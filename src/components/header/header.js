@@ -115,7 +115,7 @@ const Header = () => {
 				: setSelected((prev) => prev ? 0 : 1);
 		}, 4000);
 		return () => clearInterval(interval);
-	}, []);
+	},[]);
 	return (
 		<>
 			<div className={scss.header}>

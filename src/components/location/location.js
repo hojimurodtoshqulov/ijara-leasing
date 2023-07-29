@@ -11,7 +11,7 @@ const Location = () => {
 		<div className="map">
 			<div className="container" data-aos="zoom-in-up" data-aos-duration="1500">
 				<h1 data-aos="fade-up" data-aos-delay="300">
-					<p>Карта</p>
+					<p>{t("map")}</p>
 					<motion.span
 						initial={{ width: "100px", left: "8rem" }}
 						whileInView={{ width: "100px", left: "-0.1rem" }}
@@ -30,8 +30,17 @@ const Location = () => {
 					className="mapDiv"
 					style={{ position: "relative", overflow: "hidden" }}
 				>
+					{/* <iframe
+						src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d22254.116764188988!2d69.2356588429924!3d41.323096551627515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1690286935157!5m2!1sru!2s"
+						width="100%"
+						height="100%"
+						style={{ border: "0" }}
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+					></iframe> */}
 					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27421.554409237182!2d69.25858835347726!3d41.32078688990037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b37f890f285%3A0x832fef85ffe2c4a3!2zNzgsINCi0LDRiNC60LXQvdGCLCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2s!4v1681561043683!5m2!1sru!2s"
+						src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2996.4136772912752!2d69.24873692919392!3d41.32161712264573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1690287396722!5m2!1sru!2s"
 						width="100%"
 						height="100%"
 						style={{ border: "0" }}

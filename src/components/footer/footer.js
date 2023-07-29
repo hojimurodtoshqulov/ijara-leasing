@@ -104,8 +104,8 @@ const Footer = () => {
 						<p>{t("footer.addressText")}</p>
 						<h1>{t("footer.tel")}</h1>
 						<p>
+							<a href="tel:+998788880220">+998 (78) 888-02-20</a>
 							<a href="tel:+998991609000">+998 (99) 160-90-00</a>
-							<a href="tel:+998991619000">+998 (99) 161-90-00</a>
 						</p>
 					</div>
 				</div>

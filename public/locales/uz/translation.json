@@ -13,7 +13,6 @@
 	"sum": "so'm",
 	"month": "oy",
 	"map": "Xarita",
-
 	"company": "Kompaniya",
 	"leasing": "Lizing dasturlari",
 	"client": "Mijozlar uchun",
@@ -266,7 +265,7 @@
 	},
 	"footer": {
 		"addressTitle": "Bizning manzil:",
-		"addressText": " Yunusobod tumani, C-5, 78-dom, 13-kvartira",
+		"addressText": " Yunusobod tumani, Alisher Navoiy ko'chasi, 33",
 		"tel": "Telefon:"
 	}
 }
