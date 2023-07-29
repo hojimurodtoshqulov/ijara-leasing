@@ -61,6 +61,9 @@
 			align-items: center;
 			justify-content: space-between;
 			transition: 0s !important;
+			@media (min-width: 1200px) and (max-width: 1300px) {
+				width: 60%;
+			}
 			a {
 				font-family: $font_titles;
 				font-size: 20px;
@@ -211,7 +214,6 @@
 			}
 		}
 		&_toggleTheme {
-			border: 1px solid red;
 			span {
 				cursor: pointer;
 			}
@@ -396,7 +398,7 @@
 		}
 	}
 }
-@media (min-width: $xxl) {
+@media (max-width: $xxl) {
 }
 @media (max-width: $xl) {
 	.nav {
