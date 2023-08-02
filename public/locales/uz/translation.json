@@ -89,7 +89,7 @@
 		},
 		"section2": {
 			"title": "Manzil",
-			"text": "Toshkent shahri, Yunusobod tumani, Qashqar massivi, Ц-5, д.78, кв.13 Tel"
+			"text1": "Shayxontohur tumani, Alisher Navoiy ko‘chasi, 33-uy"
 		},
 		"section3": {
 			"title": "Bank rekvizitlari:",
@@ -265,7 +265,7 @@
 	},
 	"footer": {
 		"addressTitle": "Bizning manzil:",
-		"addressText": " Yunusobod tumani, Alisher Navoiy ko'chasi, 33",
+		"addressText": " Shayxontohur tumani, Alisher Navoiy ko'chasi, 33",
 		"tel": "Telefon:"
 	}
 }

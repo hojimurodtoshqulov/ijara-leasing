@@ -52,8 +52,8 @@ const Requisites = () => {
 						</p>
 						<p data-aos="fade-right" className="requisites__text">
 							{t("requisites.section2.text2")}
-							<a href="tel:+998 (99) 160-90-00">+998 (99) 160-90-00</a>,{" "}
-							<a href="tel:+998 (99) 161-90-00">+998 (99) 161-90-00</a>
+							<a href="tel:+998788880220">+998 (78) 888-02-20</a>,{" "}
+							<a href="tel:+998991609000">+998 (99) 160-90-00</a>
 						</p>
 					</section>
 					<section className="requisites__section">
