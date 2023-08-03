@@ -28,7 +28,7 @@ const LeasingService = ({ theme }) => {
 	return (
 		<div className={styles.main}>
 			<div className={styles.imgWrap}>
-				<img src={images[order]} alt="" />
+				<img src={images[order]} alt={images[order]} />
 			</div>
 			<div className={styles.content}>
 				<h1>{titles[order]}</h1>
